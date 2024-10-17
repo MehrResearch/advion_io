@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Wrapper-free Python bindings for Advion mass spectrometers"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "numpy>=2.1.2",
+]
 
 [tool.uv]
 dev-dependencies = [
