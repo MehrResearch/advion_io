@@ -1,4 +1,7 @@
 import ctypes
+from gzip import GzipFile
+from pathlib import Path
+import pickle
 
 import numpy as np
 
@@ -20,6 +23,10 @@ class AdvionData:
         bindings["DataReader"](
             ctypes.byref(self.handle), path, debug_output, decode_spectra
         )
+    
+    def __del__(self):
+        print('Freeing up AdvionData instance')
+        bindings["~DataReader"](ctypes.byref(self.handle))
 
     def get_num_masses(self):
         return bindings["DataReader::getNumMasses"](ctypes.byref(self.handle))
@@ -52,7 +59,7 @@ class AdvionData:
 
     def get_spectrum(self, index):
         max_spectrum = self.get_num_spectra() - 1
-        if index >= max_spectrum:
+        if index > max_spectrum:
             raise IndexError(
                 f"Requested index {index} needs to be smaller than {max_spectrum}."
             )
@@ -65,3 +72,15 @@ class AdvionData:
             err_code = AdvionDataErrorCode(err_no)
             raise IOError(err_code)
         return np.ctypeslib.as_array(buffer)
+    
+    def save(self, path):
+        with Path(path).open("wb") as p:
+            with GzipFile(fileobj=p, mode='wb') as f:
+                pickle.dump(
+                    {
+                        'masses': self.get_masses(),
+                        'times': self.get_retention_times(),
+                        'intensities': np.array([self.get_spectrum(index) for index in range(self.get_num_spectra())]),
+                    },
+                    f,
+                )

@@ -23,6 +23,7 @@ class AdvionDataErrorCode(IntEnum):
 
 NAMES = {
     'DataReader': ('??0DataReader@AdvionData@@QEAA@PEBD_N1@Z', [ctypes.c_void_p, ctypes.c_char_p, ctypes.c_bool, ctypes.c_bool], None),
+    '~DataReader': ('??1DataReader@AdvionData@@QEAA@XZ', [ctypes.c_void_p], None),
     'DataReader::getNumMasses': ('?getNumMasses@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
     'DataReader::getNumSpectra': ('?getNumSpectra@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
     'DataReader::getMasses': ('?getMasses@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
