@@ -1,0 +1,70 @@
+
+Dump of file .\lib\AdvionCommon.dll
+
+File Type: DLL
+
+  Section contains the following exports for AdvionCommon.dll
+
+    00000000 characteristics
+    5DE7E3F9 time date stamp Wed Dec  4 16:51:05 2019
+        0.00 version
+           1 ordinal base
+          44 number of functions
+          44 number of names
+
+    ordinal hint RVA      name
+
+          1    0 000026C0 ??0Mutex@AdvionCommon@@QEAA@PEB_W@Z
+          2    1 00002C10 ??0USBSerialDevice@AdvionCommon@@QEAA@AEBV01@@Z
+          3    2 00002EB0 ??0USBSerialDevice@AdvionCommon@@QEAA@XZ
+          4    3 00002720 ??1Mutex@AdvionCommon@@QEAA@XZ
+          5    4 00002EF0 ??1USBSerialDevice@AdvionCommon@@UEAA@XZ
+          6    5 000010C0 ??4AdvionUtility@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+          7    6 000010C0 ??4AdvionUtility@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+          8    7 000010C0 ??4AdvionUtilityInternal@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+          9    8 000010C0 ??4AdvionUtilityInternal@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+         10    9 00002CB0 ??4USBSerialDevice@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+         11    A 000010C0 ??4WinDump@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+         12    B 000010C0 ??4WinDump@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+         13    C 00006510 ??_7USBSerialDevice@AdvionCommon@@6B@
+         14    D 00002670 ?GetTimeMS@@YA_KXZ
+         15    E 00003250 ?configurePort@USBSerialDevice@AdvionCommon@@AEAA_NPEAX@Z
+         16    F 00002F60 ?connect@USBSerialDevice@AdvionCommon@@UEAA_NH@Z
+         17   10 000012C0 ?determineSoftwareVersion@AdvionUtilityInternal@AdvionCommon@@SAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+         18   11 00002FC0 ?disconnect@USBSerialDevice@AdvionCommon@@QEAAXXZ
+         19   12 00003060 ?findAndOpenPort@USBSerialDevice@AdvionCommon@@AEAA_NXZ
+         20   13 00003050 ?getCOMPort@USBSerialDevice@AdvionCommon@@QEAAHXZ
+         21   14 000037E0 ?getCommandDelay@USBSerialDevice@AdvionCommon@@MEAAHXZ
+         22   15 000010D0 ?getSoftwareVersion@AdvionUtility@AdvionCommon@@SAPEBDXZ
+         23   16 00001110 ?getSoftwareVersionW@AdvionUtility@AdvionCommon@@SAPEB_WXZ
+         24   17 00002C00 ?getValidationStart@USBSerialDevice@AdvionCommon@@MEAAHXZ
+         25   18 000031F0 ?initPortTimeouts@USBSerialDevice@AdvionCommon@@AEAAXPEAX@Z
+         26   19 00003020 ?isConnected@USBSerialDevice@AdvionCommon@@QEAA_NXZ
+         27   1A 00002750 ?lock@Mutex@AdvionCommon@@QEAA_NXZ
+         28   1B 000014D0 ?ltrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+         29   1C 00001690 ?ltrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+         30   1D 00003640 ?readString@USBSerialDevice@AdvionCommon@@AEAA_NPEAD_N@Z
+         31   1E 00003960 ?registerExceptionHandler@WinDump@AdvionCommon@@SAXPEB_W@Z
+         32   1F 00001410 ?rtrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+         33   20 000015B0 ?rtrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+         34   21 000037D0 ?secondaryValidationCheck@USBSerialDevice@AdvionCommon@@MEAA_NPEBD@Z
+         35   22 00003560 ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBD@Z
+         36   23 000034D0 ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBDPEAD_N@Z
+         37   24 000030F0 ?testPort@USBSerialDevice@AdvionCommon@@MEAA_NI@Z
+         38   25 00001590 ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+         39   26 000017F0 ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+         40   27 00002770 ?try_lock@Mutex@AdvionCommon@@QEAA_NH@Z
+         41   28 00002780 ?unlock@Mutex@AdvionCommon@@QEAA_NXZ
+         42   29 00003AB0 ?unregisterExceptionHandler@WinDump@AdvionCommon@@SAXXZ
+         43   2A 000032E0 ?validate@USBSerialDevice@AdvionCommon@@AEAA_N_N@Z
+         44   2B 00003600 ?writeString@USBSerialDevice@AdvionCommon@@EEAA_NPEBD@Z
+
+  Summary
+
+        1000 .data
+        1000 .gfids
+        1000 .pdata
+        4000 .rdata
+        1000 .reloc
+        1000 .rsrc
+        5000 .text
