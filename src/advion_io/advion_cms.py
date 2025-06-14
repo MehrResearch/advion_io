@@ -8,10 +8,11 @@ from .constants import (
     TuneParameter, 
     InstrumentSwitch, 
     BinaryReadback, 
-    NumberReadback
+    NumberReadback,
+    get_dll_path
 )
 
-lib = ctypes.cdll.LoadLibrary("./lib/Release/AdvionCMS.dll")
+lib = ctypes.cdll.LoadLibrary(get_dll_path("AdvionCMS.dll"))
 
 cms_bindings = {}
 

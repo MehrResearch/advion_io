@@ -1,5 +1,15 @@
 import ctypes
 from enum import IntEnum
+from pathlib import Path
+
+
+def get_dll_path(dll_name):
+    """Resolve DLL path relative to package location."""
+    package_root = Path(__file__).parent.parent.parent
+    dll_path = package_root / "lib" / "Release" / dll_name
+    if not dll_path.exists():
+        raise FileNotFoundError(f"DLL not found: expected {dll_path}")
+    return str(dll_path)
 
 
 class AdvionDataErrorCode(IntEnum):

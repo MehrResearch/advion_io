@@ -5,9 +5,9 @@ import pickle
 
 import numpy as np
 
-from .constants import DATA_NAMES, AdvionDataErrorCode
+from .constants import DATA_NAMES, AdvionDataErrorCode, get_dll_path
 
-lib = ctypes.cdll.LoadLibrary("./lib/Release/AdvionData.dll")
+lib = ctypes.cdll.LoadLibrary(get_dll_path("AdvionData.dll"))
 
 bindings = {}
 
