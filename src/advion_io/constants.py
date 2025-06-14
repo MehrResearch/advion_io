@@ -167,7 +167,7 @@ class NumberReadback(IntEnum):
     DC1RB = 16
     DC2RB = 17
 
-NAMES = {
+DATA_NAMES = {
     'DataReader': ('??0DataReader@AdvionData@@QEAA@PEBD_N1@Z', [ctypes.c_void_p, ctypes.c_char_p, ctypes.c_bool, ctypes.c_bool], None),
     '~DataReader': ('??1DataReader@AdvionData@@QEAA@XZ', [ctypes.c_void_p], None),
     'DataReader::getNumMasses': ('?getNumMasses@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
@@ -176,6 +176,43 @@ NAMES = {
     'DataReader::getRetentionTimes': ('?getRetentionTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
     'DataReader::getTIC': ('?getTIC@DataReader@AdvionData@@QEAAMH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_float),
     'DataReader::getSpectrum': ('?getSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::setDeltaBackgroundParameters': ('?setDeltaBackgroundParameters@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@NNNNH@Z', [ctypes.c_void_p, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_int], ctypes.c_int),
+    'DataReader::getDataSetValidity': ('?getDataSetValidity@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@XZ', [ctypes.c_void_p], ctypes.c_int),
+    'DataReader::getDate': ('?getDate@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getIsCentroid': ('?getIsCentroid@DataReader@AdvionData@@QEAA_NXZ', [ctypes.c_void_p], ctypes.c_bool),
+    'DataReader::getDeltaSpectrum': ('?getDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getDeltaBackgroundSpectrum': ('?getDeltaBackgroundSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getAveragedSpectrum': ('?getAveragedSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_int), ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getAveragedDeltaSpectrum': ('?getAveragedDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_int), ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::generateXIC': ('?generateXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_int), ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::generateDeltaXIC': ('?generateDeltaXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z', [ctypes.c_void_p, ctypes.POINTER(ctypes.c_int), ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getDeltaIC': ('?getDeltaIC@DataReader@AdvionData@@QEAAMH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_float),
+    'DataReader::getSoftwareVersion': ('?getSoftwareVersion@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getFirmwareVersion': ('?getFirmwareVersion@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getHardwareType': ('?getHardwareType@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getInstrumentID': ('?getInstrumentID@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getMethodXML': ('?getMethodXML@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getExperimentXML': ('?getExperimentXML@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getIcpmsExperimentXML': ('?getIcpmsExperimentXML@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getIcpmsInstrumentSettingsXML': ('?getIcpmsInstrumentSettingsXML@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getScanModeIndex': ('?getScanModeIndex@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
+    'DataReader::getNumSegments': ('?getNumSegments@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
+    'DataReader::getSegmentTime': ('?getSegmentTime@DataReader@AdvionData@@QEAANH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_double),
+    'DataReader::getIonSourceOptimizationXML': ('?getIonSourceOptimizationXML@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getTuneParametersXML': ('?getTuneParametersXML@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getExperimentLog': ('?getExperimentLog@DataReader@AdvionData@@QEAAPEBDXZ', [ctypes.c_void_p], ctypes.c_char_p),
+    'DataReader::getNumScalarChannels': ('?getNumScalarChannels@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
+    'DataReader::getScalarChannelName': ('?getScalarChannelName@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getScalarChannelNumSamples': ('?getScalarChannelNumSamples@DataReader@AdvionData@@QEAAHH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_int),
+    'DataReader::getScalarChannelTimes': ('?getScalarChannelTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getScalarChannelValues': ('?getScalarChannelValues@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.POINTER(ctypes.c_float)], ctypes.c_int),
+    'DataReader::getScalarChannelNumAttributes': ('?getScalarChannelNumAttributes@DataReader@AdvionData@@QEAAHH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_int),
+    'DataReader::getScalarChannelAttributeName': ('?getScalarChannelAttributeName@DataReader@AdvionData@@QEAAPEBDHH@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getScalarChannelAttributeValue': ('?getScalarChannelAttributeValue@DataReader@AdvionData@@QEAANHH@Z', [ctypes.c_void_p, ctypes.c_int, ctypes.c_int], ctypes.c_double),
+    'DataReader::getNumAuxFiles': ('?getNumAuxFiles@DataReader@AdvionData@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
+    'DataReader::getAuxFileName': ('?getAuxFileName@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getAuxFileType': ('?getAuxFileType@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
+    'DataReader::getAuxFileText': ('?getAuxFileText@DataReader@AdvionData@@QEAAPEBDH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_char_p),
 }
 
 CMS_NAMES = {
