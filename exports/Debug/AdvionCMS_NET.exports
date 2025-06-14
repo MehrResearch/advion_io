@@ -1,0 +1,311 @@
+
+lib/Debug/AdvionCMS_NET.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:53:21 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000009a00
+SizeOfInitializedData   0000000000031c00
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     0000000000009332
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             00042000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 0000000000000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 0000000000038104 0000008c Import Directory [parts of .idata]
+Entry 2 0000000000040000 0000050c Resource Directory [.rsrc]
+Entry 3 000000000003e000 00000474 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 0000000000041000 00000094 Base Relocation Directory [.reloc]
+Entry 6 000000000000d330 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 000000000000d390 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 000000000000c000 000006a0 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 000000000000c760 00000048 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 00038190 time 00000000 fwd 00000000 name 00038904 addr 0000c000
+
+    DLL Name: AdvionCMS.dll
+    Hint/Ord  Name
+         692  ?onWriteLogMessage@AcquisitionListener@AdvionCMS@@MEAAXPEB_W@Z
+         691  ?onWriteLogMessage@AcquisitionListener@AdvionCMS@@MEAAXPEBD@Z
+          83  ??1SimulatedInstrument@AdvionCMS@@UEAA@XZ
+          87  ??1USBInstrument@AdvionCMS@@UEAA@XZ
+         821  ?setOverridePump@USBInstrument@AdvionCMS@@QEAAX_N@Z
+         823  ?setOverrideSafeties@USBInstrument@AdvionCMS@@QEAAX_N@Z
+          56  ??0USBInstrument@AdvionCMS@@QEAA@_N0@Z
+         815  ?setLogFile@TuneScanManager@AdvionCMS@@SAXPEB_W@Z
+         207  ?cancel@TuneScanManager@AdvionCMS@@SAXXZ
+         169  ?autoTuneInstrument@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4TuningLevel@2@W4MassCalibrationLevel@2@@Z
+         455  ?getNumAutoTuneInstrumentScans@TuneScanManager@AdvionCMS@@SAHW4TuningLevel@2@W4MassCalibrationLevel@2@@Z
+         168  ?autoTuneInstrument@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4TuningLevel@2@@Z
+         454  ?getNumAutoTuneInstrumentScans@TuneScanManager@AdvionCMS@@SAHW4TuningLevel@2@@Z
+         182  ?calibrateMasses@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4MassCalibrationLevel@2@@Z
+         457  ?getNumCalibrateMassesScans@TuneScanManager@AdvionCMS@@SAHW4MassCalibrationLevel@2@@Z
+         893  ?testPerformance@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN00@Z
+         467  ?getNumTestPerformanceScans@TuneScanManager@AdvionCMS@@SAHXZ
+         190  ?canCalibrateAndAutoTune@TuneScanManager@AdvionCMS@@SA_NXZ
+         380  ?getLastIntensities@TuneScanManager@AdvionCMS@@SAXHPEAN@Z
+         381  ?getLastMasses@TuneScanManager@AdvionCMS@@SAXHPEAN@Z
+         383  ?getLastNumSamples@TuneScanManager@AdvionCMS@@SAHH@Z
+         468  ?getNumTuningMasses@TuneScanManager@AdvionCMS@@SAHXZ
+         857  ?setTuningMasses@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@HQEAN000@Z
+         844  ?setSmoothing@TuneScanManager@AdvionCMS@@SAXHH@Z
+         410  ?getMaxNumSamples@TuneScanManager@AdvionCMS@@SAHXZ
+         412  ?getMaxNumTuneMasses@TuneScanManager@AdvionCMS@@SAHXZ
+          85  ??1TuneScanListener@AdvionCMS@@MEAA@XZ
+          50  ??0TuneScanListener@AdvionCMS@@IEAA@XZ
+         306  ?forceScanFailure@SimulatedInstrument@AdvionCMS@@QEAAXXZ
+         787  ?setDigitalInput@SimulatedInstrument@AdvionCMS@@QEAAXH_N@Z
+         351  ?getFiaSignal@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+         793  ?setFiaSignal@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+         505  ?getSafetySwitch@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+         832  ?setSafetySwitch@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+         319  ?getCommOK@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+         783  ?setCommOK@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+         531  ?getSimulatedLicensedUpgrade@SimulatedInstrument@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z
+         840  ?setSimulatedLicensedUpgrade@SimulatedInstrument@AdvionCMS@@QEAAXW4LicensableUpgrade@2@_N@Z
+         533  ?getSimulatedSourceType@SimulatedInstrument@AdvionCMS@@QEAA?AW4SourceType@2@XZ
+         529  ?getSimulatedHardwareType@SimulatedInstrument@AdvionCMS@@QEAA?AW4HardwareType@2@XZ
+         842  ?setSimulatedSourceType@SimulatedInstrument@AdvionCMS@@QEAAXW4SourceType@2@@Z
+         838  ?setSimulatedHardwareType@SimulatedInstrument@AdvionCMS@@QEAAXW4HardwareType@2@@Z
+          47  ??0SimulatedInstrument@AdvionCMS@@QEAA@PEB_W@Z
+           0  ??0AcquisitionListener@AdvionCMS@@IEAA@XZ
+          60  ??1AcquisitionListener@AdvionCMS@@MEAA@XZ
+         188  ?canAcquireToFolder@AcquisitionManager@AdvionCMS@@SA_NPEB_W@Z
+         194  ?canPerformSwitching@AcquisitionManager@AdvionCMS@@SA_NXZ
+         189  ?canCalculateDeltaData@AcquisitionManager@AdvionCMS@@SA_NXZ
+         433  ?getMinRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ
+         434  ?getMinSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ
+         415  ?getMaxRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ
+         417  ?getMaxSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ
+         872  ?start@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W0000@Z
+         880  ?startWithSwitching@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W000000@Z
+         885  ?stop@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         696  ?pause@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@_N@Z
+         762  ?resume@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         269  ?extend@AcquisitionManager@AdvionCMS@@SAHH@Z
+         647  ?isFinalizingData@AcquisitionManager@AdvionCMS@@SA_NXZ
+         248  ?createScalarChannel@AcquisitionManager@AdvionCMS@@SAHPEB_W@Z
+         933  ?writeScalarEntry@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HNN@Z
+         246  ?createAuxiliaryFile@AcquisitionManager@AdvionCMS@@SAHPEB_W0@Z
+         935  ?writeTextToFile@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEB_W@Z
+         931  ?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEB_W_N@Z
+         927  ?writeExperiment@AcquisitionManager@AdvionCMS@@SAXPEB_W@Z
+         548  ?getState@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionState@2@XZ
+         659  ?isUsingTwoIonSources@AcquisitionManager@AdvionCMS@@SA_NXZ
+         460  ?getNumScanModes@AcquisitionManager@AdvionCMS@@SAHXZ
+         510  ?getScanMode@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionScanMode@2@H@Z
+         324  ?getCurrentNameW@AcquisitionManager@AdvionCMS@@SAPEB_WHH@Z
+         322  ?getCurrentFolderW@AcquisitionManager@AdvionCMS@@SAPEB_WXZ
+         411  ?getMaxNumScans@AcquisitionManager@AdvionCMS@@SAHXZ
+         409  ?getMaxNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ
+         504  ?getRuntime@AcquisitionManager@AdvionCMS@@SANXZ
+         584  ?getTotalRunTime@AcquisitionManager@AdvionCMS@@SANXZ
+         462  ?getNumScansDone@AcquisitionManager@AdvionCMS@@SAHXZ
+         385  ?getLastScanIndex@AcquisitionManager@AdvionCMS@@SAHXZ
+         387  ?getLastScanModeIndex@AcquisitionManager@AdvionCMS@@SAHXZ
+         386  ?getLastScanIonSource@AcquisitionManager@AdvionCMS@@SAHXZ
+         384  ?getLastRetentionTime@AcquisitionManager@AdvionCMS@@SANXZ
+         382  ?getLastNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ
+         390  ?getLastTIC@AcquisitionManager@AdvionCMS@@SANXZ
+         391  ?getLastXIC@AcquisitionManager@AdvionCMS@@SANNN@Z
+         377  ?getLastDeltaIC@AcquisitionManager@AdvionCMS@@SANXZ
+         379  ?getLastDeltaXIC@AcquisitionManager@AdvionCMS@@SANNN@Z
+         376  ?getLastAnalogOutput@AcquisitionManager@AdvionCMS@@SANH_N@Z
+         389  ?getLastSpectrumMasses@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+         388  ?getLastSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+         378  ?getLastDeltaSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+         337  ?getDeltaBackgroundSize@AcquisitionManager@AdvionCMS@@SAHH@Z
+         338  ?getDeltaBackgroundSpectrum@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEANH@Z
+         609  ?getWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ
+         861  ?setWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z
+         309  ?getAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ
+         775  ?setAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z
+         911  ?updateIonSourceOptimization@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEB_W@Z
+         878  ?startWithSegments@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_WHPEANPEAPEB_W200@Z
+         254  ?detectPeaks@DataProcessor@AdvionCMS@@SAPEA_WPEAN0HPEB_W@Z
+         270  ?filterBoxCar@DataProcessor@AdvionCMS@@SA?AW4ErrorCode@2@PEAN0HH@Z
+         271  ?filterQuadraticSG@DataProcessor@AdvionCMS@@SA?AW4ErrorCode@2@PEAN0HH@Z
+         612  ?ignoreRemainingPumpDownTime@Instrument@AdvionCMS@@QEAAXXZ
+         802  ?setInstrumentSwitchOn@Instrument@AdvionCMS@@QEAAXW4InstrumentSwitch@2@_N@Z
+         313  ?getBinaryReadback@Instrument@AdvionCMS@@QEAA_NW4BinaryReadback@2@@Z
+         587  ?getTuneParameter@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+         591  ?getTuneParameterUserMin@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+         589  ?getTuneParameterUserMax@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+         541  ?getSourceGasTemperatureUserMax@Instrument@AdvionCMS@@QEAANW4SourceType@2@@Z
+         358  ?getHardwareType@Instrument@AdvionCMS@@QEAA?AW4HardwareType@2@XZ
+         544  ?getSourceType@Instrument@AdvionCMS@@QEAA?AW4SourceType@2@XZ
+         355  ?getFirmwareVersionW@Instrument@AdvionCMS@@QEAAPEB_WXZ
+         525  ?getSerialNumberW@Instrument@AdvionCMS@@QEAAPEB_WXZ
+         430  ?getMinMass@Instrument@AdvionCMS@@QEAANXZ
+         408  ?getMaxMass@Instrument@AdvionCMS@@QEAANXZ
+         428  ?getMinInstrumentMass@Instrument@AdvionCMS@@QEAANXZ
+         406  ?getMaxInstrumentMass@Instrument@AdvionCMS@@QEAANXZ
+         419  ?getMaxScanSpeed@Instrument@AdvionCMS@@QEAANXZ
+         486  ?getPumpDownRemainingSeconds@Instrument@AdvionCMS@@QEAAHXZ
+         847  ?setTuneParameter@Instrument@AdvionCMS@@QEAAXW4TuneParameter@2@N@Z
+         473  ?getNumberReadback@Instrument@AdvionCMS@@QEAANW4NumberReadback@2@@Z
+         740  ?readAnalogInput@Instrument@AdvionCMS@@QEAANH@Z
+         335  ?getDefaultTuneParametersW@Instrument@AdvionCMS@@QEAAPEB_W_N0@Z
+         331  ?getDefaultIonSourceOptimizationW@Instrument@AdvionCMS@@QEAAPEB_W_N0@Z
+         650  ?isHeaterTemperatureEquilibrated@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z
+         652  ?isHeaterTemperatureWithinMaximum@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z
+         655  ?isLicensedUpgrade@Instrument@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z
+         873  ?startController@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEAVInstrument@2@@Z
+         887  ?stopController@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         549  ?getState@InstrumentController@AdvionCMS@@SA?AW4InstrumentState@2@XZ
+         480  ?getOperationMode@InstrumentController@AdvionCMS@@SA?AW4OperationMode@2@XZ
+         192  ?canOperate@InstrumentController@AdvionCMS@@SA_NXZ
+         478  ?getOperatePreventers@InstrumentController@AdvionCMS@@SAIXZ
+         200  ?canStandby@InstrumentController@AdvionCMS@@SA_NXZ
+         203  ?canVent@InstrumentController@AdvionCMS@@SA_NXZ
+         197  ?canPumpDown@InstrumentController@AdvionCMS@@SA_NXZ
+         537  ?getSoftwareVersionW@InstrumentController@AdvionCMS@@SAPEB_WXZ
+         919  ?vent@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         737  ?pumpDown@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         693  ?operate@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         869  ?standby@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+         224  ?configureDigitalOutputOnStandby@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@H_N@Z
+         807  ?setIonSourceOptimization@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+         853  ?setTuneParameters@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+         373  ?getIonSourceOptimizationW@InstrumentController@AdvionCMS@@SAPEA_WXZ
+         595  ?getTuneParametersW@InstrumentController@AdvionCMS@@SAPEA_WXZ
+          24  ??0InstrumentListener@AdvionCMS@@IEAA@XZ
+          72  ??1InstrumentListener@AdvionCMS@@MEAA@XZ
+
+  lookup 00038708 time 00000000 fwd 00000000 name 00038992 addr 0000c578
+
+    DLL Name: VCRUNTIME140D.dll
+    Hint/Ord  Name
+          60  memcpy
+          61  memmove
+          15  __CxxQueryExceptionSize
+          11  __CxxExceptionFilter
+          19  __FrameUnwindFilter
+          37  __std_type_info_destroy_list
+           8  __C_specific_handler
+           1  _CxxThrowException
+          34  __std_exception_destroy
+          33  __std_exception_copy
+          16  __CxxRegisterExceptionObject
+          17  __CxxUnregisterExceptionObject
+          10  __CxxDetectRethrow
+
+  lookup 00038788 time 00000000 fwd 00000000 name 00038aa2 addr 0000c5f8
+
+    DLL Name: ucrtbased.dll
+    Hint/Ord  Name
+         285  _free_dbg
+         372  _initterm
+         373  _initterm_e
+         705  _seh_filter_dll
+         182  _configure_narrow_argv
+         369  _initialize_narrow_environment
+         370  _initialize_onexit_table
+         692  _register_onexit_function
+         229  _execute_onexit_table
+         194  _crt_atexit
+         193  _crt_at_quick_exit
+         164  _cexit
+        1382  wcslen
+           5  _CrtDbgReportW
+         374  _invalid_parameter
+        1155  free
+         981  abort
+         161  _callnewh
+        1239  malloc
+        1354  terminate
+
+  lookup 00038628 time 00000000 fwd 00000000 name 00038c3c addr 0000c498
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+        1377  Sleep
+        1392  TerminateProcess
+         527  GetCurrentProcess
+         621  GetModuleHandleW
+         880  IsProcessorFeaturePresent
+         709  GetStartupInfoW
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+         874  IsDebuggerPresent
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+         852  InitializeSListHead
+         279  DisableThreadLibraryCalls
+         733  GetSystemTimeAsFileTime
+         532  GetCurrentThreadId
+         528  GetCurrentProcessId
+        1072  QueryPerformanceCounter
+
+  lookup 000386c0 time 00000000 fwd 00000000 name 0003b190 addr 0000c530
+
+    DLL Name: MSVCP140D.dll
+    Hint/Ord  Name
+         109  ??0_Lockit@std@@QEAA@H@Z
+         421  ?_Debug_message@std@@YAXPEB_W0I@Z
+         669  ?__ExceptionPtrCopy@@YAXPEAXPEBX@Z
+         165  ??1_Lockit@std@@QEAA@XZ
+         673  ?__ExceptionPtrDestroy@@YAXPEAX@Z
+         659  ?_Xbad_alloc@std@@YAXXZ
+         662  ?_Xlength_error@std@@YAXPEBD@Z
+         663  ?_Xout_of_range@std@@YAXPEBD@Z
+
+  lookup 00038778 time 00000000 fwd 00000000 name 0003b2b8 addr 0000c5e8
+
+    DLL Name: mscoree.dll
+    Hint/Ord  Name
+         118  _CorDllMain
+
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         0000848d 0000000180001000 TEXT
+  1 .nep          000012b0 000000018000a000 TEXT
+  2 .rdata        0002f2c4 000000018000c000 DATA
+  3 .data         00001800 000000018003c000 DATA
+  4 .pdata        00000474 000000018003e000 DATA
+  5 .gfids        0000002c 000000018003f000 DATA
+  6 .rsrc         0000050c 0000000180040000 DATA
+  7 .reloc        00000094 0000000180041000 DATA
+
+SYMBOL TABLE:

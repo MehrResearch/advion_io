@@ -7,7 +7,7 @@ import numpy as np
 
 from .constants import NAMES, AdvionDataErrorCode
 
-lib = ctypes.cdll.LoadLibrary("./lib/AdvionData.dll")
+lib = ctypes.cdll.LoadLibrary("./lib/Release/AdvionData.dll")
 
 bindings = {}
 

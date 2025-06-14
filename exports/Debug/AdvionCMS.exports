@@ -1,0 +1,1563 @@
+
+lib/Debug/AdvionCMS.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:53:16 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              00000000000ace00
+SizeOfInitializedData   0000000000058400
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     00000000000a48a0
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             0010d000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 00000000000dafe0 0000fda8 Export Directory [.edata (or where ever we found it)]
+Entry 1 00000000000ead88 000000c8 Import Directory [parts of .idata]
+Entry 2 000000000010b000 000004f4 Resource Directory [.rsrc]
+Entry 3 00000000000fb000 0000e6b8 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 000000000010c000 00000dec Base Relocation Directory [.reloc]
+Entry 6 00000000000c7670 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000000c76d0 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 00000000000ae000 00001000 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 000ebc80 time 00000000 fwd 00000000 name 000ebf8c addr 000aee30
+
+    DLL Name: lmx-MDd-vc14.dll
+    Hint/Ord  Name
+         308  ?convert@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+         309  ?convert@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+
+  lookup 000eb788 time 00000000 fwd 00000000 name 000ebffe addr 000ae938
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+        1347  SetThreadPriority
+         532  GetCurrentThreadId
+         531  GetCurrentThread
+        1340  SetThreadExecutionState
+        1377  Sleep
+         733  GetSystemTimeAsFileTime
+         279  DisableThreadLibraryCalls
+         852  InitializeSListHead
+         528  GetCurrentProcessId
+        1072  QueryPerformanceCounter
+         676  GetProcAddress
+         420  FreeLibrary
+        1459  VirtualQuery
+         681  GetProcessHeap
+         828  HeapFree
+         824  HeapAlloc
+         598  GetLastError
+         621  GetModuleHandleW
+         709  GetStartupInfoW
+        1501  WideCharToMultiByte
+         980  MultiByteToWideChar
+        1092  RaiseException
+         874  IsDebuggerPresent
+         880  IsProcessorFeaturePresent
+        1392  TerminateProcess
+         527  GetCurrentProcess
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+
+  lookup 000eae50 time 00000000 fwd 00000000 name 000ec44a addr 000ae000
+
+    DLL Name: AdvionCommon.dll
+    Hint/Ord  Name
+          36  ?testPort@USBSerialDevice@AdvionCommon@@MEAA_NI@Z
+          34  ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBD@Z
+          43  ?writeString@USBSerialDevice@AdvionCommon@@EEAA_NPEBD@Z
+          33  ?secondaryValidationCheck@USBSerialDevice@AdvionCommon@@MEAA_NPEBD@Z
+          23  ?getValidationStart@USBSerialDevice@AdvionCommon@@MEAAHXZ
+          20  ?getCommandDelay@USBSerialDevice@AdvionCommon@@MEAAHXZ
+           9  ??4USBSerialDevice@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+           1  ??0USBSerialDevice@AdvionCommon@@QEAA@AEBV01@@Z
+          35  ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBDPEAD_N@Z
+          38  ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+          13  ?GetTimeMS@@YA_KXZ
+           0  ??0Mutex@AdvionCommon@@QEAA@PEB_W@Z
+           3  ??1Mutex@AdvionCommon@@QEAA@XZ
+          26  ?lock@Mutex@AdvionCommon@@QEAA_NXZ
+          40  ?unlock@Mutex@AdvionCommon@@QEAA_NXZ
+          21  ?getSoftwareVersion@AdvionUtility@AdvionCommon@@SAPEBDXZ
+          22  ?getSoftwareVersionW@AdvionUtility@AdvionCommon@@SAPEB_WXZ
+           2  ??0USBSerialDevice@AdvionCommon@@QEAA@XZ
+           4  ??1USBSerialDevice@AdvionCommon@@UEAA@XZ
+          15  ?connect@USBSerialDevice@AdvionCommon@@UEAA_NH@Z
+
+  lookup 000eaef8 time 00000000 fwd 00000000 name 000ec9f0 addr 000ae0a8
+
+    DLL Name: AdvionData.dll
+    Hint/Ord  Name
+         478  ?writeSpectrumMasses@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBMH@Z
+         473  ?writeScanData@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBIHNN@Z
+         472  ?writeScalarEntry@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HNN@Z
+         471  ?writeScalarEntries@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEAN0H@Z
+         479  ?writeTextToFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEBD@Z
+         136  ?createDatxFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@XZ
+         107  ?canWriteData@DataWriter@AdvionData@@SA?AW4ErrorCode@2@PEB_W0@Z
+         467  ?writeLogMessage@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+         108  ?canWriteData@DataWriter@AdvionData@@SA_NPEBD@Z
+         109  ?canWriteData@DataWriter@AdvionData@@SA_NPEB_W@Z
+           3  ??0DataWriter@AdvionData@@QEAA@PEB_W0_N1@Z
+          48  ??1DataWriter@AdvionData@@QEAA@XZ
+         343  ?setMetadata@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W000@Z
+         138  ?createScalarChannel@DataWriter@AdvionData@@QEAAHPEB_W@Z
+         135  ?createAuxiliaryFile@DataWriter@AdvionData@@QEAAHPEB_W0@Z
+         469  ?writeMethod@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+         462  ?writeExperiment@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+         463  ?writeExperiment@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         465  ?writeIonSourceOpt@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+         481  ?writeTuneParams@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+         475  ?writeScanModeIndex@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@H@Z
+         476  ?writeSegments@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEANPEAPEBD1@Z
+
+  lookup 000eafb0 time 00000000 fwd 00000000 name 000f0df6 addr 000ae160
+
+    DLL Name: AdvionObjects.dll
+    Hint/Ord  Name
+        1311  ?get_segment@c_calibration@AdvionObjects@@QEBAAEBVc_calibrationSegment@2@_K@Z
+         539  ?append_segment@c_calibration@AdvionObjects@@QEAA?AW4elmx_error@lmx@@PEAVc_calibrationSegment@2@@Z
+        2816  ?size_segment@c_calibration@AdvionObjects@@QEBA_KXZ
+        1307  ?get_scanSpeed@c_speedCalibration@AdvionObjects@@QEBAAEBNXZ
+        1313  ?get_segment@c_speedCalibration@AdvionObjects@@QEBAAEBVc_calibrationSegment@2@_K@Z
+        2817  ?size_segment@c_speedCalibration@AdvionObjects@@QEBA_KXZ
+        1060  ?get_calibration@c_massCalibration@AdvionObjects@@QEBAAEBVc_speedCalibration@2@_K@Z
+        2796  ?size_calibration@c_massCalibration@AdvionObjects@@QEBA_KXZ
+        1245  ?get_onLowToHigh@c_ClosureTriggerIn@AdvionObjects@@QEBAAEB_NXZ
+         205  ??0c_ionSourceOptimization@AdvionObjects@@QEAA@XZ
+         199  ??0c_ionSourceOptimization@AdvionObjects@@QEAA@AEBV01@@Z
+         461  ??4c_ionSourceOptimization@AdvionObjects@@QEAAAEAV01@AEBV01@@Z
+         354  ??1c_ionSourceOptimization@AdvionObjects@@UEAA@XZ
+        2697  ?set_sourceVoltage@c_ionSourceOptimization@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1211  ?get_massCalibration@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBVc_massCalibration@2@XZ
+         243  ??0c_tuneParameters@AdvionObjects@@QEAA@AEBV01@@Z
+         468  ??4c_tuneParameters@AdvionObjects@@QEAAAEAV01@AEBV01@@Z
+         361  ??1c_tuneParameters@AdvionObjects@@UEAA@XZ
+        2653  ?set_radius@c_Smoothing@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBE@Z
+        2607  ?set_iterations@c_Smoothing@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBE@Z
+        2743  ?set_useTwoIonSourceOptimizations@c_RangeScanMode@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEB_N@Z
+        2810  ?size_massOfInterest@c_SIMScanMode@AdvionObjects@@QEBA_KXZ
+        1298  ?get_scanMode@c_MethodType@AdvionObjects@@QEAAAEAVc_ScanMode@2@_K@Z
+         990  ?delete_scanMode@c_MethodType@AdvionObjects@@QEAAX_K@Z
+        2814  ?size_scanMode@c_MethodType@AdvionObjects@@QEBA_KXZ
+        1328  ?get_smoothing@c_MethodType@AdvionObjects@@QEAAAEAVc_Smoothing@2@XZ
+        1284  ?get_removeNoise@c_MethodType@AdvionObjects@@QEBAAEB_NXZ
+        2665  ?set_removeNoise@c_MethodType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEB_N@Z
+        3397  ?unset_analogOutputs@c_MethodType@AdvionObjects@@QEAAXXZ
+        3396  ?unset_analogInputs@c_MethodType@AdvionObjects@@QEAAXXZ
+        3415  ?unset_contactClosuresOut@c_MethodType@AdvionObjects@@QEAAXXZ
+         215  ??0c_method@AdvionObjects@@QEAA@XZ
+         463  ??4c_method@AdvionObjects@@QEAAAEAV01@AEBV01@@Z
+         356  ??1c_method@AdvionObjects@@UEAA@XZ
+        2497  ?serializeIonSource@ObjectUtility@AdvionObjects@@SAPEADAEBVc_ionSourceOptimization@2@@Z
+        2501  ?serializeTuneParameters@ObjectUtility@AdvionObjects@@SAPEADAEBVc_tuneParameters@2@@Z
+        2386  ?parseMethod@ObjectUtility@AdvionObjects@@SA?AVc_method@2@PEBDPEAW4ErrorCode@2@@Z
+        2385  ?parseIonSource@ObjectUtility@AdvionObjects@@SA?AVc_ionSourceOptimization@2@PEBDPEAW4ErrorCode@2@@Z
+        2390  ?parseTuneParameters@ObjectUtility@AdvionObjects@@SA?AVc_tuneParameters@2@PEBDPEAW4ErrorCode@2@@Z
+        1776  ?isErrorCritical@ObjectUtility@AdvionObjects@@SA_NPEAW4ErrorCode@2@@Z
+          83  ??0c_DeltaBackgroundParameters@AdvionObjects@@QEAA@XZ
+         403  ??4c_DeltaBackgroundParameters@AdvionObjects@@QEAAAEAV01@AEBV01@@Z
+         296  ??1c_DeltaBackgroundParameters@AdvionObjects@@UEAA@XZ
+        1357  ?get_startTime@c_DeltaBackgroundParameters@AdvionObjects@@QEBAAEBNXZ
+        1140  ?get_endTime@c_DeltaBackgroundParameters@AdvionObjects@@QEBAAEBNXZ
+        1377  ?get_threshold@c_DeltaBackgroundParameters@AdvionObjects@@QEBAAEBNXZ
+        1234  ?get_minWidth@c_DeltaBackgroundParameters@AdvionObjects@@QEBAAEBNXZ
+        1241  ?get_noiseOffset@c_DeltaBackgroundParameters@AdvionObjects@@QEBAAEBIXZ
+        1208  ?get_mass@c_MassOfInterest@AdvionObjects@@QEBAAEBNXZ
+        1339  ?get_span@c_MassOfInterest@AdvionObjects@@QEBAAEBNXZ
+        1117  ?get_dwellTime@c_MassOfInterest@AdvionObjects@@QEBAAEBNXZ
+        1296  ?get_scanDelay@c_MassOfInterest@AdvionObjects@@QEBAAEBNXZ
+        1358  ?get_startTime@c_MassOfInterest@AdvionObjects@@QEBAAEBIXZ
+        1368  ?get_stopTime@c_MassOfInterest@AdvionObjects@@QEBAAEBIXZ
+        1338  ?get_sourceVoltageOffset@c_MassOfInterest@AdvionObjects@@QEBAAEBNXZ
+        1989  ?isset_sourceVoltageOffset@c_MassOfInterest@AdvionObjects@@QEBA_NXZ
+        1270  ?get_radius@c_Smoothing@AdvionObjects@@QEBAAEBEXZ
+        1202  ?get_iterations@c_Smoothing@AdvionObjects@@QEBAAEBEXZ
+        1348  ?get_start@c_RangeScanMode@AdvionObjects@@QEBAAEBNXZ
+        1132  ?get_end@c_RangeScanMode@AdvionObjects@@QEBAAEBNXZ
+        1308  ?get_scanTime@c_RangeScanMode@AdvionObjects@@QEBAAEBNXZ
+        1297  ?get_scanDelay@c_RangeScanMode@AdvionObjects@@QEBAAEBNXZ
+        1110  ?get_deltaBackgroundParameters@c_RangeScanMode@AdvionObjects@@QEBAAEBVc_DeltaBackgroundParameters@2@XZ
+        1906  ?isset_deltaBackgroundParameters@c_RangeScanMode@AdvionObjects@@QEBA_NXZ
+        1214  ?get_massOfInterest@c_SIMScanMode@AdvionObjects@@QEBAAEBVc_MassOfInterest@2@_K@Z
+        1290  ?get_runTime@c_MethodType@AdvionObjects@@QEBAAEBIXZ
+        1299  ?get_scanMode@c_MethodType@AdvionObjects@@QEBAAEBVc_ScanMode@2@_K@Z
+        1329  ?get_smoothing@c_MethodType@AdvionObjects@@QEBAAEBVc_Smoothing@2@XZ
+        1982  ?isset_smoothing@c_MethodType@AdvionObjects@@QEBA_NXZ
+        1121  ?get_enabled@c_AnalogInput@AdvionObjects@@QEBAAEB_NXZ
+        1237  ?get_name@c_AnalogInput@AdvionObjects@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+        1217  ?get_maxIntensity@c_AnalogInput@AdvionObjects@@QEBAAEBNXZ
+        1430  ?getenum_maxVoltage@c_AnalogInput@AdvionObjects@@QEBA?AW4Method_enum_maxVoltage@12@XZ
+        1180  ?get_input@c_AnalogInputs@AdvionObjects@@QEBAAEBVc_AnalogInput@2@_K@Z
+        2805  ?size_input@c_AnalogInputs@AdvionObjects@@QEBA_KXZ
+        1029  ?get_analogInputs@c_MethodType@AdvionObjects@@QEBAAEBVc_AnalogInputs@2@XZ
+        1883  ?isset_analogInputs@c_MethodType@AdvionObjects@@QEBA_NXZ
+        1125  ?get_enabled@c_BaselineRemoval@AdvionObjects@@QEBAAEB_NXZ
+        1380  ?get_time@c_TimeBaselineRemoval@AdvionObjects@@QEBAAEBNXZ
+        1340  ?get_span@c_TimeBaselineRemoval@AdvionObjects@@QEBAAEBNXZ
+        1123  ?get_enabled@c_AnalogOutputSmoothing@AdvionObjects@@QEBAAEB_NXZ
+        1381  ?get_time@c_TriangleAnalogOutputSmoothing@AdvionObjects@@QEBAAEBNXZ
+        1122  ?get_enabled@c_AnalogOutput@AdvionObjects@@QEBAAEB_NXZ
+        1218  ?get_maxIntensity@c_AnalogOutput@AdvionObjects@@QEBAAEBNXZ
+        1224  ?get_maxVoltage@c_AnalogOutput@AdvionObjects@@QEBAAEBEXZ
+        1056  ?get_baselineRemoval@c_AnalogOutput@AdvionObjects@@QEBAAEBVc_BaselineRemoval@2@XZ
+        1890  ?isset_baselineRemoval@c_AnalogOutput@AdvionObjects@@QEBA_NXZ
+        1327  ?get_smoothing@c_AnalogOutput@AdvionObjects@@QEBAAEBVc_AnalogOutputSmoothing@2@XZ
+        1981  ?isset_smoothing@c_AnalogOutput@AdvionObjects@@QEBA_NXZ
+        1436  ?getenum_source@c_AnalogOutput@AdvionObjects@@QEBA?AW4Method_enum_source@12@XZ
+        1303  ?get_scanModeIndex@c_AnalogOutput@AdvionObjects@@QEBAAEBIXZ
+        1351  ?get_startMass@c_ExtractedAnalogOutput@AdvionObjects@@QEBAAEBNXZ
+        1135  ?get_endMass@c_ExtractedAnalogOutput@AdvionObjects@@QEBAAEBNXZ
+        1323  ?get_simIndex@c_SIMAnalogOutput@AdvionObjects@@QEBAAEBIXZ
+        1250  ?get_output@c_AnalogOutputs@AdvionObjects@@QEBAAEBVc_AnalogOutput@2@_K@Z
+        2811  ?size_output@c_AnalogOutputs@AdvionObjects@@QEBA_KXZ
+        1033  ?get_analogOutputs@c_MethodType@AdvionObjects@@QEBAAEBVc_AnalogOutputs@2@XZ
+        1884  ?isset_analogOutputs@c_MethodType@AdvionObjects@@QEBA_NXZ
+          33  ??0c_ApciSource@AdvionObjects@@QEAA@XZ
+        1373  ?get_temperature@c_ApciSource@AdvionObjects@@QEBAAEBNXZ
+        2724  ?set_temperature@c_ApciSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1099  ?get_coronaDischarge@c_ApciSource@AdvionObjects@@QEBAAEBNXZ
+        2528  ?set_coronaDischarge@c_ApciSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1385  ?get_transferLineTemperature@c_ApciSource@AdvionObjects@@QEBAAEBNXZ
+        2736  ?set_transferLineTemperature@c_ApciSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+          95  ??0c_EsiSource@AdvionObjects@@QEAA@XZ
+        1158  ?get_gasTemperature@c_EsiSource@AdvionObjects@@QEBAAEBNXZ
+        2577  ?set_gasTemperature@c_EsiSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1410  ?get_voltage@c_EsiSource@AdvionObjects@@QEBAAEBNXZ
+        2757  ?set_voltage@c_EsiSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+          81  ??0c_DartSource@AdvionObjects@@QEAA@XZ
+        1394  ?get_usingHelium@c_DartSource@AdvionObjects@@QEBAAEB_NXZ
+        2745  ?set_usingHelium@c_DartSource@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEB_N@Z
+        1240  ?get_negative@c_ionSourceOptimization@AdvionObjects@@QEBAAEB_NXZ
+        2641  ?set_negative@c_ionSourceOptimization@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEB_N@Z
+        1066  ?get_capillaryTemp@c_ionSourceOptimization@AdvionObjects@@QEBAAEBNXZ
+        2517  ?set_capillaryTemp@c_ionSourceOptimization@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1067  ?get_capillaryVoltage@c_ionSourceOptimization@AdvionObjects@@QEBAAEBNXZ
+        2518  ?set_capillaryVoltage@c_ionSourceOptimization@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1336  ?get_sourceVoltage@c_ionSourceOptimization@AdvionObjects@@QEBAAEBNXZ
+        1337  ?get_sourceVoltageDynamic@c_ionSourceOptimization@AdvionObjects@@QEBAAEBNXZ
+        2698  ?set_sourceVoltageDynamic@c_ionSourceOptimization@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1193  ?get_ionSource@c_ionSourceOptimization@AdvionObjects@@QEBAAEBVc_IonSource@2@XZ
+         625  ?assign_ionSource@c_ionSourceOptimization@AdvionObjects@@QEAAAEAVc_IonSource@2@PEAV32@@Z
+         197  ??0c_calibrationSegment@AdvionObjects@@QEAA@XZ
+         241  ??0c_speedCalibration@AdvionObjects@@QEAA@XZ
+        2682  ?set_scanSpeed@c_speedCalibration@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+         541  ?append_segment@c_speedCalibration@AdvionObjects@@QEAA?AW4elmx_error@lmx@@PEAVc_calibrationSegment@2@@Z
+         207  ??0c_massCalibration@AdvionObjects@@QEAA@XZ
+         501  ?append_calibration@c_massCalibration@AdvionObjects@@QEAA?AW4elmx_error@lmx@@PEAVc_speedCalibration@2@@Z
+        1149  ?get_extractionElectrode@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2570  ?set_extractionElectrode@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1166  ?get_hexapoleBias@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2583  ?set_hexapoleBias@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1167  ?get_hexapoleRF@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2584  ?set_hexapoleRF@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1168  ?get_hexapoleRFDynamic@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2585  ?set_hexapoleRFDynamic@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1190  ?get_ionEnergy@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2599  ?set_ionEnergy@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1191  ?get_ionEnergyDynamic@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2600  ?set_ionEnergyDynamic@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1286  ?get_resolutionOffset@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2667  ?set_resolutionOffset@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1285  ?get_resolutionGain@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2666  ?set_resolutionGain@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1113  ?get_detector@c_CmsTuneParametersType@AdvionObjects@@QEBAAEBNXZ
+        2536  ?set_detector@c_CmsTuneParametersType@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+         629  ?assign_massCalibration@c_CmsTuneParametersType@AdvionObjects@@QEAAAEAVc_massCalibration@2@PEAV32@@Z
+         249  ??0c_tuneParameters@AdvionObjects@@QEAA@XZ
+         112  ??0c_IntegrationPoint@AdvionObjects@@QEAA@AEBV01@@Z
+         418  ??4c_IntegrationPoint@AdvionObjects@@QEAAAEAV01@AEBV01@@Z
+         311  ??1c_IntegrationPoint@AdvionObjects@@UEAA@XZ
+        1354  ?get_startRetentionTime@c_IntegrationPoint@AdvionObjects@@QEBAAEBNXZ
+        1994  ?isset_startRetentionTime@c_IntegrationPoint@AdvionObjects@@QEBA_NXZ
+        1433  ?getenum_retentionTime@c_IntegrationPoint@AdvionObjects@@QEBA?AW4Method_enum_retentionTime@12@XZ
+        1425  ?getenum_height@c_IntegrationPoint@AdvionObjects@@QEBA?AW4Method_enum_height@12@XZ
+        1206  ?get_manualHeight@c_IntegrationPoint@AdvionObjects@@QEBAAEBNXZ
+         357  ??1c_peakDetection@AdvionObjects@@UEAA@XZ
+        1320  ?get_setup@c_peakDetection@AdvionObjects@@QEAAAEAVc_PeakDetectionType@2@XZ
+        1226  ?get_maxWidth@c_GlobalPeakDetection@AdvionObjects@@QEBAAEBNXZ
+        2627  ?set_maxWidth@c_GlobalPeakDetection@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1148  ?get_excludeNoise@c_GlobalPeakDetection@AdvionObjects@@QEBAAEB_NXZ
+        1322  ?get_sigma@c_GlobalPeakDetection@AdvionObjects@@QEBAAEBNXZ
+        2687  ?set_sigma@c_GlobalPeakDetection@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1378  ?get_threshold@c_GlobalPeakDetection@AdvionObjects@@QEBAAEBNXZ
+        2007  ?isset_threshold@c_GlobalPeakDetection@AdvionObjects@@QEBA_NXZ
+        1147  ?get_estimateWidth@c_GlobalPeakDetection@AdvionObjects@@QEBAAEB_NXZ
+        1182  ?get_integrationPoint@c_GlobalPeakDetection@AdvionObjects@@QEAAAEAVc_IntegrationPoint@2@_K@Z
+        2806  ?size_integrationPoint@c_GlobalPeakDetection@AdvionObjects@@QEBA_KXZ
+        1372  ?get_targetRetentionTime@c_GlobalPeakDetection@AdvionObjects@@QEBAAEBNXZ
+        2004  ?isset_targetRetentionTime@c_GlobalPeakDetection@AdvionObjects@@QEBA_NXZ
+         111  ??0c_IntegrationBaseline@AdvionObjects@@QEAA@XZ
+         110  ??0c_IntegrationBaseline@AdvionObjects@@QEAA@AEBV01@@Z
+         310  ??1c_IntegrationBaseline@AdvionObjects@@UEAA@XZ
+        2716  ?set_startX@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2564  ?set_endX@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2717  ?set_startY@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2565  ?set_endY@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1349  ?get_startIndex@c_IntegrationBaseline@AdvionObjects@@QEBAAEBHXZ
+        2704  ?set_startIndex@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+        1133  ?get_endIndex@c_IntegrationBaseline@AdvionObjects@@QEBAAEBHXZ
+        2554  ?set_endIndex@c_IntegrationBaseline@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+         123  ??0c_Peak@AdvionObjects@@QEAA@XZ
+         122  ??0c_Peak@AdvionObjects@@QEAA@AEBV01@@Z
+         316  ??1c_Peak@AdvionObjects@@UEAA@XZ
+        1053  ?get_baseline@c_Peak@AdvionObjects@@QEAAAEAVc_IntegrationBaseline@2@XZ
+         570  ?assign_baseline@c_Peak@AdvionObjects@@QEAAAEAVc_IntegrationBaseline@2@AEBV32@@Z
+        1040  ?get_area@c_Peak@AdvionObjects@@QEBAAEBNXZ
+        2509  ?set_area@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2519  ?set_centroid@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2629  ?set_maximumX@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1229  ?get_maximumY@c_Peak@AdvionObjects@@QEBAAEBNXZ
+        2630  ?set_maximumY@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1227  ?get_maximumIndex@c_Peak@AdvionObjects@@QEBAAEBHXZ
+        2628  ?set_maximumIndex@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+        1165  ?get_heightAboveBaseline@c_Peak@AdvionObjects@@QEBAAEBNXZ
+        2582  ?set_heightAboveBaseline@c_Peak@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1083  ?get_commonBaseline@c_Peak@AdvionObjects@@QEAAAEAVc_IntegrationBaseline@2@XZ
+         592  ?assign_commonBaseline@c_Peak@AdvionObjects@@QEAAAEAVc_IntegrationBaseline@2@AEBV32@@Z
+        1897  ?isset_commonBaseline@c_Peak@AdvionObjects@@QEBA_NXZ
+         231  ??0c_peakList@AdvionObjects@@QEAA@XZ
+         531  ?append_peak@c_peakList@AdvionObjects@@QEAA?AW4elmx_error@lmx@@PEAVc_Peak@2@@Z
+        1255  ?get_peak@c_peakList@AdvionObjects@@QEAAAEAVc_Peak@2@_K@Z
+         848  ?clear_peak@c_peakList@AdvionObjects@@QEAAXXZ
+        2812  ?size_peak@c_peakList@AdvionObjects@@QEBA_KXZ
+        2768  ?setenum_error@c_peakList@AdvionObjects@@QEAA_NW4PeakList_enum_error@12@@Z
+        2766  ?set_widthUsed@c_peakList@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        2499  ?serializePeakList@ObjectUtility@AdvionObjects@@SAPEADAEBVc_peakList@2@@Z
+        2387  ?parsePeakDetection@ObjectUtility@AdvionObjects@@SA?AVc_peakDetection@2@PEBDPEAW4ErrorCode@2@@Z
+        1128  ?get_enabled@c_ClosureTriggerIn@AdvionObjects@@QEBAAEB_NXZ
+        1204  ?get_line@c_ClosureTriggerIn@AdvionObjects@@QEBAAEBEXZ
+         195  ??0c_calibration@AdvionObjects@@QEAA@XZ
+        1106  ?get_delayMS@c_ClosureTriggerIn@AdvionObjects@@QEBAAEBIXZ
+        1347  ?get_start@c_ContactClosureIn@AdvionObjects@@QEBAAEBVc_ClosureTriggerIn@2@XZ
+        1366  ?get_stop@c_ContactClosureIn@AdvionObjects@@QEBAAEBVc_ClosureTriggerIn@2@XZ
+        1094  ?get_contactClosureIn@c_MethodType@AdvionObjects@@QEBAAEBVc_ContactClosureIn@2@XZ
+        1901  ?isset_contactClosureIn@c_MethodType@AdvionObjects@@QEBA_NXZ
+        1126  ?get_enabled@c_ClosureOutTrigger@AdvionObjects@@QEBAAEB_NXZ
+        1309  ?get_seconds@c_TimeTrigger@AdvionObjects@@QEBAAEBHXZ
+        1107  ?get_delaySeconds@c_RepeatTimeTrigger@AdvionObjects@@QEBAAEBHXZ
+        1076  ?get_closeTimeSeconds@c_RepeatTimeTrigger@AdvionObjects@@QEBAAEBHXZ
+        1246  ?get_openTimeSeconds@c_RepeatTimeTrigger@AdvionObjects@@QEBAAEBHXZ
+        1020  ?get_aboveThreshold@c_PeakTrigger@AdvionObjects@@QEBAAEB_NXZ
+        1379  ?get_threshold@c_PeakTrigger@AdvionObjects@@QEBAAEBNXZ
+        1384  ?get_timePastThreshold@c_PeakTrigger@AdvionObjects@@QEBAAEBIXZ
+        1019  ?get_aboveGradient@c_PeakTrigger@AdvionObjects@@QEBAAEB_NXZ
+        1390  ?get_useGradient@c_PeakTrigger@AdvionObjects@@QEBAAEB_NXZ
+        1161  ?get_gradient@c_PeakTrigger@AdvionObjects@@QEBAAEBNXZ
+        1104  ?get_delay@c_PeakTrigger@AdvionObjects@@QEBAAEBIXZ
+        1437  ?getenum_source@c_PeakTrigger@AdvionObjects@@QEBA?AW4Method_enum_source@12@XZ
+        1304  ?get_scanModeIndex@c_PeakTrigger@AdvionObjects@@QEBAAEBIXZ
+        1352  ?get_startMass@c_ExtractedPeakTrigger@AdvionObjects@@QEBAAEBNXZ
+        1136  ?get_endMass@c_ExtractedPeakTrigger@AdvionObjects@@QEBAAEBNXZ
+        1324  ?get_simIndex@c_SIMPeakTrigger@AdvionObjects@@QEBAAEBIXZ
+        1205  ?get_line@c_ContactClosureOut@AdvionObjects@@QEBAAEBEXZ
+        1078  ?get_closeTrigger@c_ContactClosureOut@AdvionObjects@@QEBAAEBVc_ClosureOutTrigger@2@XZ
+        1248  ?get_openTrigger@c_ContactClosureOut@AdvionObjects@@QEBAAEBVc_ClosureOutTrigger@2@XZ
+        1090  ?get_contactClosure@c_ContactClosuresOut@AdvionObjects@@QEBAAEBVc_ContactClosureOut@2@_K@Z
+        2801  ?size_contactClosure@c_ContactClosuresOut@AdvionObjects@@QEBA_KXZ
+        1096  ?get_contactClosuresOut@c_MethodType@AdvionObjects@@QEBAAEBVc_ContactClosuresOut@2@XZ
+        1902  ?isset_contactClosuresOut@c_MethodType@AdvionObjects@@QEBA_NXZ
+        1231  ?get_minMass@c_calibrationSegment@AdvionObjects@@QEBAAEBNXZ
+        2632  ?set_minMass@c_calibrationSegment@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1219  ?get_maxMass@c_calibrationSegment@AdvionObjects@@QEBAAEBNXZ
+        2620  ?set_maxMass@c_calibrationSegment@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1325  ?get_slope@c_calibrationSegment@AdvionObjects@@QEBAAEBNXZ
+        2690  ?set_slope@c_calibrationSegment@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+        1186  ?get_intercept@c_calibrationSegment@AdvionObjects@@QEBAAEBNXZ
+        2597  ?set_intercept@c_calibrationSegment@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+
+  lookup 000eb888 time 00000000 fwd 00000000 name 000f18c0 addr 000aea38
+
+    DLL Name: MMSInterface.dll
+    Hint/Ord  Name
+         118  ?PumpSpeed@MMSInterface@@QEAAIPEAG@Z
+          90  ?IsPumpSpeedOK@MMSInterface@@QEAAEXZ
+          89  ?IsPumpRunning@MMSInterface@@QEAAEXZ
+         114  ?PiraniPressureMBar@MMSInterface@@QEAAIPEAN@Z
+          87  ?IsPressureOK@MMSInterface@@QEAAEXZ
+         162  ?SetUsingHelium@MMSInterface@@QEAAI_N@Z
+          80  ?GetUsingHelium@MMSInterface@@QEAAEXZ
+         135  ?SetCapillaryHeaterOn@MMSInterface@@QEAAIE@Z
+          39  ?GetCapillaryHeaterOn@MMSInterface@@QEAAEXZ
+         136  ?SetCapillaryHeaterTemp@MMSInterface@@QEAAIM@Z
+          40  ?GetCapillaryHeaterTemp@MMSInterface@@QEAAMXZ
+         142  ?SetDesolvationHeaterOn@MMSInterface@@QEAAIE@Z
+          48  ?GetDesolvationHeaterOn@MMSInterface@@QEAAEXZ
+         143  ?SetDesolvationHeaterTemp@MMSInterface@@QEAAIM@Z
+          49  ?GetDesolvationHeaterTemp@MMSInterface@@QEAAMXZ
+         131  ?SetAPCIHeaterOn@MMSInterface@@QEAAIE@Z
+          36  ?GetAPCIHeaterOn@MMSInterface@@QEAAEXZ
+         132  ?SetAPCIHeaterTemp@MMSInterface@@QEAAIM@Z
+          37  ?GetAPCIHeaterTemp@MMSInterface@@QEAAMXZ
+         166  ?UpdateStatusIfNeeded@MMSInterface@@QEAAIXZ
+          30  ?EnableStatusReporting@MMSInterface@@QEAAX_N@Z
+          54  ?GetFirmwareVersion@MMSInterface@@QEAA_NPEADAEAJ@Z
+         144  ?SetDigOut@MMSInterface@@QEAAIEE@Z
+          51  ?GetDigOut@MMSInterface@@QEAAEE@Z
+         127  ?SaveToVolatileFlash@MMSInterface@@QEAAIXZ
+          46  ?GetDefaultTuneParameters@MMSInterface@@QEAA_NPEAD_N1@Z
+          45  ?GetDefaultIonSourceOptimization@MMSInterface@@QEAA_NPEAD_N1@Z
+          50  ?GetDigIn@MMSInterface@@QEAAEE@Z
+          52  ?GetDigitalInput@MMSInterface@@QEAAEGE@Z
+         120  ?ReadADC@MMSInterface@@QEAAGE@Z
+         234  ?readsDataInParallel@MMSInterface@@QEAAEXZ
+          26  ?ConfigureAnalogInput@MMSInterface@@QEAAIHH@Z
+         133  ?SetAnalogOutput@MMSInterface@@QEAAIHGH@Z
+          98  ?MMSUSBGetScanData@MMSInterface@@QEAAIPEAEAEAJH@Z
+         161  ?SetStatusCallback@MMSInterface@@QEAAXP6AXXZ@Z
+         117  ?PumpOn@MMSInterface@@QEAAIXZ
+          59  ?GetHeadAmpType@MMSInterface@@QEAA?AW4HeadAmpType@@XZ
+          62  ?GetHousingType@MMSInterface@@QEAA?AW4SourceHousingType@@XZ
+          53  ?GetDynodePSU@MMSInterface@@QEAA?AW4PowerSupplyType@@XZ
+          76  ?GetSourcePSU@MMSInterface@@QEAA?AW4PowerSupplyType@@XZ
+          64  ?GetLastPumpDownTime@MMSInterface@@QEAA_JXZ
+         151  ?SetLastPumpDownTime@MMSInterface@@QEAAI_J@Z
+          75  ?GetSerialNumber@MMSInterface@@QEAAPEB_WXZ
+          86  ?IsLicensedUpgrade@MMSInterface@@QEAA_NW4CMSLicensableUpgrade@@@Z
+          57  ?GetHardwareType@MMSInterface@@QEAA?AW4CMSHardwareType@@XZ
+          25  ?ClearScanQueue@MMSInterface@@QEAAIXZ
+         202  ?initializeScanReading@MMSInterface@@QEAAIXZ
+         112  ?PerformScan@MMSInterface@@QEAAIGGIPEAXGPEAI@Z
+         113  ?PerformScanHS@MMSInterface@@QEAAIGGGIG_N@Z
+          31  ?FlushTuneParameters@MMSInterface@@QEAAXXZ
+         137  ?SetDACParam@MMSInterface@@QEAAIEF@Z
+         158  ?SetScanParams@MMSInterface@@QEAAIEFF@Z
+          85  ?InitializeSettings@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+         163  ?TestConnection@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+          41  ?GetCommunicationState@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+          17  ??1MMSInterface@@QEAA@XZ
+           0  ??0MMSInterface@@QEAA@PEAD@Z
+         116  ?PumpOff@MMSInterface@@QEAAIXZ
+
+  lookup 000eba60 time 00000000 fwd 00000000 name 000f24aa addr 000aec10
+
+    DLL Name: MSVCP140D.dll
+    Hint/Ord  Name
+        1218  ?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+         865  ?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1097  ?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+        1223  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD0@Z
+         883  ?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+         594  ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+         125  ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1229  ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+        1298  ?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ
+        1167  ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ
+         873  ?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ
+          12  ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         588  ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+         270  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAVios_base@1@AEAV21@@Z@Z
+         266  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z
+         880  ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+          19  ??0?$basic_iostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@@Z
+         128  ??1?$basic_iostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         560  ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+         647  ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+        1022  ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+        1213  ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+        1245  ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+        1285  ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1315  ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1355  ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+        1358  ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+         412  ?_BADOFF@std@@3_JB
+         109  ??0_Lockit@std@@QEAA@H@Z
+         165  ??1_Lockit@std@@QEAA@XZ
+         659  ?_Xbad_alloc@std@@YAXXZ
+         662  ?_Xlength_error@std@@YAXPEBD@Z
+         663  ?_Xout_of_range@std@@YAXPEBD@Z
+        1222  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+        1318  ?uncaught_exception@std@@YA_NXZ
+         421  ?_Debug_message@std@@YAXPEB_W0I@Z
+         973  ?good@ios_base@std@@QEBA_NXZ
+         879  ?flags@ios_base@std@@QEBAHXZ
+        1217  ?setf@ios_base@std@@QEAAHHH@Z
+        1106  ?precision@ios_base@std@@QEAA_J_J@Z
+        1350  ?width@ios_base@std@@QEBA_JXZ
+        1349  ?width@ios_base@std@@QEAA_J_J@Z
+          47  ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         137  ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         856  ?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1103  ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1094  ?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         974  ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         853  ?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1257  ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+        1254  ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+
+  lookup 000ebc00 time 00000000 fwd 00000000 name 000f25e2 addr 000aedb0
+
+    DLL Name: VCRUNTIME140D.dll
+    Hint/Ord  Name
+          37  __std_type_info_destroy_list
+          49  __vcrt_LoadLibraryExW
+          47  __vcrt_GetModuleHandleW
+          46  __vcrt_GetModuleFileNameW
+          34  __std_exception_destroy
+          33  __std_exception_copy
+           8  __C_specific_handler
+          59  memcmp
+          62  memset
+          14  __CxxFrameHandler3
+           1  _CxxThrowException
+          61  memmove
+          60  memcpy
+          54  _purecall
+          24  __RTDynamicCast
+
+  lookup 000ebc98 time 00000000 fwd 00000000 name 000f28e8 addr 000aee48
+
+    DLL Name: ucrtbased.dll
+    Hint/Ord  Name
+        1331  strncmp
+        1271  pow
+        1317  srand
+        1282  rand
+        1153  fread
+        1162  fwrite
+        1020  calloc
+        1332  strncpy
+        1354  terminate
+         161  _callnewh
+         285  _free_dbg
+         705  _seh_filter_dll
+         182  _configure_narrow_argv
+         369  _initialize_narrow_environment
+         370  _initialize_onexit_table
+         692  _register_onexit_function
+         229  _execute_onexit_table
+         194  _crt_atexit
+         193  _crt_at_quick_exit
+         164  _cexit
+           4  _CrtDbgReport
+         104  __stdio_common_vsprintf_s
+         372  _initterm
+         373  _initterm_e
+         923  _wmakepath_s
+         797  _time64
+        1379  wcscpy_s
+         839  _wcsdup
+        1112  fabs
+        1104  exp
+          53  __acrt_iob_func
+        1134  floor
+        1045  ceil
+          92  __stdio_common_vfprintf
+        1128  fflush
+        1113  fclose
+         909  _wfopen
+        1315  sqrt
+         982  abs
+        1378  wcscpy
+         102  __stdio_common_vsprintf
+         106  __stdio_common_vswprintf
+         833  _wassert
+         154  _beginthread
+        1284  realloc
+        1239  malloc
+        1155  free
+        1328  strlen
+        1382  wcslen
+           5  _CrtDbgReportW
+         374  _invalid_parameter
+        1055  clock
+         951  _wsplitpath_s
+        1220  log
+
+Export Table:
+ DLL name: AdvionCMS.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1   0x2190  ??0AcquisitionListener@AdvionCMS@@IEAA@XZ
+       2   0x3250  ??0AcquisitionListener@AdvionCMS@@QEAA@AEBV01@@Z
+       3  0x40ff0  ??0AutoTuner@AdvionCMS@@QEAA@AEBV01@@Z
+       4  0x37f30  ??0AutoTuner@AdvionCMS@@QEAA@XZ
+       5  0x1a6a0  ??0CmsInstrumentControllerImpl@AdvionCMS@@QEAA@AEBV01@@Z
+       6  0x4a730  ??0CmsInstrumentControllerImpl@AdvionCMS@@QEAA@XZ
+       7  0x4bff0  ??0CmsInstrumentImpl@AdvionCMS@@IEAA@XZ
+       8  0x4cfa0  ??0CmsInstrumentImpl@AdvionCMS@@QEAA@AEBV01@@Z
+       9  0x41590  ??0DetectorGainTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      10  0x573d0  ??0DetectorGainTuner@AdvionCMS@@QEAA@XZ
+      11  0x41660  ??0DualParameterTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      12  0x5c7b0  ??0DualParameterTuner@AdvionCMS@@QEAA@XZ
+      13  0x41860  ??0ExtractionElectrodeTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      14  0x5dd00  ??0ExtractionElectrodeTuner@AdvionCMS@@QEAA@XZ
+      15  0x5eb70  ??0HexRFTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      16  0x5e950  ??0HexRFTuner@AdvionCMS@@QEAA@XZ
+      17  0x418b0  ??0HexapoleBiasTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      18  0x5e5a0  ??0HexapoleBiasTuner@AdvionCMS@@QEAA@XZ
+      19  0x5f600  ??0Instrument@AdvionCMS@@IEAA@PEAVInstrumentImpl@1@@Z
+      20   0x3290  ??0Instrument@AdvionCMS@@QEAA@AEBV01@@Z
+      21  0x60d90  ??0InstrumentControllerImpl@AdvionCMS@@IEAA@XZ
+      22  0x1a6f0  ??0InstrumentControllerImpl@AdvionCMS@@QEAA@AEBV01@@Z
+      23  0x64dc0  ??0InstrumentImpl@AdvionCMS@@IEAA@XZ
+      24   0x32d0  ??0InstrumentImpl@AdvionCMS@@QEAA@AEBV01@@Z
+      25  0x650f0  ??0InstrumentListener@AdvionCMS@@IEAA@XZ
+      26  0x62460  ??0InstrumentListener@AdvionCMS@@QEAA@AEBV01@@Z
+      27  0x41900  ??0IonEnergyAndResolutionTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      28  0x651f0  ??0IonEnergyAndResolutionTuner@AdvionCMS@@QEAA@XZ
+      29  0x69c50  ??0IonEnergyTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      30  0x68c30  ??0IonEnergyTuner@AdvionCMS@@QEAA@XZ
+      31  0x73170  ??0MRAValve@AdvionCMS@@QEAA@AEBV01@@Z
+      32  0x72cb0  ??0MRAValve@AdvionCMS@@QEAA@XZ
+      33  0x419f0  ??0ParameterTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      34  0x73360  ??0ParameterTuner@AdvionCMS@@QEAA@XZ
+      35  0x41b10  ??0RampedParameterTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      36  0x77d90  ??0RampedParameterTuner@AdvionCMS@@QEAA@XZ
+      37  0x41c40  ??0ResolutionTuner@AdvionCMS@@QEAA@AEBV01@@Z
+      38  0x799f0  ??0ResolutionTuner@AdvionCMS@@QEAA@XZ
+      39  0x95150  ??0SSIPump@AdvionCMS@@QEAA@AEBV01@@Z
+      40  0x948b0  ??0SSIPump@AdvionCMS@@QEAA@XZ
+      41  0x1a720  ??0SampleSet@AdvionCMS@@QEAA@AEBV01@@Z
+      42  0x7f590  ??0SampleSet@AdvionCMS@@QEAA@XZ
+      43  0x82670  ??0ScanData@AdvionCMS@@QEAA@PEAVInstrumentImpl@1@@Z
+      44  0x1a7f0  ??0ScanSampleSet@AdvionCMS@@QEAA@AEBV01@@Z
+      45  0x89370  ??0ScanSampleSet@AdvionCMS@@QEAA@XZ
+      46  0x8b0b0  ??0SimulatedInstrument@AdvionCMS@@QEAA@AEBV01@@Z
+      47  0x8a470  ??0SimulatedInstrument@AdvionCMS@@QEAA@PEBD@Z
+      48  0x8a510  ??0SimulatedInstrument@AdvionCMS@@QEAA@PEB_W@Z
+      49  0x8c6e0  ??0SimulatedInstrumentImpl@AdvionCMS@@QEAA@PEBD@Z
+      50  0x8c840  ??0SimulatedInstrumentImpl@AdvionCMS@@QEAA@PEB_W@Z
+      51  0x955b0  ??0TuneScanListener@AdvionCMS@@IEAA@XZ
+      52  0x41e10  ??0TuneScanListener@AdvionCMS@@QEAA@AEBV01@@Z
+      53  0x41e50  ??0TuneScanProcessor@AdvionCMS@@QEAA@$$QEAV01@@Z
+      54  0x41f90  ??0TuneScanProcessor@AdvionCMS@@QEAA@AEBV01@@Z
+      55  0x9bf40  ??0TuneScanProcessor@AdvionCMS@@QEAA@XZ
+      56  0x9c660  ??0USBInstrument@AdvionCMS@@QEAA@AEBV01@@Z
+      57  0x9c470  ??0USBInstrument@AdvionCMS@@QEAA@_N0@Z
+      58  0x9c850  ??0USBInstrumentImpl@AdvionCMS@@QEAA@_N0@Z
+      59  0xa1b40  ??0VICIValve@AdvionCMS@@QEAA@AEBV01@@Z
+      60  0xa1780  ??0VICIValve@AdvionCMS@@QEAA@XZ
+      61   0x21f0  ??1AcquisitionListener@AdvionCMS@@MEAA@XZ
+      62  0x383a0  ??1AutoTuner@AdvionCMS@@UEAA@XZ
+      63  0x4a780  ??1CmsInstrumentControllerImpl@AdvionCMS@@UEAA@XZ
+      64  0x4c070  ??1CmsInstrumentImpl@AdvionCMS@@MEAA@XZ
+      65  0x57470  ??1DetectorGainTuner@AdvionCMS@@UEAA@XZ
+      66  0x5c960  ??1DualParameterTuner@AdvionCMS@@UEAA@XZ
+      67  0x5dd50  ??1ExtractionElectrodeTuner@AdvionCMS@@UEAA@XZ
+      68  0x5e9a0  ??1HexRFTuner@AdvionCMS@@UEAA@XZ
+      69  0x5e5f0  ??1HexapoleBiasTuner@AdvionCMS@@UEAA@XZ
+      70  0x5ed20  ??1Instrument@AdvionCMS@@UEAA@XZ
+      71  0x60dc0  ??1InstrumentControllerImpl@AdvionCMS@@MEAA@XZ
+      72  0x64270  ??1InstrumentImpl@AdvionCMS@@UEAA@XZ
+      73  0x65150  ??1InstrumentListener@AdvionCMS@@MEAA@XZ
+      74  0x652b0  ??1IonEnergyAndResolutionTuner@AdvionCMS@@UEAA@XZ
+      75  0x68cf0  ??1IonEnergyTuner@AdvionCMS@@UEAA@XZ
+      76  0x72d10  ??1MRAValve@AdvionCMS@@UEAA@XZ
+      77  0x73470  ??1ParameterTuner@AdvionCMS@@UEAA@XZ
+      78  0x77e80  ??1RampedParameterTuner@AdvionCMS@@UEAA@XZ
+      79  0x79b70  ??1ResolutionTuner@AdvionCMS@@UEAA@XZ
+      80  0x94920  ??1SSIPump@AdvionCMS@@UEAA@XZ
+      81  0x7f630  ??1SampleSet@AdvionCMS@@UEAA@XZ
+      82  0x82780  ??1ScanData@AdvionCMS@@QEAA@XZ
+      83  0x89480  ??1ScanSampleSet@AdvionCMS@@UEAA@XZ
+      84  0x8a5b0  ??1SimulatedInstrument@AdvionCMS@@UEAA@XZ
+      85  0x8c910  ??1SimulatedInstrumentImpl@AdvionCMS@@UEAA@XZ
+      86  0x95610  ??1TuneScanListener@AdvionCMS@@MEAA@XZ
+      87  0x42240  ??1TuneScanProcessor@AdvionCMS@@UEAA@XZ
+      88  0x9c520  ??1USBInstrument@AdvionCMS@@UEAA@XZ
+      89  0x9cbb0  ??1USBInstrumentImpl@AdvionCMS@@UEAA@XZ
+      90  0xa17f0  ??1VICIValve@AdvionCMS@@UEAA@XZ
+      91   0x3b10  ??4AcquisitionListener@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      92   0x3b40  ??4AcquisitionManager@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+      93   0x3b60  ??4AcquisitionManager@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      94  0x426c0  ??4AutoTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      95  0x43270  ??4Calibrator@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+      96  0x43290  ??4Calibrator@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      97  0x1bae0  ??4CmsInstrumentControllerImpl@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      98  0x4d010  ??4CmsInstrumentImpl@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+      99  0x4d300  ??4DataProcessor@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+     100  0x4d320  ??4DataProcessor@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     101  0x432b0  ??4DetectorGainTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     102  0x433a0  ??4DualParameterTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     103  0x43820  ??4ExtractionElectrodeTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     104  0x5ebc0  ??4HexRFTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     105  0x43860  ??4HexapoleBiasTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     106   0x3b80  ??4Instrument@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     107   0x3bb0  ??4InstrumentController@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+     108   0x3bd0  ??4InstrumentController@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     109  0x1bb20  ??4InstrumentControllerImpl@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     110   0x3bf0  ??4InstrumentImpl@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     111  0x627c0  ??4InstrumentListener@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     112  0x438a0  ??4IonEnergyAndResolutionTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     113  0x69d30  ??4IonEnergyTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     114  0x731e0  ??4MRAValve@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     115  0x43a90  ??4ParameterTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     116  0x43cb0  ??4RampedParameterTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     117  0x588d0  ??4Regression@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+     118  0x588f0  ??4Regression@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     119  0x43ea0  ??4ResolutionTuner@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     120  0x951c0  ??4SSIPump@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     121  0x1bb40  ??4SampleSet@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     122  0x1bc00  ??4ScanSampleSet@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     123  0x8b550  ??4SimulatedInstrument@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     124  0x8b590  ??4SimulatedInstrumentImpl@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     125  0x44260  ??4TuneScanListener@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     126  0x44290  ??4TuneScanManager@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+     127  0x442b0  ??4TuneScanManager@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     128  0x442d0  ??4TuneScanProcessor@AdvionCMS@@QEAAAEAV01@$$QEAV01@@Z
+     129  0x444d0  ??4TuneScanProcessor@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     130  0x9c6b0  ??4USBInstrument@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     131  0xa1bb0  ??4VICIValve@AdvionCMS@@QEAAAEAV01@AEBV01@@Z
+     132  0xaf918  ??_7AcquisitionListener@AdvionCMS@@6B@
+     133  0xb9240  ??_7AutoTuner@AdvionCMS@@6B@
+     134  0xb4368  ??_7CmsInstrumentControllerImpl@AdvionCMS@@6B@
+     135  0xbad68  ??_7CmsInstrumentImpl@AdvionCMS@@6B@
+     136  0xb96d0  ??_7DetectorGainTuner@AdvionCMS@@6B@
+     137  0xb9120  ??_7DualParameterTuner@AdvionCMS@@6B@
+     138  0xb9430  ??_7ExtractionElectrodeTuner@AdvionCMS@@6B@
+     139  0xbd770  ??_7HexRFTuner@AdvionCMS@@6B@
+     140  0xb94f0  ??_7HexapoleBiasTuner@AdvionCMS@@6B@
+     141  0xafea8  ??_7Instrument@AdvionCMS@@6B@
+     142  0xb4320  ??_7InstrumentControllerImpl@AdvionCMS@@6B@
+     143  0xafec0  ??_7InstrumentImpl@AdvionCMS@@6B@
+     144  0xbe238  ??_7InstrumentListener@AdvionCMS@@6B@
+     145  0xb95b0  ??_7IonEnergyAndResolutionTuner@AdvionCMS@@6B@
+     146  0xbf0b0  ??_7IonEnergyTuner@AdvionCMS@@6B@
+     147  0xc0990  ??_7MRAValve@AdvionCMS@@6B@
+     148  0xb9060  ??_7ParameterTuner@AdvionCMS@@6B@
+     149  0xb9290  ??_7RampedParameterTuner@AdvionCMS@@6B@
+     150  0xb9360  ??_7ResolutionTuner@AdvionCMS@@6B@
+     151  0xc5290  ??_7SSIPump@AdvionCMS@@6B@
+     152  0xb43b0  ??_7SampleSet@AdvionCMS@@6B@
+     153  0xb43c0  ??_7ScanSampleSet@AdvionCMS@@6B@
+     154  0xc3fa8  ??_7SimulatedInstrument@AdvionCMS@@6B@
+     155  0xc47c0  ??_7SimulatedInstrumentImpl@AdvionCMS@@6B@
+     156  0xb8fd8  ??_7TuneScanListener@AdvionCMS@@6B@
+     157  0xb9010  ??_7TuneScanProcessor@AdvionCMS@@6B@
+     158  0xc64b0  ??_7USBInstrument@AdvionCMS@@6B@
+     159  0xc6a00  ??_7USBInstrumentImpl@AdvionCMS@@6B@
+     160  0xc6c98  ??_7VICIValve@AdvionCMS@@6B@
+     161  0x9c7b0  ??_FUSBInstrument@AdvionCMS@@QEAAXXZ
+     162  0x7f4d0  ?ContinueProcessing@ResolutionTuner@AdvionCMS@@AEAA_NAEAW4ErrorCode@2@_N@Z
+     163  0x916f0  ?addDefaultEntries@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEAV?$vector@PEAVSimulatorElement@AdvionCMS@@V?$allocator@PEAVSimulatorElement@AdvionCMS@@@std@@@std@@_N@Z
+     164  0x60cd0  ?addInstrumentListener@InstrumentControllerImpl@AdvionCMS@@SAXPEAVInstrumentListener@2@@Z
+     165  0x814f0  ?addToAll@SampleSet@AdvionCMS@@QEAAXN@Z
+     166  0x81390  ?addToExisting@SampleSet@AdvionCMS@@QEAAXPEAV12@@Z
+     167  0x49f30  ?analyzePerformance@Calibrator@AdvionCMS@@CA?AW4ErrorCode@2@PEAN00@Z
+     168  0x38af0  ?autoTuneInstrument@AutoTuner@AdvionCMS@@QEAA?AW4ErrorCode@2@W4TuningLevel@2@W4MassCalibrationLevel@2@HH@Z
+     169  0x95b60  ?autoTuneInstrument@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4TuningLevel@2@@Z
+     170  0x95bf0  ?autoTuneInstrument@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4TuningLevel@2@W4MassCalibrationLevel@2@@Z
+     171  0x81460  ?averageInPlace@SampleSet@AdvionCMS@@QEAAXH@Z
+     172  0x3da10  ?averageValidPoints@AutoTuner@AdvionCMS@@AEAAXNN@Z
+     173  0x7bef0  ?baselineScan@ResolutionTuner@AdvionCMS@@AEAA_NH@Z
+     174  0x3b350  ?beginMultiScanSweep@AutoTuner@AdvionCMS@@AEAAXW4TuneParameter@2@HHNNHNNN@Z
+     175  0x3ae80  ?beginSweep@AutoTuner@AdvionCMS@@AEAAXW4TuneParameter@2@HHNNHNNN@Z
+     176  0x81850  ?binaryMassSearch@SampleSet@AdvionCMS@@IEAAINHH@Z
+     177  0x81570  ?calcDelta@SampleSet@AdvionCMS@@QEAAXPEAV12@0NN@Z
+     178  0x580e0  ?calculateFractionalChange@DetectorGainTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@PEAN00HH@Z
+     179  0x8fe00  ?calculateMasses@SimulatedInstrumentImpl@AdvionCMS@@IEAAXPEAVScanParams@2@PEAVScanResults@2@@Z
+     180  0x809e0  ?calculateSignalToNoise@SampleSet@AdvionCMS@@QEAAXPEAN0@Z
+     181  0x48fe0  ?calibrateMasses@Calibrator@AdvionCMS@@SA?AW4ErrorCode@2@W4MassCalibrationLevel@2@HH@Z
+     182  0x80640  ?calibrateMasses@SampleSet@AdvionCMS@@QEAAXNPEBVMassCalibration@2@@Z
+     183  0x95ae0  ?calibrateMasses@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@W4MassCalibrationLevel@2@@Z
+     184  0x95a60  ?calibrateMasses@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     185  0x49820  ?calibrateMassesCms@Calibrator@AdvionCMS@@CA?AW4ErrorCode@2@W4MassCalibrationLevel@2@H@Z
+     186  0x49dc0  ?calibrateMassesIcpms@Calibrator@AdvionCMS@@CA?AW4ErrorCode@2@HHH@Z
+     187  0x492d0  ?calibrateMassesImpl@Calibrator@AdvionCMS@@SA?AW4ErrorCode@2@W4MassCalibrationLevel@2@HHH@Z
+     188   0x71c0  ?canAcquireToFolder@AcquisitionManager@AdvionCMS@@SA_NPEBD@Z
+     189   0x7200  ?canAcquireToFolder@AcquisitionManager@AdvionCMS@@SA_NPEB_W@Z
+     190   0x7270  ?canCalculateDeltaData@AcquisitionManager@AdvionCMS@@SA_NXZ
+     191  0x95930  ?canCalibrateAndAutoTune@TuneScanManager@AdvionCMS@@SA_NXZ
+     192  0x4c8a0  ?canOperate@CmsInstrumentImpl@AdvionCMS@@UEAA_NXZ
+     193  0x5f950  ?canOperate@InstrumentController@AdvionCMS@@SA_NXZ
+     194  0x60790  ?canOperate@InstrumentControllerImpl@AdvionCMS@@SA_NXZ
+     195   0x7240  ?canPerformSwitching@AcquisitionManager@AdvionCMS@@SA_NXZ
+     196  0x64840  ?canPerformSwitching@InstrumentImpl@AdvionCMS@@UEAA_NXZ
+     197  0x4ca10  ?canPumpDown@CmsInstrumentImpl@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     198  0x5fa10  ?canPumpDown@InstrumentController@AdvionCMS@@SA_NXZ
+     199  0x60920  ?canPumpDown@InstrumentControllerImpl@AdvionCMS@@SA_NXZ
+     200  0x4c810  ?canStandby@CmsInstrumentImpl@AdvionCMS@@UEAA_NXZ
+     201  0x5f9b0  ?canStandby@InstrumentController@AdvionCMS@@SA_NXZ
+     202  0x60850  ?canStandby@InstrumentControllerImpl@AdvionCMS@@SA_NXZ
+     203  0x4c9a0  ?canVent@CmsInstrumentImpl@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     204  0x5f9e0  ?canVent@InstrumentController@AdvionCMS@@SA_NXZ
+     205  0x608b0  ?canVent@InstrumentControllerImpl@AdvionCMS@@SA_NXZ
+     206  0x38c00  ?cancel@AutoTuner@AdvionCMS@@UEAAXXZ
+     207  0x49190  ?cancel@Calibrator@AdvionCMS@@SAXXZ
+     208  0x95c40  ?cancel@TuneScanManager@AdvionCMS@@SAXXZ
+     209  0x9c0b0  ?cancel@TuneScanProcessor@AdvionCMS@@UEAAXXZ
+     210  0x61650  ?checkCommunication@InstrumentControllerImpl@AdvionCMS@@CAXXZ
+     211  0x61750  ?checkFirmwareVersion@InstrumentControllerImpl@AdvionCMS@@CAXXZ
+     212  0x617b0  ?checkInstrument@InstrumentControllerImpl@AdvionCMS@@CAXXZ
+     213  0x4af30  ?checkInstrumentImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAAXXZ
+     214  0x4bf20  ?checkIonSource@CmsInstrumentControllerImpl@AdvionCMS@@AEAAXXZ
+     215  0x4bce0  ?checkVacuum@CmsInstrumentControllerImpl@AdvionCMS@@AEAAXXZ
+     216  0x3adb0  ?cleanUpAfterAutoTuning@AutoTuner@AdvionCMS@@AEAAXW4ErrorCode@2@@Z
+     217  0x7f6f0  ?clear@SampleSet@AdvionCMS@@QEAAXINN@Z
+     218  0x8daf0  ?collectReadbacks@SimulatedInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     219  0x9de30  ?collectReadbacks@USBInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     220  0x9c3a0  ?collectingDone@TuneScanProcessor@AdvionCMS@@AEAAXH@Z
+     221  0x82bb0  ?compareId@ScanData@AdvionCMS@@SA_NPEAV12@0@Z
+     222  0x4a170  ?computeSpeedCalibration@Calibrator@AdvionCMS@@CAPEAVSpeedCalibration@2@N@Z
+     223  0x90140  ?configureAnalogInput@SimulatedInstrumentImpl@AdvionCMS@@MEAAXH_NW4AnalogInputMaxVoltage@2@N@Z
+     224  0x9fb40  ?configureAnalogInput@USBInstrumentImpl@AdvionCMS@@MEAAXH_NW4AnalogInputMaxVoltage@2@N@Z
+     225  0x5fb00  ?configureDigitalOutputOnStandby@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@H_N@Z
+     226  0x60ae0  ?configureDigitalOutputOnStandby@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@H_N@Z
+     227  0x72d60  ?connect@MRAValve@AdvionCMS@@UEAA_NH@Z
+     228  0xa1520  ?convertRawToValue10Volts@USBInstrumentImpl@AdvionCMS@@AEAANH@Z
+     229  0x7fb20  ?copyAndMergeFromDoubles@SampleSet@AdvionCMS@@QEAAXPEAN0I@Z
+     230  0x7f800  ?copyAndMergeFromShorts@SampleSet@AdvionCMS@@QEAAXPEAGHNN@Z
+     231  0x3d990  ?copyArray@AutoTuner@AdvionCMS@@AEAAXPEAN0H@Z
+     232  0x74400  ?copyArray@ParameterTuner@AdvionCMS@@IEAAXPEAN0H@Z
+     233  0x800a0  ?copyFrom@SampleSet@AdvionCMS@@QEAAXPEAV12@@Z
+     234  0x7fda0  ?copyFromDoubles@SampleSet@AdvionCMS@@QEAAXPEAN0I@Z
+     235  0x7fea0  ?copyFromFloats@SampleSet@AdvionCMS@@QEAAXPEAM0I@Z
+     236  0x7ffa0  ?copyFromUInts@SampleSet@AdvionCMS@@QEAAXPEAMPEAII@Z
+     237  0x80e40  ?copyIntensities@SampleSet@AdvionCMS@@QEAAXPEAI@Z
+     238  0x80eb0  ?copyIntensities@SampleSet@AdvionCMS@@QEAAXPEAM@Z
+     239  0x80f20  ?copyIntensities@SampleSet@AdvionCMS@@QEAAXPEAN@Z
+     240  0x80dd0  ?copyMasses@SampleSet@AdvionCMS@@QEAAXPEAM@Z
+     241  0x80d60  ?copyMasses@SampleSet@AdvionCMS@@QEAAXPEAN@Z
+     242  0x8e1e0  ?copyScanResultsToScanData@SimulatedInstrumentImpl@AdvionCMS@@IEAAXPEAVScanResults@2@PEAVScanData@2@@Z
+     243  0x9ede0  ?copyScanResultsToScanData@USBInstrumentImpl@AdvionCMS@@IEAAXPEAVScanResults@2@PEAVScanData@2@@Z
+     244  0x8e160  ?copyScanToSampleSet@SimulatedInstrumentImpl@AdvionCMS@@MEAA_NPEAVScanData@2@PEAVSampleSet@2@@Z
+     245  0x9ed70  ?copyScanToSampleSet@USBInstrumentImpl@AdvionCMS@@MEAA_NPEAVScanData@2@PEAVSampleSet@2@@Z
+     246   0x77d0  ?createAuxiliaryFile@AcquisitionManager@AdvionCMS@@SAHPEBD0@Z
+     247   0x7810  ?createAuxiliaryFile@AcquisitionManager@AdvionCMS@@SAHPEB_W0@Z
+     248   0x76b0  ?createScalarChannel@AcquisitionManager@AdvionCMS@@SAHPEBD@Z
+     249   0x76f0  ?createScalarChannel@AcquisitionManager@AdvionCMS@@SAHPEB_W@Z
+     250  0x3d770  ?createSmoothedData@AutoTuner@AdvionCMS@@AEAAXPEAN00HH@Z
+     251  0x3d7d0  ?createSmoothedRes@AutoTuner@AdvionCMS@@AEAAXPEAN0HH@Z
+     252  0x804c0  ?cropAbove@SampleSet@AdvionCMS@@QEAAXN@Z
+     253  0x60de0  ?deleteMassCalibration@InstrumentControllerImpl@AdvionCMS@@KAXXZ
+     254  0x4d190  ?detectPeaks@DataProcessor@AdvionCMS@@SAPEADPEAN0HPEBD@Z
+     255  0x4d1f0  ?detectPeaks@DataProcessor@AdvionCMS@@SAPEA_WPEAN0HPEB_W@Z
+     256  0xa1040  ?determineSourceType@USBInstrumentImpl@AdvionCMS@@AEAA?AW4SourceType@2@XZ
+     257  0x60990  ?determineState@InstrumentControllerImpl@AdvionCMS@@SAXXZ
+     258  0x4ad90  ?determineStateImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAAXXZ
+     259  0x90440  ?doTasksAfterCMSReady@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     260  0x9ffa0  ?doTasksAfterCMSReady@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     261  0x90580  ?doTasksAfterDisconnect@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     262  0xa0270  ?doTasksAfterDisconnect@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     263  0x90540  ?doTasksAfterFirstStatus@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     264  0xa01a0  ?doTasksAfterFirstStatus@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     265  0x92590  ?enableStatusReporting@SimulatedInstrumentImpl@AdvionCMS@@AEAAX_N@Z
+     266  0x3b650  ?endMultiScanSweep@AutoTuner@AdvionCMS@@AEAAXXZ
+     267  0x3b0a0  ?endSweep@AutoTuner@AdvionCMS@@AEAAXXZ
+     268  0x7ed50  ?evaluateFit@ResolutionTuner@AdvionCMS@@AEAAHAEAUResolutionFit@2@@Z
+     269  0x7d1d0  ?evaluateMedTune@ResolutionTuner@AdvionCMS@@AEAA_NPEANN@Z
+     270   0x7640  ?extend@AcquisitionManager@AdvionCMS@@SAHH@Z
+     271  0x4d250  ?filterBoxCar@DataProcessor@AdvionCMS@@SA?AW4ErrorCode@2@PEAN0HH@Z
+     272  0x4d2b0  ?filterQuadraticSG@DataProcessor@AdvionCMS@@SA?AW4ErrorCode@2@PEAN0HH@Z
+     273  0x3c7e0  ?findBestAverage@AutoTuner@AdvionCMS@@AEAANPEAN@Z
+     274  0x5df10  ?findBestIndex@ExtractionElectrodeTuner@AdvionCMS@@MEAAHPEANH@Z
+     275  0x73a20  ?findBestIndex@ParameterTuner@AdvionCMS@@MEAAHPEANH@Z
+     276  0x77ff0  ?findBestIndex@RampedParameterTuner@AdvionCMS@@MEAAHHHPEAN@Z
+     277  0x7d810  ?findBestResolutionFit@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@XZ
+     278  0x5d870  ?findBestStep@DualParameterTuner@AdvionCMS@@IEAAHXZ
+     279  0x58310  ?findBestVoltage@DetectorGainTuner@AdvionCMS@@AEAANPEAN0HNNH@Z
+     280  0x5d1b0  ?findBestVoltages@DualParameterTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     281  0x5e6f0  ?findBestVoltages@HexapoleBiasTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     282  0x65610  ?findBestVoltages@IonEnergyAndResolutionTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     283  0x73a70  ?findBestVoltages@ParameterTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     284  0x783b0  ?findBestVoltages@RampedParameterTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     285  0x7a900  ?findBestVoltages@ResolutionTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     286  0x3ca10  ?findFilteredAverage@AutoTuner@AdvionCMS@@AEAAXNN@Z
+     287  0x78f80  ?findHalfRangeWhereValuesAreGood@RampedParameterTuner@AdvionCMS@@IEAAHHPEANHN_N1@Z
+     288  0x79110  ?findIndexForValue@RampedParameterTuner@AdvionCMS@@IEAAHPEANHN_N@Z
+     289  0x7be40  ?findMinimumIndex@ResolutionTuner@AdvionCMS@@AEAAHPEANHH@Z
+     290  0x3cc10  ?findPeakIndex@AutoTuner@AdvionCMS@@AEAAHPEANH@Z
+     291  0x73f60  ?findPeakIndex@ParameterTuner@AdvionCMS@@IEAAHPEANHH@Z
+     292  0x73eb0  ?findPeakIndex@ParameterTuner@AdvionCMS@@IEAAHPEANHN@Z
+     293  0x3ccb0  ?findPeakResolutionAndShape@AutoTuner@AdvionCMS@@AEAANHHHPEAN0@Z
+     294  0x74010  ?findPlateauIndex@ParameterTuner@AdvionCMS@@IEAAHPEANH_NN@Z
+     295  0x7ac90  ?findVoltageForResValue@ResolutionTuner@AdvionCMS@@AEAANPEAN0HN@Z
+     296  0x7af10  ?findVoltageForResValueOrMin@ResolutionTuner@AdvionCMS@@AEAANPEAN0HN@Z
+     297  0x7add0  ?findVoltageForResValueReverse@ResolutionTuner@AdvionCMS@@AEAANPEAN0HN@Z
+     298  0x79210  ?findVoltageForValue@RampedParameterTuner@AdvionCMS@@IEAANPEAN0HN_N@Z
+     299  0x7cea0  ?fineTune@ResolutionTuner@AdvionCMS@@AEAA_NH@Z
+     300  0x60e70  ?fireErrorReported@InstrumentControllerImpl@AdvionCMS@@KAXHW4SeverityCode@2@@Z
+     301  0x61080  ?fireStatusUpdated@InstrumentControllerImpl@AdvionCMS@@KAXXZ
+     302  0x79940  ?fitHorizontalLine@Regression@AdvionCMS@@SAXPEANH0@Z
+     303  0x79770  ?fitLine@Regression@AdvionCMS@@SAXPEAN0H0@Z
+     304  0x79670  ?fitLineThroughOrigin@Regression@AdvionCMS@@SAXPEAN0H0@Z
+     305  0x79440  ?fitLineThroughPoint@Regression@AdvionCMS@@SAXPEAN0HNN0@Z
+     306  0xa0f70  ?flushTuneParameters@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     307  0x8ab20  ?forceScanFailure@SimulatedInstrument@AdvionCMS@@QEAAXXZ
+     308  0x8cfb0  ?forceScanFailure@SimulatedInstrumentImpl@AdvionCMS@@QEAAXXZ
+     309  0x648f0  ?generatesData@InstrumentImpl@AdvionCMS@@UEAA_NXZ
+     310   0x80b0  ?getAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ
+     311  0x897a0  ?getAnalogInput@ScanSampleSet@AdvionCMS@@QEAANH@Z
+     312  0x38ff0  ?getAreas@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     313  0x811f0  ?getAvgAndStdDev@SampleSet@AdvionCMS@@QEAAXPEAN0@Z
+     314  0x5eda0  ?getBinaryReadback@Instrument@AdvionCMS@@QEAA_NW4BinaryReadback@2@@Z
+     315  0x64740  ?getBinaryReadback@InstrumentImpl@AdvionCMS@@QEAA_NW4BinaryReadback@2@@Z
+     316  0x899f0  ?getBinnedSamples@ScanSampleSet@AdvionCMS@@QEAAPEAVBinnedSampleSet@2@XZ
+     317  0x74660  ?getBinsPerAMU@ParameterTuner@AdvionCMS@@MEAAHH@Z
+     318  0x7aad0  ?getBinsPerAMU@ResolutionTuner@AdvionCMS@@MEAAHH@Z
+     319  0x89ad0  ?getCentroidSamples@ScanSampleSet@AdvionCMS@@QEAAPEAVBinnedSampleSet@2@XZ
+     320  0x8a930  ?getCommOK@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+     321  0x8ce90  ?getCommOK@SimulatedInstrumentImpl@AdvionCMS@@QEAA_NXZ
+     322   0x7ba0  ?getCurrentFolder@AcquisitionManager@AdvionCMS@@SAPEBDXZ
+     323   0x7bd0  ?getCurrentFolderW@AcquisitionManager@AdvionCMS@@SAPEB_WXZ
+     324   0x7b20  ?getCurrentName@AcquisitionManager@AdvionCMS@@SAPEBDHH@Z
+     325   0x7b60  ?getCurrentNameW@AcquisitionManager@AdvionCMS@@SAPEB_WHH@Z
+     326  0x72fb0  ?getDefaultBaudRate@MRAValve@AdvionCMS@@MEAAKXZ
+     327  0x94e50  ?getDefaultBaudRate@SSIPump@AdvionCMS@@MEAAKXZ
+     328  0xa1a40  ?getDefaultBaudRate@VICIValve@AdvionCMS@@MEAAKXZ
+     329  0x74720  ?getDefaultIntensity@ParameterTuner@AdvionCMS@@MEAANXZ
+     330  0x5f470  ?getDefaultIonSourceOptimization@Instrument@AdvionCMS@@QEAAPEBD_N0@Z
+     331  0x64b70  ?getDefaultIonSourceOptimization@InstrumentImpl@AdvionCMS@@QEAAPEBD_N0@Z
+     332  0x5f4c0  ?getDefaultIonSourceOptimizationW@Instrument@AdvionCMS@@QEAAPEB_W_N0@Z
+     333  0x64c20  ?getDefaultIonSourceOptimizationW@InstrumentImpl@AdvionCMS@@QEAAPEB_W_N0@Z
+     334  0x5f3d0  ?getDefaultTuneParameters@Instrument@AdvionCMS@@QEAAPEBD_N0@Z
+     335  0x64920  ?getDefaultTuneParameters@InstrumentImpl@AdvionCMS@@QEAAPEBD_N0@Z
+     336  0x5f420  ?getDefaultTuneParametersW@Instrument@AdvionCMS@@QEAAPEB_W_N0@Z
+     337  0x649d0  ?getDefaultTuneParametersW@InstrumentImpl@AdvionCMS@@QEAAPEB_W_N0@Z
+     338   0x7fc0  ?getDeltaBackgroundSize@AcquisitionManager@AdvionCMS@@SAHH@Z
+     339   0x8000  ?getDeltaBackgroundSpectrum@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEANH@Z
+     340  0x89bb0  ?getDeltaSamples@ScanSampleSet@AdvionCMS@@QEAAPEAVBinnedSampleSet@2@XZ
+     341  0x57760  ?getDwellTime@DetectorGainTuner@AdvionCMS@@MEAANH@Z
+     342  0x5de70  ?getDwellTime@ExtractionElectrodeTuner@AdvionCMS@@MEAANH@Z
+     343  0x5e8a0  ?getDwellTime@HexapoleBiasTuner@AdvionCMS@@MEAANH@Z
+     344  0x69a40  ?getDwellTime@IonEnergyTuner@AdvionCMS@@MEAANH@Z
+     345  0x74620  ?getDwellTime@ParameterTuner@AdvionCMS@@MEAANH@Z
+     346  0x7aa90  ?getDwellTime@ResolutionTuner@AdvionCMS@@MEAANH@Z
+     347  0x5eac0  ?getDynamicRegister@HexRFTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     348  0x7aa30  ?getDynamicRegister@ResolutionTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     349  0x80ff0  ?getEndMass@SampleSet@AdvionCMS@@QEAANXZ
+     350  0x82cb0  ?getErrorCode@ScanData@AdvionCMS@@QEAA?AW4ErrorCode@2@XZ
+     351  0x89760  ?getErrorCode@ScanSampleSet@AdvionCMS@@QEAA?AW4ErrorCode@2@XZ
+     352  0x8aa70  ?getFiaSignal@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+     353  0x8cf60  ?getFiaSignal@SimulatedInstrumentImpl@AdvionCMS@@QEAA_NXZ
+     354  0x5f020  ?getFirmwareVersion@Instrument@AdvionCMS@@QEAAPEBDXZ
+     355  0x64430  ?getFirmwareVersion@InstrumentImpl@AdvionCMS@@QEAAPEBDXZ
+     356  0x5f060  ?getFirmwareVersionW@Instrument@AdvionCMS@@QEAAPEB_WXZ
+     357  0x64470  ?getFirmwareVersionW@InstrumentImpl@AdvionCMS@@QEAAPEB_WXZ
+     358  0x7ecd0  ?getFitVoltageForMass@ResolutionTuner@AdvionCMS@@AEAANAEBUResolutionFit@2@H@Z
+     359  0x5f2b0  ?getHardwareType@Instrument@AdvionCMS@@QEAA?AW4HardwareType@2@XZ
+     360  0x8d910  ?getHardwareType@SimulatedInstrumentImpl@AdvionCMS@@UEAA?AW4HardwareType@2@XZ
+     361  0x9d540  ?getHardwareType@USBInstrumentImpl@AdvionCMS@@UEAA?AW4HardwareType@2@XZ
+     362  0x645b0  ?getHardwareTypeNameW@InstrumentImpl@AdvionCMS@@QEAAPEB_WXZ
+     363  0x396b0  ?getHighestIntensityMassIndex@AutoTuner@AdvionCMS@@QEAAHXZ
+     364  0x88e30  ?getId@ScanParams@AdvionCMS@@QEAAGXZ
+     365  0x89690  ?getId@ScanSampleSet@AdvionCMS@@QEAAGXZ
+     366  0x5f640  ?getImpl@Instrument@AdvionCMS@@AEAAPEAVInstrumentImpl@2@XZ
+     367  0x81030  ?getIndexForMass@SampleSet@AdvionCMS@@QEAAIN@Z
+     368  0x60b20  ?getInstrument@InstrumentControllerImpl@AdvionCMS@@SAPEAVInstrumentImpl@2@XZ
+     369  0x38dc0  ?getIntensities@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     370  0x253a0  ?getIntensity@SampleSet@AdvionCMS@@QEAANH@Z
+     371  0x4af70  ?getIonSourceImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAAPEADXZ
+     372  0x5f810  ?getIonSourceOptimization@InstrumentController@AdvionCMS@@SAPEADXZ
+     373  0x60450  ?getIonSourceOptimization@InstrumentControllerImpl@AdvionCMS@@SAPEADXZ
+     374  0x5f840  ?getIonSourceOptimizationW@InstrumentController@AdvionCMS@@SAPEA_WXZ
+     375  0x604b0  ?getIonSourceOptimizationW@InstrumentControllerImpl@AdvionCMS@@SAPEA_WXZ
+     376  0x60c90  ?getIsAutoTuning@InstrumentControllerImpl@AdvionCMS@@SA_NXZ
+     377   0x7ec0  ?getLastAnalogOutput@AcquisitionManager@AdvionCMS@@SANH_N@Z
+     378   0x7e50  ?getLastDeltaIC@AcquisitionManager@AdvionCMS@@SANXZ
+     379   0x7f80  ?getLastDeltaSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+     380   0x7e80  ?getLastDeltaXIC@AcquisitionManager@AdvionCMS@@SANNN@Z
+     381  0x958f0  ?getLastIntensities@TuneScanManager@AdvionCMS@@SAXHPEAN@Z
+     382  0x958b0  ?getLastMasses@TuneScanManager@AdvionCMS@@SAXHPEAN@Z
+     383   0x7db0  ?getLastNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ
+     384  0x95870  ?getLastNumSamples@TuneScanManager@AdvionCMS@@SAHH@Z
+     385   0x7d80  ?getLastRetentionTime@AcquisitionManager@AdvionCMS@@SANXZ
+     386   0x7cf0  ?getLastScanIndex@AcquisitionManager@AdvionCMS@@SAHXZ
+     387   0x7d50  ?getLastScanIonSource@AcquisitionManager@AdvionCMS@@SAHXZ
+     388   0x7d20  ?getLastScanModeIndex@AcquisitionManager@AdvionCMS@@SAHXZ
+     389   0x7f40  ?getLastSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+     390   0x7f00  ?getLastSpectrumMasses@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z
+     391   0x7de0  ?getLastTIC@AcquisitionManager@AdvionCMS@@SANXZ
+     392   0x7e10  ?getLastXIC@AcquisitionManager@AdvionCMS@@SANNN@Z
+     393  0x25400  ?getMass@SampleSet@AdvionCMS@@QEAANH@Z
+     394  0x60b70  ?getMassCalibration@InstrumentControllerImpl@AdvionCMS@@SAPEBVMassCalibration@2@XZ
+     395  0x4bb30  ?getMassCalibrationParameters@CmsInstrumentControllerImpl@AdvionCMS@@CAPEAVc_massCalibration@AdvionObjects@@XZ
+     396  0x5eb60  ?getMassIndex@HexRFTuner@AdvionCMS@@MEAAHH@Z
+     397  0x745c0  ?getMassIndex@ParameterTuner@AdvionCMS@@MEAAHH@Z
+     398  0x77fa0  ?getMassIndex@RampedParameterTuner@AdvionCMS@@MEAAHH@Z
+     399  0x7ab70  ?getMassIndex@ResolutionTuner@AdvionCMS@@MEAAHH@Z
+     400  0x57720  ?getMassSpan@DetectorGainTuner@AdvionCMS@@MEAANH@Z
+     401  0x69a00  ?getMassSpan@IonEnergyTuner@AdvionCMS@@MEAANH@Z
+     402  0x745e0  ?getMassSpan@ParameterTuner@AdvionCMS@@MEAANH@Z
+     403  0x7aa50  ?getMassSpan@ResolutionTuner@AdvionCMS@@MEAANH@Z
+     404  0x812f0  ?getMax@SampleSet@AdvionCMS@@QEAANXZ
+     405  0x7d6a0  ?getMaxGoodRes@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     406  0x4c210  ?getMaxInstrumentMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     407  0x5f210  ?getMaxInstrumentMass@Instrument@AdvionCMS@@QEAANXZ
+     408  0x4c100  ?getMaxMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     409  0x5f170  ?getMaxMass@Instrument@AdvionCMS@@QEAANXZ
+     410   0x7c30  ?getMaxNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ
+     411  0x95750  ?getMaxNumSamples@TuneScanManager@AdvionCMS@@SAHXZ
+     412   0x7c00  ?getMaxNumScans@AcquisitionManager@AdvionCMS@@SAHXZ
+     413  0x95720  ?getMaxNumTuneMasses@TuneScanManager@AdvionCMS@@SAHXZ
+     414  0x7d520  ?getMaxPassingRes@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     415  0x4c2a0  ?getMaxRampedMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     416   0x72c0  ?getMaxRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ
+     417  0x7d5a0  ?getMaxResolutionTarget@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     418   0x72d0  ?getMaxSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ
+     419  0x4c2e0  ?getMaxScanSpeed@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     420  0x5f260  ?getMaxScanSpeed@Instrument@AdvionCMS@@QEAANXZ
+     421  0x95790  ?getMaxScanTime@TuneScanManager@AdvionCMS@@SAHXZ
+     422  0x58060  ?getMaxVoltage@DetectorGainTuner@AdvionCMS@@EEAANH@Z
+     423  0x5dcc0  ?getMaxVoltage@DualParameterTuner@AdvionCMS@@MEAANH@Z
+     424  0x5eb20  ?getMaxVoltage@HexRFTuner@AdvionCMS@@MEAANH@Z
+     425  0x747d0  ?getMaxVoltage@ParameterTuner@AdvionCMS@@MEAANH@Z
+     426  0x7ab30  ?getMaxVoltage@ResolutionTuner@AdvionCMS@@MEAANH@Z
+     427  0x7d620  ?getMinGoodRes@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     428  0x4c1e0  ?getMinInstrumentMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     429  0x5f1c0  ?getMinInstrumentMass@Instrument@AdvionCMS@@QEAANXZ
+     430  0x4c0c0  ?getMinMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     431  0x5f120  ?getMinMass@Instrument@AdvionCMS@@QEAANXZ
+     432  0x7d4a0  ?getMinPassingRes@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     433  0x4c270  ?getMinRampedMass@CmsInstrumentImpl@AdvionCMS@@UEAANXZ
+     434   0x72a0  ?getMinRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ
+     435   0x72b0  ?getMinSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ
+     436  0x95780  ?getMinScanTime@TuneScanManager@AdvionCMS@@SAHXZ
+     437  0x58020  ?getMinVoltage@DetectorGainTuner@AdvionCMS@@EEAANH@Z
+     438  0x5dc70  ?getMinVoltage@DualParameterTuner@AdvionCMS@@MEAANH@Z
+     439  0x5deb0  ?getMinVoltage@ExtractionElectrodeTuner@AdvionCMS@@MEAANH@Z
+     440  0x5eae0  ?getMinVoltage@HexRFTuner@AdvionCMS@@MEAANH@Z
+     441  0x5e8e0  ?getMinVoltage@HexapoleBiasTuner@AdvionCMS@@MEAANH@Z
+     442  0x74760  ?getMinVoltage@ParameterTuner@AdvionCMS@@MEAANH@Z
+     443  0x7aaf0  ?getMinVoltage@ResolutionTuner@AdvionCMS@@MEAANH@Z
+     444  0x393b0  ?getMultiScanIntensities@AutoTuner@AdvionCMS@@QEAAXPEANH@Z
+     445  0x39410  ?getMultiScanIntensities@AutoTuner@AdvionCMS@@QEAAXPEANHPEAH@Z
+     446  0x39500  ?getMultiScanRawIntensities@AutoTuner@AdvionCMS@@QEAAXPEANH@Z
+     447  0x39560  ?getMultiScanRawIntensities@AutoTuner@AdvionCMS@@QEAAXPEANHPEAH@Z
+     448  0x395f0  ?getMultiScanRawResolutions@AutoTuner@AdvionCMS@@QEAAXPEANH@Z
+     449  0x394a0  ?getMultiScanResolutions@AutoTuner@AdvionCMS@@QEAAXPEANH@Z
+     450  0x39650  ?getMultiScanVoltages@AutoTuner@AdvionCMS@@QEAAXPEANH@Z
+     451  0x4cbd0  ?getNextScanId@CmsInstrumentImpl@AdvionCMS@@UEAAGG@Z
+     452  0x392e0  ?getNextSweepValue@AutoTuner@AdvionCMS@@QEAANH@Z
+     453  0x78050  ?getNormalizedMass@RampedParameterTuner@AdvionCMS@@IEAANN@Z
+     454  0x38610  ?getNumAutoTuneInstrumentScans@AutoTuner@AdvionCMS@@QEAAHW4TuningLevel@2@W4MassCalibrationLevel@2@HH@Z
+     455  0x95b20  ?getNumAutoTuneInstrumentScans@TuneScanManager@AdvionCMS@@SAHW4TuningLevel@2@@Z
+     456  0x95ba0  ?getNumAutoTuneInstrumentScans@TuneScanManager@AdvionCMS@@SAHW4TuningLevel@2@W4MassCalibrationLevel@2@@Z
+     457  0x487b0  ?getNumCalibrateMassesScans@Calibrator@AdvionCMS@@SAHW4MassCalibrationLevel@2@HH@Z
+     458  0x95aa0  ?getNumCalibrateMassesScans@TuneScanManager@AdvionCMS@@SAHW4MassCalibrationLevel@2@@Z
+     459  0x95a20  ?getNumCalibrateMassesScans@TuneScanManager@AdvionCMS@@SAHXZ
+     460  0x80f90  ?getNumSamples@SampleSet@AdvionCMS@@QEAAHXZ
+     461   0x7ab0  ?getNumScanModes@AcquisitionManager@AdvionCMS@@SAHXZ
+     462  0x468e0  ?getNumScans@TuneScanProcessor@AdvionCMS@@UEAAHXZ
+     463   0x7cc0  ?getNumScansDone@AcquisitionManager@AdvionCMS@@SAHXZ
+     464  0x57f70  ?getNumSteps@DetectorGainTuner@AdvionCMS@@AEAAHH@Z
+     465  0x7bd10  ?getNumSteps@ResolutionTuner@AdvionCMS@@AEAAHH@Z
+     466  0x39390  ?getNumStepsFinished@AutoTuner@AdvionCMS@@QEAAHXZ
+     467  0x484a0  ?getNumTestPerformanceScans@Calibrator@AdvionCMS@@SAHHH@Z
+     468  0x95990  ?getNumTestPerformanceScans@TuneScanManager@AdvionCMS@@SAHXZ
+     469  0x95840  ?getNumTuningMasses@TuneScanManager@AdvionCMS@@SAHXZ
+     470  0x91390  ?getNumUniqueAcquisitionMasses@SimulatedInstrumentImpl@AdvionCMS@@AEAAINNH@Z
+     471  0x81970  ?getNumUniqueMasses@SampleSet@AdvionCMS@@IEAAHXZ
+     472  0x5cac0  ?getNumberOfSweeps@DualParameterTuner@AdvionCMS@@UEAAHXZ
+     473  0x735e0  ?getNumberOfSweeps@ParameterTuner@AdvionCMS@@UEAAHXZ
+     474  0x5ef80  ?getNumberReadback@Instrument@AdvionCMS@@QEAANW4NumberReadback@2@@Z
+     475  0x8d170  ?getNumberReadback@SimulatedInstrumentImpl@AdvionCMS@@UEAANW4NumberReadback@2@@Z
+     476  0x9d310  ?getNumberReadback@USBInstrumentImpl@AdvionCMS@@UEAANW4NumberReadback@2@@Z
+     477  0x95140  ?getOKResponse@SSIPump@AdvionCMS@@AEAAPEBDXZ
+     478  0x4ca80  ?getOperatePreventers@CmsInstrumentImpl@AdvionCMS@@UEAAIXZ
+     479  0x5f980  ?getOperatePreventers@InstrumentController@AdvionCMS@@SAIXZ
+     480  0x607f0  ?getOperatePreventers@InstrumentControllerImpl@AdvionCMS@@SAIXZ
+     481  0x5fa70  ?getOperationMode@InstrumentController@AdvionCMS@@SA?AW4OperationMode@2@XZ
+     482  0x60a10  ?getOperationMode@InstrumentControllerImpl@AdvionCMS@@SA?AW4OperationMode@2@XZ
+     483  0x64770  ?getPendingBinaryReadback@InstrumentImpl@AdvionCMS@@QEAA_NW4BinaryReadback@2@@Z
+     484  0x74700  ?getPlateauFoundCount@ParameterTuner@AdvionCMS@@MEAAHXZ
+     485  0x74680  ?getPlateauHeightPercent@ParameterTuner@AdvionCMS@@MEAANXZ
+     486  0x746c0  ?getPlateauSlopePercent@ParameterTuner@AdvionCMS@@MEAANXZ
+     487  0x5f350  ?getPumpDownRemainingSeconds@Instrument@AdvionCMS@@QEAAHXZ
+     488  0x646a0  ?getPumpDownRemainingSeconds@InstrumentImpl@AdvionCMS@@QEAAHXZ
+     489  0x74850  ?getRampMaxVoltage@ParameterTuner@AdvionCMS@@MEAANXZ
+     490  0x38e30  ?getRawIntensities@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     491  0x38f10  ?getRawResolutions@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     492  0x89970  ?getRawSamples@ScanSampleSet@AdvionCMS@@QEAAPEAVSampleSet@2@XZ
+     493  0x57700  ?getRegister@DetectorGainTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     494  0x5d1c0  ?getRegister@DualParameterTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     495  0x5de50  ?getRegister@ExtractionElectrodeTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     496  0x5eaa0  ?getRegister@HexRFTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     497  0x5e880  ?getRegister@HexapoleBiasTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     498  0x7aa10  ?getRegister@ResolutionTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     499  0x38ea0  ?getResolutions@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     500  0x72fd0  ?getResponseTerminator@MRAValve@AdvionCMS@@MEAA?BDXZ
+     501  0x94e70  ?getResponseTerminator@SSIPump@AdvionCMS@@MEAA?BDXZ
+     502  0xa1a60  ?getResponseTerminator@VICIValve@AdvionCMS@@MEAA?BDXZ
+     503  0x9c100  ?getResultCode@TuneScanProcessor@AdvionCMS@@QEAA?AW4ErrorCode@2@XZ
+     504  0x898b0  ?getRetentionTime@ScanSampleSet@AdvionCMS@@QEAANXZ
+     505   0x7c60  ?getRuntime@AcquisitionManager@AdvionCMS@@SANXZ
+     506  0x8a9d0  ?getSafetySwitch@SimulatedInstrument@AdvionCMS@@QEAA_NXZ
+     507  0x8cf10  ?getSafetySwitch@SimulatedInstrumentImpl@AdvionCMS@@QEAA_NXZ
+     508  0x4cf00  ?getSamplesScannedPerSecond@CmsInstrumentImpl@AdvionCMS@@QEAANXZ
+     509  0x88e90  ?getScanIndex@ScanParams@AdvionCMS@@QEAAHXZ
+     510  0x89920  ?getScanIndex@ScanSampleSet@AdvionCMS@@QEAAHXZ
+     511   0x7ae0  ?getScanMode@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionScanMode@2@H@Z
+     512  0x88e70  ?getScanModeIndex@ScanParams@AdvionCMS@@QEAAHXZ
+     513  0x89890  ?getScanNumber@ScanSampleSet@AdvionCMS@@QEAAHXZ
+     514  0x82860  ?getScanParams@ScanData@AdvionCMS@@QEAAPEAVScanParams@2@XZ
+     515  0x82880  ?getScanSampleSet@ScanData@AdvionCMS@@QEAAPEAVScanSampleSet@2@XZ
+     516  0x88eb0  ?getScanTime@ScanParams@AdvionCMS@@QEAAHXZ
+     517  0x57620  ?getScansInSweep@DetectorGainTuner@AdvionCMS@@UEAAHH@Z
+     518  0x5cba0  ?getScansInSweep@DualParameterTuner@AdvionCMS@@UEAAHH@Z
+     519  0x5def0  ?getScansInSweep@ExtractionElectrodeTuner@AdvionCMS@@MEAAHH@Z
+     520  0x5ea50  ?getScansInSweep@HexRFTuner@AdvionCMS@@UEAAHH@Z
+     521  0x5e920  ?getScansInSweep@HexapoleBiasTuner@AdvionCMS@@MEAAHH@Z
+     522  0x73600  ?getScansInSweep@ParameterTuner@AdvionCMS@@UEAAHH@Z
+     523  0x79ea0  ?getScansInSweep@ResolutionTuner@AdvionCMS@@UEAAHH@Z
+     524  0x5f0a0  ?getSerialNumber@Instrument@AdvionCMS@@QEAAPEBDXZ
+     525  0x644f0  ?getSerialNumber@InstrumentImpl@AdvionCMS@@QEAAPEBDXZ
+     526  0x5f0e0  ?getSerialNumberW@Instrument@AdvionCMS@@QEAAPEB_WXZ
+     527  0x64530  ?getSerialNumberW@InstrumentImpl@AdvionCMS@@QEAAPEB_WXZ
+     528  0x38f80  ?getShapes@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     529  0x89c90  ?getSimSamples@ScanSampleSet@AdvionCMS@@QEAAPEAVSampleSet@2@XZ
+     530  0x8a740  ?getSimulatedHardwareType@SimulatedInstrument@AdvionCMS@@QEAA?AW4HardwareType@2@XZ
+     531  0x8cc50  ?getSimulatedHardwareType@SimulatedInstrumentImpl@AdvionCMS@@QEAA?AW4HardwareType@2@XZ
+     532  0x8a890  ?getSimulatedLicensedUpgrade@SimulatedInstrument@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z
+     533  0x8cd80  ?getSimulatedLicensedUpgrade@SimulatedInstrumentImpl@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z
+     534  0x8a7e0  ?getSimulatedSourceType@SimulatedInstrument@AdvionCMS@@QEAA?AW4SourceType@2@XZ
+     535  0x8ccc0  ?getSimulatedSourceType@SimulatedInstrumentImpl@AdvionCMS@@QEAA?AW4SourceType@2@XZ
+     536  0x5faa0  ?getSoftwareVersion@InstrumentController@AdvionCMS@@SAPEBDXZ
+     537  0x60a80  ?getSoftwareVersion@InstrumentControllerImpl@AdvionCMS@@SAPEBDXZ
+     538  0x5fad0  ?getSoftwareVersionW@InstrumentController@AdvionCMS@@SAPEB_WXZ
+     539  0x60ab0  ?getSoftwareVersionW@InstrumentControllerImpl@AdvionCMS@@SAPEB_WXZ
+     540  0xa0830  ?getSourceGasHeaterOn@USBInstrumentImpl@AdvionCMS@@AEAA_NXZ
+     541  0xa0750  ?getSourceGasOn@USBInstrumentImpl@AdvionCMS@@AEAA_NXZ
+     542  0x5ef30  ?getSourceGasTemperatureUserMax@Instrument@AdvionCMS@@QEAANW4SourceType@2@@Z
+     543  0x8d060  ?getSourceGasTemperatureUserMax@SimulatedInstrumentImpl@AdvionCMS@@UEAANW4SourceType@2@@Z
+     544  0x9d1f0  ?getSourceGasTemperatureUserMax@USBInstrumentImpl@AdvionCMS@@UEAANW4SourceType@2@@Z
+     545  0x5f300  ?getSourceType@Instrument@AdvionCMS@@QEAA?AW4SourceType@2@XZ
+     546  0x8d930  ?getSourceType@SimulatedInstrumentImpl@AdvionCMS@@UEAA?AW4SourceType@2@XZ
+     547  0x9d620  ?getSourceType@USBInstrumentImpl@AdvionCMS@@UEAA?AW4SourceType@2@XZ
+     548  0x80fb0  ?getStartMass@SampleSet@AdvionCMS@@QEAANXZ
+     549   0x7a50  ?getState@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionState@2@XZ
+     550  0x5fa40  ?getState@InstrumentController@AdvionCMS@@SA?AW4InstrumentState@2@XZ
+     551  0x60a00  ?getState@InstrumentControllerImpl@AdvionCMS@@SA?AW4InstrumentState@2@XZ
+     552  0x66d70  ?getStepFineIncrement@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     553  0x6a090  ?getStepFineIncrement@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     554  0x66cf0  ?getStepHigh@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     555  0x6a0c0  ?getStepHigh@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     556  0x580a0  ?getStepIncrement@DetectorGainTuner@AdvionCMS@@AEAANH@Z
+     557  0x7bd80  ?getStepIncrement@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     558  0x66cb0  ?getStepLow@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     559  0x6a0f0  ?getStepLow@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     560  0x66c90  ?getStepParameter@IonEnergyAndResolutionTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     561  0x6a120  ?getStepParameter@IonEnergyTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     562  0x66d30  ?getStepRoughIncrement@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     563  0x6a130  ?getStepRoughIncrement@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     564  0x7bdc0  ?getStepValue@ResolutionTuner@AdvionCMS@@AEAANHH@Z
+     565  0x73040  ?getSuccessResponse@MRAValve@AdvionCMS@@AEAAPEBDXZ
+     566  0x66e10  ?getSweepHigh@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     567  0x69960  ?getSweepHigh@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     568  0x66e50  ?getSweepIncrement@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     569  0x699a0  ?getSweepIncrement@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     570  0x66dd0  ?getSweepLow@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANXZ
+     571  0x69920  ?getSweepLow@IonEnergyTuner@AdvionCMS@@MEAANXZ
+     572  0x66db0  ?getSweepParameter@IonEnergyAndResolutionTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     573  0x69900  ?getSweepParameter@IonEnergyTuner@AdvionCMS@@MEAA?AW4TuneParameter@2@XZ
+     574  0x81080  ?getTIC@SampleSet@AdvionCMS@@QEAANXZ
+     575  0x7d420  ?getTargetRes@ResolutionTuner@AdvionCMS@@AEAANH@Z
+     576  0x577a0  ?getTaskId@DetectorGainTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     577  0x468f0  ?getTaskId@DualParameterTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     578  0x5df70  ?getTaskId@ExtractionElectrodeTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     579  0x5e940  ?getTaskId@HexapoleBiasTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     580  0x66e90  ?getTaskId@IonEnergyAndResolutionTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     581  0x69a80  ?getTaskId@IonEnergyTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     582  0x46900  ?getTaskId@ParameterTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     583  0x46910  ?getTaskId@RampedParameterTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     584  0x7ab90  ?getTaskId@ResolutionTuner@AdvionCMS@@MEAA?AW4TuningTask@2@XZ
+     585   0x7c90  ?getTotalRunTime@AcquisitionManager@AdvionCMS@@SANXZ
+     586  0xa0910  ?getTransferLineHeaterOn@USBInstrumentImpl@AdvionCMS@@AEAA_NXZ
+     587  0x4c3c0  ?getTuneParameter@CmsInstrumentImpl@AdvionCMS@@UEAANW4TuneParameter@2@@Z
+     588  0x5ee40  ?getTuneParameter@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+     589  0x4c4c0  ?getTuneParameterUserMax@CmsInstrumentImpl@AdvionCMS@@UEAANW4TuneParameter@2@@Z
+     590  0x5eee0  ?getTuneParameterUserMax@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+     591  0x4c440  ?getTuneParameterUserMin@CmsInstrumentImpl@AdvionCMS@@UEAANW4TuneParameter@2@@Z
+     592  0x5ee90  ?getTuneParameterUserMin@Instrument@AdvionCMS@@QEAANW4TuneParameter@2@@Z
+     593  0x5f8f0  ?getTuneParameters@InstrumentController@AdvionCMS@@SAPEADXZ
+     594  0x605f0  ?getTuneParameters@InstrumentControllerImpl@AdvionCMS@@SAPEADXZ
+     595  0x4b590  ?getTuneParametersImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAAPEADXZ
+     596  0x5f920  ?getTuneParametersW@InstrumentController@AdvionCMS@@SAPEA_WXZ
+     597  0x60650  ?getTuneParametersW@InstrumentControllerImpl@AdvionCMS@@SAPEA_WXZ
+     598  0x88e50  ?getType@ScanParams@AdvionCMS@@QEAA?AW4ScanType@2@XZ
+     599  0x72fe0  ?getValidationCommand@MRAValve@AdvionCMS@@MEAAPEBDXZ
+     600  0x94e80  ?getValidationCommand@SSIPump@AdvionCMS@@MEAAPEBDXZ
+     601  0xa1a70  ?getValidationCommand@VICIValve@AdvionCMS@@MEAAPEBDXZ
+     602  0x73020  ?getValidationLength@MRAValve@AdvionCMS@@MEAAHXZ
+     603  0x94ed0  ?getValidationLength@SSIPump@AdvionCMS@@MEAAHXZ
+     604  0xa1ab0  ?getValidationLength@VICIValve@AdvionCMS@@MEAAHXZ
+     605  0x73000  ?getValidationResponse@MRAValve@AdvionCMS@@MEAAPEBDXZ
+     606  0x94ea0  ?getValidationResponse@SSIPump@AdvionCMS@@MEAAPEBDXZ
+     607  0xa1a90  ?getValidationResponse@VICIValve@AdvionCMS@@MEAAPEBDXZ
+     608  0x94ec0  ?getValidationStart@SSIPump@AdvionCMS@@MEAAHXZ
+     609  0x38d50  ?getVoltages@AutoTuner@AdvionCMS@@QEAAHPEAN@Z
+     610   0x8040  ?getWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ
+     611  0x81130  ?getXIC@SampleSet@AdvionCMS@@QEAANNN@Z
+     612  0x60b40  ?highVoltagesHasBeenSet@InstrumentControllerImpl@AdvionCMS@@SAX_N@Z
+     613  0x5f390  ?ignoreRemainingPumpDownTime@Instrument@AdvionCMS@@QEAAXXZ
+     614  0x64720  ?ignoreRemainingPumpDownTime@InstrumentImpl@AdvionCMS@@QEAAXXZ
+     615  0x39990  ?increaseNumScansDone@AutoTuner@AdvionCMS@@QEAAXH@Z
+     616  0x829d0  ?init@ScanData@AdvionCMS@@QEAAXGW4ScanType@2@HHHNNHHP6AXPEAV12@@Z22@Z
+     617  0x828a0  ?init@ScanData@AdvionCMS@@QEAAXGW4ScanType@2@HHHNNH_NHAEBVc_ionSourceOptimization@AdvionObjects@@AEBVc_tuneParameters@5@HP6AXPEAV12@@Z55@Z
+     618  0x90aa0  ?initForAcquisition@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEAVScanParams@2@PEAVScanResults@2@@Z
+     619  0x8e100  ?initMassesForScan2@SimulatedInstrumentImpl@AdvionCMS@@IEAAXPEAVSampleSet@2@NNH@Z
+     620  0x8e000  ?initMassesForScan@SimulatedInstrumentImpl@AdvionCMS@@MEAAXPEAVSampleSet@2@NNH@Z
+     621  0x9ebd0  ?initMassesForScan@USBInstrumentImpl@AdvionCMS@@MEAAXPEAVSampleSet@2@NNH@Z
+     622  0x7c100  ?initialScanZero@ResolutionTuner@AdvionCMS@@AEAAHH@Z
+     623  0x574c0  ?initialize@DetectorGainTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     624  0x5c9b0  ?initialize@DualParameterTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     625  0x5dda0  ?initialize@ExtractionElectrodeTuner@AdvionCMS@@MEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     626  0x5e9f0  ?initialize@HexRFTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     627  0x5e640  ?initialize@HexapoleBiasTuner@AdvionCMS@@MEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     628  0x65300  ?initialize@IonEnergyAndResolutionTuner@AdvionCMS@@MEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     629  0x68d40  ?initialize@IonEnergyTuner@AdvionCMS@@MEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     630  0x73490  ?initialize@ParameterTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     631  0x77ed0  ?initialize@RampedParameterTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     632  0x79bc0  ?initialize@ResolutionTuner@AdvionCMS@@UEAAXPEAVAutoTuner@2@PEAVInstrumentImpl@2@HPEAN@Z
+     633  0x901f0  ?initialize@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     634  0x64900  ?initializeDataSet@InstrumentImpl@AdvionCMS@@UEAAXPEAVDataWriter@AdvionData@@@Z
+     635  0x3a6e0  ?initializeInstrument@AutoTuner@AdvionCMS@@AEAAXXZ
+     636  0x8ff60  ?initializeScanning@SimulatedInstrumentImpl@AdvionCMS@@MEAAXXZ
+     637  0x9f5d0  ?initializeScanning@USBInstrumentImpl@AdvionCMS@@MEAAXXZ
+     638  0x39db0  ?initializeState@AutoTuner@AdvionCMS@@AEAAXXZ
+     639  0x39f20  ?initializeTuners@AutoTuner@AdvionCMS@@AEAAXH@Z
+     640  0x73530  ?initializeTuningData@ParameterTuner@AdvionCMS@@UEAAXHPEAN0PEAH@Z
+     641  0x3a6b0  ?initializeVariables@AutoTuner@AdvionCMS@@AEAAXXZ
+     642  0xf8c70  ?instrument@InstrumentControllerImpl@AdvionCMS@@1PEAVInstrumentImpl@2@EA
+     643  0xf8c6c  ?instrumentState@InstrumentControllerImpl@AdvionCMS@@1W4InstrumentState@2@A
+     644  0x7d720  ?interpolateTargetsCms@ResolutionTuner@AdvionCMS@@AEAANHNN@Z
+     645  0x3a9b0  ?invokeAllTuners@AutoTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@HH@Z
+     646  0x4cc00  ?isCms@CmsInstrumentImpl@AdvionCMS@@UEAA_NXZ
+     647  0x896e0  ?isDoneScanning@ScanSampleSet@AdvionCMS@@QEAA_NXZ
+     648   0x7680  ?isFinalizingData@AcquisitionManager@AdvionCMS@@SA_NXZ
+     649  0x89720  ?isGoodScan@ScanSampleSet@AdvionCMS@@QEAA_NXZ
+     650  0x4cc10  ?isHeaterTemperatureEquilibrated@CmsInstrumentImpl@AdvionCMS@@UEAA_NW4HeaterId@2@@Z
+     651  0x5f510  ?isHeaterTemperatureEquilibrated@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z
+     652  0x4cdb0  ?isHeaterTemperatureWithinMaximum@CmsInstrumentImpl@AdvionCMS@@UEAA_NW4HeaterId@2@@Z
+     653  0x5f560  ?isHeaterTemperatureWithinMaximum@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z
+     654  0x64690  ?isInitialized@InstrumentImpl@AdvionCMS@@UEAA_NXZ
+     655  0x9d640  ?isInitialized@USBInstrumentImpl@AdvionCMS@@UEAA_NXZ
+     656  0x5f5b0  ?isLicensedUpgrade@Instrument@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z
+     657  0x8d950  ?isLicensedUpgrade@SimulatedInstrumentImpl@AdvionCMS@@UEAA_NW4LicensableUpgrade@2@@Z
+     658  0x9d6b0  ?isLicensedUpgrade@USBInstrumentImpl@AdvionCMS@@UEAA_NW4LicensableUpgrade@2@@Z
+     659  0x94ba0  ?isTurnedOn@SSIPump@AdvionCMS@@QEAA_NXZ
+     660   0x7a80  ?isUsingTwoIonSources@AcquisitionManager@AdvionCMS@@SA_NXZ
+     661  0x7e410  ?lineThroughPoints@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@NNNN@Z
+     662  0x7e6b0  ?linearFit@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@U32@HNN@Z
+     663  0x7e1c0  ?linearFitThroughPoint@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@HN@Z
+     664  0x7e010  ?linearRegression@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@XZ
+     665  0x7e5a0  ?linearShift@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@U32@HNN@Z
+     666  0x7e810  ?linesThoughEdgePoints@ResolutionTuner@AdvionCMS@@AEAA?AUResolutionFit@2@U32@PEAN1@Z
+     667  0x9fd50  ?loadDefaultTuneIonSettings@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     668  0x90790  ?loadState@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     669  0xa0700  ?loadState@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     670  0xf8c80  ?massCalMutex@InstrumentControllerImpl@AdvionCMS@@1PEAVMutex@AdvionCommon@@EA
+     671  0xf8c78  ?massCalibration@InstrumentControllerImpl@AdvionCMS@@1PEAVMassCalibration@2@EA
+     672  0xa0b10  ?massUserToUsb@USBInstrumentImpl@AdvionCMS@@AEAAGN@Z
+     673  0x7c920  ?medTune@ResolutionTuner@AdvionCMS@@AEAANHN@Z
+     674  0x806f0  ?mergeSameMasses@SampleSet@AdvionCMS@@QEAAXXZ
+     675  0x89840  ?needsEvent@ScanSampleSet@AdvionCMS@@QEAA_NXZ
+     676  0x8e410  ?needsSmoothing@SimulatedInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     677  0x9f470  ?needsSmoothing@USBInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     678  0x5db30  ?numSteps@DualParameterTuner@AdvionCMS@@IEAAHXZ
+     679  0x699e0  ?numSteps@IonEnergyTuner@AdvionCMS@@IEAAHXZ
+     680  0x5dbd0  ?numSweeps@DualParameterTuner@AdvionCMS@@IEAAHXZ
+     681   0x2290  ?onAcquisitionFinished@AcquisitionListener@AdvionCMS@@MEAAXXZ
+     682   0x2260  ?onAcquisitionStarted@AcquisitionListener@AdvionCMS@@MEAAXXZ
+     683  0x956e0  ?onAutoTuneScanFinished@TuneScanListener@AdvionCMS@@MEAAXHNNNN@Z
+     684  0x956c0  ?onAutoTuneSweepStarting@TuneScanListener@AdvionCMS@@MEAAXHNN@Z
+     685  0x651d0  ?onErrorReported@InstrumentListener@AdvionCMS@@MEAAXHH@Z
+     686  0x956a0  ?onProgressUpdated@TuneScanListener@AdvionCMS@@MEAAXHW4TuningTask@2@@Z
+     687   0x2270  ?onScanCompleted@AcquisitionListener@AdvionCMS@@MEAAXH@Z
+     688  0x651c0  ?onStatusUpdated@InstrumentListener@AdvionCMS@@MEAAXXZ
+     689  0x95700  ?onTuneParameterChanged@TuneScanListener@AdvionCMS@@MEAAXW4TuneParameter@2@N@Z
+     690  0x95680  ?onTuneScanCompleted@TuneScanListener@AdvionCMS@@MEAAXH@Z
+     691  0x9c120  ?onTuneScanCompleted@TuneScanProcessor@AdvionCMS@@MEAAXH@Z
+     692   0x22a0  ?onWriteLogMessage@AcquisitionListener@AdvionCMS@@MEAAXPEBD@Z
+     693   0x22c0  ?onWriteLogMessage@AcquisitionListener@AdvionCMS@@MEAAXPEB_W@Z
+     694  0x5f730  ?operate@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     695  0x5ffc0  ?operate@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     696  0xa0980  ?paramUserToUsb@USBInstrumentImpl@AdvionCMS@@AEAAFW4TuneParameter@2@N@Z
+     697   0x75d0  ?pause@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@_N@Z
+     698  0x82b50  ?performEventCallback@ScanData@AdvionCMS@@QEAAXXZ
+     699  0x39090  ?performMultiScanSweep@AutoTuner@AdvionCMS@@QEAAXW4TuningTask@2@W4TuneParameter@2@HHNNHNNNPEAH@Z
+     700  0x577c0  ?performMultiScanSweep@DetectorGainTuner@AdvionCMS@@AEAA_NH@Z
+     701  0x7afc0  ?performMultiScanSweep@ResolutionTuner@AdvionCMS@@AEAA_NH@Z
+     702  0x82ab0  ?performPostReadCallback@ScanData@AdvionCMS@@QEAAXXZ
+     703  0x82b00  ?performProcessingCallback@ScanData@AdvionCMS@@QEAAXXZ
+     704  0x39200  ?performReverseMultiScanSweep@AutoTuner@AdvionCMS@@QEAAXW4TuningTask@2@W4TuneParameter@2@HHNNHNNNPEAH@Z
+     705  0x7b8e0  ?performRoughSweep@ResolutionTuner@AdvionCMS@@AEAA_NH@Z
+     706  0x38c70  ?performSweep@AutoTuner@AdvionCMS@@QEAAXW4TuningTask@2@W4TuneParameter@2@HHNNHNNN@Z
+     707  0x73bf0  ?performSweep@ParameterTuner@AdvionCMS@@IEAA_NH@Z
+     708  0x5d760  ?performSweepForStep@DualParameterTuner@AdvionCMS@@IEAA_NHH@Z
+     709  0x69210  ?performSweepForStep@IonEnergyTuner@AdvionCMS@@IEAA_NHH@Z
+     710  0xa19d0  ?positionToString@VICIValve@AdvionCMS@@QEAAPEBDW4VICIValvePosition@@@Z
+     711  0x648d0  ?prepareForScan@InstrumentImpl@AdvionCMS@@UEAAXPEAVScanData@2@@Z
+     712  0x9c320  ?prepareToCollectScans@TuneScanProcessor@AdvionCMS@@AEAAXXZ
+     713  0x74550  ?printArray@ParameterTuner@AdvionCMS@@IEAAXPEBDPEBNH_N@Z
+     714  0x74480  ?printArray@ParameterTuner@AdvionCMS@@IEAAXPEBDPEBN_NHH@Z
+     715  0x66eb0  ?printMatrix@IonEnergyAndResolutionTuner@AdvionCMS@@IEAAXPEBDQEAY1BCM@BCM@NHHHHH@Z
+     716  0x69aa0  ?printMatrix@IonEnergyTuner@AdvionCMS@@IEAAXQEAY1BCM@BCM@NHHHHH@Z
+     717  0x5d920  ?printWeightMatrix@DualParameterTuner@AdvionCMS@@IEAAXHHHHH@Z
+     718  0x5d6f0  ?printWeightMatrix@DualParameterTuner@AdvionCMS@@MEAAXH@Z
+     719  0x66ae0  ?printWeightMatrix@IonEnergyAndResolutionTuner@AdvionCMS@@MEAAXH@Z
+     720  0x696f0  ?printWeightMatrix@IonEnergyTuner@AdvionCMS@@MEAAXH@Z
+     721  0x9c040  ?process@TuneScanProcessor@AdvionCMS@@QEAA?AW4ErrorCode@2@H@Z
+     722  0x8d9e0  ?processCommands@SimulatedInstrumentImpl@AdvionCMS@@MEAAXXZ
+     723  0x9d7e0  ?processCommands@USBInstrumentImpl@AdvionCMS@@MEAAXXZ
+     724  0x39b40  ?processData@AutoTuner@AdvionCMS@@MEAAXHHHPEAN0@Z
+     725  0x9c300  ?processData@TuneScanProcessor@AdvionCMS@@MEAAXHHHPEAN0@Z
+     726  0x3b860  ?processMultiScanData@AutoTuner@AdvionCMS@@AEAAXHHHPEAN0@Z
+     727  0x579d0  ?processMultiScanSweep@DetectorGainTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@H@Z
+     728  0x7b1e0  ?processMultiScanSweep@ResolutionTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@H@Z
+     729  0x7bb20  ?processRoughSweep@ResolutionTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@H@Z
+     730  0x5d200  ?processSweep@DualParameterTuner@AdvionCMS@@MEAAXHH@Z
+     731  0x66250  ?processSweep@IonEnergyAndResolutionTuner@AdvionCMS@@MEAAXHH@Z
+     732  0x692b0  ?processSweep@IonEnergyTuner@AdvionCMS@@MEAAXHH@Z
+     733  0x736f0  ?processSweep@ParameterTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@H@Z
+     734  0x780e0  ?processSweep@RampedParameterTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@H@Z
+     735  0x7a460  ?processSweep@ResolutionTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@H@Z
+     736  0x5d440  ?processSweepsForMass@DualParameterTuner@AdvionCMS@@MEAANH@Z
+     737  0x66730  ?processSweepsForMass@IonEnergyAndResolutionTuner@AdvionCMS@@MEAANH@Z
+     738  0x5f700  ?pumpDown@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     739  0x5ff40  ?pumpDown@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     740  0xa0d70  ?rampDetectorUp@USBInstrumentImpl@AdvionCMS@@AEAAXXZ
+     741  0x5efd0  ?readAnalogInput@Instrument@AdvionCMS@@QEAANH@Z
+     742  0x8d860  ?readAnalogInput@SimulatedInstrumentImpl@AdvionCMS@@UEAANH@Z
+     743  0x9d360  ?readAnalogInput@USBInstrumentImpl@AdvionCMS@@UEAANH@Z
+     744  0x94cd0  ?readCurrentCondition@SSIPump@AdvionCMS@@QEAAPEADXZ
+     745  0xa1840  ?readCurrentPosition@VICIValve@AdvionCMS@@QEAA?AW4VICIValvePosition@@PEADH@Z
+     746  0x94d50  ?readCurrentSetup@SSIPump@AdvionCMS@@QEAAPEADXZ
+     747  0x94dd0  ?readFault@SSIPump@AdvionCMS@@QEAAPEADXZ
+     748  0xa12f0  ?readPirani@USBInstrumentImpl@AdvionCMS@@AEAANXZ
+     749  0xa1420  ?readSourceGasTemperature@USBInstrumentImpl@AdvionCMS@@AEAAMXZ
+     750  0xa14d0  ?readTransferLineTemperature@USBInstrumentImpl@AdvionCMS@@AEAAMXZ
+     751  0xa1380  ?readTurboSpeed@USBInstrumentImpl@AdvionCMS@@AEAANXZ
+     752  0xa0ba0  ?readbackUsbToUser@USBInstrumentImpl@AdvionCMS@@AEAAXW4NumberReadback@2@G@Z
+     753  0x64830  ?readsDataInParallel@InstrumentImpl@AdvionCMS@@UEAA_NXZ
+     754  0x8ff50  ?readsDataInParallel@SimulatedInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     755  0x9f480  ?readsDataInParallel@USBInstrumentImpl@AdvionCMS@@MEAA_NXZ
+     756  0x802f0  ?removeFatSpikes@SampleSet@AdvionCMS@@QEAAXNN@Z
+     757  0x60d30  ?removeInstrumentListener@InstrumentControllerImpl@AdvionCMS@@SAXPEAVInstrumentListener@2@@Z
+     758  0x80550  ?removeNoise@SampleSet@AdvionCMS@@QEAAXNN@Z
+     759  0x80190  ?removeSpikes@SampleSet@AdvionCMS@@QEAAXNN@Z
+     760  0xf8c88  ?requestingStandby@InstrumentControllerImpl@AdvionCMS@@1_NA
+     761  0x65070  ?resetPumpDownTimer@InstrumentImpl@AdvionCMS@@IEAAXXZ
+     762  0x81780  ?resize@SampleSet@AdvionCMS@@IEAAXH@Z
+     763   0x7610  ?resume@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     764  0x7c420  ?roughTune@ResolutionTuner@AdvionCMS@@AEAANHH@Z
+     765  0x61330  ?run@InstrumentControllerImpl@AdvionCMS@@AEAAXXZ
+     766  0x611f0  ?runControllerInThread@InstrumentControllerImpl@AdvionCMS@@CAXPEAX@Z
+     767  0x92670  ?runStatusReadingThread@SimulatedInstrumentImpl@AdvionCMS@@CAXPEAX@Z
+     768  0x8ddc0  ?saveState@SimulatedInstrumentImpl@AdvionCMS@@MEAAXXZ
+     769  0x9eb70  ?saveState@USBInstrumentImpl@AdvionCMS@@MEAAXXZ
+     770  0x8ff90  ?scheduleScan@SimulatedInstrumentImpl@AdvionCMS@@MEAAXPEAVScanData@2@@Z
+     771  0x9f670  ?scheduleScan@USBInstrumentImpl@AdvionCMS@@MEAAXPEAVScanData@2@@Z
+     772  0x94ef0  ?secondaryValidationCheck@SSIPump@AdvionCMS@@MEAA_NPEBD@Z
+     773  0xa1ad0  ?secondaryValidationCheck@VICIValve@AdvionCMS@@MEAA_NPEBD@Z
+     774  0x73060  ?sendCommand@MRAValve@AdvionCMS@@AEAA_NPEBD_N@Z
+     775  0x95040  ?sendCommand@SSIPump@AdvionCMS@@AEAA_NPEBD@Z
+     776   0x80e0  ?setAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z
+     777  0x89800  ?setAnalogInput@ScanSampleSet@AdvionCMS@@QEAAXHN@Z
+     778  0x901b0  ?setAnalogOutput@SimulatedInstrumentImpl@AdvionCMS@@MEAAXHNNH@Z
+     779  0x9fc40  ?setAnalogOutput@USBInstrumentImpl@AdvionCMS@@MEAAXHNNH@Z
+     780  0x92360  ?setBackgroundNoise@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEANH@Z
+     781  0x7f420  ?setBestFit@ResolutionTuner@AdvionCMS@@AEAA_NAEBUResolutionFit@2@AEAU32@@Z
+     782  0x89a10  ?setBinnedSamples@ScanSampleSet@AdvionCMS@@QEAAXPEAVBinnedSampleSet@2@@Z
+     783  0x89af0  ?setCentroidSamples@ScanSampleSet@AdvionCMS@@QEAAXPEAVBinnedSampleSet@2@@Z
+     784  0x8a8e0  ?setCommOK@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+     785  0x8ce00  ?setCommOK@SimulatedInstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     786  0x4b930  ?setDefaultTuneParametersImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAAXXZ
+     787  0x89bd0  ?setDeltaSamples@ScanSampleSet@AdvionCMS@@QEAAXPEAVBinnedSampleSet@2@@Z
+     788  0x8aac0  ?setDigitalInput@SimulatedInstrument@AdvionCMS@@QEAAXH_N@Z
+     789  0x8cf80  ?setDigitalInput@SimulatedInstrumentImpl@AdvionCMS@@QEAAXH_N@Z
+     790  0x901d0  ?setDigitalOutput@SimulatedInstrumentImpl@AdvionCMS@@MEAAXH_N@Z
+     791  0x9fcf0  ?setDigitalOutput@USBInstrumentImpl@AdvionCMS@@MEAAXH_N@Z
+     792  0x82cd0  ?setErrorCode@ScanData@AdvionCMS@@QEAAXW4ErrorCode@2@@Z
+     793  0x89780  ?setErrorCode@ScanSampleSet@AdvionCMS@@QEAAXW4ErrorCode@2@@Z
+     794  0x8aa20  ?setFiaSignal@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+     795  0x8cf30  ?setFiaSignal@SimulatedInstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     796  0x949f0  ?setFlowRate@SSIPump@AdvionCMS@@QEAA_NN@Z
+     797  0x8a650  ?setHardwareType@SimulatedInstrument@AdvionCMS@@QEAAXW4HardwareType@2@@Z
+     798  0x647e0  ?setHighVoltagesOn@InstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     799  0x905c0  ?setHighVoltagesOnActions@SimulatedInstrumentImpl@AdvionCMS@@AEAAX_N@Z
+     800  0xa02b0  ?setHighVoltagesOnActions@USBInstrumentImpl@AdvionCMS@@AEAAX_N@Z
+     801  0x896b0  ?setId@ScanSampleSet@AdvionCMS@@QEAAXG@Z
+     802  0x4c660  ?setInstrumentSwitchOn@CmsInstrumentImpl@AdvionCMS@@UEAAXW4InstrumentSwitch@2@_N@Z
+     803  0x5ed40  ?setInstrumentSwitchOn@Instrument@AdvionCMS@@QEAAXW4InstrumentSwitch@2@_N@Z
+     804  0x27790  ?setIntensity@SampleSet@AdvionCMS@@QEAAXHN@Z
+     805  0x4b490  ?setIonSourceImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAA?AW4ErrorCode@2@PEBD@Z
+     806  0x4a7d0  ?setIonSourceOptimization@CmsInstrumentControllerImpl@AdvionCMS@@SAXAEBVc_ionSourceOptimization@AdvionObjects@@_N1@Z
+     807  0x5f790  ?setIonSourceOptimization@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEBD@Z
+     808  0x5f7d0  ?setIonSourceOptimization@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+     809  0x60150  ?setIonSourceOptimization@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@PEBD@Z
+     810  0x601c0  ?setIonSourceOptimization@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+     811  0x60cb0  ?setIsAutoTuning@InstrumentControllerImpl@AdvionCMS@@SAX_N@Z
+     812  0x89700  ?setIsDoneScanning@ScanSampleSet@AdvionCMS@@QEAAX_N@Z
+     813  0x89740  ?setIsGoodScan@ScanSampleSet@AdvionCMS@@QEAAX_N@Z
+     814  0x399f0  ?setLogFile@AutoTuner@AdvionCMS@@SAXPEB_W@Z
+     815  0x95c70  ?setLogFile@TuneScanManager@AdvionCMS@@SAXPEBD@Z
+     816  0x95cb0  ?setLogFile@TuneScanManager@AdvionCMS@@SAXPEB_W@Z
+     817  0x277e0  ?setMass@SampleSet@AdvionCMS@@QEAAXHN@Z
+     818  0x60bd0  ?setMassCalibration@InstrumentControllerImpl@AdvionCMS@@SAXPEBVMassCalibration@2@@Z
+     819  0x4bb90  ?setMassCalibrationParameters@CmsInstrumentControllerImpl@AdvionCMS@@CAXAEBVc_massCalibration@AdvionObjects@@@Z
+     820  0x89860  ?setNeedsEvent@ScanSampleSet@AdvionCMS@@QEAAX_NH@Z
+     821  0x399c0  ?setNumScansDone@AutoTuner@AdvionCMS@@QEAAXH@Z
+     822  0x9c610  ?setOverridePump@USBInstrument@AdvionCMS@@QEAAX_N@Z
+     823  0x9ccf0  ?setOverridePump@USBInstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     824  0x9c5c0  ?setOverrideSafeties@USBInstrument@AdvionCMS@@QEAAX_N@Z
+     825  0x9ccc0  ?setOverrideSafeties@USBInstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     826  0xa1950  ?setPositionA@VICIValve@AdvionCMS@@QEAAXXZ
+     827  0xa1990  ?setPositionB@VICIValve@AdvionCMS@@QEAAXXZ
+     828  0x647a0  ?setPumpOn@InstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     829  0x89990  ?setRawSamples@ScanSampleSet@AdvionCMS@@QEAAXPEAVSampleSet@2@@Z
+     830  0x39960  ?setResolutionTarget@AutoTuner@AdvionCMS@@QEAAXN@Z
+     831  0x39930  ?setResolutionTuneType@AutoTuner@AdvionCMS@@QEAAXW4ResolutionTuneType@2@@Z
+     832  0x898f0  ?setRetentionTime@ScanSampleSet@AdvionCMS@@QEAAXN@Z
+     833  0x8a980  ?setSafetySwitch@SimulatedInstrument@AdvionCMS@@QEAAX_N@Z
+     834  0x8ceb0  ?setSafetySwitch@SimulatedInstrumentImpl@AdvionCMS@@QEAAX_N@Z
+     835  0xa1180  ?setScanDelay@USBInstrumentImpl@AdvionCMS@@AEAAXPEAVScanParams@2@_N@Z
+     836  0x89940  ?setScanIndex@ScanSampleSet@AdvionCMS@@QEAAXH@Z
+     837  0x7a430  ?setScansPerStep@ResolutionTuner@AdvionCMS@@QEAAXH@Z
+     838  0x89cb0  ?setSimSamples@ScanSampleSet@AdvionCMS@@QEAAXPEAVSampleSet@2@@Z
+     839  0x8a6f0  ?setSimulatedHardwareType@SimulatedInstrument@AdvionCMS@@QEAAXW4HardwareType@2@@Z
+     840  0x8cc00  ?setSimulatedHardwareType@SimulatedInstrumentImpl@AdvionCMS@@QEAAXW4HardwareType@2@@Z
+     841  0x8a830  ?setSimulatedLicensedUpgrade@SimulatedInstrument@AdvionCMS@@QEAAXW4LicensableUpgrade@2@_N@Z
+     842  0x8cce0  ?setSimulatedLicensedUpgrade@SimulatedInstrumentImpl@AdvionCMS@@QEAAXW4LicensableUpgrade@2@_N@Z
+     843  0x8a790  ?setSimulatedSourceType@SimulatedInstrument@AdvionCMS@@QEAAXW4SourceType@2@@Z
+     844  0x8cc70  ?setSimulatedSourceType@SimulatedInstrumentImpl@AdvionCMS@@QEAAXW4SourceType@2@@Z
+     845  0x957a0  ?setSmoothing@TuneScanManager@AdvionCMS@@SAXHH@Z
+     846  0x8a6a0  ?setSourceType@SimulatedInstrument@AdvionCMS@@QEAAXW4SourceType@2@@Z
+     847  0x72eb0  ?setSplitFactor@MRAValve@AdvionCMS@@QEAA_NH@Z
+     848  0x5ede0  ?setTuneParameter@Instrument@AdvionCMS@@QEAAXW4TuneParameter@2@N@Z
+     849  0x8cfd0  ?setTuneParameter@SimulatedInstrumentImpl@AdvionCMS@@UEAAXW4TuneParameter@2@N@Z
+     850  0x9cd20  ?setTuneParameter@USBInstrumentImpl@AdvionCMS@@UEAAXW4TuneParameter@2@N@Z
+     851  0x4c600  ?setTuneParameterAndWait@CmsInstrumentImpl@AdvionCMS@@UEAA_NW4TuneParameter@2@NK@Z
+     852  0x4ab70  ?setTuneParameters@CmsInstrumentControllerImpl@AdvionCMS@@SAXAEBVc_CmsTuneParametersType@AdvionObjects@@@Z
+     853  0x5f870  ?setTuneParameters@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEBD@Z
+     854  0x5f8b0  ?setTuneParameters@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+     855  0x602d0  ?setTuneParameters@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@PEBD@Z
+     856  0x60340  ?setTuneParameters@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W@Z
+     857  0x4b840  ?setTuneParametersImpl@CmsInstrumentControllerImpl@AdvionCMS@@MEAA?AW4ErrorCode@2@PEBD@Z
+     858  0x957e0  ?setTuningMasses@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@HQEAN000@Z
+     859  0x914a0  ?setUpBackgroundSignal@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     860  0x94ad0  ?setUpperLimit@SSIPump@AdvionCMS@@QEAA_NN@Z
+     861  0x7abb0  ?setVoltages@ResolutionTuner@AdvionCMS@@AEAA_NNN@Z
+     862   0x8070  ?setWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z
+     863  0x80ca0  ?shiftMasses@SampleSet@AdvionCMS@@QEAAXN_N0@Z
+     864  0x8f1c0  ?simulateDetailedTuningScan@SimulatedInstrumentImpl@AdvionCMS@@IEAAXPEAVScanParams@2@PEAVScanResults@2@@Z
+     865  0x90e30  ?simulateRangeScan@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEAVScanData@2@PEAVScanResults@2@@Z
+     866  0x91200  ?simulateSIMScan@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEAVScanData@2@PEAVScanResults@2@@Z
+     867  0x90d20  ?simulateScan@SimulatedInstrumentImpl@AdvionCMS@@AEAAXPEAVScanData@2@PEAVScanResults@2@@Z
+     868  0x8e420  ?simulateTuningScan@SimulatedInstrumentImpl@AdvionCMS@@IEAAXPEAVScanParams@2@PEAVScanResults@2@@Z
+     869  0x808a0  ?smoothSamples@SampleSet@AdvionCMS@@QEAAXHH@Z
+     870  0x5f760  ?standby@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     871  0x60070  ?standby@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     872   0x72e0  ?start@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEBD0000@Z
+     873   0x7340  ?start@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W0000@Z
+     874  0x5f660  ?startController@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@PEAVInstrument@2@@Z
+     875  0x5fb40  ?startController@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@PEAVInstrumentImpl@2@@Z
+     876  0x61290  ?startFireErrorReported@InstrumentControllerImpl@AdvionCMS@@CAXPEAX@Z
+     877  0x61230  ?startFireStatusUpdated@InstrumentControllerImpl@AdvionCMS@@CAXPEAX@Z
+     878   0x74a0  ?startWithSegments@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEBDHPEANPEAPEBD200@Z
+     879   0x7520  ?startWithSegments@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_WHPEANPEAPEB_W200@Z
+     880   0x73a0  ?startWithSwitching@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEBD000000@Z
+     881   0x7420  ?startWithSwitching@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEB_W000000@Z
+     882  0x92650  ?statusCallback@SimulatedInstrumentImpl@AdvionCMS@@CAXXZ
+     883  0xa15b0  ?statusCallback@USBInstrumentImpl@AdvionCMS@@CAXXZ
+     884  0xbad30  ?statusIntervalMS@CmsInstrumentImpl@AdvionCMS@@1_KB
+     885  0x3dcf0  ?std_dev@AutoTuner@AdvionCMS@@AEAANQEANH@Z
+     886   0x75a0  ?stop@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     887  0x9c0e0  ?stop@TuneScanProcessor@AdvionCMS@@QEAAXXZ
+     888  0x5f6a0  ?stopController@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     889  0x5fd70  ?stopController@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     890  0x49200  ?terminate@Calibrator@AdvionCMS@@SAXXZ
+     891  0x8ff70  ?terminateScanning@SimulatedInstrumentImpl@AdvionCMS@@MEAAXXZ
+     892  0x9f610  ?terminateScanning@USBInstrumentImpl@AdvionCMS@@MEAAXXZ
+     893  0x48b60  ?testPerformance@Calibrator@AdvionCMS@@SA?AW4ErrorCode@2@HHPEAN00@Z
+     894  0x959c0  ?testPerformance@TuneScanManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN00@Z
+     895  0x57640  ?tune@DetectorGainTuner@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     896  0x5cbe0  ?tune@DualParameterTuner@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     897  0x654c0  ?tune@IonEnergyAndResolutionTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     898  0x68f20  ?tune@IonEnergyTuner@AdvionCMS@@MEAA?AW4ErrorCode@2@XZ
+     899  0x73620  ?tune@ParameterTuner@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     900  0x77f30  ?tune@RampedParameterTuner@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     901  0x79ed0  ?tune@ResolutionTuner@AdvionCMS@@UEAA?AW4ErrorCode@2@XZ
+     902  0x72e10  ?turnOff@MRAValve@AdvionCMS@@QEAA_NXZ
+     903  0x949b0  ?turnOff@SSIPump@AdvionCMS@@QEAA_NXZ
+     904  0x72dd0  ?turnOn@MRAValve@AdvionCMS@@QEAA_NXZ
+     905  0x94970  ?turnOn@SSIPump@AdvionCMS@@QEAA_NXZ
+     906  0x92440  ?updateAnalogInputs@SimulatedInstrumentImpl@AdvionCMS@@AEAAXXZ
+     907  0x61480  ?updateCycleState@InstrumentControllerImpl@AdvionCMS@@CAXXZ
+     908  0x648c0  ?updateDigitalAndAnalogInputs@InstrumentImpl@AdvionCMS@@UEAAXXZ
+     909  0x9f4e0  ?updateDigitalAndAnalogInputs@USBInstrumentImpl@AdvionCMS@@MEAAXXZ
+     910  0x4cf40  ?updateIonSourceAndTuneParameters@CmsInstrumentImpl@AdvionCMS@@IEAAXPEAVScanParams@2@@Z
+     911   0x8120  ?updateIonSourceOptimization@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEBD@Z
+     912   0x8160  ?updateIonSourceOptimization@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEB_W@Z
+     913  0x73e40  ?updateRegister@ParameterTuner@AdvionCMS@@IEAAXW4TuneParameter@2@N_N@Z
+     914  0x585d0  ?updateSweepMass@DetectorGainTuner@AdvionCMS@@AEAA_NH@Z
+     915  0x5d120  ?updateTuning@DualParameterTuner@AdvionCMS@@MEAAXXZ
+     916  0x65590  ?updateTuning@IonEnergyAndResolutionTuner@AdvionCMS@@MEAAXXZ
+     917  0x739c0  ?updateTuning@ParameterTuner@AdvionCMS@@MEAAXXZ
+     918  0x78ef0  ?updateTuning@RampedParameterTuner@AdvionCMS@@MEAAXXZ
+     919  0x3a8e0  ?validateInput@AutoTuner@AdvionCMS@@AEAA?AW4ErrorCode@2@HH@Z
+     920  0x5f6d0  ?vent@InstrumentController@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     921  0x5feb0  ?vent@InstrumentControllerImpl@AdvionCMS@@SA?AW4ErrorCode@2@XZ
+     922  0x90080  ?waitForScanToFinish@SimulatedInstrumentImpl@AdvionCMS@@MEAA_NPEAVScanData@2@@Z
+     923  0x9f9b0  ?waitForScanToFinish@USBInstrumentImpl@AdvionCMS@@MEAA_NPEAVScanData@2@@Z
+     924  0x9c420  ?waitForScanningToFinish@TuneScanProcessor@AdvionCMS@@AEAAXXZ
+     925  0x64820  ?wantsToStopScanning@InstrumentImpl@AdvionCMS@@UEAA_NXZ
+     926  0x39070  ?wasCanceled@AutoTuner@AdvionCMS@@QEAA_NXZ
+     927   0x79d0  ?writeExperiment@AcquisitionManager@AdvionCMS@@SAXPEBD@Z
+     928   0x7a10  ?writeExperiment@AcquisitionManager@AdvionCMS@@SAXPEB_W@Z
+     929   0x78d0  ?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEBD@Z
+     930   0x7950  ?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEBD_N@Z
+     931   0x7910  ?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEB_W@Z
+     932   0x7990  ?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEB_W_N@Z
+     933   0x7780  ?writeScalarEntries@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEAN0H@Z
+     934   0x7730  ?writeScalarEntry@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HNN@Z
+     935   0x7850  ?writeTextToFile@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEBD@Z
+     936   0x7890  ?writeTextToFile@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEB_W@Z
+     937  0x39ab0  ?writeToLog@AutoTuner@AdvionCMS@@SAXPEBDZZ
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         000acd77 0000000180001000 TEXT
+  1 .rdata        00044b14 00000001800ae000 DATA
+  2 .data         00003a00 00000001800f3000 DATA
+  3 .pdata        0000e6b8 00000001800fb000 DATA
+  4 .gfids        0000003c 000000018010a000 DATA
+  5 .rsrc         000004f4 000000018010b000 DATA
+  6 .reloc        00000dec 000000018010c000 DATA
+
+SYMBOL TABLE:

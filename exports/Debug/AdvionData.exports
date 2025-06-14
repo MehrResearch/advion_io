@@ -1,0 +1,921 @@
+
+lib/Debug/AdvionData.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:52:41 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              000000000009b600
+SizeOfInitializedData   0000000000056a00
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     000000000008e0a0
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             000f8000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 00000000000d3570 00009a8c Export Directory [.edata (or where ever we found it)]
+Entry 1 00000000000dcffc 000000a0 Import Directory [parts of .idata]
+Entry 2 00000000000f6000 00000500 Resource Directory [.rsrc]
+Entry 3 00000000000e6000 0000efd0 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 00000000000f7000 00000d58 Base Relocation Directory [.reloc]
+Entry 6 00000000000bb470 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 00000000000bb4d0 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 000000000009d000 00000a60 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 000dd670 time 00000000 fwd 00000000 name 000dee84 addr 0009d5d0
+
+    DLL Name: lmx-MDd-vc14.dll
+    Hint/Ord  Name
+          85  ??0c_xml_writer@lmx@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@HPEBD111@Z
+         361  ?get_convenience_options@c_xml_writer@lmx@@SAHXZ
+         125  ??1c_xml_writer_local@lmx@@QEAA@XZ
+          87  ??0c_xml_writer_local@lmx@@QEAA@AEAVc_xml_writer@1@@Z
+         764  ?unmarshal_complex_content@c_unmarshal_helper@lmx@@QEAA?AW4elmx_error@2@QEBDH@Z
+         630  ?set_body_can_be_empty@c_unmarshal_helper@lmx@@QEAAXXZ
+         116  ??1c_unmarshal_helper@lmx@@UEAA@XZ
+          71  ??0c_unmarshal_helper@lmx@@QEAA@AEAVc_xml_reader@1@@Z
+         123  ??1c_xml_reader_memory@lmx@@UEAA@XZ
+          83  ??0c_xml_reader_memory@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+         124  ??1c_xml_writer@lmx@@UEAA@XZ
+         540  ?is_open@c_xml_reader_file@lmx@@QEBA_NXZ
+         121  ??1c_xml_reader_file@lmx@@UEAA@XZ
+          80  ??0c_xml_reader_file@lmx@@QEAA@PEB_W@Z
+          79  ??0c_xml_reader_file@lmx@@QEAA@PEBD@Z
+         761  ?unmarshal_child_element_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@PEBUs_event_map@2@@Z
+         759  ?unmarshal_attribute_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+         632  ?set_code_line@c_xml_reader@lmx@@QEAAXH@Z
+         631  ?set_code_file@c_xml_reader@lmx@@QEAAXPEBD@Z
+         391  ?get_element_value@c_xml_reader@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@@Z
+         362  ?get_current_event@c_xml_reader@lmx@@QEBAHXZ
+         434  ?get_known_element_event@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@PEAW4elmx_error@2@@Z
+         381  ?get_element_event@c_xml_reader@lmx@@QEAAXPEAW4elmx_error@2@@Z
+         748  ?tokenise@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@W4elxp_attr_elem@2@@Z
+         369  ?get_debug_error@c_xml_writer@lmx@@QEBAAEBUs_debug_error@2@XZ
+         306  ?conditionally_select_ns_map@c_xml_writer@lmx@@QEAAXPEBUs_ns_map@2@@Z
+         307  ?conditionally_write_ns_attrs@c_xml_writer@lmx@@QEAAX_N@Z
+         738  ?start_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+         315  ?end_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+         582  ?marshal_attribute_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+         585  ?marshal_element_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@PEBUs_ns_map@2@@Z
+         588  ?marshal_element_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+         535  ?is_nil@c_unmarshal_helper@lmx@@EEBA_NXZ
+         536  ?is_not_choice_or_choice_is_not_set@c_unmarshal_helper@lmx@@EEBA_NXZ
+         770  ?unmarshal_simple_body@c_unmarshal_helper@lmx@@EEAA_NPEAW4elmx_error@2@@Z
+         509  ?global_check_exception@lmx@@3Vc_check_exception@1@A
+         308  ?convert@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+         309  ?convert@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+         554  ?is_valid_bool@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+         602  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@_N@Z
+          84  ??0c_xml_reader_memory@lmx@@QEAA@PEBD_K@Z
+         555  ?is_valid_float@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+         557  ?is_valid_integer@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+           3  ??0c_big_int@lmx@@QEAA@PEBD@Z
+          90  ??1c_big_int@lmx@@QEAA@XZ
+         252  ??Plmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+         222  ??Nlmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+         599  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+         601  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@N@Z
+         329  ?float_zero@lmx@@YANXZ
+          72  ??0c_untyped_validation_spec@lmx@@QEAA@W4elmx_whitespace@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@Q6A?AW4elmx_error@1@AEAVc_xml_reader@1@1@Z@Z
+         500  ?get_whitespace_handling@c_untyped_validation_spec@lmx@@QEBA?AW4elmx_whitespace@2@XZ
+          81  ??0c_xml_reader_local@lmx@@QEAA@PEAVc_xml_reader@1@@Z
+         122  ??1c_xml_reader_local@lmx@@QEAA@XZ
+          52  ??0c_known_elements_selector@lmx@@QEAA@AEAVc_xml_reader@1@PEBUs_known_elements@1@@Z
+         109  ??1c_known_elements_selector@lmx@@QEAA@XZ
+         629  ?set_auto_versioning@c_xml_reader@lmx@@QEAAX_N@Z
+         282  ?add_namespace_mapping@c_xml_reader@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+         513  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@H@Z
+         511  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@@Z
+         368  ?get_debug_error@c_xml_reader@lmx@@QEBAAEBUs_debug_error@2@XZ
+         784  ?vtostring@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+         677  ?set_ns_map@c_xml_reader@lmx@@QEAAXPEBUs_ns_map@2@@Z
+         388  ?get_element_ns_id@c_xml_reader@lmx@@QEBAHXZ
+         444  ?get_local_name@c_xml_reader@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+
+  lookup 000dd0d8 time 00000000 fwd 00000000 name 000df0de addr 0009d038
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+         420  FreeLibrary
+        1459  VirtualQuery
+         681  GetProcessHeap
+         828  HeapFree
+         824  HeapAlloc
+         621  GetModuleHandleW
+         709  GetStartupInfoW
+         880  IsProcessorFeaturePresent
+         676  GetProcAddress
+         527  GetCurrentProcess
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+        1092  RaiseException
+         874  IsDebuggerPresent
+        1072  QueryPerformanceCounter
+         528  GetCurrentProcessId
+         532  GetCurrentThreadId
+         733  GetSystemTimeAsFileTime
+         279  DisableThreadLibraryCalls
+        1392  TerminateProcess
+         746  GetTempPathW
+         744  GetTempFileNameW
+         355  FileTimeToSystemTime
+        1429  UnmapViewOfFile
+         963  MapViewOfFile
+         191  CreateFileMappingW
+         761  GetTickCount
+         599  GetLocalTime
+         578  GetFileSize
+         574  GetFileInformationByHandle
+        1501  WideCharToMultiByte
+         980  MultiByteToWideChar
+        1388  SystemTimeToFileTime
+        1521  WriteFile
+        1295  SetFileTime
+        1291  SetFilePointer
+        1108  ReadFile
+         947  LocalFileTimeToFileTime
+         572  GetFileAttributesW
+         194  CreateFileW
+         178  CreateDirectoryW
+         521  GetCurrentDirectoryW
+        1347  SetThreadPriority
+         852  InitializeSListHead
+         531  GetCurrentThread
+        1377  Sleep
+         209  CreateMutexW
+         598  GetLastError
+         127  CloseHandle
+         592  GetFullPathNameW
+         389  FindNextFileW
+         372  FindFirstFileExW
+         366  FindClose
+
+  lookup 000dd5c8 time 00000000 fwd 00000000 name 000df10c addr 0009d528
+
+    DLL Name: USER32.dll
+    Hint/Ord  Name
+         313  GetDesktopWindow
+         899  wsprintfW
+
+  lookup 000dd0a0 time 00000000 fwd 00000000 name 000df226 addr 0009d000
+
+    DLL Name: AdvionCommon.dll
+    Hint/Ord  Name
+          41  ?unregisterExceptionHandler@WinDump@AdvionCommon@@SAXXZ
+           0  ??0Mutex@AdvionCommon@@QEAA@PEB_W@Z
+           3  ??1Mutex@AdvionCommon@@QEAA@XZ
+          26  ?lock@Mutex@AdvionCommon@@QEAA_NXZ
+          40  ?unlock@Mutex@AdvionCommon@@QEAA_NXZ
+          30  ?registerExceptionHandler@WinDump@AdvionCommon@@SAXPEB_W@Z
+
+  lookup 000dd2a0 time 00000000 fwd 00000000 name 000e0b9a addr 0009d200
+
+    DLL Name: MSVCP140D.dll
+    Hint/Ord  Name
+        1350  ?width@ios_base@std@@QEBA_JXZ
+         879  ?flags@ios_base@std@@QEBAHXZ
+        1349  ?width@ios_base@std@@QEAA_J_J@Z
+          53  ??0?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+         139  ??1?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+        1256  ?sputc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAAG_W@Z
+        1259  ?sputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@QEAA_JPEB_W_J@Z
+         855  ?eback@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+         976  ?gptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+        1096  ?pbase@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+        1105  ?pptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+         885  ?gbump@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXH@Z
+        1220  ?setg@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+         867  ?epptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+        1099  ?pbump@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXH@Z
+        1227  ?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W0@Z
+        1226  ?setp@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAXPEA_W00@Z
+         596  ?_Pninc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEAAPEA_WXZ
+         127  ??1?$basic_ios@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+        1233  ?setstate@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEAAXH_N@Z
+        1302  ?tie@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_ostream@_WU?$char_traits@_W@std@@@2@XZ
+        1171  ?rdbuf@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBAPEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@2@XZ
+         877  ?fill@?$basic_ios@_WU?$char_traits@_W@std@@@std@@QEBA_WXZ
+          16  ??0?$basic_ios@_WU?$char_traits@_W@std@@@std@@IEAA@XZ
+         590  ?_Osfx@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAXXZ
+         295  ??6?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV01@H@Z
+         882  ?flush@?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAAAEAV12@XZ
+          23  ??0?$basic_iostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@@Z
+         130  ??1?$basic_iostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+         562  ?_Lock@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAAXXZ
+         649  ?_Unlock@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@UEAAXXZ
+        1024  ?imbue@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAXAEBVlocale@2@@Z
+        1215  ?setbuf@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAPEAV12@PEA_W_J@Z
+        1247  ?showmanyc@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JXZ
+        1287  ?sync@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAHXZ
+         973  ?good@ios_base@std@@QEBA_NXZ
+        1318  ?uncaught_exception@std@@YA_NXZ
+         131  ??1?$basic_istream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1317  ?uflow@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAAGXZ
+        1357  ?xsgetn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEA_W_J@Z
+        1360  ?xsputn@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@MEAA_JPEB_W_J@Z
+          43  ??0?$basic_ostream@_WU?$char_traits@_W@std@@@std@@QEAA@PEAV?$basic_streambuf@_WU?$char_traits@_W@std@@@1@_N@Z
+         136  ??1?$basic_ostream@_WU?$char_traits@_W@std@@@std@@UEAA@XZ
+         858  ?egptr@?$basic_streambuf@_WU?$char_traits@_W@std@@@std@@IEBAPEA_WXZ
+         109  ??0_Lockit@std@@QEAA@H@Z
+         165  ??1_Lockit@std@@QEAA@XZ
+         421  ?_Debug_message@std@@YAXPEB_W0I@Z
+         659  ?_Xbad_alloc@std@@YAXXZ
+         662  ?_Xlength_error@std@@YAXPEBD@Z
+         663  ?_Xout_of_range@std@@YAXPEBD@Z
+         311  ??Bid@locale@std@@QEAA_KXZ
+         477  ?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ
+         677  ?always_noconv@codecvt_base@std@@QEBA_NXZ
+        1026  ?in@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+        1083  ?out@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+        1327  ?unshift@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z
+         441  ?_Getcat@?$codecvt@DDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+          47  ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         137  ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         968  ?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEBA?AVlocale@2@XZ
+         853  ?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         974  ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1094  ?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1103  ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         856  ?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         883  ?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+        1218  ?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+         865  ?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         493  ?_Gndec@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+         496  ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+        1097  ?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+        1223  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD0@Z
+        1222  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+         594  ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+         509  ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXXZ
+         508  ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAPEAD0PEAH001@Z
+         125  ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1229  ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+          12  ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+          37  ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+         134  ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         262  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z
+         435  ?_Fiopen@std@@YAPEAU_iobuf@@PEBDHH@Z
+         437  ?_Fiopen@std@@YAPEAU_iobuf@@PEB_WHH@Z
+         560  ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+         647  ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+        1022  ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+        1213  ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+        1245  ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+        1285  ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1315  ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1355  ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+        1358  ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+         412  ?_BADOFF@std@@3_JB
+         977  ?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A
+         261  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
+        1181  ?sbumpc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ
+        1239  ?sgetc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHXZ
+        1167  ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ
+          26  ??0?$basic_istream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+
+  lookup 000dd5e0 time 00000000 fwd 00000000 name 000e0cde addr 0009d540
+
+    DLL Name: VCRUNTIME140D.dll
+    Hint/Ord  Name
+          37  __std_type_info_destroy_list
+          49  __vcrt_LoadLibraryExW
+          47  __vcrt_GetModuleHandleW
+          46  __vcrt_GetModuleFileNameW
+           8  __C_specific_handler
+          70  wcsstr
+          58  memchr
+          14  __CxxFrameHandler3
+           1  _CxxThrowException
+          34  __std_exception_destroy
+          33  __std_exception_copy
+          64  strchr
+          62  memset
+          61  memmove
+          60  memcpy
+          59  memcmp
+          54  _purecall
+
+  lookup 000dd880 time 00000000 fwd 00000000 name 000e113a addr 0009d7e0
+
+    DLL Name: ucrtbased.dll
+    Hint/Ord  Name
+         833  _wassert
+        1155  free
+        1239  malloc
+         712  _set_errno
+         914  _wfullpath
+        1382  wcslen
+        1365  towlower
+         935  _wrmdir
+        1003  atoi
+        1020  calloc
+          53  __acrt_iob_func
+         909  _wfopen
+         106  __stdio_common_vswprintf
+         109  __stdio_common_vswscanf
+        1153  fread
+        1159  fseek
+          92  __stdio_common_vfprintf
+         154  _beginthread
+         498  _localtime64_s
+        1327  strftime
+         797  _time64
+        1161  ftell
+         924  _wmkdir
+        1381  wcsftime
+        1096  div
+        1045  ceil
+        1374  wcscat
+        1378  wcscpy
+        1386  wcsncpy
+        1320  strcmp
+         844  _wcsicmp
+        1318  strcat
+        1332  strncpy
+        1317  srand
+        1282  rand
+         285  _free_dbg
+         517  _malloc_dbg
+        1354  terminate
+         161  _callnewh
+         705  _seh_filter_dll
+         182  _configure_narrow_argv
+         369  _initialize_narrow_environment
+         370  _initialize_onexit_table
+         692  _register_onexit_function
+         229  _execute_onexit_table
+         194  _crt_atexit
+         193  _crt_at_quick_exit
+         164  _cexit
+           4  _CrtDbgReport
+         104  __stdio_common_vsprintf_s
+         372  _initterm
+         373  _initterm_e
+         923  _wmakepath_s
+         951  _wsplitpath_s
+        1379  wcscpy_s
+        1219  localeconv
+           5  _CrtDbgReportW
+        1328  strlen
+         825  _unlock_file
+         499  _lock_file
+        1370  ungetc
+        1309  setvbuf
+        1288  remove
+        1162  fwrite
+         288  _fseeki64
+        1160  fsetpos
+        1149  fputc
+        1130  fgetpos
+        1129  fgetc
+        1128  fflush
+        1113  fclose
+         324  _get_stream_buffer_pointers
+         932  _wremove
+        1345  strtoul
+        1002  atof
+         223  _errno
+         375  _invalid_parameter_noinfo
+         374  _invalid_parameter
+        1322  strcpy
+
+Export Table:
+ DLL name: AdvionData.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1  0x28a60  ??0DataReader@AdvionData@@QEAA@PEBD_N1@Z
+       2  0x28b00  ??0DataReader@AdvionData@@QEAA@PEB_W_N1@Z
+       3  0x47520  ??0DataWriter@AdvionData@@QEAA@PEBD0_N1@Z
+       4  0x475d0  ??0DataWriter@AdvionData@@QEAA@PEB_W0_N1@Z
+       5  0x67010  ??0ScalarChannelWriter@AdvionData@@QEAA@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@0PEB_WH@Z
+       6  0x59450  ??0c_Attribute@AdvionData@@QEAA@AEBV01@@Z
+       7  0x593d0  ??0c_Attribute@AdvionData@@QEAA@XZ
+       8  0x1ee00  ??0c_AuxFile@AdvionData@@QEAA@AEBV01@@Z
+       9  0x1ed70  ??0c_AuxFile@AdvionData@@QEAA@XZ
+      10   0x3040  ??0c_acquisitionMetadata@AdvionData@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+      11   0x2d40  ??0c_acquisitionMetadata@AdvionData@@QEAA@AEBV01@@Z
+      12   0x3390  ??0c_acquisitionMetadata@AdvionData@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+      13   0x3480  ??0c_acquisitionMetadata@AdvionData@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+      14   0x32b0  ??0c_acquisitionMetadata@AdvionData@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      15   0x3110  ??0c_acquisitionMetadata@AdvionData@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      16   0x31e0  ??0c_acquisitionMetadata@AdvionData@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      17   0x2ca0  ??0c_acquisitionMetadata@AdvionData@@QEAA@XZ
+      18  0x1fcd0  ??0c_auxFiles@AdvionData@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+      19  0x1fa60  ??0c_auxFiles@AdvionData@@QEAA@AEBV01@@Z
+      20  0x1ff80  ??0c_auxFiles@AdvionData@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+      21  0x20050  ??0c_auxFiles@AdvionData@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+      22  0x1fed0  ??0c_auxFiles@AdvionData@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      23  0x1fd70  ??0c_auxFiles@AdvionData@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      24  0x1fe20  ??0c_auxFiles@AdvionData@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      25  0x1f9e0  ??0c_auxFiles@AdvionData@@QEAA@XZ
+      26  0x58a30  ??0c_entry@AdvionData@@QEAA@AEBV01@@Z
+      27  0x589b0  ??0c_entry@AdvionData@@QEAA@XZ
+      28  0x5a1a0  ??0c_scalarChannel@AdvionData@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+      29  0x59ea0  ??0c_scalarChannel@AdvionData@@QEAA@AEBV01@@Z
+      30  0x5a4f0  ??0c_scalarChannel@AdvionData@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+      31  0x5a5e0  ??0c_scalarChannel@AdvionData@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+      32  0x5a410  ??0c_scalarChannel@AdvionData@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      33  0x5a270  ??0c_scalarChannel@AdvionData@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      34  0x5a340  ??0c_scalarChannel@AdvionData@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      35  0x59e00  ??0c_scalarChannel@AdvionData@@QEAA@XZ
+      36  0x68a60  ??0c_scan@AdvionData@@QEAA@AEBV01@@Z
+      37  0x689c0  ??0c_scan@AdvionData@@QEAA@XZ
+      38  0x69d00  ??0c_scans@AdvionData@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+      39  0x69860  ??0c_scans@AdvionData@@QEAA@AEBV01@@Z
+      40  0x6a1f0  ??0c_scans@AdvionData@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+      41  0x6a350  ??0c_scans@AdvionData@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+      42  0x6a0b0  ??0c_scans@AdvionData@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      43  0x69e30  ??0c_scans@AdvionData@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      44  0x69f70  ??0c_scans@AdvionData@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      45  0x69760  ??0c_scans@AdvionData@@QEAA@XZ
+      46   0x2110  ??0c_segment@AdvionData@@QEAA@AEBV01@@Z
+      47   0x2080  ??0c_segment@AdvionData@@QEAA@XZ
+      48  0x28ba0  ??1DataReader@AdvionData@@QEAA@XZ
+      49  0x47680  ??1DataWriter@AdvionData@@QEAA@XZ
+      50  0x67610  ??1ScalarChannelWriter@AdvionData@@QEAA@XZ
+      51  0x596c0  ??1c_Attribute@AdvionData@@UEAA@XZ
+      52  0x1f0b0  ??1c_AuxFile@AdvionData@@UEAA@XZ
+      53   0x3550  ??1c_acquisitionMetadata@AdvionData@@UEAA@XZ
+      54  0x20100  ??1c_auxFiles@AdvionData@@UEAA@XZ
+      55  0x58c70  ??1c_entry@AdvionData@@UEAA@XZ
+      56  0x5a6b0  ??1c_scalarChannel@AdvionData@@UEAA@XZ
+      57  0x68d30  ??1c_scan@AdvionData@@UEAA@XZ
+      58  0x6a490  ??1c_scans@AdvionData@@UEAA@XZ
+      59   0x23c0  ??1c_segment@AdvionData@@UEAA@XZ
+      60  0x1ebd0  ??4AdvionUtility@AdvionData@@QEAAAEAV01@$$QEAV01@@Z
+      61  0x1ebf0  ??4AdvionUtility@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      62  0x59500  ??4c_Attribute@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      63  0x1eee0  ??4c_AuxFile@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      64   0x2e50  ??4c_acquisitionMetadata@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      65  0x1fb10  ??4c_auxFiles@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      66  0x58ae0  ??4c_entry@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      67  0x59fb0  ??4c_scalarChannel@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      68  0x68b70  ??4c_scan@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      69  0x69a70  ??4c_scans@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      70   0x21f0  ??4c_segment@AdvionData@@QEAAAEAV01@AEBV01@@Z
+      71  0x9def8  ?AcquisitionMetadata_reader@AdvionData@@3QBUs_ns_map@lmx@@B
+      72  0x9df10  ?AcquisitionMetadata_writer_1@AdvionData@@3QBUs_ns_map@lmx@@B
+      73  0xa3f08  ?AuxFiles_reader@AdvionData@@3QBUs_ns_map@lmx@@B
+      74  0xa3f20  ?AuxFiles_writer_1@AdvionData@@3QBUs_ns_map@lmx@@B
+      75  0xae2d0  ?ScalarChannel_reader@AdvionData@@3QBUs_ns_map@lmx@@B
+      76  0xae2e8  ?ScalarChannel_writer_1@AdvionData@@3QBUs_ns_map@lmx@@B
+      77  0xb2298  ?Scans_reader@AdvionData@@3QBUs_ns_map@lmx@@B
+      78  0xb22b0  ?Scans_writer_1@AdvionData@@3QBUs_ns_map@lmx@@B
+      79  0x67750  ?addAttribute@ScalarChannelWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_WN@Z
+      80  0x47e50  ?addScalarChannelAttribute@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEBDN@Z
+      81  0x47eb0  ?addScalarChannelAttribute@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEB_WN@Z
+      82  0x63240  ?append_attribute@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@PEAVc_Attribute@2@@Z
+      83  0x632d0  ?append_attribute@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@XZ
+      84  0x63350  ?append_entry@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@PEAVc_entry@2@@Z
+      85  0x633e0  ?append_entry@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@XZ
+      86  0x25fb0  ?append_file@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@PEAVc_AuxFile@2@@Z
+      87  0x26040  ?append_file@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@XZ
+      88  0x718a0  ?append_scan@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@PEAVc_scan@2@@Z
+      89  0x71930  ?append_scan@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@XZ
+      90  0x13310  ?append_segment@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@PEAVc_segment@2@@Z
+      91  0x133a0  ?append_segment@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@XZ
+      92  0x63780  ?assign_attribute@c_scalarChannel@AdvionData@@QEAAAEAVc_Attribute@2@_KAEBV32@@Z
+      93  0x637d0  ?assign_attribute@c_scalarChannel@AdvionData@@QEAAAEAVc_Attribute@2@_KPEAV32@@Z
+      94  0x63820  ?assign_entry@c_scalarChannel@AdvionData@@QEAAAEAVc_entry@2@_KAEBV32@@Z
+      95  0x63870  ?assign_entry@c_scalarChannel@AdvionData@@QEAAAEAVc_entry@2@_KPEAV32@@Z
+      96  0x26250  ?assign_file@c_auxFiles@AdvionData@@QEAAAEAVc_AuxFile@2@_KAEBV32@@Z
+      97  0x262a0  ?assign_file@c_auxFiles@AdvionData@@QEAAAEAVc_AuxFile@2@_KPEAV32@@Z
+      98  0x71b40  ?assign_scan@c_scans@AdvionData@@QEAAAEAVc_scan@2@_KAEBV32@@Z
+      99  0x71b90  ?assign_scan@c_scans@AdvionData@@QEAAAEAVc_scan@2@_KPEAV32@@Z
+     100  0x13ac0  ?assign_segment@c_acquisitionMetadata@AdvionData@@QEAAAEAVc_segment@2@_KAEBV32@@Z
+     101  0x13b10  ?assign_segment@c_acquisitionMetadata@AdvionData@@QEAAAEAVc_segment@2@_KPEAV32@@Z
+     102  0x63b20  ?back_attribute@c_scalarChannel@AdvionData@@QEAAAEAVc_Attribute@2@XZ
+     103  0x63b60  ?back_entry@c_scalarChannel@AdvionData@@QEAAAEAVc_entry@2@XZ
+     104  0x264d0  ?back_file@c_auxFiles@AdvionData@@QEAAAEAVc_AuxFile@2@XZ
+     105  0x71d10  ?back_scan@c_scans@AdvionData@@QEAAAEAVc_scan@2@XZ
+     106  0x13ed0  ?back_segment@c_acquisitionMetadata@AdvionData@@QEAAAEAVc_segment@2@XZ
+     107  0x48130  ?canWriteData@DataWriter@AdvionData@@SA?AW4ErrorCode@2@PEBD0@Z
+     108  0x48170  ?canWriteData@DataWriter@AdvionData@@SA?AW4ErrorCode@2@PEB_W0@Z
+     109  0x480b0  ?canWriteData@DataWriter@AdvionData@@SA_NPEBD@Z
+     110  0x480f0  ?canWriteData@DataWriter@AdvionData@@SA_NPEB_W@Z
+     111  0x59820  ?check@c_Attribute@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     112  0x1f2b0  ?check@c_AuxFile@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     113   0x36b0  ?check@c_acquisitionMetadata@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     114  0x201b0  ?check@c_auxFiles@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     115  0x58e20  ?check@c_entry@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     116  0x5a840  ?check@c_scalarChannel@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     117  0x69020  ?check@c_scan@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     118  0x6a8d0  ?check@c_scans@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     119   0x25c0  ?check@c_segment@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     120  0x64180  ?clear_attribute@c_scalarChannel@AdvionData@@QEAAXXZ
+     121  0x641c0  ?clear_entry@c_scalarChannel@AdvionData@@QEAAXXZ
+     122  0x26820  ?clear_file@c_auxFiles@AdvionData@@QEAAXXZ
+     123  0x720a0  ?clear_scan@c_scans@AdvionData@@QEAAXXZ
+     124  0x143e0  ?clear_segment@c_acquisitionMetadata@AdvionData@@QEAAXXZ
+     125  0x595d0  ?clone@c_Attribute@AdvionData@@UEBAPEAV12@XZ
+     126  0x1efb0  ?clone@c_AuxFile@AdvionData@@UEBAPEAV12@XZ
+     127   0x2f20  ?clone@c_acquisitionMetadata@AdvionData@@UEBAPEAV12@XZ
+     128  0x1fbe0  ?clone@c_auxFiles@AdvionData@@UEBAPEAV12@XZ
+     129  0x58b80  ?clone@c_entry@AdvionData@@UEBAPEAV12@XZ
+     130  0x5a080  ?clone@c_scalarChannel@AdvionData@@UEBAPEAV12@XZ
+     131  0x68c10  ?clone@c_scan@AdvionData@@UEBAPEAV12@XZ
+     132  0x69b40  ?clone@c_scans@AdvionData@@UEBAPEAV12@XZ
+     133   0x22c0  ?clone@c_segment@AdvionData@@UEBAPEAV12@XZ
+     134  0x67fa0  ?close@ScalarChannelWriter@AdvionData@@QEAAXXZ
+     135  0x47860  ?createAuxiliaryFile@DataWriter@AdvionData@@QEAAHPEBD0@Z
+     136  0x478b0  ?createAuxiliaryFile@DataWriter@AdvionData@@QEAAHPEB_W0@Z
+     137  0x48070  ?createDatxFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@XZ
+     138  0x477c0  ?createScalarChannel@DataWriter@AdvionData@@QEAAHPEBD@Z
+     139  0x47810  ?createScalarChannel@DataWriter@AdvionData@@QEAAHPEB_W@Z
+     140  0x64420  ?delete_attribute@c_scalarChannel@AdvionData@@QEAAX_K@Z
+     141  0x644a0  ?delete_entry@c_scalarChannel@AdvionData@@QEAAX_K@Z
+     142  0x26a40  ?delete_file@c_auxFiles@AdvionData@@QEAAX_K@Z
+     143  0x723a0  ?delete_scan@c_scans@AdvionData@@QEAAX_K@Z
+     144  0x14cc0  ?delete_segment@c_acquisitionMetadata@AdvionData@@QEAAX_K@Z
+     145  0x290c0  ?generateDeltaXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+     146  0x29060  ?generateXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+     147  0x29af0  ?getAuxFileName@DataReader@AdvionData@@QEAAPEBDH@Z
+     148  0x29b30  ?getAuxFileNameW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     149  0x29bf0  ?getAuxFileText@DataReader@AdvionData@@QEAAPEBDH@Z
+     150  0x29c30  ?getAuxFileTextW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     151  0x29b70  ?getAuxFileType@DataReader@AdvionData@@QEAAPEBDH@Z
+     152  0x29bb0  ?getAuxFileTypeW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     153  0x29000  ?getAveragedDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+     154  0x28fa0  ?getAveragedSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+     155  0x28c90  ?getDataSetValidity@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@XZ
+     156  0x28cd0  ?getDate@DataReader@AdvionData@@QEAAPEBDXZ
+     157  0x28d10  ?getDateW@DataReader@AdvionData@@QEAAPEB_WXZ
+     158  0x28f50  ?getDeltaBackgroundSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+     159  0x29160  ?getDeltaIC@DataReader@AdvionData@@QEAAMH@Z
+     160  0x28f00  ?getDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+     161  0x29760  ?getExperimentLog@DataReader@AdvionData@@QEAAPEBDXZ
+     162  0x297a0  ?getExperimentLogW@DataReader@AdvionData@@QEAAPEB_WXZ
+     163  0x29420  ?getExperimentXML@DataReader@AdvionData@@QEAAPEBDXZ
+     164  0x29460  ?getExperimentXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+     165  0x67f20  ?getFileNameW@ScalarChannelWriter@AdvionData@@QEAAPEB_WXZ
+     166  0x67f60  ?getFilePathW@ScalarChannelWriter@AdvionData@@QEAAPEB_WXZ
+     167  0x29220  ?getFirmwareVersion@DataReader@AdvionData@@QEAAPEBDXZ
+     168  0x29260  ?getFirmwareVersionW@DataReader@AdvionData@@QEAAPEB_WXZ
+     169  0x292a0  ?getHardwareType@DataReader@AdvionData@@QEAAPEBDXZ
+     170  0x292e0  ?getHardwareTypeW@DataReader@AdvionData@@QEAAPEB_WXZ
+     171  0x294a0  ?getIcpmsExperimentXML@DataReader@AdvionData@@QEAAPEBDXZ
+     172  0x294e0  ?getIcpmsExperimentXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+     173  0x29520  ?getIcpmsInstrumentSettingsXML@DataReader@AdvionData@@QEAAPEBDXZ
+     174  0x29560  ?getIcpmsInstrumentSettingsXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+     175  0x29320  ?getInstrumentID@DataReader@AdvionData@@QEAAPEBDXZ
+     176  0x29360  ?getInstrumentIdW@DataReader@AdvionData@@QEAAPEB_WXZ
+     177  0x29660  ?getIonSourceOptimizationXML@DataReader@AdvionData@@QEAAPEBDH@Z
+     178  0x296a0  ?getIonSourceOptimizationXmlW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     179  0x28d50  ?getIsCentroid@DataReader@AdvionData@@QEAA_NXZ
+     180  0x28e10  ?getMasses@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+     181  0x293a0  ?getMethodXML@DataReader@AdvionData@@QEAAPEBDXZ
+     182  0x293e0  ?getMethodXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+     183  0x29ab0  ?getNumAuxFiles@DataReader@AdvionData@@QEAAHXZ
+     184  0x28d90  ?getNumMasses@DataReader@AdvionData@@QEAAHXZ
+     185  0x297e0  ?getNumScalarChannels@DataReader@AdvionData@@QEAAHXZ
+     186  0x295e0  ?getNumSegments@DataReader@AdvionData@@QEAAHXZ
+     187  0x28dd0  ?getNumSpectra@DataReader@AdvionData@@QEAAHXZ
+     188  0x28e60  ?getRetentionTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+     189  0x299c0  ?getScalarChannelAttributeName@DataReader@AdvionData@@QEAAPEBDHH@Z
+     190  0x29a10  ?getScalarChannelAttributeNameW@DataReader@AdvionData@@QEAAPEB_WHH@Z
+     191  0x29a60  ?getScalarChannelAttributeValue@DataReader@AdvionData@@QEAANHH@Z
+     192  0x29820  ?getScalarChannelName@DataReader@AdvionData@@QEAAPEBDH@Z
+     193  0x29860  ?getScalarChannelNameW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     194  0x29980  ?getScalarChannelNumAttributes@DataReader@AdvionData@@QEAAHH@Z
+     195  0x298a0  ?getScalarChannelNumSamples@DataReader@AdvionData@@QEAAHH@Z
+     196  0x298e0  ?getScalarChannelTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+     197  0x29930  ?getScalarChannelValues@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+     198  0x295a0  ?getScanModeIndex@DataReader@AdvionData@@QEAAHXZ
+     199  0x29620  ?getSegmentTime@DataReader@AdvionData@@QEAANH@Z
+     200  0x291a0  ?getSoftwareVersion@DataReader@AdvionData@@QEAAPEBDXZ
+     201  0x291e0  ?getSoftwareVersionW@DataReader@AdvionData@@QEAAPEB_WXZ
+     202  0x28eb0  ?getSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+     203  0x29120  ?getTIC@DataReader@AdvionData@@QEAAMH@Z
+     204  0x296e0  ?getTuneParametersXML@DataReader@AdvionData@@QEAAPEBDH@Z
+     205  0x29720  ?getTuneParametersXmlW@DataReader@AdvionData@@QEAAPEB_WH@Z
+     206  0x65140  ?get_attribute@c_scalarChannel@AdvionData@@QEAAAEAVc_Attribute@2@_K@Z
+     207  0x43750  ?get_attribute@c_scalarChannel@AdvionData@@QEBAAEBVc_Attribute@2@_K@Z
+     208  0x72a30  ?get_dataType@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     209  0x43790  ?get_date@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     210  0x65180  ?get_entry@c_scalarChannel@AdvionData@@QEAAAEAVc_entry@2@_K@Z
+     211  0x437d0  ?get_entry@c_scalarChannel@AdvionData@@QEBAAEBVc_entry@2@_K@Z
+     212  0x271c0  ?get_file@c_auxFiles@AdvionData@@QEAAAEAVc_AuxFile@2@_K@Z
+     213  0x27200  ?get_file@c_auxFiles@AdvionData@@QEBAAEBVc_AuxFile@2@_K@Z
+     214  0x43820  ?get_firmwareVersion@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     215  0x43860  ?get_hardwareID@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     216  0x15960  ?get_hardwareType@c_acquisitionMetadata@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     217  0x27240  ?get_index@c_AuxFile@AdvionData@@QEBAAEBHXZ
+     218  0x438a0  ?get_index@c_scan@AdvionData@@QEBAAEBIXZ
+     219  0x159a0  ?get_ionSourceFile@c_segment@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     220  0x438e0  ?get_name@c_Attribute@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     221  0x27280  ?get_name@c_AuxFile@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     222  0x43920  ?get_name@c_scalarChannel@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     223  0x43960  ?get_samplesPerScan@c_scans@AdvionData@@QEBAAEBHXZ
+     224  0x72cb0  ?get_scan@c_scans@AdvionData@@QEAAAEAVc_scan@2@_K@Z
+     225  0x439a0  ?get_scan@c_scans@AdvionData@@QEBAAEBVc_scan@2@_K@Z
+     226  0x15e00  ?get_scanModeIndex@c_acquisitionMetadata@AdvionData@@QEBAAEBIXZ
+     227  0x15e40  ?get_segment@c_acquisitionMetadata@AdvionData@@QEAAAEAVc_segment@2@_K@Z
+     228  0x15e80  ?get_segment@c_acquisitionMetadata@AdvionData@@QEBAAEBVc_segment@2@_K@Z
+     229  0x439f0  ?get_size@c_scan@AdvionData@@QEBAAEBIXZ
+     230  0x43a30  ?get_softwareVersion@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     231  0x15ec0  ?get_startTime@c_segment@AdvionData@@QEBAAEBNXZ
+     232  0x43a70  ?get_storeAsFloat@c_scans@AdvionData@@QEBAAEB_NXZ
+     233  0x43ab0  ?get_tic@c_scan@AdvionData@@QEBAAEBNXZ
+     234  0x43af0  ?get_time@c_entry@AdvionData@@QEBAAEBNXZ
+     235  0x43b30  ?get_time@c_scan@AdvionData@@QEBAAEBNXZ
+     236  0x15f00  ?get_tuneParamsFile@c_segment@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     237  0x273c0  ?get_type@c_AuxFile@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     238  0x43b70  ?get_value@c_Attribute@AdvionData@@QEBAAEBNXZ
+     239  0x43bb0  ?get_value@c_entry@AdvionData@@QEBAAEBNXZ
+     240  0x15f60  ?get_version@c_acquisitionMetadata@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     241  0x27400  ?get_version@c_auxFiles@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     242  0x651d0  ?get_version@c_scalarChannel@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     243  0x43bf0  ?get_version@c_scans@AdvionData@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     244  0x6a610  ?getenum_dataType@c_scans@AdvionData@@QEBA?AW4Scans_enum_dataType@12@XZ
+     245  0x59df0  ?init@c_Attribute@AdvionData@@AEAAXXZ
+     246  0x1f940  ?init@c_AuxFile@AdvionData@@AEAAXXZ
+     247   0x4310  ?init@c_acquisitionMetadata@AdvionData@@AEAAXXZ
+     248  0x20ce0  ?init@c_auxFiles@AdvionData@@AEAAXXZ
+     249  0x593c0  ?init@c_entry@AdvionData@@AEAAXXZ
+     250  0x5b610  ?init@c_scalarChannel@AdvionData@@AEAAXXZ
+     251  0x69710  ?init@c_scan@AdvionData@@AEAAXXZ
+     252  0x6b8b0  ?init@c_scans@AdvionData@@AEAAXXZ
+     253   0x2c50  ?init@c_segment@AdvionData@@AEAAXXZ
+     254  0x656d0  ?insert_attribute@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@_K@Z
+     255  0x65760  ?insert_attribute@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@_KPEAVc_Attribute@2@@Z
+     256  0x657f0  ?insert_entry@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@_K@Z
+     257  0x65880  ?insert_entry@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@_KPEAVc_entry@2@@Z
+     258  0x276a0  ?insert_file@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@_K@Z
+     259  0x27730  ?insert_file@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@_KPEAVc_AuxFile@2@@Z
+     260  0x72f60  ?insert_scan@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@_K@Z
+     261  0x72ff0  ?insert_scan@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@_KPEAVc_scan@2@@Z
+     262  0x16330  ?insert_segment@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@_K@Z
+     263  0x163c0  ?insert_segment@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@_KPEAVc_segment@2@@Z
+     264  0x59720  ?is_occurs_ok@c_Attribute@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     265  0x1f170  ?is_occurs_ok@c_AuxFile@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     266  0x168e0  ?is_occurs_ok@c_acquisitionMetadata@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     267  0x27910  ?is_occurs_ok@c_auxFiles@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     268  0x58d20  ?is_occurs_ok@c_entry@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     269  0x5a780  ?is_occurs_ok@c_scalarChannel@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     270  0x68ee0  ?is_occurs_ok@c_scan@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     271  0x6a7d0  ?is_occurs_ok@c_scans@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     272   0x2480  ?is_occurs_ok@c_segment@AdvionData@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     273  0x73410  ?isset_date@c_scans@AdvionData@@QEBA_NXZ
+     274  0x73450  ?isset_firmwareVersion@c_scans@AdvionData@@QEBA_NXZ
+     275  0x73490  ?isset_hardwareID@c_scans@AdvionData@@QEBA_NXZ
+     276  0x16c00  ?isset_hardwareType@c_acquisitionMetadata@AdvionData@@QEBA_NXZ
+     277  0x16c40  ?isset_scanModeIndex@c_acquisitionMetadata@AdvionData@@QEBA_NXZ
+     278  0x734d0  ?isset_softwareVersion@c_scans@AdvionData@@QEBA_NXZ
+     279  0x73510  ?isset_storeAsFloat@c_scans@AdvionData@@QEBA_NXZ
+     280  0x43c30  ?isset_tic@c_scan@AdvionData@@QEBA_NXZ
+     281  0x16c80  ?isset_version@c_acquisitionMetadata@AdvionData@@QEBA_NXZ
+     282  0x279e0  ?isset_version@c_auxFiles@AdvionData@@QEBA_NXZ
+     283  0x65910  ?isset_version@c_scalarChannel@AdvionData@@QEBA_NXZ
+     284  0x73550  ?isset_version@c_scans@AdvionData@@QEBA_NXZ
+     285  0x598a0  ?marshal@c_Attribute@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     286  0x1f330  ?marshal@c_AuxFile@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     287   0x3880  ?marshal@c_acquisitionMetadata@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     288   0x3a20  ?marshal@c_acquisitionMetadata@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     289   0x3830  ?marshal@c_acquisitionMetadata@AdvionData@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     290   0x3790  ?marshal@c_acquisitionMetadata@AdvionData@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     291   0x37e0  ?marshal@c_acquisitionMetadata@AdvionData@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     292  0x20380  ?marshal@c_auxFiles@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     293  0x20520  ?marshal@c_auxFiles@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     294  0x20330  ?marshal@c_auxFiles@AdvionData@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     295  0x20290  ?marshal@c_auxFiles@AdvionData@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     296  0x202e0  ?marshal@c_auxFiles@AdvionData@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     297  0x58ea0  ?marshal@c_entry@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     298  0x5aa90  ?marshal@c_scalarChannel@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     299  0x5ac30  ?marshal@c_scalarChannel@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     300  0x5aa40  ?marshal@c_scalarChannel@AdvionData@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     301  0x5a9a0  ?marshal@c_scalarChannel@AdvionData@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     302  0x5a9f0  ?marshal@c_scalarChannel@AdvionData@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     303  0x690a0  ?marshal@c_scan@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     304  0x6aab0  ?marshal@c_scans@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     305  0x6ac50  ?marshal@c_scans@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     306  0x6aa60  ?marshal@c_scans@AdvionData@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     307  0x6a9c0  ?marshal@c_scans@AdvionData@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     308  0x6aa10  ?marshal@c_scans@AdvionData@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     309   0x2640  ?marshal@c_segment@AdvionData@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     310  0x65950  ?marshal_attributes@c_Attribute@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     311  0x27a20  ?marshal_attributes@c_AuxFile@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     312   0x3ee0  ?marshal_attributes@c_acquisitionMetadata@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     313  0x209e0  ?marshal_attributes@c_auxFiles@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     314  0x65960  ?marshal_attributes@c_entry@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     315  0x5b0e0  ?marshal_attributes@c_scalarChannel@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     316  0x73590  ?marshal_attributes@c_scan@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     317  0x6b100  ?marshal_attributes@c_scans@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     318  0x16d10  ?marshal_attributes@c_segment@AdvionData@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     319  0x59b80  ?marshal_child_elements@c_Attribute@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     320  0x1f610  ?marshal_child_elements@c_AuxFile@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     321   0x3f40  ?marshal_child_elements@c_acquisitionMetadata@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     322  0x20a40  ?marshal_child_elements@c_auxFiles@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     323  0x59150  ?marshal_child_elements@c_entry@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     324  0x5b140  ?marshal_child_elements@c_scalarChannel@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     325  0x69350  ?marshal_child_elements@c_scan@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     326  0x6b160  ?marshal_child_elements@c_scans@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     327   0x2920  ?marshal_child_elements@c_segment@AdvionData@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     328  0x172b0  ?ns_map@c_acquisitionMetadata@AdvionData@@SAPEBUs_ns_map@lmx@@XZ
+     329  0x27b60  ?ns_map@c_auxFiles@AdvionData@@SAPEBUs_ns_map@lmx@@XZ
+     330  0x65b10  ?ns_map@c_scalarChannel@AdvionData@@SAPEBUs_ns_map@lmx@@XZ
+     331  0x73750  ?ns_map@c_scans@AdvionData@@SAPEBUs_ns_map@lmx@@XZ
+     332  0x1eb60  ?registerExceptionHandler@AdvionUtility@AdvionData@@SAXPEB_W@Z
+     333  0x59ae0  ?reset@c_Attribute@AdvionData@@QEAAXXZ
+     334  0x1f570  ?reset@c_AuxFile@AdvionData@@QEAAXXZ
+     335   0x3e40  ?reset@c_acquisitionMetadata@AdvionData@@QEAAXXZ
+     336  0x20940  ?reset@c_auxFiles@AdvionData@@QEAAXXZ
+     337  0x590e0  ?reset@c_entry@AdvionData@@QEAAXXZ
+     338  0x5b040  ?reset@c_scalarChannel@AdvionData@@QEAAXXZ
+     339  0x692e0  ?reset@c_scan@AdvionData@@QEAAXXZ
+     340  0x6b060  ?reset@c_scans@AdvionData@@QEAAXXZ
+     341   0x2880  ?reset@c_segment@AdvionData@@QEAAXXZ
+     342  0x28c20  ?setDeltaBackgroundParameters@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@NNNNH@Z
+     343  0x47700  ?setMetadata@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD000@Z
+     344  0x47760  ?setMetadata@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W000@Z
+     345  0x6a5c0  ?set_dataType@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     346  0x56040  ?set_date@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     347  0x56080  ?set_firmwareVersion@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     348  0x560d0  ?set_hardwareID@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     349  0x1a380  ?set_hardwareType@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     350  0x1f120  ?set_index@c_AuxFile@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+     351  0x68e00  ?set_index@c_scan@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBI@Z
+     352  0x1a3c0  ?set_ionSourceFile@c_segment@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     353  0x66880  ?set_name@c_Attribute@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     354  0x283d0  ?set_name@c_AuxFile@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     355  0x668c0  ?set_name@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     356  0x6a740  ?set_samplesPerScan@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+     357   0x3620  ?set_scanModeIndex@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBI@Z
+     358  0x68e50  ?set_size@c_scan@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBI@Z
+     359  0x56120  ?set_softwareVersion@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     360   0x2430  ?set_startTime@c_segment@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     361  0x56170  ?set_storeAsFloat@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEB_N@Z
+     362  0x561c0  ?set_tic@c_scan@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     363  0x58cd0  ?set_time@c_entry@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     364  0x68db0  ?set_time@c_scan@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     365  0x1a400  ?set_tuneParamsFile@c_segment@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     366  0x28410  ?set_type@c_AuxFile@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     367  0x66900  ?set_value@c_Attribute@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     368  0x66940  ?set_value@c_entry@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBN@Z
+     369  0x1a440  ?set_version@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     370  0x28450  ?set_version@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     371  0x66980  ?set_version@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     372  0x73f50  ?set_version@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     373  0x6a690  ?setenum_dataType@c_scans@AdvionData@@QEAA_NW4Scans_enum_dataType@12@@Z
+     374  0x46f50  ?size_attribute@c_scalarChannel@AdvionData@@QEBA_KXZ
+     375  0x46f90  ?size_entry@c_scalarChannel@AdvionData@@QEBA_KXZ
+     376  0x28570  ?size_file@c_auxFiles@AdvionData@@QEBA_KXZ
+     377  0x46fd0  ?size_scan@c_scans@AdvionData@@QEBA_KXZ
+     378  0x1a6f0  ?size_segment@c_acquisitionMetadata@AdvionData@@QEBA_KXZ
+     379  0x59650  ?swap@c_Attribute@AdvionData@@QEAAXAEAV12@@Z
+     380  0x1f030  ?swap@c_AuxFile@AdvionData@@QEAAXAEAV12@@Z
+     381   0x2fa0  ?swap@c_acquisitionMetadata@AdvionData@@QEAAXAEAV12@@Z
+     382  0x1fc60  ?swap@c_auxFiles@AdvionData@@QEAAXAEAV12@@Z
+     383  0x58c00  ?swap@c_entry@AdvionData@@QEAAXAEAV12@@Z
+     384  0x5a100  ?swap@c_scalarChannel@AdvionData@@QEAAXAEAV12@@Z
+     385  0x68c90  ?swap@c_scan@AdvionData@@QEAAXAEAV12@@Z
+     386  0x69bc0  ?swap@c_scans@AdvionData@@QEAAXAEAV12@@Z
+     387   0x2340  ?swap@c_segment@AdvionData@@QEAAXAEAV12@@Z
+     388  0x599d0  ?unmarshal@c_Attribute@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     389  0x1f460  ?unmarshal@c_AuxFile@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     390   0x3b50  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     391   0x3d20  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     392  0x1b720  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     393   0x39d0  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     394   0x3970  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     395   0x38d0  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     396   0x3920  ?unmarshal@c_acquisitionMetadata@AdvionData@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     397  0x20650  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     398  0x20820  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     399  0x287f0  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     400  0x204d0  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     401  0x20470  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     402  0x203d0  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     403  0x20420  ?unmarshal@c_auxFiles@AdvionData@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     404  0x58fd0  ?unmarshal@c_entry@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     405  0x5ad60  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     406  0x5af30  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     407  0x66d00  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     408  0x5abe0  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     409  0x5ab80  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     410  0x5aae0  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     411  0x5ab30  ?unmarshal@c_scalarChannel@AdvionData@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     412  0x691d0  ?unmarshal@c_scan@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     413  0x6ad80  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     414  0x6af50  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     415  0x741d0  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     416  0x6ac00  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     417  0x6aba0  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     418  0x6ab00  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     419  0x6ab50  ?unmarshal@c_scans@AdvionData@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     420   0x2770  ?unmarshal@c_segment@AdvionData@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     421  0x59c20  ?unmarshal_attributes@c_Attribute@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     422  0x1f6d0  ?unmarshal_attributes@c_AuxFile@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     423   0x4040  ?unmarshal_attributes@c_acquisitionMetadata@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     424  0x20af0  ?unmarshal_attributes@c_auxFiles@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     425  0x591f0  ?unmarshal_attributes@c_entry@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     426  0x5b290  ?unmarshal_attributes@c_scalarChannel@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     427  0x69440  ?unmarshal_attributes@c_scan@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     428  0x6b340  ?unmarshal_attributes@c_scans@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     429   0x29e0  ?unmarshal_attributes@c_segment@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     430  0x59c40  ?unmarshal_attributes_check@c_Attribute@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     431  0x1f6f0  ?unmarshal_attributes_check@c_AuxFile@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     432   0x40e0  ?unmarshal_attributes_check@c_acquisitionMetadata@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     433  0x20b90  ?unmarshal_attributes_check@c_auxFiles@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     434  0x59210  ?unmarshal_attributes_check@c_entry@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     435  0x5b330  ?unmarshal_attributes_check@c_scalarChannel@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     436  0x69460  ?unmarshal_attributes_check@c_scan@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     437  0x6b3e0  ?unmarshal_attributes_check@c_scans@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     438   0x2a00  ?unmarshal_attributes_check@c_segment@AdvionData@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     439  0x59c60  ?unmarshal_body@c_Attribute@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     440  0x1f710  ?unmarshal_body@c_AuxFile@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     441   0x4100  ?unmarshal_body@c_acquisitionMetadata@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     442  0x20bb0  ?unmarshal_body@c_auxFiles@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     443  0x59230  ?unmarshal_body@c_entry@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     444  0x5b350  ?unmarshal_body@c_scalarChannel@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     445  0x69480  ?unmarshal_body@c_scan@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     446  0x6b400  ?unmarshal_body@c_scans@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     447   0x2a20  ?unmarshal_body@c_segment@AdvionData@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     448  0x1eba0  ?unregisterExceptionHandler@AdvionUtility@AdvionData@@SAXXZ
+     449  0x744e0  ?unset_date@c_scans@AdvionData@@QEAAXXZ
+     450  0x74520  ?unset_firmwareVersion@c_scans@AdvionData@@QEAAXXZ
+     451  0x74560  ?unset_hardwareID@c_scans@AdvionData@@QEAAXXZ
+     452  0x1ba80  ?unset_hardwareType@c_acquisitionMetadata@AdvionData@@QEAAXXZ
+     453   0x3670  ?unset_scanModeIndex@c_acquisitionMetadata@AdvionData@@QEAAXXZ
+     454  0x745a0  ?unset_softwareVersion@c_scans@AdvionData@@QEAAXXZ
+     455  0x6a790  ?unset_storeAsFloat@c_scans@AdvionData@@QEAAXXZ
+     456  0x68ea0  ?unset_tic@c_scan@AdvionData@@QEAAXXZ
+     457   0x35d0  ?unset_version@c_acquisitionMetadata@AdvionData@@QEAAXXZ
+     458  0x20160  ?unset_version@c_auxFiles@AdvionData@@QEAAXXZ
+     459  0x5a730  ?unset_version@c_scalarChannel@AdvionData@@QEAAXXZ
+     460  0x6a570  ?unset_version@c_scans@AdvionData@@QEAAXXZ
+     461  0x67b90  ?writeEntries@ScalarChannelWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEAN0H@Z
+     462  0x678c0  ?writeEntry@ScalarChannelWriter@AdvionData@@QEAA?AW4ErrorCode@2@NN@Z
+     463  0x479a0  ?writeExperiment@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+     464  0x479f0  ?writeExperiment@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+     465  0x680b0  ?writeHeader@ScalarChannelWriter@AdvionData@@AEAA?AW4ErrorCode@2@XZ
+     466  0x47a40  ?writeIonSourceOpt@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+     467  0x47a90  ?writeIonSourceOpt@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+     468  0x47c80  ?writeLogMessage@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+     469  0x47cd0  ?writeLogMessage@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+     470  0x47900  ?writeMethod@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+     471  0x47950  ?writeMethod@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+     472  0x47f70  ?writeScalarEntries@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEAN0H@Z
+     473  0x47f10  ?writeScalarEntry@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HNN@Z
+     474  0x47d70  ?writeScanData@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBIHNN@Z
+     475  0x47de0  ?writeScanData@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBMHNN@Z
+     476  0x47b80  ?writeScanModeIndex@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@H@Z
+     477  0x47bc0  ?writeSegments@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEANPEAPEBD1@Z
+     478  0x47c20  ?writeSegments@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEANPEAPEB_W1@Z
+     479  0x47d20  ?writeSpectrumMasses@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBMH@Z
+     480  0x47fd0  ?writeTextToFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEBD@Z
+     481  0x48020  ?writeTextToFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEB_W@Z
+     482  0x47ae0  ?writeTuneParams@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBD@Z
+     483  0x47b30  ?writeTuneParams@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         0009b405 0000000180001000 TEXT
+  1 .rdata        00044340 000000018009d000 DATA
+  2 .data         00002000 00000001800e2000 DATA
+  3 .pdata        0000efd0 00000001800e6000 DATA
+  4 .gfids        0000003c 00000001800f5000 DATA
+  5 .rsrc         00000500 00000001800f6000 DATA
+  6 .reloc        00000d58 00000001800f7000 DATA
+
+SYMBOL TABLE:

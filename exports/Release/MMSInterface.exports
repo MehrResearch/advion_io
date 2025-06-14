@@ -1,0 +1,670 @@
+
+lib/Release/MMSInterface.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:51:25 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000023000
+SizeOfInitializedData   0000000000017200
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     0000000000021288
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             00751000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 000000000002ebc0 000046b0 Export Directory [.edata (or where ever we found it)]
+Entry 1 0000000000033270 00000168 Import Directory [parts of .idata]
+Entry 2 000000000074f000 0000050c Resource Directory [.rsrc]
+Entry 3 000000000074b000 0000213c Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 0000000000750000 00000348 Base Relocation Directory [.reloc]
+Entry 6 00000000000280c0 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 0000000000028120 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 0000000000024000 00000868 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 00033a50 time 00000000 fwd 00000000 name 00034e7e addr 00024678
+
+    DLL Name: lmx-MD-vc14.dll
+    Hint/Ord  Name
+         513  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@H@Z
+         511  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@@Z
+         368  ?get_debug_error@c_xml_reader@lmx@@QEBAAEBUs_debug_error@2@XZ
+         388  ?get_element_ns_id@c_xml_reader@lmx@@QEBAHXZ
+         391  ?get_element_value@c_xml_reader@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@@Z
+         748  ?tokenise@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@W4elxp_attr_elem@2@@Z
+         677  ?set_ns_map@c_xml_reader@lmx@@QEAAXPEBUs_ns_map@2@@Z
+         282  ?add_namespace_mapping@c_xml_reader@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+         599  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+         598  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+         770  ?unmarshal_simple_body@c_unmarshal_helper@lmx@@EEAA_NPEAW4elmx_error@2@@Z
+         764  ?unmarshal_complex_content@c_unmarshal_helper@lmx@@QEAA?AW4elmx_error@2@QEBDH@Z
+          71  ??0c_unmarshal_helper@lmx@@QEAA@AEAVc_xml_reader@1@@Z
+         109  ??1c_known_elements_selector@lmx@@QEAA@XZ
+         442  ?get_local_name@c_cracked_name@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+          52  ??0c_known_elements_selector@lmx@@QEAA@AEAVc_xml_reader@1@PEBUs_known_elements@1@@Z
+         500  ?get_whitespace_handling@c_untyped_validation_spec@lmx@@QEBA?AW4elmx_whitespace@2@XZ
+         315  ?end_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+         738  ?start_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+          72  ??0c_untyped_validation_spec@lmx@@QEAA@W4elmx_whitespace@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@Q6A?AW4elmx_error@1@AEAVc_xml_reader@1@1@Z@Z
+         369  ?get_debug_error@c_xml_writer@lmx@@QEBAAEBUs_debug_error@2@XZ
+         308  ?convert@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+         518  ?include_xml_decl@c_xml_writer@lmx@@2HB
+           3  ??0c_big_int@lmx@@QEAA@PEBD@Z
+         557  ?is_valid_integer@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+         536  ?is_not_choice_or_choice_is_not_set@c_unmarshal_helper@lmx@@EEBA_NXZ
+         535  ?is_nil@c_unmarshal_helper@lmx@@EEBA_NXZ
+         116  ??1c_unmarshal_helper@lmx@@UEAA@XZ
+         123  ??1c_xml_reader_memory@lmx@@UEAA@XZ
+          83  ??0c_xml_reader_memory@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+          84  ??0c_xml_reader_memory@lmx@@QEAA@PEBD_K@Z
+         540  ?is_open@c_xml_reader_file@lmx@@QEBA_NXZ
+         121  ??1c_xml_reader_file@lmx@@UEAA@XZ
+          80  ??0c_xml_reader_file@lmx@@QEAA@PEB_W@Z
+          79  ??0c_xml_reader_file@lmx@@QEAA@PEBD@Z
+         632  ?set_code_line@c_xml_reader@lmx@@QEAAXH@Z
+         631  ?set_code_file@c_xml_reader@lmx@@QEAAXPEBD@Z
+         362  ?get_current_event@c_xml_reader@lmx@@QEBAHXZ
+         222  ??Nlmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+         381  ?get_element_event@c_xml_reader@lmx@@QEAAXPEAW4elmx_error@2@@Z
+         252  ??Plmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+         629  ?set_auto_versioning@c_xml_reader@lmx@@QEAAX_N@Z
+          90  ??1c_big_int@lmx@@QEAA@XZ
+         444  ?get_local_name@c_xml_reader@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+         464  ?get_nested_element_value@c_xml_reader@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0W4elmx_whitespace@2@_N@Z
+         759  ?unmarshal_attribute_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+         761  ?unmarshal_child_element_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@PEBUs_event_map@2@@Z
+          81  ??0c_xml_reader_local@lmx@@QEAA@PEAVc_xml_reader@1@@Z
+         122  ??1c_xml_reader_local@lmx@@QEAA@XZ
+         509  ?global_check_exception@lmx@@3Vc_check_exception@1@A
+          87  ??0c_xml_writer_local@lmx@@QEAA@AEAVc_xml_writer@1@@Z
+         125  ??1c_xml_writer_local@lmx@@QEAA@XZ
+         361  ?get_convenience_options@c_xml_writer@lmx@@SAHXZ
+         306  ?conditionally_select_ns_map@c_xml_writer@lmx@@QEAAXPEBUs_ns_map@2@@Z
+         307  ?conditionally_write_ns_attrs@c_xml_writer@lmx@@QEAAX_N@Z
+         579  ?marshal_attribute_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@@Z
+         585  ?marshal_element_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@PEBUs_ns_map@2@@Z
+         783  ?vtostring@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@AEBV23@@Z
+         784  ?vtostring@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+         124  ??1c_xml_writer@lmx@@UEAA@XZ
+          85  ??0c_xml_writer@lmx@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@HPEBD111@Z
+
+  lookup 000337b8 time 00000000 fwd 00000000 name 00034f08 addr 000243e0
+
+    DLL Name: SETUPAPI.dll
+    Hint/Ord  Name
+         397  SetupDiEnumDeviceInterfaces
+         439  SetupDiGetDeviceInterfaceDetailA
+         413  SetupDiGetClassDevsA
+         393  SetupDiDestroyDeviceInfoList
+
+  lookup 000334a0 time 00000000 fwd 00000000 name 00034fec addr 000240c8
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+         818  GlobalUnlock
+         811  GlobalLock
+        1377  Sleep
+        1072  QueryPerformanceCounter
+        1198  RtlCaptureContext
+         127  CloseHandle
+        1205  RtlLookupFunctionEntry
+        1212  RtlVirtualUnwind
+        1426  UnhandledExceptionFilter
+        1362  SetUnhandledExceptionFilter
+         527  GetCurrentProcess
+        1392  TerminateProcess
+         880  IsProcessorFeaturePresent
+         874  IsDebuggerPresent
+         709  GetStartupInfoW
+         621  GetModuleHandleW
+         528  GetCurrentProcessId
+         532  GetCurrentThreadId
+         733  GetSystemTimeAsFileTime
+         279  DisableThreadLibraryCalls
+         852  InitializeSListHead
+         598  GetLastError
+         179  CreateEventA
+        1467  WaitForSingleObject
+         654  GetOverlappedResult
+         278  DeviceIoControl
+         186  CreateFileA
+        1073  QueryPerformanceFrequency
+
+  lookup 000337e0 time 00000000 fwd 00000000 name 00035038 addr 00024408
+
+    DLL Name: USER32.dll
+    Hint/Ord  Name
+         850  UnregisterDeviceNotification
+         657  RegisterDeviceNotificationA
+
+  lookup 000333d8 time 00000000 fwd 00000000 name 000350be addr 00024000
+
+    DLL Name: AdvionCommon.dll
+    Hint/Ord  Name
+          37  ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+
+  lookup 000333e8 time 00000000 fwd 00000000 name 000357b0 addr 00024010
+
+    DLL Name: AdvionObjects.dll
+    Hint/Ord  Name
+        2158  ?marshal@c_tuneParameters@AdvionObjects@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+         361  ??1c_tuneParameters@AdvionObjects@@UEAA@XZ
+         246  ??0c_tuneParameters@AdvionObjects@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+        2131  ?marshal@c_ionSourceOptimization@AdvionObjects@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+         354  ??1c_ionSourceOptimization@AdvionObjects@@UEAA@XZ
+         202  ??0c_ionSourceOptimization@AdvionObjects@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+        2390  ?parseTuneParameters@ObjectUtility@AdvionObjects@@SA?AVc_tuneParameters@2@PEBDPEAW4ErrorCode@2@@Z
+         196  ??0c_calibrationSegment@AdvionObjects@@QEAA@AEBV01@@Z
+         195  ??0c_calibration@AdvionObjects@@QEAA@XZ
+        2754  ?set_version@c_tuneParameters@AdvionObjects@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+        3451  ?unset_massCalibration@c_CmsTuneParametersType@AdvionObjects@@QEAAXXZ
+        1210  ?get_massCalibration@c_CmsTuneParametersType@AdvionObjects@@QEAAAEAVc_massCalibration@2@XZ
+        3404  ?unset_calibration@c_CmsTuneParametersType@AdvionObjects@@QEAAXXZ
+        1891  ?isset_calibration@c_CmsTuneParametersType@AdvionObjects@@QEBA_NXZ
+        1057  ?get_calibration@c_CmsTuneParametersType@AdvionObjects@@QEAAAEAVc_calibration@2@XZ
+        2796  ?size_calibration@c_massCalibration@AdvionObjects@@QEBA_KXZ
+        1060  ?get_calibration@c_massCalibration@AdvionObjects@@QEBAAEBVc_speedCalibration@2@_K@Z
+        2817  ?size_segment@c_speedCalibration@AdvionObjects@@QEBA_KXZ
+        1313  ?get_segment@c_speedCalibration@AdvionObjects@@QEBAAEBVc_calibrationSegment@2@_K@Z
+        2816  ?size_segment@c_calibration@AdvionObjects@@QEBA_KXZ
+         539  ?append_segment@c_calibration@AdvionObjects@@QEAA?AW4elmx_error@lmx@@PEAVc_calibrationSegment@2@@Z
+         575  ?assign_calibration@c_CmsTuneParametersType@AdvionObjects@@QEAAAEAVc_calibration@2@PEAV32@@Z
+
+  lookup 00033588 time 00000000 fwd 00000000 name 00035952 addr 000241b0
+
+    DLL Name: LicenseGenerator.dll
+    Hint/Ord  Name
+           8  ?LicenseDecodeStrV2@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+           4  ?EncodedLicenseLengthV1@LicenseTools@LicenseGenerator@@SAHEE@Z
+           7  ?LicenseDecodeStrV1@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+           5  ?EncodedLicenseLengthV2@LicenseTools@LicenseGenerator@@SAHEEEE@Z
+           6  ?GenerateLicenseKey@LicenseTools@LicenseGenerator@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@@Z
+
+  lookup 000335b8 time 00000000 fwd 00000000 name 00036840 addr 000241e0
+
+    DLL Name: MSVCP140.dll
+    Hint/Ord  Name
+         580  ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+        1290  ?tie@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_ostream@DU?$char_traits@D@std@@@2@XZ
+         406  ?_BADOFF@std@@3_JB
+        1310  ?uncaught_exception@std@@YA_NXZ
+         469  ?_Getgloballocale@locale@std@@CAPEAV_Locimp@12@XZ
+         109  ??0_Lockit@std@@QEAA@H@Z
+         165  ??1_Lockit@std@@QEAA@XZ
+         872  ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+        1221  ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+         865  ?fill@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADXZ
+         875  ?gbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+         488  ?_Gninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+        1089  ?pbump@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXH@Z
+         125  ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         433  ?_Getcat@?$codecvt@DDU_Mbstatet@@@std@@SA_KPEAPEBVfacet@locale@2@PEBV42@@Z
+         137  ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+         552  ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+         639  ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+        1237  ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+        1307  ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1214  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+        1215  ?setp@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD0@Z
+         857  ?epptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1347  ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+        1350  ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+        1205  ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+        1277  ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1014  ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+         134  ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1341  ?width@ios_base@std@@QEAA_J_J@Z
+        1342  ?width@ios_base@std@@QEBA_JXZ
+         871  ?flags@ios_base@std@@QEBAHXZ
+         965  ?good@ios_base@std@@QEBA_NXZ
+        1164  ?rdstate@ios_base@std@@QEBAHXZ
+         669  ?always_noconv@codecvt_base@std@@QEBA_NXZ
+         305  ??Bid@locale@std@@QEAA_KXZ
+         255  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
+         969  ?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A
+         427  ?_Fiopen@std@@YAPEAU_iobuf@@PEBDHH@Z
+         429  ?_Fiopen@std@@YAPEAU_iobuf@@PEB_WHH@Z
+          47  ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         960  ?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEBA?AVlocale@2@XZ
+         501  ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXXZ
+         500  ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAPEAD0PEAH001@Z
+        1319  ?unshift@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEAD1AEAPEAD@Z
+          12  ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         485  ?_Gndec@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+          37  ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+        1018  ?in@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+        1075  ?out@?$codecvt@DDU_Mbstatet@@@std@@QEBAHAEAU_Mbstatet@@PEBD1AEAPEBDPEAD3AEAPEAD@Z
+        1249  ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+         586  ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAPEADXZ
+        1159  ?rdbuf@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBAPEAV?$basic_streambuf@DU?$char_traits@D@std@@@2@XZ
+         651  ?_Xbad_alloc@std@@YAXXZ
+         655  ?_Xout_of_range@std@@YAXPEBD@Z
+         654  ?_Xlength_error@std@@YAXPEBD@Z
+         845  ?eback@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         966  ?gptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1086  ?pbase@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1095  ?pptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+         848  ?egptr@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEBAPEADXZ
+        1210  ?setg@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAAXPEAD00@Z
+        1246  ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+
+  lookup 000337f8 time 00000000 fwd 00000000 name 0003693e addr 00024420
+
+    DLL Name: VCRUNTIME140.dll
+    Hint/Ord  Name
+          35  __std_terminate
+          34  __std_exception_destroy
+          59  memcmp
+          61  memmove
+          54  _purecall
+          58  memchr
+          66  strstr
+          64  strchr
+          60  memcpy
+           1  _CxxThrowException
+          62  memset
+          14  __CxxFrameHandler3
+           8  __C_specific_handler
+          37  __std_type_info_destroy_list
+          33  __std_exception_copy
+
+  lookup 00033980 time 00000000 fwd 00000000 name 00036c74 addr 000245a8
+
+    DLL Name: api-ms-win-crt-stdio-l1-1-0.dll
+    Hint/Ord  Name
+           0  __acrt_iob_func
+           3  __stdio_common_vfprintf
+         120  fgetc
+         125  fopen
+          16  __stdio_common_vsscanf
+         116  fclose
+         138  fwrite
+          57  _get_stream_buffer_pointers
+          47  _fseeki64
+         136  fsetpos
+         157  ungetc
+         152  setvbuf
+          20  __stdio_common_vswscanf
+         127  fputc
+          13  __stdio_common_vsprintf
+         121  fgetpos
+          17  __stdio_common_vswprintf
+         119  fflush
+
+  lookup 00033a18 time 00000000 fwd 00000000 name 00036c94 addr 00024640
+
+    DLL Name: api-ms-win-crt-string-l1-1-0.dll
+    Hint/Ord  Name
+         143  strncpy
+          74  _wcsicmp
+         142  strncmp
+
+  lookup 000338c8 time 00000000 fwd 00000000 name 00036cb6 addr 000244f0
+
+    DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+    Hint/Ord  Name
+          25  malloc
+           8  _callnewh
+          24  free
+
+  lookup 000338f8 time 00000000 fwd 00000000 name 00036cd6 addr 00024520
+
+    DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+    Hint/Ord  Name
+         103  terminate
+          56  _invalid_parameter_noinfo
+          33  _errno
+          55  _initterm_e
+          54  _initterm
+          22  _cexit
+          29  _crt_at_quick_exit
+          30  _crt_atexit
+          34  _execute_onexit_table
+          60  _register_onexit_function
+          52  _initialize_onexit_table
+          51  _initialize_narrow_environment
+          24  _configure_narrow_argv
+          63  _seh_filter_dll
+          19  _beginthread
+          57  _invalid_parameter_noinfo_noreturn
+
+  lookup 000338a0 time 00000000 fwd 00000000 name 00036cf8 addr 000244c8
+
+    DLL Name: api-ms-win-crt-filesystem-l1-1-0.dll
+    Hint/Ord  Name
+          36  _unlock_file
+          22  _lock_file
+          53  _wremove
+          63  remove
+
+  lookup 00033a38 time 00000000 fwd 00000000 name 00036d1e addr 00024660
+
+    DLL Name: api-ms-win-crt-time-l1-1-0.dll
+    Hint/Ord  Name
+          48  _time64
+          69  clock
+
+  lookup 00033878 time 00000000 fwd 00000000 name 00036d3e addr 000244a0
+
+    DLL Name: api-ms-win-crt-convert-l1-1-0.dll
+    Hint/Ord  Name
+         100  strtoul
+          97  strtol
+          80  atoi
+          94  strtod
+
+  lookup 000338e8 time 00000000 fwd 00000000 name 00036d60 addr 00024510
+
+    DLL Name: api-ms-win-crt-locale-l1-1-0.dll
+    Hint/Ord  Name
+          18  localeconv
+
+Export Table:
+ DLL name: MMSInterface.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1  0x14a70  ??0MMSInterface@@QEAA@PEAD@Z
+       2   0xad80  ??0c_flashMemory@FlashMemory@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+       3   0xc670  ??0c_flashMemory@FlashMemory@@QEAA@AEBV01@@Z
+       4   0xb970  ??0c_flashMemory@FlashMemory@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+       5   0xbc70  ??0c_flashMemory@FlashMemory@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+       6   0xb670  ??0c_flashMemory@FlashMemory@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+       7   0xb070  ??0c_flashMemory@FlashMemory@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+       8   0xb370  ??0c_flashMemory@FlashMemory@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+       9   0xa990  ??0c_flashMemory@FlashMemory@@QEAA@XZ
+      10  0x1dd00  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@AEAVc_xml_reader@lmx@@PEAW4elmx_error@3@@Z
+      11  0x1e300  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@AEBV01@@Z
+      12  0x1df70  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAW4elmx_error@lmx@@PEAUs_debug_error@5@@Z
+      13  0x1e020  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@AEBVc_any_info@lmx@@PEAW4elmx_error@3@PEAUs_debug_error@3@@Z
+      14  0x1ded0  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@PEBD_KPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      15  0x1dd90  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@QEBDPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      16  0x1de30  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@QEB_WPEAW4elmx_error@lmx@@PEAUs_debug_error@3@@Z
+      17  0x1dca0  ??0c_volatileFlashMemory@VolatileFlashMemory@@QEAA@XZ
+      18  0x14e10  ??1MMSInterface@@QEAA@XZ
+      19   0xc410  ??1c_flashMemory@FlashMemory@@UEAA@XZ
+      20  0x1e2a0  ??1c_volatileFlashMemory@VolatileFlashMemory@@UEAA@XZ
+      21   0xce80  ??4c_flashMemory@FlashMemory@@QEAAAEAV01@AEBV01@@Z
+      22  0x1e430  ??4c_volatileFlashMemory@VolatileFlashMemory@@QEAAAEAV01@AEBV01@@Z
+      23   0x5590  ??_FMMSInterface@@QEAAXXZ
+      24  0x13dc0  ?AllowHeaterChange@MMSInterface@@AEAAEE@Z
+      25  0x1c550  ?ClearFX2Buffers@MMSInterface@@QEAAIXZ
+      26  0x19950  ?ClearScanQueue@MMSInterface@@QEAAIXZ
+      27  0x17b00  ?ConfigureAnalogInput@MMSInterface@@QEAAIHH@Z
+      28  0x19f90  ?DACSetup@MMSInterface@@QEAAIGG@Z
+      29  0x1a3b0  ?DACSetupHS@MMSInterface@@AEAAIGG@Z
+      30  0x17c70  ?DebugOut@MMSInterface@@AEAAXPEADZZ
+      31  0x1b4d0  ?EnableStatusReporting@MMSInterface@@QEAAX_N@Z
+      32  0x19df0  ?FlushTuneParameters@MMSInterface@@QEAAXXZ
+      33  0x1b000  ?ForceStatusUpdate@MMSInterface@@QEAAIXZ
+      34   0x76c0  ?FormatIonXML@MMSInterface@@QEAAPEADPEBD@Z
+      35   0x76b0  ?FormatTuneXML@MMSInterface@@QEAAPEADPEBD@Z
+      36  0x17490  ?GetAPCIGasHC@MMSInterface@@QEAA?AW4HeaterControllerType@@XZ
+      37  0x141a0  ?GetAPCIHeaterOn@MMSInterface@@QEAAEXZ
+      38  0x14250  ?GetAPCIHeaterTemp@MMSInterface@@QEAAMXZ
+      39  0x171f0  ?GetCapillaryHC@MMSInterface@@QEAA?AW4HeaterControllerType@@XZ
+      40  0x13ef0  ?GetCapillaryHeaterOn@MMSInterface@@QEAAEXZ
+      41  0x13fd0  ?GetCapillaryHeaterTemp@MMSInterface@@QEAAMXZ
+      42  0x15160  ?GetCommunicationState@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+      43   0x6c30  ?GetConfigFlashXML@MMSInterface@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      44  0x1a780  ?GetDACParam@MMSInterface@@QEAAIEPEAF@Z
+      45  0x17c20  ?GetDebugString@MMSInterface@@QEAAXPEAD@Z
+      46   0x75c0  ?GetDefaultIonSourceOptimization@MMSInterface@@QEAA_NPEAD_N1@Z
+      47   0x7360  ?GetDefaultTuneParameters@MMSInterface@@QEAA_NPEAD_N1@Z
+      48  0x17340  ?GetDesolvationGasHC@MMSInterface@@QEAA?AW4HeaterControllerType@@XZ
+      49  0x14420  ?GetDesolvationHeaterOn@MMSInterface@@QEAAEXZ
+      50  0x144d0  ?GetDesolvationHeaterTemp@MMSInterface@@QEAAMXZ
+      51  0x17a60  ?GetDigIn@MMSInterface@@QEAAEE@Z
+      52  0x17880  ?GetDigOut@MMSInterface@@QEAAEE@Z
+      53  0x17ab0  ?GetDigitalInput@MMSInterface@@QEAAEGE@Z
+      54  0x17080  ?GetDynodePSU@MMSInterface@@QEAA?AW4PowerSupplyType@@XZ
+      55  0x16660  ?GetFirmwareVersion@MMSInterface@@QEAA_NPEADAEAJ@Z
+      56   0x7120  ?GetFlashAddr@MMSInterface@@AEAAPEAD_N000@Z
+      57  0x15600  ?GetFreqFact@MMSInterface@@QEAAIXZ
+      58  0x16390  ?GetHardwareType@MMSInterface@@QEAA?AW4CMSHardwareType@@XZ
+      59  0x163a0  ?GetHardwareTypeName@MMSInterface@@QEAAPEBDW4CMSHardwareType@@@Z
+      60  0x17750  ?GetHeadAmpType@MMSInterface@@QEAA?AW4HeadAmpType@@XZ
+      61  0x17670  ?GetHeadAmpTypeName@MMSInterface@@QEAAPEB_WW4HeadAmpType@@@Z
+      62  0x17110  ?GetHeaterControllerName@MMSInterface@@QEAAPEB_WW4HeaterControllerType@@@Z
+      63  0x175f0  ?GetHousingType@MMSInterface@@QEAA?AW4SourceHousingType@@XZ
+      64  0x17510  ?GetHousingTypeName@MMSInterface@@QEAAPEB_WW4SourceHousingType@@@Z
+      65  0x164b0  ?GetLastPumpDownTime@MMSInterface@@QEAA_JXZ
+      66  0x16f30  ?GetLensPSU@MMSInterface@@QEAA?AW4PowerSupplyType@@XZ
+      67  0x15720  ?GetMassPot@MMSInterface@@QEAAEXZ
+      68  0x17100  ?GetNumHeaterTypes@MMSInterface@@QEAAHXZ
+      69  0x15840  ?GetPiraniType@MMSInterface@@QEAA?AW4PiraniType@@XZ
+      70  0x15760  ?GetPiraniTypeName@MMSInterface@@QEAAPEB_WW4PiraniType@@@Z
+      71  0x16d00  ?GetPowerSupplyName@MMSInterface@@QEAAPEB_WW4PowerSupplyType@@@Z
+      72  0x164e0  ?GetQCData@MMSInterface@@QEAAPEBDXZ
+      73  0x159a0  ?GetRfBoxType@MMSInterface@@QEAA?AW4RfBoxType@@XZ
+      74  0x158c0  ?GetRfBoxTypeName@MMSInterface@@QEAAPEB_WW4RfBoxType@@@Z
+      75  0x1a720  ?GetScanParams@MMSInterface@@QEAAIEPEAF0@Z
+      76  0x163d0  ?GetSerialNumber@MMSInterface@@QEAAPEB_WXZ
+      77  0x16de0  ?GetSourcePSU@MMSInterface@@QEAA?AW4PowerSupplyType@@XZ
+      78  0x17c40  ?GetStatusString@MMSInterface@@QEAAXPEAD@Z
+      79  0x17d40  ?GetTimeMS@MMSInterface@@AEAA_KXZ
+      80  0x1c410  ?GetUSBDevice@MMSInterface@@AEAAPEAVCCyUSBDevice@@XZ
+      81  0x19780  ?GetUsingHelium@MMSInterface@@QEAAEXZ
+      82   0x6e90  ?GetVolatileFlashXML@MMSInterface@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      83  0x38de8  ?GlDummy@MMSInterface@@0JA
+      84  0x16600  ?InitFirmwareVersion@MMSInterface@@AEAA_NXZ
+      85  0x15a20  ?InitHardwareVersion@MMSInterface@@AEAA_NXZ
+      86  0x151d0  ?InitializeSettings@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+      87  0x163b0  ?IsLicensedUpgrade@MMSInterface@@QEAA_NW4CMSLicensableUpgrade@@@Z
+      88  0x152d0  ?IsPressureOK@MMSInterface@@QEAAEXZ
+      89  0x17a50  ?IsPressureSensitiveChannel@MMSInterface@@QEAAEE@Z
+      90  0x15300  ?IsPumpRunning@MMSInterface@@QEAAEXZ
+      91  0x15310  ?IsPumpSpeedOK@MMSInterface@@QEAAEXZ
+      92   0x5580  ?IsV3@MMSInterface@@QEAAEXZ
+      93   0x76d0  ?LoadDefaultTuneIonSettings@MMSInterface@@QEAAIXZ
+      94   0x60a0  ?LoadFromConfigFlash@MMSInterface@@QEAAIXZ
+      95   0x7730  ?LoadFromSecondFlash@MMSInterface@@AEAAIXZ
+      96   0x6530  ?LoadFromVolatileFlash@MMSInterface@@QEAAIXZ
+      97  0x1cdb0  ?MMSUSBExecuteCommand@MMSInterface@@QEAAIPEBDPEAEAEAJ_NKK@Z
+      98  0x1c9e0  ?MMSUSBGetData@MMSInterface@@QEAAIPEAEAEAJK@Z
+      99  0x1cb80  ?MMSUSBGetScanData@MMSInterface@@QEAAIPEAEAEAJH@Z
+     100  0x1cd40  ?MMSUSBGetStatusData@MMSInterface@@QEAAIPEAEAEAJ@Z
+     101  0x1c6d0  ?MMSUSBPreRead@MMSInterface@@QEAAIXZ
+     102  0x1d080  ?MMSUSBReadSerialASCII@MMSInterface@@QEAAIHPEADAEAJ@Z
+     103  0x1d3a0  ?MMSUSBReadSerialHex@MMSInterface@@QEAAIHPEADAEAJ@Z
+     104  0x1c880  ?MMSUSBSendData@MMSInterface@@QEAAIPEAEAEAJK@Z
+     105  0x1cfe0  ?MMSUSBSetupSerial@MMSInterface@@QEAAIH@Z
+     106  0x1d6b0  ?MMSUSBWriteSerialASCII@MMSInterface@@QEAAIHPEBD@Z
+     107  0x1d910  ?MMSUSBWriteSerialHex@MMSInterface@@QEAAIHPEBD@Z
+     108  0x1a7c0  ?ModbusReadASCII@MMSInterface@@QEAAIHEEGPEAI@Z
+     109  0x1aa10  ?ModbusReadRTU@MMSInterface@@QEAAIHEGPEAI@Z
+     110  0x1a900  ?ModbusWriteASCII@MMSInterface@@QEAAIHEEGG@Z
+     111  0x1ab80  ?ModbusWriteRTU@MMSInterface@@QEAAIHEGI@Z
+     112  0x1b2b0  ?ParseSerialData@MMSInterface@@QEAAXPEAD@Z
+     113  0x199a0  ?PerformScan@MMSInterface@@QEAAIGGIPEAXGPEAI@Z
+     114  0x197a0  ?PerformScanHS@MMSInterface@@QEAAIGGGIG_N@Z
+     115  0x19710  ?PiraniPressureMBar@MMSInterface@@QEAAIPEAN@Z
+     116  0x19640  ?PiraniSetup@MMSInterface@@QEAAIXZ
+     117   0x56b0  ?PumpOff@MMSInterface@@QEAAIXZ
+     118   0x55a0  ?PumpOn@MMSInterface@@QEAAIXZ
+     119   0x5860  ?PumpSpeed@MMSInterface@@QEAAIPEAG@Z
+     120   0x5750  ?PumpStandby@MMSInterface@@QEAAIXZ
+     121  0x17ac0  ?ReadADC@MMSInterface@@QEAAGE@Z
+     122   0x7790  ?ReadFlash@MMSInterface@@QEAAIPEAEH@Z
+     123  0x1a7b0  ?ReadSerial@MMSInterface@@QEAAIHPEADAEAJ@Z
+     124  0x1c610  ?RenumFX2@MMSInterface@@QEAAIXZ
+     125   0x7700  ?SaveDefaultTuneIonSettings@MMSInterface@@QEAAIXZ
+     126   0x6740  ?SaveToConfigFlash@MMSInterface@@QEAAIXZ
+     127   0x7760  ?SaveToSecondFlash@MMSInterface@@AEAAIXZ
+     128   0x69f0  ?SaveToVolatileFlash@MMSInterface@@QEAAIXZ
+     129  0x1aca0  ?SerialCommandASCII@MMSInterface@@QEAAIHPEAD0AEAJ@Z
+     130  0x1ad40  ?SerialCommandHex@MMSInterface@@QEAAIHPEAD0AEAJ@Z
+     131  0x173c0  ?SetAPCIGasHC@MMSInterface@@QEAAIW4HeaterControllerType@@@Z
+     132  0x14080  ?SetAPCIHeaterOn@MMSInterface@@QEAAIE@Z
+     133  0x141b0  ?SetAPCIHeaterTemp@MMSInterface@@QEAAIM@Z
+     134  0x17b80  ?SetAnalogOutput@MMSInterface@@QEAAIHGH@Z
+     135  0x17120  ?SetCapillaryHC@MMSInterface@@QEAAIW4HeaterControllerType@@@Z
+     136  0x13e20  ?SetCapillaryHeaterOn@MMSInterface@@QEAAIE@Z
+     137  0x13f00  ?SetCapillaryHeaterTemp@MMSInterface@@QEAAIM@Z
+     138  0x1a750  ?SetDACParam@MMSInterface@@QEAAIEF@Z
+     139  0x17c00  ?SetDebugCallback@MMSInterface@@QEAAXP6AXXZ@Z
+     140   0x74c0  ?SetDefaultIonSourceOptimization@MMSInterface@@QEAAIPEAD_N1@Z
+     141   0x71e0  ?SetDefaultTuneParameters@MMSInterface@@QEAAIPEAD_N1@Z
+     142  0x17270  ?SetDesolvationGasHC@MMSInterface@@QEAAIW4HeaterControllerType@@@Z
+     143  0x14300  ?SetDesolvationHeaterOn@MMSInterface@@QEAAIE@Z
+     144  0x14430  ?SetDesolvationHeaterTemp@MMSInterface@@QEAAIM@Z
+     145  0x178c0  ?SetDigOut@MMSInterface@@QEAAIEE@Z
+     146  0x17940  ?SetDigOut@MMSInterface@@QEAAIEEE@Z
+     147  0x16fb0  ?SetDynodePSU@MMSInterface@@QEAAIW4PowerSupplyType@@@Z
+     148  0x15340  ?SetFreqFact@MMSInterface@@QEAAIIPEAG@Z
+     149  0x17680  ?SetHeadAmpType@MMSInterface@@QEAAIW4HeadAmpType@@@Z
+     150  0x17520  ?SetHousingType@MMSInterface@@QEAAIW4SourceHousingType@@@Z
+     151  0x179c0  ?SetI2C@MMSInterface@@QEAAIEEE@Z
+     152  0x164c0  ?SetLastPumpDownTime@MMSInterface@@QEAAI_J@Z
+     153  0x16e60  ?SetLensPSU@MMSInterface@@QEAAIW4PowerSupplyType@@@Z
+     154  0x15640  ?SetMassPot@MMSInterface@@QEAAIE@Z
+     155  0x15770  ?SetPiraniType@MMSInterface@@QEAAIW4PiraniType@@@Z
+     156  0x17c10  ?SetProgressCallback@MMSInterface@@QEAAXP6AXH@Z@Z
+     157  0x16500  ?SetQCData@MMSInterface@@QEAAIPEAD@Z
+     158  0x158d0  ?SetRfBoxType@MMSInterface@@QEAAIW4RfBoxType@@@Z
+     159  0x1a6f0  ?SetScanParams@MMSInterface@@QEAAIEFF@Z
+     160  0x163f0  ?SetSerialNumber@MMSInterface@@QEAAIPEB_W@Z
+     161  0x16d10  ?SetSourcePSU@MMSInterface@@QEAAIW4PowerSupplyType@@@Z
+     162  0x1b4c0  ?SetStatusCallback@MMSInterface@@QEAAXP6AXXZ@Z
+     163  0x19750  ?SetUsingHelium@MMSInterface@@QEAAI_N@Z
+     164  0x15170  ?TestConnection@MMSInterface@@QEAA?AW4CommunicationState@@XZ
+     165  0x19e40  ?UpdateDACs@MMSInterface@@AEAAIGG_N0@Z
+     166  0x16720  ?UpdateFirmware@MMSInterface@@QEAAIPEAEJ@Z
+     167  0x1af80  ?UpdateStatusIfNeeded@MMSInterface@@QEAAIXZ
+     168  0x177d0  ?WriteDigitalOut@MMSInterface@@QEAAIXZ
+     169   0x7a70  ?WriteFlash@MMSInterface@@QEAAIPEAEH@Z
+     170  0x1ade0  ?calculateCRC@MMSInterface@@AEAAGPEBD@Z
+     171   0xd080  ?check@c_flashMemory@FlashMemory@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     172  0x1e680  ?check@c_volatileFlashMemory@VolatileFlashMemory@@QEBA_NPEAVc_check_tracker@lmx@@PEBD@Z
+     173  0x1caf0  ?clearScanPipe@MMSInterface@@QEAAIXZ
+     174  0x1cca0  ?clearStatusPipe@MMSInterface@@QEAAIXZ
+     175   0xcee0  ?clone@c_flashMemory@FlashMemory@@UEBAPEAV12@XZ
+     176  0x1e5b0  ?clone@c_volatileFlashMemory@VolatileFlashMemory@@UEBAPEAV12@XZ
+     177  0x1ca70  ?ensureScanPipeAvailable@MMSInterface@@QEAAIXZ
+     178  0x1cc00  ?ensureStatusPipeAvailable@MMSInterface@@QEAAIXZ
+     179  0x1c4e0  ?findUsbEndpoint@MMSInterface@@AEAAPEAVCCyBulkEndPoint@@PEAVCCyUSBDevice@@H@Z
+     180  0x1c1d0  ?formatIonXML@MMSInterface@@AEAAPEADPEBD@Z
+     181  0x1bf90  ?formatTuneXML@MMSInterface@@AEAAPEADPEBD@Z
+     182  0x14620  ?getDigitalBoardTemp@MMSInterface@@AEAAMH@Z
+     183  0x1dab0  ?get_version@c_volatileFlashMemory@VolatileFlashMemory@@QEBAAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@XZ
+     184   0xbf70  ?init@c_flashMemory@FlashMemory@@AEAAXXZ
+     185  0x1e0c0  ?init@c_volatileFlashMemory@VolatileFlashMemory@@AEAAXXZ
+     186  0x19940  ?initializeScanReading@MMSInterface@@QEAAIXZ
+     187   0xcf90  ?is_occurs_ok@c_flashMemory@FlashMemory@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     188  0x1e630  ?is_occurs_ok@c_volatileFlashMemory@VolatileFlashMemory@@QEBA_NPEAVc_check_tracker@lmx@@@Z
+     189   0xa6d0  ?isset_headAmpType@c_flashMemory@FlashMemory@@QEBA_NXZ
+     190   0xa6c0  ?isset_housingType@c_flashMemory@FlashMemory@@QEBA_NXZ
+     191   0xa6b0  ?isset_piraniType@c_flashMemory@FlashMemory@@QEBA_NXZ
+     192   0xa6e0  ?isset_rfBoxType@c_flashMemory@FlashMemory@@QEBA_NXZ
+     193   0xa6a0  ?isset_version@c_flashMemory@FlashMemory@@QEBA_NXZ
+     194  0x1daf0  ?isset_version@c_volatileFlashMemory@VolatileFlashMemory@@QEBA_NXZ
+     195   0xd0e0  ?marshal@c_flashMemory@FlashMemory@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     196   0xd0f0  ?marshal@c_flashMemory@FlashMemory@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     197   0xd0d0  ?marshal@c_flashMemory@FlashMemory@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     198   0xd0b0  ?marshal@c_flashMemory@FlashMemory@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     199   0xd0c0  ?marshal@c_flashMemory@FlashMemory@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     200  0x1e710  ?marshal@c_volatileFlashMemory@VolatileFlashMemory@@QEBA?AW4elmx_error@lmx@@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEAUs_debug_error@4@@Z
+     201  0x1e720  ?marshal@c_volatileFlashMemory@VolatileFlashMemory@@QEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@PEBD@Z
+     202  0x1e700  ?marshal@c_volatileFlashMemory@VolatileFlashMemory@@QEBA?AW4elmx_error@lmx@@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUs_debug_error@4@@Z
+     203  0x1e6e0  ?marshal@c_volatileFlashMemory@VolatileFlashMemory@@QEBA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     204  0x1e6f0  ?marshal@c_volatileFlashMemory@VolatileFlashMemory@@QEBA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     205   0xd1b0  ?marshal_attributes@c_flashMemory@FlashMemory@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     206  0x1e800  ?marshal_attributes@c_volatileFlashMemory@VolatileFlashMemory@@IEBAXAEAVc_xml_writer@lmx@@@Z
+     207   0xd200  ?marshal_child_elements@c_flashMemory@FlashMemory@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     208  0x1e850  ?marshal_child_elements@c_volatileFlashMemory@VolatileFlashMemory@@IEBA?AW4elmx_error@lmx@@AEAVc_xml_writer@4@@Z
+     209   0xa6f0  ?ns_map@c_flashMemory@FlashMemory@@SAPEBUs_ns_map@lmx@@XZ
+     210  0x1db00  ?ns_map@c_volatileFlashMemory@VolatileFlashMemory@@SAPEBUs_ns_map@lmx@@XZ
+     211  0x25438  ?ns_map_reader@FlashMemory@@3QBUs_ns_map@lmx@@B
+     212  0x25718  ?ns_map_reader@VolatileFlashMemory@@3QBUs_ns_map@lmx@@B
+     213  0x25420  ?ns_map_writer_1@FlashMemory@@3QBUs_ns_map@lmx@@B
+     214  0x25768  ?ns_map_writer_1@VolatileFlashMemory@@3QBUs_ns_map@lmx@@B
+     215  0x14820  ?rawTempSettingFromUserTemp@MMSInterface@@AEAAGM@Z
+     216  0x17d90  ?readEnglishLocaleFloat@MMSInterface@@AEAAPEADPEADPEAN@Z
+     217  0x14fe0  ?readFlashMemorySettings@MMSInterface@@QEAAIXZ
+     218  0x15150  ?readsDataInParallel@MMSInterface@@QEAAEXZ
+     219  0x17fa0  ?replaceAll@MMSInterface@@AEAAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@1@Z
+     220   0xc3b0  ?reset@c_flashMemory@FlashMemory@@QEAAXXZ
+     221  0x1e150  ?reset@c_volatileFlashMemory@VolatileFlashMemory@@QEAAXXZ
+     222  0x1b5b0  ?runStatusReadingThread@MMSInterface@@CAXPEAX@Z
+     223  0x14580  ?setDigitalBoardTemp@MMSInterface@@AEAAIHM@Z
+     224  0x1e620  ?set_lastPumpDownTime@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@AEBH@Z
+     225  0x1dac0  ?set_version@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     226  0x1bd50  ?simplifyIonXML@MMSInterface@@AEAAPEADPEBD@Z
+     227  0x1b9e0  ?simplifyTuneXML@MMSInterface@@AEAAPEADPEBD_N@Z
+     228  0x17e10  ?split@MMSInterface@@AEAAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@3@@Z
+     229   0xcaf0  ?swap@c_flashMemory@FlashMemory@@QEAAXAEAV12@@Z
+     230  0x1e3a0  ?swap@c_volatileFlashMemory@VolatileFlashMemory@@QEAAXAEAV12@@Z
+     231   0xd560  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     232   0xd6b0  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     233   0xd550  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     234   0xd540  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     235   0xd520  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     236   0xd530  ?unmarshal@c_flashMemory@FlashMemory@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     237  0x1e8d0  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     238  0x1ea20  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     239  0x1e8c0  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@AEBVc_any_info@4@PEAUs_debug_error@4@@Z
+     240  0x1e8b0  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@PEBD_KPEAUs_debug_error@4@@Z
+     241  0x1e890  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@QEBDPEAUs_debug_error@4@@Z
+     242  0x1e8a0  ?unmarshal@c_volatileFlashMemory@VolatileFlashMemory@@QEAA?AW4elmx_error@lmx@@QEB_WPEAUs_debug_error@4@@Z
+     243   0xd850  ?unmarshal_attributes@c_flashMemory@FlashMemory@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     244  0x1ebc0  ?unmarshal_attributes@c_volatileFlashMemory@VolatileFlashMemory@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     245   0xd8e0  ?unmarshal_attributes_check@c_flashMemory@FlashMemory@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     246  0x1ec50  ?unmarshal_attributes_check@c_volatileFlashMemory@VolatileFlashMemory@@IEAA?AW4elmx_error@lmx@@AEAVc_xml_reader@4@@Z
+     247   0xd8f0  ?unmarshal_body@c_flashMemory@FlashMemory@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     248  0x1ec60  ?unmarshal_body@c_volatileFlashMemory@VolatileFlashMemory@@IEAA_NAEAVc_xml_reader@lmx@@PEAW4elmx_error@4@@Z
+     249   0xcf70  ?unset_headAmpType@c_flashMemory@FlashMemory@@QEAAXXZ
+     250   0xcf60  ?unset_housingType@c_flashMemory@FlashMemory@@QEAAXXZ
+     251   0xcf50  ?unset_piraniType@c_flashMemory@FlashMemory@@QEAAXXZ
+     252   0xcf80  ?unset_rfBoxType@c_flashMemory@FlashMemory@@QEAAXXZ
+     253   0xcf20  ?unset_version@c_flashMemory@FlashMemory@@QEAAXXZ
+     254  0x1e5f0  ?unset_version@c_volatileFlashMemory@VolatileFlashMemory@@QEAAXXZ
+     255  0x147f0  ?userTempReadbackFromRawTemp@MMSInterface@@AEAAMG@Z
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         00022fc7 0000000180001000 TEXT
+  1 .rdata        00012efe 0000000180024000 DATA
+  2 .data         00001400 0000000180037000 DATA
+  3 .pdata        0000213c 000000018074b000 DATA
+  4 .gfids        0000003c 000000018074e000 DATA
+  5 .rsrc         0000050c 000000018074f000 DATA
+  6 .reloc        00000348 0000000180750000 DATA
+
+SYMBOL TABLE:

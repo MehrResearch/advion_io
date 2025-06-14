@@ -1,0 +1,230 @@
+
+lib/Release/AdvionData_NET.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:51:26 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000006c00
+SizeOfInitializedData   0000000000021e00
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     00000000000069ae
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             0002e000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 0000000000000000 00000000 Export Directory [.edata (or where ever we found it)]
+Entry 1 000000000002659c 000000a0 Import Directory [parts of .idata]
+Entry 2 000000000002c000 00000518 Resource Directory [.rsrc]
+Entry 3 000000000002a000 00000234 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 000000000002d000 00000040 Base Relocation Directory [.reloc]
+Entry 6 0000000000008610 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 0000000000008670 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 0000000000008000 000003f8 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 00000000000084b0 00000048 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 00026920 time 00000000 fwd 00000000 name 00026ac2 addr 000082e0
+
+    DLL Name: VCRUNTIME140.dll
+    Hint/Ord  Name
+          61  memmove
+          15  __CxxQueryExceptionSize
+          11  __CxxExceptionFilter
+          16  __CxxRegisterExceptionObject
+          10  __CxxDetectRethrow
+          17  __CxxUnregisterExceptionObject
+          19  __FrameUnwindFilter
+          62  memset
+          37  __std_type_info_destroy_list
+           8  __C_specific_handler
+           1  _CxxThrowException
+          34  __std_exception_destroy
+          33  __std_exception_copy
+
+  lookup 000269b0 time 00000000 fwd 00000000 name 00026bce addr 00008370
+
+    DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+    Hint/Ord  Name
+          22  _cexit
+          29  _crt_at_quick_exit
+          30  _crt_atexit
+          34  _execute_onexit_table
+          60  _register_onexit_function
+         103  terminate
+          51  _initialize_narrow_environment
+          24  _configure_narrow_argv
+          63  _seh_filter_dll
+          55  _initterm_e
+          54  _initterm
+          57  _invalid_parameter_noinfo_noreturn
+          84  abort
+          52  _initialize_onexit_table
+
+  lookup 00026990 time 00000000 fwd 00000000 name 00026bf0 addr 00008350
+
+    DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+    Hint/Ord  Name
+           8  _callnewh
+          24  free
+          25  malloc
+
+  lookup 00026868 time 00000000 fwd 00000000 name 00026d74 addr 00008228
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+        1377  Sleep
+         621  GetModuleHandleW
+         880  IsProcessorFeaturePresent
+         709  GetStartupInfoW
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+         874  IsDebuggerPresent
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+         852  InitializeSListHead
+         279  DisableThreadLibraryCalls
+         733  GetSystemTimeAsFileTime
+         532  GetCurrentThreadId
+         528  GetCurrentProcessId
+        1072  QueryPerformanceCounter
+
+  lookup 00026640 time 00000000 fwd 00000000 name 00027e2a addr 00008000
+
+    DLL Name: AdvionData.dll
+    Hint/Ord  Name
+         175  ?getInstrumentIdW@DataReader@AdvionData@@QEAAPEB_WXZ
+         109  ?canWriteData@DataWriter@AdvionData@@SA_NPEB_W@Z
+         136  ?createDatxFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@XZ
+         451  ?writeTextToFile@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEB_W@Z
+         443  ?writeScalarEntry@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HNN@Z
+          80  ?addScalarChannelAttribute@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEB_WN@Z
+         445  ?writeScanData@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBMHNN@Z
+         444  ?writeScanData@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBIHNN@Z
+         449  ?writeSpectrumMasses@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEBMH@Z
+         439  ?writeLogMessage@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         446  ?writeScanModeIndex@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@H@Z
+         453  ?writeTuneParams@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         437  ?writeIonSourceOpt@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         434  ?writeExperiment@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         441  ?writeMethod@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W@Z
+         135  ?createAuxiliaryFile@DataWriter@AdvionData@@QEAAHPEB_W0@Z
+         138  ?createScalarChannel@DataWriter@AdvionData@@QEAAHPEB_W@Z
+         323  ?setMetadata@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@PEB_W000@Z
+          48  ??1DataWriter@AdvionData@@QEAA@XZ
+           3  ??0DataWriter@AdvionData@@QEAA@PEB_W0_N1@Z
+         448  ?writeSegments@DataWriter@AdvionData@@QEAA?AW4ErrorCode@2@HPEANPEAPEB_W1@Z
+         149  ?getAuxFileTextW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         151  ?getAuxFileTypeW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         147  ?getAuxFileNameW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         182  ?getNumAuxFiles@DataReader@AdvionData@@QEAAHXZ
+         190  ?getScalarChannelAttributeValue@DataReader@AdvionData@@QEAANHH@Z
+         189  ?getScalarChannelAttributeNameW@DataReader@AdvionData@@QEAAPEB_WHH@Z
+         193  ?getScalarChannelNumAttributes@DataReader@AdvionData@@QEAAHH@Z
+         196  ?getScalarChannelValues@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+         195  ?getScalarChannelTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+         194  ?getScalarChannelNumSamples@DataReader@AdvionData@@QEAAHH@Z
+         192  ?getScalarChannelNameW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         184  ?getNumScalarChannels@DataReader@AdvionData@@QEAAHXZ
+         161  ?getExperimentLogW@DataReader@AdvionData@@QEAAPEB_WXZ
+         204  ?getTuneParametersXmlW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         177  ?getIonSourceOptimizationXmlW@DataReader@AdvionData@@QEAAPEB_WH@Z
+         198  ?getSegmentTime@DataReader@AdvionData@@QEAANH@Z
+         185  ?getNumSegments@DataReader@AdvionData@@QEAAHXZ
+         311  ?registerExceptionHandler@AdvionUtility@AdvionData@@SAXPEB_W@Z
+         418  ?unregisterExceptionHandler@AdvionUtility@AdvionData@@SAXXZ
+           1  ??0DataReader@AdvionData@@QEAA@PEB_W_N1@Z
+          47  ??1DataReader@AdvionData@@QEAA@XZ
+         321  ?setDeltaBackgroundParameters@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@NNNNH@Z
+         154  ?getDataSetValidity@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@XZ
+         156  ?getDateW@DataReader@AdvionData@@QEAAPEB_WXZ
+         178  ?getIsCentroid@DataReader@AdvionData@@QEAA_NXZ
+         183  ?getNumMasses@DataReader@AdvionData@@QEAAHXZ
+         186  ?getNumSpectra@DataReader@AdvionData@@QEAAHXZ
+         179  ?getMasses@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+         187  ?getRetentionTimes@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+         201  ?getSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+         159  ?getDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@HPEAM@Z
+         157  ?getDeltaBackgroundSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEAM@Z
+         153  ?getAveragedSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+         152  ?getAveragedDeltaSpectrum@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+         145  ?generateXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+         144  ?generateDeltaXIC@DataReader@AdvionData@@QEAA?AW4ErrorCode@2@PEBHHPEAM@Z
+         202  ?getTIC@DataReader@AdvionData@@QEAAMH@Z
+         158  ?getDeltaIC@DataReader@AdvionData@@QEAAMH@Z
+         200  ?getSoftwareVersionW@DataReader@AdvionData@@QEAAPEB_WXZ
+         167  ?getFirmwareVersionW@DataReader@AdvionData@@QEAAPEB_WXZ
+         169  ?getHardwareTypeW@DataReader@AdvionData@@QEAAPEB_WXZ
+         197  ?getScanModeIndex@DataReader@AdvionData@@QEAAHXZ
+         181  ?getMethodXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+         163  ?getExperimentXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+         171  ?getIcpmsExperimentXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+         173  ?getIcpmsInstrumentSettingsXmlW@DataReader@AdvionData@@QEAAPEB_WXZ
+         107  ?canWriteData@DataWriter@AdvionData@@SA?AW4ErrorCode@2@PEB_W0@Z
+
+  lookup 000268f0 time 00000000 fwd 00000000 name 00027ee2 addr 000082b0
+
+    DLL Name: MSVCP140.dll
+    Hint/Ord  Name
+         665  ?__ExceptionPtrDestroy@@YAXPEAX@Z
+         661  ?__ExceptionPtrCopy@@YAXPEAXPEBX@Z
+         651  ?_Xbad_alloc@std@@YAXXZ
+         654  ?_Xlength_error@std@@YAXPEBD@Z
+         655  ?_Xout_of_range@std@@YAXPEBD@Z
+
+  lookup 00026a28 time 00000000 fwd 00000000 name 00027fec addr 000083e8
+
+    DLL Name: mscoree.dll
+    Hint/Ord  Name
+         118  _CorDllMain
+
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         00005a53 0000000180001000 TEXT
+  1 .nep          00000f00 0000000180007000 TEXT
+  2 .rdata        0001fff8 0000000180008000 DATA
+  3 .data         00001000 0000000180028000 DATA
+  4 .pdata        00000234 000000018002a000 DATA
+  5 .gfids        0000002c 000000018002b000 DATA
+  6 .rsrc         00000518 000000018002c000 DATA
+  7 .reloc        00000040 000000018002d000 DATA
+
+SYMBOL TABLE:

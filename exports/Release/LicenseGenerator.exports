@@ -1,0 +1,184 @@
+
+lib/Release/LicenseGenerator.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:51:11 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000004600
+SizeOfInitializedData   0000000000008400
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     0000000000003fc8
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             00013000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 000000000000c360 00000500 Export Directory [.edata (or where ever we found it)]
+Entry 1 000000000000c860 000000b4 Import Directory [parts of .idata]
+Entry 2 0000000000011000 00000524 Resource Directory [.rsrc]
+Entry 3 000000000000f000 00000504 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 0000000000012000 00000044 Base Relocation Directory [.reloc]
+Entry 6 000000000000b4c0 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 000000000000b520 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 0000000000006000 000001d0 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 0000c918 time 00000000 fwd 00000000 name 0000cb62 addr 00006000
+
+    DLL Name: AdvionCommon.dll
+    Hint/Ord  Name
+          37  ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+
+  lookup 0000c9b8 time 00000000 fwd 00000000 name 0000cbd2 addr 000060a0
+
+    DLL Name: MSVCP140.dll
+    Hint/Ord  Name
+         651  ?_Xbad_alloc@std@@YAXXZ
+         655  ?_Xout_of_range@std@@YAXPEBD@Z
+         654  ?_Xlength_error@std@@YAXPEBD@Z
+
+  lookup 0000c9d8 time 00000000 fwd 00000000 name 0000cc94 addr 000060c0
+
+    DLL Name: VCRUNTIME140.dll
+    Hint/Ord  Name
+          14  __CxxFrameHandler3
+          60  memcpy
+          62  memset
+           8  __C_specific_handler
+          33  __std_exception_copy
+          61  memmove
+          34  __std_exception_destroy
+          37  __std_type_info_destroy_list
+           1  _CxxThrowException
+
+  lookup 0000ca48 time 00000000 fwd 00000000 name 0000ce2c addr 00006130
+
+    DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+    Hint/Ord  Name
+         103  terminate
+          52  _initialize_onexit_table
+          22  _cexit
+          29  _crt_at_quick_exit
+          57  _invalid_parameter_noinfo_noreturn
+          30  _crt_atexit
+          34  _execute_onexit_table
+          60  _register_onexit_function
+          51  _initialize_narrow_environment
+          24  _configure_narrow_argv
+          63  _seh_filter_dll
+          55  _initterm_e
+          54  _initterm
+
+  lookup 0000cab8 time 00000000 fwd 00000000 name 0000ce4e addr 000061a0
+
+    DLL Name: api-ms-win-crt-stdio-l1-1-0.dll
+    Hint/Ord  Name
+           3  __stdio_common_vfprintf
+          13  __stdio_common_vsprintf
+           0  __acrt_iob_func
+
+  lookup 0000cad8 time 00000000 fwd 00000000 name 0000ce6e addr 000061c0
+
+    DLL Name: api-ms-win-crt-string-l1-1-0.dll
+    Hint/Ord  Name
+         152  toupper
+
+  lookup 0000ca28 time 00000000 fwd 00000000 name 0000ce90 addr 00006110
+
+    DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+    Hint/Ord  Name
+           8  _callnewh
+          25  malloc
+          24  free
+
+  lookup 0000c928 time 00000000 fwd 00000000 name 0000d03c addr 00006010
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+         621  GetModuleHandleW
+         709  GetStartupInfoW
+         874  IsDebuggerPresent
+         852  InitializeSListHead
+         279  DisableThreadLibraryCalls
+         733  GetSystemTimeAsFileTime
+         532  GetCurrentThreadId
+         528  GetCurrentProcessId
+        1072  QueryPerformanceCounter
+         880  IsProcessorFeaturePresent
+        1392  TerminateProcess
+         527  GetCurrentProcess
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+
+Export Table:
+ DLL name: LicenseGenerator.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1   0x2390  ??4LicenseTools@LicenseGenerator@@QEAAAEAV01@$$QEAV01@@Z
+       2   0x23a0  ??4LicenseTools@LicenseGenerator@@QEAAAEAV01@AEBV01@@Z
+       3   0x23b0  ?AtoH@LicenseTools@LicenseGenerator@@CAEEE@Z
+       4   0x23e0  ?EncDecTest@LicenseTools@LicenseGenerator@@SAXXZ
+       5   0x2610  ?EncodedLicenseLengthV1@LicenseTools@LicenseGenerator@@SAHEE@Z
+       6   0x2650  ?EncodedLicenseLengthV2@LicenseTools@LicenseGenerator@@SAHEEEE@Z
+       7   0x26c0  ?GenerateLicenseKey@LicenseTools@LicenseGenerator@@SA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V34@@Z
+       8   0x29a0  ?LicenseDecodeStrV1@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+       9   0x2a70  ?LicenseDecodeStrV2@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+      10   0x2b50  ?LicenseDecodeV1@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0H@Z
+      11   0x2c50  ?LicenseDecodeV2@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0H@Z
+      12   0x2d70  ?LicenseEncodeV1@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+      13   0x2ed0  ?LicenseEncodeV2@LicenseTools@LicenseGenerator@@SAHPEBEPEAE0HH@Z
+      14   0x3030  ?VersionTest@LicenseTools@LicenseGenerator@@SAXPEAD@Z
+      15   0x3310  ?ah@LicenseTools@LicenseGenerator@@CAEE@Z
+      16   0x3950  ?toUpper@LicenseTools@LicenseGenerator@@CAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         00004433 0000000180001000 TEXT
+  1 .rdata        0000704a 0000000180006000 DATA
+  2 .data         00000200 000000018000e000 DATA
+  3 .pdata        00000504 000000018000f000 DATA
+  4 .gfids        00000034 0000000180010000 DATA
+  5 .rsrc         00000524 0000000180011000 DATA
+  6 .reloc        00000044 0000000180012000 DATA
+
+SYMBOL TABLE:

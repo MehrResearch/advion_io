@@ -1,0 +1,1161 @@
+
+lib/Debug/lmx-MDd-vc14.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Tue Oct 22 23:46:32 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000049600
+SizeOfInitializedData   0000000000033800
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     0000000000045c10
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             00082000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 0000000000065700 00010254 Export Directory [.edata (or where ever we found it)]
+Entry 1 0000000000075954 00000064 Import Directory [parts of .idata]
+Entry 2 0000000000080000 00000348 Resource Directory [.rsrc]
+Entry 3 000000000007a000 00004df4 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 0000000000081000 00000598 Base Relocation Directory [.reloc]
+Entry 6 0000000000056b70 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 0000000000056bd0 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 000000000004b000 00000368 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 00075a48 time 00000000 fwd 00000000 name 000764f8 addr 0004b090
+
+    DLL Name: MSVCP140D.dll
+    Hint/Ord  Name
+         588  ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+         261  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@H@Z
+         880  ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+         560  ?_Lock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+         647  ?_Unlock@?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAAXXZ
+        1022  ?imbue@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAXAEBVlocale@2@@Z
+        1213  ?setbuf@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAPEAV12@PEAD_J@Z
+        1245  ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JXZ
+         134  ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1315  ?uflow@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+        1355  ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEAD_J@Z
+        1358  ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAA_JPEBD_J@Z
+         412  ?_BADOFF@std@@3_JB
+         262  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@I@Z
+         265  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@M@Z
+         266  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@N@Z
+        1238  ?setw@std@@YA?AU?$_Smanip@_J@1@_J@Z
+          37  ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAA@PEAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+          12  ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IEAA@XZ
+        1019  ?imbue@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAA?AVlocale@2@AEBV32@@Z
+        1229  ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+         125  ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UEAA@XZ
+        1257  ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+        1254  ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+         137  ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UEAA@XZ
+          47  ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IEAA@XZ
+         684  ?classic@locale@std@@SAAEBV12@XZ
+         663  ?_Xout_of_range@std@@YAXPEBD@Z
+         662  ?_Xlength_error@std@@YAXPEBD@Z
+         659  ?_Xbad_alloc@std@@YAXXZ
+         421  ?_Debug_message@std@@YAXPEB_W0I@Z
+        1318  ?uncaught_exception@std@@YA_NXZ
+         165  ??1_Lockit@std@@QEAA@XZ
+        1285  ?sync@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MEAAHXZ
+         109  ??0_Lockit@std@@QEAA@H@Z
+
+  lookup 000759b8 time 00000000 fwd 00000000 name 00076692 addr 0004b000
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+         279  DisableThreadLibraryCalls
+         733  GetSystemTimeAsFileTime
+         532  GetCurrentThreadId
+         528  GetCurrentProcessId
+        1072  QueryPerformanceCounter
+         621  GetModuleHandleW
+         709  GetStartupInfoW
+         874  IsDebuggerPresent
+         880  IsProcessorFeaturePresent
+        1392  TerminateProcess
+         527  GetCurrentProcess
+        1362  SetUnhandledExceptionFilter
+        1426  UnhandledExceptionFilter
+        1212  RtlVirtualUnwind
+        1205  RtlLookupFunctionEntry
+        1198  RtlCaptureContext
+         852  InitializeSListHead
+
+  lookup 00075b68 time 00000000 fwd 00000000 name 00076790 addr 0004b1b0
+
+    DLL Name: VCRUNTIME140D.dll
+    Hint/Ord  Name
+          54  _purecall
+          35  __std_terminate
+          58  memchr
+          61  memmove
+          64  strchr
+          34  __std_exception_destroy
+           1  _CxxThrowException
+          14  __CxxFrameHandler3
+          59  memcmp
+          60  memcpy
+          62  memset
+           8  __C_specific_handler
+          33  __std_exception_copy
+          37  __std_type_info_destroy_list
+
+  lookup 00075be0 time 00000000 fwd 00000000 name 000769e2 addr 0004b228
+
+    DLL Name: ucrtbased.dll
+    Hint/Ord  Name
+         374  _invalid_parameter
+        1179  isalpha
+        1182  isdigit
+        1204  isxdigit
+        1188  isspace
+        1003  atoi
+        1345  strtoul
+         909  _wfopen
+        1113  fclose
+        1147  fopen
+        1153  fread
+        1159  fseek
+         752  _stricmp
+           5  _CrtDbgReportW
+         833  _wassert
+        1178  isalnum
+        1002  atof
+         102  __stdio_common_vsprintf
+         274  _fpclass
+        1219  localeconv
+          53  __acrt_iob_func
+          92  __stdio_common_vfprintf
+        1155  free
+        1239  malloc
+        1284  realloc
+        1354  terminate
+         161  _callnewh
+         285  _free_dbg
+         705  _seh_filter_dll
+         182  _configure_narrow_argv
+         369  _initialize_narrow_environment
+         370  _initialize_onexit_table
+         692  _register_onexit_function
+         229  _execute_onexit_table
+         194  _crt_atexit
+         193  _crt_at_quick_exit
+         164  _cexit
+         372  _initterm
+         373  _initterm_e
+
+Export Table:
+ DLL name: lmx-MDd-vc14.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1  0x31cf0  ??0c_big_int@lmx@@QEAA@AEBV01@@Z
+       2  0x31d10  ??0c_big_int@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+       3  0x31d60  ??0c_big_int@lmx@@QEAA@J@Z
+       4  0x31dd0  ??0c_big_int@lmx@@QEAA@PEBD@Z
+       5  0x31e10  ??0c_big_int@lmx@@QEAA@XZ
+       6  0x31e50  ??0c_binary@lmx@@QEAA@AEBV01@@Z
+       7  0x31e70  ??0c_binary@lmx@@QEAA@PEBE_K@Z
+       8   0x72b0  ??0c_binary@lmx@@QEAA@XZ
+       9   0x7350  ??0c_cracked_name@lmx@@QEAA@PEAVc_xml_local@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      10   0x73c0  ??0c_cracked_name@lmx@@QEAA@XZ
+      11  0x31e90  ??0c_date@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      12  0x31ee0  ??0c_date@lmx@@QEAA@PEBD@Z
+      13  0x31f20  ??0c_date@lmx@@QEAA@XZ
+      14  0x31f40  ??0c_datetime@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      15  0x31f90  ??0c_datetime@lmx@@QEAA@PEBD@Z
+      16  0x31fd0  ??0c_datetime@lmx@@QEAA@XZ
+      17  0x31ff0  ??0c_datetime_base@lmx@@QEAA@XZ
+      18  0x32010  ??0c_decimal@lmx@@QEAA@AEBV01@@Z
+      19  0x32070  ??0c_decimal@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      20  0x32100  ??0c_decimal@lmx@@QEAA@JH@Z
+      21  0x32370  ??0c_decimal@lmx@@QEAA@N@Z
+      22  0x32440  ??0c_decimal@lmx@@QEAA@NI@Z
+      23  0x32530  ??0c_decimal@lmx@@QEAA@PEBD@Z
+      24  0x325b0  ??0c_decimal@lmx@@QEAA@XZ
+      25   0x7420  ??0c_dtd_util@lmx@@QEAA@AEAVc_get_for_xml@1@@Z
+      26  0x32610  ??0c_duration@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      27  0x32650  ??0c_duration@lmx@@QEAA@PEBD@Z
+      28  0x32670  ??0c_duration@lmx@@QEAA@XZ
+      29   0x74d0  ??0c_enumerated_namespaces@lmx@@QEAA@XZ
+      30   0x7540  ??0c_error@lmx@@QEAA@AEBV01@@Z
+      31   0x7580  ??0c_error@lmx@@QEAA@XZ
+      32   0x75b0  ??0c_external_transcoder@lmx@@QEAA@AEAVc_read@1@AEAVc_error@1@@Z
+      33  0x32690  ??0c_gday@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      34  0x326e0  ??0c_gday@lmx@@QEAA@PEBD@Z
+      35  0x32720  ??0c_gday@lmx@@QEAA@XZ
+      36   0x75d0  ??0c_get_as_utf8@lmx@@QEAA@AEAVc_read@1@AEAVc_error@1@@Z
+      37   0x7640  ??0c_get_for_xml@lmx@@QEAA@AEAVc_read@1@AEAVc_error@1@_N@Z
+      38   0x76d0  ??0c_get_with_entities@lmx@@QEAA@AEAVc_read@1@AEAVc_error@1@_N@Z
+      39   0x7790  ??0c_getter_error_binder@lmx@@QEAA@AEAVc_error@1@@Z
+      40  0x32740  ??0c_gmonth@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      41  0x32790  ??0c_gmonth@lmx@@QEAA@PEBD@Z
+      42  0x327d0  ??0c_gmonth@lmx@@QEAA@XZ
+      43  0x327f0  ??0c_gmonthday@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      44  0x32840  ??0c_gmonthday@lmx@@QEAA@PEBD@Z
+      45  0x32880  ??0c_gmonthday@lmx@@QEAA@XZ
+      46  0x328a0  ??0c_gyear@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      47  0x328f0  ??0c_gyear@lmx@@QEAA@PEBD@Z
+      48  0x32930  ??0c_gyear@lmx@@QEAA@XZ
+      49  0x32950  ??0c_gyearmonth@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      50  0x329a0  ??0c_gyearmonth@lmx@@QEAA@PEBD@Z
+      51  0x329e0  ??0c_gyearmonth@lmx@@QEAA@XZ
+      52   0x77b0  ??0c_internal_dtd@lmx@@QEAA@AEAVc_get_for_xml@1@@Z
+      53   0x77c0  ??0c_known_elements_selector@lmx@@QEAA@AEAVc_xml_reader@1@PEBUs_known_elements@1@@Z
+      54   0x7870  ??0c_pattern@lmx@@QEAA@PEBD@Z
+      55   0x7980  ??0c_read@lmx@@QEAA@AEBV01@@Z
+      56   0x7990  ??0c_read@lmx@@QEAA@XZ
+      57   0x79a0  ??0c_read_file@lmx@@QEAA@PEAU_iobuf@@@Z
+      58   0x7a00  ??0c_read_file@lmx@@QEAA@PEBD@Z
+      59   0x7a70  ??0c_read_file@lmx@@QEAA@PEB_W@Z
+      60   0x7bd0  ??0c_read_memory@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+      61   0x7c60  ??0c_read_memory@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      62   0x7cd0  ??0c_read_memory@lmx@@QEAA@PEBD_K@Z
+      63   0x7d20  ??0c_read_memory@lmx@@QEAA@PEBD_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      64   0x7d80  ??0c_read_string@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+      65   0x7db0  ??0c_read_string@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      66  0x3de50  ??0c_regex@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      67   0x7e80  ??0c_string_stack_node@lmx@@QEAA@AEAVc_string_stack@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      68  0x32a00  ??0c_time@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      69  0x32a50  ??0c_time@lmx@@QEAA@PEBD@Z
+      70  0x32a90  ??0c_time@lmx@@QEAA@XZ
+      71   0x80f0  ??0c_unget_buffer@lmx@@QEAA@XZ
+      72   0x8100  ??0c_unmarshal_helper@lmx@@QEAA@AEAVc_xml_reader@1@@Z
+      73   0x8150  ??0c_untyped_validation_spec@lmx@@QEAA@W4elmx_whitespace@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@Q6A?AW4elmx_error@1@AEAVc_xml_reader@1@1@Z@Z
+      74   0x8180  ??0c_xml@lmx@@QEAA@AEAVc_read@1@AEAVc_error@1@_N@Z
+      75   0x8200  ??0c_xml_list_tokeniser@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      76   0x8330  ??0c_xml_local@lmx@@QEAA@AEBV01@@Z
+      77   0x8360  ??0c_xml_local@lmx@@QEAA@XZ
+      78   0x8390  ??0c_xml_reader@lmx@@QEAA@AEAVc_read@1@@Z
+      79   0x85a0  ??0c_xml_reader_file@lmx@@QEAA@PEAU_iobuf@@@Z
+      80   0x8630  ??0c_xml_reader_file@lmx@@QEAA@PEBD@Z
+      81   0x86d0  ??0c_xml_reader_file@lmx@@QEAA@PEB_W@Z
+      82   0x8730  ??0c_xml_reader_local@lmx@@QEAA@PEAVc_xml_reader@1@@Z
+      83   0x8780  ??0c_xml_reader_local@lmx@@QEAA@XZ
+      84   0x87c0  ??0c_xml_reader_memory@lmx@@QEAA@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      85   0x8850  ??0c_xml_reader_memory@lmx@@QEAA@PEBD_K@Z
+      86   0x88d0  ??0c_xml_writer@lmx@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@HPEBD111@Z
+      87   0x9150  ??0c_xml_writer@lmx@@QEAA@AEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@PEBD111@Z
+      88   0x99a0  ??0c_xml_writer_local@lmx@@QEAA@AEAVc_xml_writer@1@@Z
+      89   0x99c0  ??0c_xml_writer_local@lmx@@QEAA@XZ
+      90   0x9a20  ??0s_debug_error@lmx@@QEAA@XZ
+      91   0xab40  ??1c_big_int@lmx@@QEAA@XZ
+      92   0xab50  ??1c_binary@lmx@@QEAA@XZ
+      93   0xabf0  ??1c_date@lmx@@QEAA@XZ
+      94   0xac00  ??1c_datetime@lmx@@QEAA@XZ
+      95   0xac20  ??1c_decimal@lmx@@QEAA@XZ
+      96   0xac40  ??1c_duration@lmx@@QEAA@XZ
+      97   0xaca0  ??1c_enumerated_namespaces@lmx@@QEAA@XZ
+      98   0xacf0  ??1c_error@lmx@@UEAA@XZ
+      99   0xad00  ??1c_external_transcoder@lmx@@UEAA@XZ
+     100   0xad10  ??1c_external_transcoder_factory@lmx@@UEAA@XZ
+     101   0xad20  ??1c_gday@lmx@@QEAA@XZ
+     102   0xad30  ??1c_get_as_utf8@lmx@@UEAA@XZ
+     103   0xad90  ??1c_get_for_xml@lmx@@UEAA@XZ
+     104   0xadf0  ??1c_get_with_entities@lmx@@UEAA@XZ
+     105   0xaf20  ??1c_getter_error_binder@lmx@@QEAA@XZ
+     106   0xaf60  ??1c_gmonth@lmx@@QEAA@XZ
+     107   0xaf70  ??1c_gmonthday@lmx@@QEAA@XZ
+     108   0xaf80  ??1c_gyear@lmx@@QEAA@XZ
+     109   0xaf90  ??1c_gyearmonth@lmx@@QEAA@XZ
+     110   0xafa0  ??1c_known_elements_selector@lmx@@QEAA@XZ
+     111   0xafe0  ??1c_read@lmx@@UEAA@XZ
+     112   0xaff0  ??1c_read_file@lmx@@UEAA@XZ
+     113   0xb040  ??1c_read_memory@lmx@@UEAA@XZ
+     114  0x3dea0  ??1c_regex@lmx@@UEAA@XZ
+     115   0xb100  ??1c_string_stack_node@lmx@@QEAA@XZ
+     116   0xb160  ??1c_time@lmx@@QEAA@XZ
+     117   0xb170  ??1c_unmarshal_helper@lmx@@UEAA@XZ
+     118   0xb1e0  ??1c_xml@lmx@@QEAA@XZ
+     119   0xb2e0  ??1c_xml_list_tokeniser@lmx@@QEAA@XZ
+     120   0xb330  ??1c_xml_local@lmx@@QEAA@XZ
+     121   0xb380  ??1c_xml_reader@lmx@@UEAA@XZ
+     122   0xb4f0  ??1c_xml_reader_file@lmx@@UEAA@XZ
+     123   0xb560  ??1c_xml_reader_local@lmx@@QEAA@XZ
+     124   0xb5c0  ??1c_xml_reader_memory@lmx@@UEAA@XZ
+     125   0xb610  ??1c_xml_writer@lmx@@UEAA@XZ
+     126   0xb6e0  ??1c_xml_writer_local@lmx@@QEAA@XZ
+     127  0x32be0  ??4c_big_int@lmx@@QEAAAEAV01@AEBV01@@Z
+     128  0x32c30  ??4c_big_int@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     129  0x32cc0  ??4c_big_int@lmx@@QEAAAEAV01@J@Z
+     130  0x32d50  ??4c_big_int@lmx@@QEAAAEAV01@PEBD@Z
+     131  0x32dd0  ??4c_binary@lmx@@QEAAAEAV01@AEBV01@@Z
+     132  0x32e30  ??4c_date@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     133  0x32e50  ??4c_date@lmx@@QEAAAEAV01@PEBD@Z
+     134  0x32fb0  ??4c_datetime@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     135  0x32fd0  ??4c_datetime@lmx@@QEAAAEAV01@PEBD@Z
+     136  0x33200  ??4c_decimal@lmx@@QEAAAEAV01@AEBV01@@Z
+     137   0xba80  ??4c_decimal@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     138  0x332c0  ??4c_decimal@lmx@@QEAAAEAV01@N@Z
+     139  0x332e0  ??4c_decimal@lmx@@QEAAAEAV01@PEBD@Z
+     140   0xbaa0  ??4c_duration@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     141  0x333c0  ??4c_duration@lmx@@QEAAAEAV01@PEBD@Z
+     142   0xbac0  ??4c_error@lmx@@QEAAAEAV01@AEBV01@@Z
+     143  0x33730  ??4c_gday@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     144  0x33750  ??4c_gday@lmx@@QEAAAEAV01@PEBD@Z
+     145  0x337f0  ??4c_gmonth@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     146  0x33810  ??4c_gmonth@lmx@@QEAAAEAV01@PEBD@Z
+     147  0x338d0  ??4c_gmonthday@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     148  0x338f0  ??4c_gmonthday@lmx@@QEAAAEAV01@PEBD@Z
+     149  0x339e0  ??4c_gyear@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     150  0x33a00  ??4c_gyear@lmx@@QEAAAEAV01@PEBD@Z
+     151  0x33aa0  ??4c_gyearmonth@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     152  0x33ac0  ??4c_gyearmonth@lmx@@QEAAAEAV01@PEBD@Z
+     153   0xbb00  ??4c_read@lmx@@QEAAAEAV01@AEBV01@@Z
+     154  0x33bc0  ??4c_time@lmx@@QEAAAEAV01@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     155  0x33be0  ??4c_time@lmx@@QEAAAEAV01@PEBD@Z
+     156   0xbb10  ??4c_unget_buffer@lmx@@QEAAAEAV01@$$QEAV01@@Z
+     157   0xbb30  ??4c_unget_buffer@lmx@@QEAAAEAV01@AEBV01@@Z
+     158   0xbb50  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBUs_debug_error@0@@Z
+     159  0x33f40  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_big_int@0@@Z
+     160  0x33f60  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_binary@0@@Z
+     161  0x34070  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_date@0@@Z
+     162  0x34190  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_datetime@0@@Z
+     163  0x34390  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_decimal@0@@Z
+     164  0x343f0  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_duration@0@@Z
+     165  0x34530  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_gday@0@@Z
+     166  0x345d0  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_gmonth@0@@Z
+     167  0x34680  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_gmonthday@0@@Z
+     168  0x34770  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_gyear@0@@Z
+     169  0x347e0  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_gyearmonth@0@@Z
+     170  0x348a0  ??6lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV12@AEBVc_time@0@@Z
+     171   0xbc30  ??8c_string_stack_node@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     172  0x34a00  ??8lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     173  0x34a30  ??8lmx@@YA_NAEBVc_big_int@0@0@Z
+     174  0x34a70  ??8lmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     175  0x34a90  ??8lmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     176  0x34c00  ??8lmx@@YA_NAEBVc_binary@0@0@Z
+     177  0x34c10  ??8lmx@@YA_NAEBVc_date@0@0@Z
+     178  0x34c50  ??8lmx@@YA_NAEBVc_datetime@0@0@Z
+     179  0x34c90  ??8lmx@@YA_NAEBVc_decimal@0@0@Z
+     180  0x34cf0  ??8lmx@@YA_NAEBVc_duration@0@0@Z
+     181  0x34d30  ??8lmx@@YA_NAEBVc_gday@0@0@Z
+     182  0x34d70  ??8lmx@@YA_NAEBVc_gmonth@0@0@Z
+     183  0x34db0  ??8lmx@@YA_NAEBVc_gmonthday@0@0@Z
+     184  0x34df0  ??8lmx@@YA_NAEBVc_gyear@0@0@Z
+     185  0x34e30  ??8lmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     186  0x34e70  ??8lmx@@YA_NAEBVc_time@0@0@Z
+     187  0x34eb0  ??8lmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     188   0xbd70  ??9c_string_stack_node@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     189  0x34ef0  ??9lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     190  0x34f30  ??9lmx@@YA_NAEBVc_big_int@0@0@Z
+     191  0x34f50  ??9lmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     192  0x34f90  ??9lmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     193  0x34fb0  ??9lmx@@YA_NAEBVc_binary@0@0@Z
+     194  0x34fd0  ??9lmx@@YA_NAEBVc_date@0@0@Z
+     195  0x35010  ??9lmx@@YA_NAEBVc_datetime@0@0@Z
+     196  0x35050  ??9lmx@@YA_NAEBVc_decimal@0@0@Z
+     197  0x350c0  ??9lmx@@YA_NAEBVc_duration@0@0@Z
+     198  0x35110  ??9lmx@@YA_NAEBVc_gday@0@0@Z
+     199  0x35150  ??9lmx@@YA_NAEBVc_gmonth@0@0@Z
+     200  0x35190  ??9lmx@@YA_NAEBVc_gmonthday@0@0@Z
+     201  0x351d0  ??9lmx@@YA_NAEBVc_gyear@0@0@Z
+     202  0x35210  ??9lmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     203  0x35250  ??9lmx@@YA_NAEBVc_time@0@0@Z
+     204  0x35290  ??9lmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     205  0x35470  ??Ac_binary@lmx@@QEAAAEAE_K@Z
+     206  0x354c0  ??Ac_binary@lmx@@QEBAAEBE_K@Z
+     207   0xc3a0  ??Ac_string_stack@lmx@@QEBAPEBD_K@Z
+     208  0x35760  ??Mlmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     209  0x35790  ??Mlmx@@YA_NAEBVc_big_int@0@0@Z
+     210  0x35800  ??Mlmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     211  0x35860  ??Mlmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     212  0x358b0  ??Mlmx@@YA_NAEBVc_date@0@0@Z
+     213  0x35940  ??Mlmx@@YA_NAEBVc_datetime@0@0@Z
+     214  0x359d0  ??Mlmx@@YA_NAEBVc_decimal@0@0@Z
+     215  0x35a40  ??Mlmx@@YA_NAEBVc_duration@0@0@Z
+     216  0x35ab0  ??Mlmx@@YA_NAEBVc_gday@0@0@Z
+     217  0x35b40  ??Mlmx@@YA_NAEBVc_gmonth@0@0@Z
+     218  0x35bd0  ??Mlmx@@YA_NAEBVc_gmonthday@0@0@Z
+     219  0x35c60  ??Mlmx@@YA_NAEBVc_gyear@0@0@Z
+     220  0x35cf0  ??Mlmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     221  0x35d80  ??Mlmx@@YA_NAEBVc_time@0@0@Z
+     222  0x35e10  ??Mlmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     223  0x35e20  ??Nlmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     224  0x35e80  ??Nlmx@@YA_NAEBVc_big_int@0@0@Z
+     225  0x35ec0  ??Nlmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     226  0x35f00  ??Nlmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     227  0x35f20  ??Nlmx@@YA_NAEBVc_date@0@0@Z
+     228  0x35f80  ??Nlmx@@YA_NAEBVc_datetime@0@0@Z
+     229  0x35fe0  ??Nlmx@@YA_NAEBVc_decimal@0@0@Z
+     230  0x36000  ??Nlmx@@YA_NAEBVc_duration@0@0@Z
+     231  0x36050  ??Nlmx@@YA_NAEBVc_gday@0@0@Z
+     232  0x360b0  ??Nlmx@@YA_NAEBVc_gmonth@0@0@Z
+     233  0x36110  ??Nlmx@@YA_NAEBVc_gmonthday@0@0@Z
+     234  0x36170  ??Nlmx@@YA_NAEBVc_gyear@0@0@Z
+     235  0x361d0  ??Nlmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     236  0x36230  ??Nlmx@@YA_NAEBVc_time@0@0@Z
+     237  0x36290  ??Nlmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     238  0x362e0  ??Olmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     239  0x36340  ??Olmx@@YA_NAEBVc_big_int@0@0@Z
+     240  0x36360  ??Olmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     241  0x36380  ??Olmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     242  0x36570  ??Olmx@@YA_NAEBVc_date@0@0@Z
+     243  0x365d0  ??Olmx@@YA_NAEBVc_datetime@0@0@Z
+     244  0x36630  ??Olmx@@YA_NAEBVc_decimal@0@0@Z
+     245  0x36720  ??Olmx@@YA_NAEBVc_duration@0@0@Z
+     246  0x36760  ??Olmx@@YA_NAEBVc_gday@0@0@Z
+     247  0x367c0  ??Olmx@@YA_NAEBVc_gmonth@0@0@Z
+     248  0x36820  ??Olmx@@YA_NAEBVc_gmonthday@0@0@Z
+     249  0x36880  ??Olmx@@YA_NAEBVc_gyear@0@0@Z
+     250  0x368e0  ??Olmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     251  0x36940  ??Olmx@@YA_NAEBVc_time@0@0@Z
+     252  0x369a0  ??Olmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     253  0x369f0  ??Plmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_big_int@0@@Z
+     254  0x36a30  ??Plmx@@YA_NAEBVc_big_int@0@0@Z
+     255  0x36aa0  ??Plmx@@YA_NAEBVc_big_int@0@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     256  0x36b00  ??Plmx@@YA_NAEBVc_big_int@0@PEBD@Z
+     257  0x36b40  ??Plmx@@YA_NAEBVc_date@0@0@Z
+     258  0x36bd0  ??Plmx@@YA_NAEBVc_datetime@0@0@Z
+     259  0x36c60  ??Plmx@@YA_NAEBVc_decimal@0@0@Z
+     260  0x36cd0  ??Plmx@@YA_NAEBVc_duration@0@0@Z
+     261  0x36d40  ??Plmx@@YA_NAEBVc_gday@0@0@Z
+     262  0x36dd0  ??Plmx@@YA_NAEBVc_gmonth@0@0@Z
+     263  0x36e60  ??Plmx@@YA_NAEBVc_gmonthday@0@0@Z
+     264  0x36ef0  ??Plmx@@YA_NAEBVc_gyear@0@0@Z
+     265  0x36f80  ??Plmx@@YA_NAEBVc_gyearmonth@0@0@Z
+     266  0x37010  ??Plmx@@YA_NAEBVc_time@0@0@Z
+     267  0x370a0  ??Plmx@@YA_NPEBDAEBVc_big_int@0@@Z
+     268   0xd320  ??Rc_xml_writer@lmx@@QEAAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@_N@Z
+     269  0x371a0  ??Yc_binary@lmx@@QEAAXE@Z
+     270  0x4f7e8  ??_7c_error@lmx@@6B@
+     271  0x4f800  ??_7c_read@lmx@@6B@
+     272  0x137d0  ?add_char_wsp@c_get_with_entities@lmx@@QEAAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H_N@Z
+     273  0x138f0  ?add_default_namespace@c_xml_writer@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     274  0x13ad0  ?add_default_namespace_mapping@c_xml_reader@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     275  0x13cb0  ?add_general_entity@c_get_with_entities@lmx@@QEAAXPEBD0@Z
+     276  0x13cc0  ?add_general_entity@c_xml@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+     277  0x13d00  ?add_namespace@c_enumerated_namespaces@lmx@@QEAAHPEBD@Z
+     278  0x13d70  ?add_namespace@c_enumerated_namespaces@lmx@@QEAAXPEBDH@Z
+     279  0x13dd0  ?add_namespace@c_xml@lmx@@QEAAHPEBD@Z
+     280  0x13de0  ?add_namespace@c_xml@lmx@@QEAAXPEBDH@Z
+     281  0x13e50  ?add_namespace@c_xml_local@lmx@@QEAAXPEBDH@Z
+     282  0x13e70  ?add_namespace@c_xml_writer@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+     283  0x13f10  ?add_namespace_mapping@c_xml_reader@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+     284  0x13fb0  ?add_no_namespace_schema_location@c_xml_writer@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     285  0x14190  ?add_parameter_entity@c_get_with_entities@lmx@@QEAAXPEBD0@Z
+     286  0x141a0  ?add_parameter_entity@c_xml@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+     287  0x141e0  ?add_schema_location@c_xml_writer@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z
+     288  0x37b50  ?append@c_binary@lmx@@QEAAXE@Z
+     289  0x37e70  ?at@c_binary@lmx@@QEAAAEAE_K@Z
+     290  0x37ea0  ?at@c_binary@lmx@@QEBAAEBE_K@Z
+     291  0x15230  ?back@c_string_stack@lmx@@QEBAPEBDXZ
+     292  0x154f0  ?bind@c_getter_error_binder@lmx@@QEAAXPEBVc_get_as_utf8@2@@Z
+     293  0x15510  ?bool_must_understand@lmx@@YA?AW4elmx_must_understand@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     294  0x15580  ?bswap@lmx@@YAXPEAX0_K@Z
+     295  0x156e0  ?capture_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     296  0x15790  ?capture_error@c_xml_writer@lmx@@QEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     297  0x15ff0  ?clear@c_enumerated_namespaces@lmx@@QEAAXXZ
+     298  0x16050  ?clear@c_unget_buffer@lmx@@QEAAXXZ
+     299  0x16060  ?clear@c_xml_local@lmx@@QEAAXXZ
+     300  0x16070  ?clear@s_debug_error@lmx@@QEAAXXZ
+     301  0x160b0  ?clear_default_external_transcoder_factory@c_get_as_utf8@lmx@@SAXXZ
+     302  0x160c0  ?clear_default_external_transcoder_factory@c_xml@lmx@@SAXXZ
+     303  0x160d0  ?clear_expected_class_identity@c_xml_writer@lmx@@QEAAXXZ
+     304  0x160e0  ?clear_external_transcoder_factory@c_get_as_utf8@lmx@@QEAAXXZ
+     305  0x160f0  ?clear_external_transcoder_factory@c_xml@lmx@@QEAAXXZ
+     306  0x16100  ?close@c_read_file@lmx@@QEAAXXZ
+     307  0x16340  ?conditionally_select_ns_map@c_xml_writer@lmx@@QEAAXPEBUs_ns_map@2@@Z
+     308  0x16360  ?conditionally_write_ns_attrs@c_xml_writer@lmx@@QEAAX_N@Z
+     309  0x38090  ?convert@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+     310  0x38300  ?convert@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+     311  0x16d90  ?count@c_xml_list_tokeniser@lmx@@SA_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     312  0x78ae0  ?debug_error@lmx@@3Us_debug_error@1@A
+     313  0x172a0  ?disable_ns_map_output@c_xml_writer@lmx@@QEAAXXZ
+     314  0x38330  ?empty@c_binary@lmx@@QEBA_NXZ
+     315  0x17320  ?empty@c_unget_buffer@lmx@@QEBA_NXZ
+     316  0x17640  ?end_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+     317  0x38380  ?equal@c_binary@lmx@@QEBA_NQEBE_K@Z
+     318  0x17850  ?error@c_error@lmx@@QEAAXW4elmx_error_type@2@W4elmx_error@2@PEBD@Z
+     319  0x17900  ?error@c_error@lmx@@QEAAXW4elmx_error_type@2@W4elmx_error@2@PEBDH2@Z
+     320  0x17950  ?error@c_get_as_utf8@lmx@@QEAAXW4elmx_error_type@2@W4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     321  0x17a10  ?error@c_get_as_utf8@lmx@@QEAAXW4elmx_error_type@2@W4elmx_error@2@PEBD@Z
+     322  0x17ac0  ?extract_namespace_context@c_xml_local@lmx@@QEBAXPEAVc_namespace_context@2@AEBVc_xml@2@@Z
+     323  0x18370  ?find_enumerated_namespace@c_xml@lmx@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     324  0x183b0  ?find_first_namespace_prefix@c_xml_local@lmx@@QEBAPEBDH@Z
+     325  0x18890  ?find_namespace@c_enumerated_namespaces@lmx@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     326  0x188d0  ?find_namespace_from_id@c_enumerated_namespaces@lmx@@QEBAPEBDH@Z
+     327  0x18900  ?find_namespace_from_id@c_xml@lmx@@QEBAPEBDH@Z
+     328  0x18930  ?find_namespace_id@c_xml_local@lmx@@QEBAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     329  0x189d0  ?find_namespace_prefix@c_xml_local@lmx@@QEBAPEBDH@Z
+     330  0x18ec0  ?float_zero@lmx@@YANXZ
+     331  0x18ed0  ?found_unknown_attribute@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     332  0x18f50  ?found_unknown_element@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     333  0x38510  ?fraction_digits@lmx@@YAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     334  0x385b0  ?from_base64@c_binary@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     335  0x38770  ?from_hex@c_binary@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     336  0x38950  ?get@c_big_int@lmx@@QEBAJPEA_N@Z
+     337  0x38a50  ?get@c_binary@lmx@@QEBAPEAEPEAE_K@Z
+     338  0x197a0  ?get@c_dtd_util@lmx@@QEAAHXZ
+     339  0x19890  ?get@c_get_as_utf8@lmx@@QEAAHXZ
+     340  0x198e0  ?get@c_get_with_entities@lmx@@QEAAHXZ
+     341  0x199d0  ?get@c_unget_buffer@lmx@@QEAAHXZ
+     342  0x19a10  ?get@c_xml_list_tokeniser@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     343  0x1a0c0  ?get_any_element@c_xml@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@W4elmx_whitespace@2@_N@Z
+     344  0x38c50  ?get_as_float@c_big_int@lmx@@QEBANXZ
+     345  0x38d70  ?get_as_float@c_decimal@lmx@@QEBANXZ
+     346  0x38f30  ?get_as_string@c_big_int@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     347  0x38f60  ?get_as_string@c_date@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     348  0x38f90  ?get_as_string@c_datetime@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     349  0x38fc0  ?get_as_string@c_decimal@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     350  0x38ff0  ?get_as_string@c_duration@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     351  0x39020  ?get_as_string@c_gday@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     352  0x39050  ?get_as_string@c_gmonth@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     353  0x39080  ?get_as_string@c_gmonthday@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     354  0x390b0  ?get_as_string@c_gyear@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     355  0x390e0  ?get_as_string@c_gyearmonth@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     356  0x39110  ?get_as_string@c_time@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     357  0x1a120  ?get_attribute_event@c_xml_reader@lmx@@QEAA_NQEBUs_event_map@2@PEAW4elmx_error@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     358  0x1a1e0  ?get_attribute_name@c_xml@lmx@@QEAA?AW4elxp_xml_event@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z
+     359  0x1a3a0  ?get_attribute_value@c_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@@Z
+     360  0x1a500  ?get_comment_collection@c_get_for_xml@lmx@@QEAAAEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ
+     361  0x1a510  ?get_comment_collection@c_xml@lmx@@QEAAAEAV?$vector@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@V?$allocator@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@@std@@XZ
+     362  0x1a520  ?get_convenience_options@c_xml_writer@lmx@@SAHXZ
+     363  0x1a530  ?get_current_event@c_xml_reader@lmx@@QEBAHXZ
+     364  0x1a540  ?get_day@c_date@lmx@@QEBAIXZ
+     365  0x1a550  ?get_day@c_datetime@lmx@@QEBAIXZ
+     366  0x1a560  ?get_day@c_gday@lmx@@QEBAIXZ
+     367  0x1a570  ?get_day@c_gmonthday@lmx@@QEBAIXZ
+     368  0x1a580  ?get_days@c_duration@lmx@@QEBAIXZ
+     369  0x1a590  ?get_debug_error@c_xml_reader@lmx@@QEBAAEBUs_debug_error@2@XZ
+     370  0x1a5a0  ?get_debug_error@c_xml_writer@lmx@@QEBAAEBUs_debug_error@2@XZ
+     371  0x39140  ?get_decimal@lmx@@YAHAEAPEBDAEAM@Z
+     372  0x39170  ?get_decimal@lmx@@YAHAEAPEBDAEAN@Z
+     373  0x1a5b0  ?get_default@c_untyped_validation_spec@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     374  0x1a5c0  ?get_default_attribute_nl@c_xml_writer@lmx@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     375  0x1a5d0  ?get_default_attribute_tab@c_xml_writer@lmx@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     376  0x1a5e0  ?get_default_nl@c_xml_writer@lmx@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     377  0x1a5f0  ?get_default_tab@c_xml_writer@lmx@@SAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     378  0x1a600  ?get_description@s_debug_error@lmx@@QEBAPEBDPEBUs_custom_error_description@2@@Z
+     379  0x1a680  ?get_description@s_debug_error@lmx@@QEBAPEBDXZ
+     380  0x39270  ?get_digits@lmx@@YAHAEAPEBDAEAH@Z
+     381  0x392e0  ?get_digits@lmx@@YAHAEAPEBDAEAI@Z
+     382  0x1a710  ?get_element_event@c_xml_reader@lmx@@QEAAXPEAW4elmx_error@2@@Z
+     383  0x1a720  ?get_element_event@c_xml_reader@lmx@@QEAAXPEAW4elmx_error@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     384  0x1a930  ?get_element_event@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@PEAW4elmx_error@2@@Z
+     385  0x1a980  ?get_element_event@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@PEAW4elmx_error@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     386  0x1a9d0  ?get_element_name@c_xml@lmx@@QEAA?AW4elxp_xml_event@2@PEAVc_xml_local@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     387  0x1af30  ?get_element_name_stack@c_xml_reader@lmx@@QEAAAEAVc_string_stack@2@XZ
+     388  0x1af40  ?get_element_ns_id@c_cracked_name@lmx@@QEBAHXZ
+     389  0x1af60  ?get_element_ns_id@c_xml_reader@lmx@@QEBAHXZ
+     390  0x1af80  ?get_element_ur_value@c_xml_reader@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@PEAW4elmx_error@2@PEA_N@Z
+     391  0x1b200  ?get_element_value@c_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@_N@Z
+     392  0x1b6c0  ?get_element_value@c_xml_reader@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@@Z
+     393  0x1b990  ?get_entity_stack_depth@c_get_with_entities@lmx@@QEBA_KXZ
+     394  0x1b9c0  ?get_entity_value@c_dtd_util@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     395  0x1bb40  ?get_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@XZ
+     396  0x1bb50  ?get_error_description@lmx@@YAPEBDW4elmx_error@1@@Z
+     397  0x1bb90  ?get_error_handler@c_get_as_utf8@lmx@@QEBAAEAVc_error@2@XZ
+     398  0x1bba0  ?get_error_info@c_error@lmx@@QEAA_NPEAW4elmx_error_type@2@PEAW4elmx_error@2@PEAH@Z
+     399  0x1bbc0  ?get_error_info@c_xml_reader@lmx@@QEAA_NPEAW4elmx_error_type@2@PEAW4elmx_error@2@PEAH@Z
+     400  0x1bbf0  ?get_error_info@c_xml_writer@lmx@@QEAA_NPEAW4elmx_error_type@2@PEAW4elmx_error@2@PEAH@Z
+     401  0x1bc20  ?get_error_item_name@c_xml_reader@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     402  0x1bc30  ?get_error_item_name@c_xml_writer@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     403  0x1bc40  ?get_error_mapping@lmx@@YAPEBUs_error_description@1@W4elmx_error@1@@Z
+     404  0x1bc80  ?get_error_message@c_xml_reader@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     405  0x1bdd0  ?get_error_message@c_xml_reader@lmx@@UEBAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@@Z
+     406  0x1bee0  ?get_error_message@c_xml_writer@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     407  0x1c030  ?get_error_message@c_xml_writer@lmx@@UEBAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@@Z
+     408  0x1c140  ?get_expected_class_identity@c_xml_writer@lmx@@QEBAPEBDXZ
+     409  0x39350  ?get_fractional@c_decimal@lmx@@QEBAKHPEA_N@Z
+     410  0x1c150  ?get_full_name@c_cracked_name@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     411  0x1c160  ?get_full_name@c_xml_reader@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     412  0x1c170  ?get_general_entity@c_get_with_entities@lmx@@QEBA_NPEBDPEAPEBD@Z
+     413  0x1c180  ?get_has_attributes@c_xml_writer_local@lmx@@QEBA_NXZ
+     414  0x1c190  ?get_has_body@c_xml_writer_local@lmx@@QEBA_NXZ
+     415  0x1c1a0  ?get_has_children@c_xml_writer_local@lmx@@QEBA_NXZ
+     416  0x1c1b0  ?get_has_ns_prefix@c_cracked_name@lmx@@QEBA_NXZ
+     417  0x1c1c0  ?get_has_ns_prefix@c_xml_reader@lmx@@QEBA_NXZ
+     418  0x1c1d0  ?get_has_pi@c_get_for_xml@lmx@@QEAA_NXZ
+     419  0x1c1e0  ?get_has_pi@c_xml@lmx@@QEAA_NXZ
+     420  0x1c1f0  ?get_hours@c_datetime@lmx@@QEBAIXZ
+     421  0x1c200  ?get_hours@c_duration@lmx@@QEBAIXZ
+     422  0x1c210  ?get_hours@c_time@lmx@@QEBAIXZ
+     423  0x1c230  ?get_instance_namespace@lmx@@YA_NAEAVc_xml_reader@1@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     424  0x39460  ?get_integral@c_decimal@lmx@@QEBAJPEA_N@Z
+     425  0x1c490  ?get_is_neg@c_duration@lmx@@QEBA_NXZ
+     426  0x1c4a0  ?get_is_utc@c_date@lmx@@QEBA_NXZ
+     427  0x1c4b0  ?get_is_utc@c_datetime@lmx@@QEBA_NXZ
+     428  0x1c4c0  ?get_is_utc@c_gday@lmx@@QEBA_NXZ
+     429  0x1c4d0  ?get_is_utc@c_gmonth@lmx@@QEBA_NXZ
+     430  0x1c4e0  ?get_is_utc@c_gmonthday@lmx@@QEBA_NXZ
+     431  0x1c4f0  ?get_is_utc@c_gyear@lmx@@QEBA_NXZ
+     432  0x1c500  ?get_is_utc@c_gyearmonth@lmx@@QEBA_NXZ
+     433  0x1c510  ?get_is_utc@c_time@lmx@@QEBA_NXZ
+     434  0x1c540  ?get_known_element_event@c_xml_reader@lmx@@QEAAXPEAW4elmx_error@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     435  0x1c5a0  ?get_known_element_event@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@PEAW4elmx_error@2@@Z
+     436  0x1c5b0  ?get_known_element_event@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@PEAW4elmx_error@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     437  0x1c640  ?get_known_elements@c_xml_reader@lmx@@QEBAPEBUs_known_elements@2@XZ
+     438  0x1c650  ?get_last_error@c_error@lmx@@QEAA?AW4elmx_error@2@XZ
+     439  0x1c660  ?get_last_error_type@c_error@lmx@@QEAA?AW4elmx_error_type@2@XZ
+     440  0x1c670  ?get_line_no@c_xml_reader@lmx@@QEBAHXZ
+     441  0x1c680  ?get_line_num@c_get_as_utf8@lmx@@QEBAHXZ
+     442  0x1c690  ?get_line_num@c_xml@lmx@@QEBAHXZ
+     443  0x1c6a0  ?get_local_name@c_cracked_name@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     444  0x1c6b0  ?get_local_name@c_xml@lmx@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@PEAV34@@Z
+     445  0x1c700  ?get_local_name@c_xml_reader@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     446  0x1c710  ?get_local_name@c_xml_reader@lmx@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@PEAV34@@Z
+     447  0x1c760  ?get_mins@c_datetime@lmx@@QEBAIXZ
+     448  0x1c770  ?get_mins@c_duration@lmx@@QEBAIXZ
+     449  0x1c780  ?get_mins@c_time@lmx@@QEBAIXZ
+     450  0x1c790  ?get_month@c_date@lmx@@QEBAIXZ
+     451  0x1c7a0  ?get_month@c_datetime@lmx@@QEBAIXZ
+     452  0x1c7b0  ?get_month@c_gmonth@lmx@@QEBAIXZ
+     453  0x1c7c0  ?get_month@c_gmonthday@lmx@@QEBAIXZ
+     454  0x1c7d0  ?get_month@c_gyearmonth@lmx@@QEBAIXZ
+     455  0x1c7e0  ?get_months@c_duration@lmx@@QEBAIXZ
+     456  0x1c800  ?get_named_attribute@c_xml@lmx@@QEAA_NPEBVc_xml_local@2@HAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV45@@Z
+     457  0x1ca00  ?get_named_attribute@c_xml_reader@lmx@@QEAA_NHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAV34@@Z
+     458  0x1ca30  ?get_namespace@c_xml_reader@lmx@@QEBAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@PEAV34@@Z
+     459  0x1cae0  ?get_namespace_attribute_name@c_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     460  0x1cbd0  ?get_namespace_attribute_value@c_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     461  0x1cd30  ?get_namespace_prefix@c_xml@lmx@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@PEAV34@@Z
+     462  0x1cdf0  ?get_namespace_prefix@c_xml_reader@lmx@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@PEAV34@@Z
+     463  0x1ce00  ?get_namespace_prefix@c_xml_writer@lmx@@QEBAPEBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     464  0x1d1f0  ?get_nested_element_value@c_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0W4elmx_whitespace@2@_N@Z
+     465  0x1d5c0  ?get_nested_element_value@c_xml_reader@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0W4elmx_whitespace@2@_N@Z
+     466  0x1d620  ?get_new_getter@c_getter_error_binder@lmx@@QEBAPEBVc_get_as_utf8@2@XZ
+     467  0x1d630  ?get_non_ws@c_get_for_xml@lmx@@QEAAHXZ
+     468  0x39480  ?get_non_ws@lmx@@YA_NAEAPEBDPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     469  0x1d670  ?get_ns_id@c_cracked_name@lmx@@QEBAHXZ
+     470  0x1d680  ?get_ns_id@c_xml@lmx@@QEBAHPEBVc_xml_local@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     471  0x1d6c0  ?get_ns_id@c_xml_reader@lmx@@QEBAHXZ
+     472  0x1d6d0  ?get_ns_prefix@c_cracked_name@lmx@@QEBAAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     473  0x1d6e0  ?get_old_getter@c_getter_error_binder@lmx@@QEBAPEBVc_get_as_utf8@2@XZ
+     474  0x395d0  ?get_opt_sign@lmx@@YA_NAEAPEBDAEA_N@Z
+     475  0x1d6f0  ?get_parameter_entity@c_get_with_entities@lmx@@QEBA_NPEBDPEAPEBD@Z
+     476  0x1d700  ?get_parent_has_body@c_xml_writer_local@lmx@@QEAA_NXZ
+     477  0x1d720  ?get_quoted_entity_value@c_dtd_util@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     478  0x1d8d0  ?get_reader_local@c_xml_reader@lmx@@QEBAPEAVc_xml_reader_local@2@XZ
+     479  0x39600  ?get_scaled@c_decimal@lmx@@QEBAJHPEA_N@Z
+     480  0x1d8e0  ?get_secs@c_datetime@lmx@@QEBANXZ
+     481  0x1d8f0  ?get_secs@c_duration@lmx@@QEBANXZ
+     482  0x1d900  ?get_secs@c_time@lmx@@QEBANXZ
+     483  0x39910  ?get_sign@lmx@@YA_NAEAPEBDAEA_N@Z
+     484  0x1d910  ?get_simple_quoted_value@c_get_for_xml@lmx@@QEAA_NPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     485  0x1da80  ?get_simple_type_value@c_xml_reader@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4elmx_whitespace@2@PEAV34@PEAW4elmx_error@2@PEA_N@Z
+     486  0x1db90  ?get_source_id@c_get_as_utf8@lmx@@QEBAPEBDXZ
+     487  0x1dba0  ?get_source_id@c_read@lmx@@UEBAPEBDXZ
+     488  0x1dbb0  ?get_source_id@c_read_file@lmx@@UEBAPEBDXZ
+     489  0x1dbd0  ?get_source_id@c_read_memory@lmx@@UEBAPEBDXZ
+     490  0x1dbf0  ?get_source_id@c_xml@lmx@@QEBAPEBDXZ
+     491  0x1dc00  ?get_stack_size@c_string_stack@lmx@@QEBA_KXZ
+     492  0x1dc30  ?get_str@c_string_stack_node@lmx@@QEBAPEBDXZ
+     493  0x1dc40  ?get_total_offset_mins@c_date@lmx@@QEBAHXZ
+     494  0x1dc50  ?get_total_offset_mins@c_datetime@lmx@@QEBAHXZ
+     495  0x1dc60  ?get_total_offset_mins@c_gday@lmx@@QEBAHXZ
+     496  0x1dc70  ?get_total_offset_mins@c_gmonth@lmx@@QEBAHXZ
+     497  0x1dc80  ?get_total_offset_mins@c_gmonthday@lmx@@QEBAHXZ
+     498  0x1dc90  ?get_total_offset_mins@c_gyear@lmx@@QEBAHXZ
+     499  0x1dca0  ?get_total_offset_mins@c_gyearmonth@lmx@@QEBAHXZ
+     500  0x1dcb0  ?get_total_offset_mins@c_time@lmx@@QEBAHXZ
+     501  0x1dcf0  ?get_whitespace_handling@c_untyped_validation_spec@lmx@@QEBA?AW4elmx_whitespace@2@XZ
+     502  0x1dd00  ?get_xml_writer_local@c_xml_writer@lmx@@QEAAPEAVc_xml_writer_local@2@XZ
+     503  0x1dd10  ?get_xsi_type@c_xml@lmx@@QEAA_NPEBVc_xml_local@2@PEAHPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     504  0x1ded0  ?get_xsi_type@c_xml_reader@lmx@@QEAA_NPEAHPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     505  0x1def0  ?get_year@c_date@lmx@@QEBAHXZ
+     506  0x1df00  ?get_year@c_datetime@lmx@@QEBAHXZ
+     507  0x1df10  ?get_year@c_gyear@lmx@@QEBAHXZ
+     508  0x1df20  ?get_year@c_gyearmonth@lmx@@QEBAHXZ
+     509  0x1df30  ?get_years@c_duration@lmx@@QEBAIXZ
+     510  0x78b70  ?global_check_exception@lmx@@3Vc_check_exception@1@A
+     511  0x1df40  ?handle_attribute_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@@Z
+     512  0x1e1a0  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@@Z
+     513  0x1e210  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     514  0x1e270  ?handle_error@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@W432@H@Z
+     515  0x1e2e0  ?handle_error@c_xml_writer@lmx@@QEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     516  0x1e340  ?has_must_understand@lmx@@YA?AW4elmx_must_understand@1@AEAVc_xml_reader@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@1P6A?AW421@1@Z@Z
+     517  0x1e540  ?ignore_element@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@QEBUs_event_map@2@@Z
+     518  0x4b434  ?include_standalone@c_xml_writer@lmx@@2HB
+     519  0x4b430  ?include_xml_decl@c_xml_writer@lmx@@2HB
+     520  0x1e5f0  ?indent@c_xml_writer@lmx@@QEAAXXZ
+     521  0x1e600  ?insert_character_entity@c_get_with_entities@lmx@@QEAA_NAEAVc_entity_name_reader@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     522  0x1e930  ?is_auto_versioning@c_xml_reader@lmx@@QEBA_NXZ
+     523  0x1e940  ?is_compiled@c_regex@lmx@@QEBA_NXZ
+     524  0x1e950  ?is_current_event_tokenisable@c_xml_reader@lmx@@QEBA_NXZ
+     525  0x1ecd0  ?is_element_end_tag@c_xml@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     526  0x1ede0  ?is_element_end_tag@c_xml_reader@lmx@@QEAA_NXZ
+     527  0x1ee60  ?is_error_event@c_xml@lmx@@SA_NH@Z
+     528  0x1ee70  ?is_errored@c_error@lmx@@QEAA_NXZ
+     529  0x1ee80  ?is_fatal_errored@c_error@lmx@@QEAA_NXZ
+     530  0x1ee90  ?is_lexical_valid@c_untyped_validation_spec@lmx@@QEBA?AW4elmx_error@2@AEAVc_xml_reader@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     531  0x1eec0  ?is_match@c_pattern@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     532  0x1eed0  ?is_match@c_pattern@lmx@@QEBA_NAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     533  0x3df60  ?is_match@c_regex@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     534  0x399e0  ?is_max_length_ok@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@Z
+     535  0x39a20  ?is_min_length_ok@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_K@Z
+     536  0x1f020  ?is_nil@c_unmarshal_helper@lmx@@EEBA_NXZ
+     537  0x1f030  ?is_not_choice_or_choice_is_not_set@c_unmarshal_helper@lmx@@EEBA_NXZ
+     538  0x1f040  ?is_open@c_read@lmx@@UEBA_NXZ
+     539  0x1f050  ?is_open@c_read_file@lmx@@UEBA_NXZ
+     540  0x1f060  ?is_open@c_read_memory@lmx@@UEBA_NXZ
+     541  0x1f070  ?is_open@c_xml_reader_file@lmx@@QEBA_NXZ
+     542  0x1f080  ?is_open@c_xml_reader_memory@lmx@@QEBA_NXZ
+     543  0x39a70  ?is_valid@c_date@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     544  0x39bc0  ?is_valid@c_datetime@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     545  0x39e50  ?is_valid@c_decimal@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     546  0x1f090  ?is_valid@c_duration@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     547  0x39eb0  ?is_valid@c_duration@lmx@@SA_NPEBD@Z
+     548  0x3a1b0  ?is_valid@c_gday@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     549  0x3a250  ?is_valid@c_gmonth@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     550  0x3a320  ?is_valid@c_gmonthday@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     551  0x3a420  ?is_valid@c_gyear@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     552  0x3a4a0  ?is_valid@c_gyearmonth@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     553  0x3a590  ?is_valid@c_time@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     554  0x3a720  ?is_valid_base64@c_binary@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     555  0x3a8b0  ?is_valid_bool@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     556  0x3a920  ?is_valid_float@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     557  0x3aa50  ?is_valid_hex@c_binary@lmx@@SA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     558  0x3ab00  ?is_valid_integer@lmx@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     559  0x1f0b0  ?is_valid_qname@c_xml_reader@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     560  0x1f470  ?is_valid_utf8_char_sequence@lmx@@YA_NQEBD@Z
+     561  0x1f5c0  ?is_xsi_attribute@c_xml@lmx@@QEBA_NPEBVc_xml_local@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     562  0x1f600  ?is_xsi_attribute@c_xml_reader@lmx@@QEBA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     563  0x1f650  ?is_xsi_attribute@c_xml_reader@lmx@@QEBA_NXZ
+     564  0x78a90  ?k_namespace_not_found@c_xml@lmx@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B
+     565  0x78a68  ?k_non_namespace@c_xml@lmx@@2V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B
+     566  0x78bc8  ?k_qname_user_explicit_ns_prefix_not_set@lmx@@3V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@B
+     567  0x1f6a0  ?leave_file_open_on_delete@c_read_file@lmx@@QEAAX_N@Z
+     568  0x3ac70  ?length@lmx@@YA_KAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     569  0x3ae70  ?length@lmx@@YA_KAEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@Z
+     570  0x1f750  ?m_getter@c_dtd_util@lmx@@QEAAAEAVc_get_for_xml@2@XZ
+     571  0x3af50  ?make_qname@lmx@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@11@Z
+     572  0x3af70  ?make_qname@lmx@@YAXPEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV23@@Z
+     573  0x3af80  ?make_qname@lmx@@YAXPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@11@Z
+     574  0x3af90  ?make_qname@lmx@@YAXPEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+     575  0x3afa0  ?make_qname@lmx@@YAXPEAV?$ct_qname@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@11@Z
+     576  0x3aff0  ?make_qname@lmx@@YAXPEAV?$ct_qname@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     577  0x3b000  ?make_qname@lmx@@YAXPEAV?$ct_qname@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@11@Z
+     578  0x3b180  ?make_qname@lmx@@YAXPEAV?$ct_qname@V?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@@1@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     579  0x1f780  ?marshal_any_attribute@c_xml_writer@lmx@@QEAAXAEBV?$ct_non_pod_container@Vc_any_info@lmx@@V?$vector@PEAVc_any_info@lmx@@V?$allocator@PEAVc_any_info@lmx@@@std@@@std@@V?$ct_happy_ptr_deleter@Vc_any_info@lmx@@@2@@2@@Z
+     580  0x1f840  ?marshal_attribute_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@@Z
+     581  0x1f8c0  ?marshal_attribute_list_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_list_bridge@2@@Z
+     582  0x1f980  ?marshal_attribute_list_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_list_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     583  0x1fa10  ?marshal_attribute_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     584  0x1faa0  ?marshal_element_body_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@@Z
+     585  0x1fb00  ?marshal_element_body_list_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_list_bridge@2@@Z
+     586  0x1fba0  ?marshal_element_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@PEBUs_ns_map@2@@Z
+     587  0x1fcc0  ?marshal_element_list_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_list_bridge@2@PEBUs_ns_map@2@@Z
+     588  0x1fe10  ?marshal_element_list_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_list_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     589  0x1fe70  ?marshal_element_or_default_impl@c_xml_writer@lmx@@QEAAXQEBDAEAVc_untyped_marshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     590  0x20130  ?move_to_start_tag_end@c_get_for_xml@lmx@@QEAA_NPEA_N@Z
+     591  0x3b230  ?normalize@c_duration@lmx@@QEAAXXZ
+     592  0x3b2d0  ?out_base64@c_binary@lmx@@QEBAXAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@@Z
+     593  0x3b430  ?out_hex@c_binary@lmx@@QEBAXAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@@Z
+     594  0x3b580  ?output_convert_to_ascii@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+     595  0x3b610  ?output_convert_to_base64@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBVc_binary@1@@Z
+     596  0x3b630  ?output_convert_to_bool_digit@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@_N@Z
+     597  0x3b660  ?output_convert_to_escaped@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+     598  0x3b670  ?output_convert_to_hex@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBVc_binary@1@@Z
+     599  0x3b690  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+     600  0x3b7e0  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@AEBV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@3@@Z
+     601  0x3ba90  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@M@Z
+     602  0x3bb50  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@N@Z
+     603  0x3bc10  ?output_convert_to_xml@lmx@@YAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV23@_N@Z
+     604  0x244a0  ?prepare_for_simple_body_data@c_xml_writer@lmx@@QEAAXXZ
+     605  0x24d20  ?read@c_read_file@lmx@@UEAAHXZ
+     606  0x24da0  ?read@c_read_memory@lmx@@UEAAHXZ
+     607  0x24dc0  ?read_doctype_decl@c_internal_dtd@lmx@@QEAA_NXZ
+     608  0x254f0  ?read_specified_string_from_input@c_get_for_xml@lmx@@QEAA_NPEBD@Z
+     609  0x256d0  ?read_xml_decl@c_get_for_xml@lmx@@QEAA_NXZ
+     610  0x25ae0  ?reenable_ns_map_output@c_xml_writer@lmx@@QEAAXXZ
+     611  0x25b00  ?register_getter@c_error@lmx@@QEAAPEBVc_get_as_utf8@2@PEAVc_getter_error_binder@2@@Z
+     612  0x266d0  ?report_error@c_error@lmx@@UEAAXW4elmx_error_type@2@W4elmx_error@2@PEBDH2@Z
+     613  0x26760  ?reset@c_internal_dtd@lmx@@QEAAXXZ
+     614  0x26770  ?reset_ws_mode@c_get_with_entities@lmx@@QEAAXXZ
+     615  0x26b90  ?restore_event@c_xml_reader@lmx@@QEAAXH@Z
+     616  0x26ef0  ?rewind@c_get_as_utf8@lmx@@QEAAXXZ
+     617  0x26f50  ?rewind@c_get_for_xml@lmx@@QEAAXXZ
+     618  0x26f70  ?rewind@c_get_with_entities@lmx@@QEAAXXZ
+     619  0x26fe0  ?rewind@c_read_file@lmx@@UEAAXXZ
+     620  0x27010  ?rewind@c_read_memory@lmx@@UEAAXXZ
+     621  0x27020  ?rewind@c_xml@lmx@@QEAAXXZ
+     622  0x27360  ?select_general_entity@c_get_with_entities@lmx@@QEAA_NAEAVc_entity_name_reader@2@PEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     623  0x276a0  ?select_parameter_entity@c_dtd_util@lmx@@QEAA_NXZ
+     624  0x3ce80  ?set@c_binary@lmx@@QEAAXPEBE_K@Z
+     625  0x284c0  ?set@c_cracked_name@lmx@@QEAAXPEAVc_xml_local@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     626  0x3cee0  ?set@c_decimal@lmx@@QEAAXNI@Z
+     627  0x28710  ?set@c_xml_list_tokeniser@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     628  0x28820  ?set@s_debug_error@lmx@@QEAAXW4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDHH@Z
+     629  0x28890  ?set_anyattributes_store@c_unmarshal_helper@lmx@@QEAAXPEAV?$ct_non_pod_container@Vc_any_info@lmx@@V?$vector@PEAVc_any_info@lmx@@V?$allocator@PEAVc_any_info@lmx@@@std@@@std@@V?$ct_happy_ptr_deleter@Vc_any_info@lmx@@@2@@2@@Z
+     630  0x288a0  ?set_auto_versioning@c_xml_reader@lmx@@QEAAX_N@Z
+     631  0x288b0  ?set_body_can_be_empty@c_unmarshal_helper@lmx@@QEAAXXZ
+     632  0x288c0  ?set_code_file@c_xml_reader@lmx@@QEAAXPEBD@Z
+     633  0x288d0  ?set_code_line@c_xml_reader@lmx@@QEAAXH@Z
+     634  0x288e0  ?set_convenience_options@c_xml_writer@lmx@@SAXH@Z
+     635  0x288f0  ?set_day@c_date@lmx@@QEAAXI@Z
+     636  0x28900  ?set_day@c_datetime@lmx@@QEAAXI@Z
+     637  0x28910  ?set_day@c_gday@lmx@@QEAAXI@Z
+     638  0x28920  ?set_day@c_gmonthday@lmx@@QEAAXI@Z
+     639  0x28930  ?set_days@c_duration@lmx@@QEAAXI@Z
+     640  0x28940  ?set_default_attribute_nl@c_xml_writer@lmx@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     641  0x28960  ?set_default_attribute_tab@c_xml_writer@lmx@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     642  0x28980  ?set_default_external_transcoder_factory@c_get_as_utf8@lmx@@SAXAEBVc_external_transcoder_factory@2@@Z
+     643  0x28990  ?set_default_external_transcoder_factory@c_xml@lmx@@SAXAEBVc_external_transcoder_factory@2@@Z
+     644  0x289a0  ?set_default_nl@c_xml_writer@lmx@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     645  0x28ab0  ?set_default_tab@c_xml_writer@lmx@@SAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     646  0x28bc0  ?set_encoding@c_get_as_utf8@lmx@@QEAA_NPEBD@Z
+     647  0x28d90  ?set_expected_class_identity@c_xml_writer@lmx@@QEAAXPEBD@Z
+     648  0x28da0  ?set_external_transcoder_factory@c_get_as_utf8@lmx@@QEAAXAEBVc_external_transcoder_factory@2@@Z
+     649  0x28db0  ?set_external_transcoder_factory@c_xml@lmx@@QEAAXAEBVc_external_transcoder_factory@2@@Z
+     650  0x28dc0  ?set_for_attribute@c_cracked_name@lmx@@QEAAXPEAVc_xml_local@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     651  0x3cf60  ?set_fractional@c_decimal@lmx@@QEAAXKI@Z
+     652  0x28df0  ?set_has_attributes@c_xml_writer_local@lmx@@QEAAXXZ
+     653  0x28e00  ?set_has_body@c_xml_writer_local@lmx@@QEAAXXZ
+     654  0x28e10  ?set_hours@c_datetime@lmx@@QEAAXI@Z
+     655  0x28e20  ?set_hours@c_duration@lmx@@QEAAXI@Z
+     656  0x28e30  ?set_hours@c_time@lmx@@QEAAXI@Z
+     657  0x28e40  ?set_input_entity_value@c_get_with_entities@lmx@@QEAA_NPEBD@Z
+     658  0x3d150  ?set_integral@c_decimal@lmx@@QEAAXJ@Z
+     659  0x291d0  ?set_is_neg@c_duration@lmx@@QEAAX_N@Z
+     660  0x291e0  ?set_is_utc@c_date@lmx@@QEAAX_N@Z
+     661  0x291f0  ?set_is_utc@c_datetime@lmx@@QEAAX_N@Z
+     662  0x29200  ?set_is_utc@c_gday@lmx@@QEAAX_N@Z
+     663  0x29210  ?set_is_utc@c_gmonth@lmx@@QEAAX_N@Z
+     664  0x29220  ?set_is_utc@c_gmonthday@lmx@@QEAAX_N@Z
+     665  0x29230  ?set_is_utc@c_gyear@lmx@@QEAAX_N@Z
+     666  0x29240  ?set_is_utc@c_gyearmonth@lmx@@QEAAX_N@Z
+     667  0x29250  ?set_is_utc@c_time@lmx@@QEAAX_N@Z
+     668  0x29260  ?set_known_elements@c_xml_reader@lmx@@QEAAXPEBUs_known_elements@2@@Z
+     669  0x29270  ?set_mins@c_datetime@lmx@@QEAAXI@Z
+     670  0x29280  ?set_mins@c_duration@lmx@@QEAAXI@Z
+     671  0x29290  ?set_mins@c_time@lmx@@QEAAXI@Z
+     672  0x292a0  ?set_month@c_date@lmx@@QEAAXI@Z
+     673  0x292b0  ?set_month@c_datetime@lmx@@QEAAXI@Z
+     674  0x292c0  ?set_month@c_gmonth@lmx@@QEAAXI@Z
+     675  0x292d0  ?set_month@c_gmonthday@lmx@@QEAAXI@Z
+     676  0x292e0  ?set_month@c_gyearmonth@lmx@@QEAAXI@Z
+     677  0x292f0  ?set_months@c_duration@lmx@@QEAAXI@Z
+     678  0x29300  ?set_ns_map@c_xml_reader@lmx@@QEAAXPEBUs_ns_map@2@@Z
+     679  0x29ae0  ?set_offset@c_date@lmx@@QEAAXHI@Z
+     680  0x29b10  ?set_offset@c_datetime@lmx@@QEAAXHI@Z
+     681  0x29b70  ?set_offset@c_gday@lmx@@QEAAXHI@Z
+     682  0x29ba0  ?set_offset@c_gmonth@lmx@@QEAAXHI@Z
+     683  0x29bd0  ?set_offset@c_gmonthday@lmx@@QEAAXHI@Z
+     684  0x29c00  ?set_offset@c_gyear@lmx@@QEAAXHI@Z
+     685  0x29c30  ?set_offset@c_gyearmonth@lmx@@QEAAXHI@Z
+     686  0x29c60  ?set_offset@c_time@lmx@@QEAAXHI@Z
+     687  0x29c90  ?set_offset_mins@c_date@lmx@@QEAAXHI@Z
+     688  0x29cc0  ?set_offset_mins@c_datetime@lmx@@QEAAXHI@Z
+     689  0x29cf0  ?set_offset_mins@c_gday@lmx@@QEAAXHI@Z
+     690  0x29d20  ?set_offset_mins@c_gmonth@lmx@@QEAAXHI@Z
+     691  0x29d50  ?set_offset_mins@c_gmonthday@lmx@@QEAAXHI@Z
+     692  0x29d80  ?set_offset_mins@c_gyear@lmx@@QEAAXHI@Z
+     693  0x29db0  ?set_offset_mins@c_gyearmonth@lmx@@QEAAXHI@Z
+     694  0x29de0  ?set_offset_mins@c_time@lmx@@QEAAXHI@Z
+     695  0x29e10  ?set_parent_has_body@c_xml_writer_local@lmx@@QEAAXXZ
+     696  0x29e30  ?set_reader@c_xml_reader_local@lmx@@QEAAXPEAVc_xml_reader@2@@Z
+     697  0x29e40  ?set_reader_local@c_xml_reader@lmx@@QEAAXPEAVc_xml_reader_local@2@@Z
+     698  0x3d170  ?set_scaled@c_decimal@lmx@@QEAAXJH@Z
+     699  0x29e50  ?set_secs@c_datetime@lmx@@QEAAXN@Z
+     700  0x29eb0  ?set_secs@c_duration@lmx@@QEAAXN@Z
+     701  0x29f10  ?set_secs@c_time@lmx@@QEAAXN@Z
+     702  0x29f70  ?set_source_id@c_read_memory@lmx@@QEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     703  0x29f90  ?set_total_offset_mins@c_date@lmx@@QEAAXH@Z
+     704  0x29fa0  ?set_total_offset_mins@c_datetime@lmx@@QEAAXH@Z
+     705  0x29fb0  ?set_total_offset_mins@c_gday@lmx@@QEAAXH@Z
+     706  0x29fc0  ?set_total_offset_mins@c_gmonth@lmx@@QEAAXH@Z
+     707  0x29fd0  ?set_total_offset_mins@c_gmonthday@lmx@@QEAAXH@Z
+     708  0x29fe0  ?set_total_offset_mins@c_gyear@lmx@@QEAAXH@Z
+     709  0x29ff0  ?set_total_offset_mins@c_gyearmonth@lmx@@QEAAXH@Z
+     710  0x2a000  ?set_total_offset_mins@c_time@lmx@@QEAAXH@Z
+     711  0x2a010  ?set_writer@c_xml_writer_local@lmx@@QEAAXPEAVc_xml_writer@2@@Z
+     712  0x2a020  ?set_ws_mode@c_get_with_entities@lmx@@QEAAXW4elmx_whitespace@2@@Z
+     713  0x2a030  ?set_xml_writer_local@c_xml_writer@lmx@@QEAAXPEAVc_xml_writer_local@2@@Z
+     714  0x2a040  ?set_year@c_date@lmx@@QEAAXH@Z
+     715  0x2a050  ?set_year@c_datetime@lmx@@QEAAXH@Z
+     716  0x2a060  ?set_year@c_gyear@lmx@@QEAAXH@Z
+     717  0x2a070  ?set_year@c_gyearmonth@lmx@@QEAAXH@Z
+     718  0x2a080  ?set_years@c_duration@lmx@@QEAAXI@Z
+     719  0x3d350  ?size@c_binary@lmx@@QEBA_KXZ
+     720  0x2a1d0  ?size@c_string_stack@lmx@@QEBA_KXZ
+     721  0x2a1e0  ?skip_PI@c_get_for_xml@lmx@@QEAA_NXZ
+     722  0x2a3c0  ?skip_attribute_value@c_xml@lmx@@QEAA_NXZ
+     723  0x2a3e0  ?skip_comment@c_get_for_xml@lmx@@QEAA_NXZ
+     724  0x3d360  ?skip_const@lmx@@YA_NAEAPEBDPEBD@Z
+     725  0x3d3a0  ?skip_decimal@lmx@@YAHAEAPEBD@Z
+     726  0x3d440  ?skip_digits@lmx@@YAHAEAPEBD@Z
+     727  0x2a4a0  ?skip_element_body@c_xml@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     728  0x2aac0  ?skip_namespace_attribute_value@c_xml@lmx@@QEAA_NXZ
+     729  0x3d480  ?skip_non_ws@lmx@@YA_KAEAPEBD@Z
+     730  0x3d4c0  ?skip_opt_non_ws@lmx@@YA_NAEAPEBD@Z
+     731  0x3d500  ?skip_opt_sign@lmx@@YA_NAEAPEBD@Z
+     732  0x3d520  ?skip_opt_ws@lmx@@YA_NAEAPEBD@Z
+     733  0x2aae0  ?skip_rest_of_element@c_xml@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     734  0x2ab40  ?skip_rest_of_empty_element@c_xml@lmx@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     735  0x3d570  ?skip_sign@lmx@@YA_NAEAPEBD@Z
+     736  0x2ab90  ?skip_start_tag@c_xml@lmx@@QEAA_NPEA_N@Z
+     737  0x2aba0  ?skip_start_tag@c_xml_reader@lmx@@QEAA_NPEA_N@Z
+     738  0x3d590  ?skip_ws@lmx@@YA_NAEAPEBD@Z
+     739  0x2abf0  ?start_element@c_xml_writer@lmx@@QEAAXQEBD@Z
+     740  0x2b1a0  ?swap@c_big_int@lmx@@QEAAXAEAV12@@Z
+     741  0x3d6a0  ?swap@c_binary@lmx@@QEAAXAEAV12@@Z
+     742  0x3d6b0  ?swap@c_decimal@lmx@@QEAAXAEAV12@@Z
+     743  0x2b1d0  ?to_stream@s_debug_error@lmx@@QEBAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV34@@Z
+     744  0x2b1e0  ?to_stream@s_debug_error@lmx@@QEBAAEAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AEAV34@PEBUs_custom_error_description@2@@Z
+     745  0x2b300  ?to_string@c_string_stack@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV34@@Z
+     746  0x2b410  ?to_string@lmx@@YAPEBDW4elmx_error@1@@Z
+     747  0x2b450  ?to_string@s_debug_error@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBUs_custom_error_description@2@@Z
+     748  0x2b540  ?to_string@s_debug_error@lmx@@QEBA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ
+     749  0x2b5c0  ?tokenise@c_xml_reader@lmx@@QEAAXQEBUs_event_map@2@W4elxp_attr_elem@2@@Z
+     750  0x3d6f0  ?total_digits@lmx@@YAHAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+     751  0x2b800  ?undent@c_xml_writer@lmx@@QEAAXXZ
+     752  0x2b940  ?unget@c_dtd_util@lmx@@QEAAXH@Z
+     753  0x2b9e0  ?unget@c_get_as_utf8@lmx@@QEAAXH@Z
+     754  0x2ba30  ?unget@c_get_with_entities@lmx@@QEAAXH@Z
+     755  0x2bad0  ?unget@c_unget_buffer@lmx@@QEAAXH@Z
+     756  0x2bb20  ?unicode_char_to_utf8@lmx@@YAPEADHQEAD@Z
+     757  0x2bbb0  ?unmarshal_all_attributes@c_unmarshal_helper@lmx@@AEAA?AW4elmx_error@2@XZ
+     758  0x2c000  ?unmarshal_an_attribute@c_unmarshal_helper@lmx@@EEAA_NPEAW4elmx_error@2@@Z
+     759  0x2c010  ?unmarshal_attribute_list_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_list_bridge@2@AEBVc_untyped_validation_spec@2@P6A?AW432@AEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@Z
+     760  0x2c250  ?unmarshal_attribute_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     761  0x2c2f0  ?unmarshal_attributes_check@c_unmarshal_helper@lmx@@EEAA?AW4elmx_error@2@XZ
+     762  0x2c300  ?unmarshal_child_element_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@PEBUs_event_map@2@@Z
+     763  0x2c410  ?unmarshal_child_element_list_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_list_bridge@2@AEBVc_untyped_validation_spec@2@P6A?AW432@AEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@ZPEBUs_event_map@2@@Z
+     764  0x2c530  ?unmarshal_complex_body@c_unmarshal_helper@lmx@@EEAA_NPEAW4elmx_error@2@@Z
+     765  0x2c560  ?unmarshal_complex_content@c_unmarshal_helper@lmx@@QEAA?AW4elmx_error@2@QEBDH@Z
+     766  0x2c590  ?unmarshal_complex_content_case@c_unmarshal_helper@lmx@@AEAA?AW4elmx_error@2@XZ
+     767  0x2ccb0  ?unmarshal_element_list_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_list_bridge@2@AEBVc_untyped_validation_spec@2@P6A?AW432@AEAV12@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z@Z
+     768  0x2cf10  ?unmarshal_element_value_impl@c_xml_reader@lmx@@QEAA?AW4elmx_error@2@AEAVc_untyped_unmarshal_bridge@2@AEBVc_untyped_validation_spec@2@@Z
+     769  0x2cfe0  ?unmarshal_empty_content@c_unmarshal_helper@lmx@@QEAA?AW4elmx_error@2@QEBDH@Z
+     770  0x2d010  ?unmarshal_empty_content_case@c_unmarshal_helper@lmx@@AEAA?AW4elmx_error@2@XZ
+     771  0x2d5f0  ?unmarshal_simple_body@c_unmarshal_helper@lmx@@EEAA_NPEAW4elmx_error@2@@Z
+     772  0x2d620  ?unmarshal_simple_content@c_unmarshal_helper@lmx@@QEAA?AW4elmx_error@2@QEBDH@Z
+     773  0x2d650  ?unmarshal_simple_content_case@c_unmarshal_helper@lmx@@AEAA?AW4elmx_error@2@XZ
+     774  0x2d900  ?unregister_getter@c_error@lmx@@QEAAXPEAVc_getter_error_binder@2@@Z
+     775  0x2d910  ?user_found_unknown_attribute@c_xml_reader@lmx@@UEAA?AW4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_string_stack@2@PEBDH@Z
+     776  0x2d920  ?user_found_unknown_element@c_xml_reader@lmx@@UEAA?AW4elmx_error@2@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBVc_string_stack@2@PEBDH@Z
+     777  0x2d930  ?user_handle_error@c_xml_reader@lmx@@UEAA?AW4elmx_error@2@W432@@Z
+     778  0x2d940  ?user_handle_error@c_xml_reader@lmx@@UEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     779  0x2d9f0  ?user_handle_error@c_xml_writer@lmx@@UEAA?AW4elmx_error@2@W432@@Z
+     780  0x2da00  ?user_handle_error@c_xml_writer@lmx@@UEAA?AW4elmx_error@2@W432@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEBDH@Z
+     781  0x2daa0  ?utf8_to_unicode_char@lmx@@YA_NQEADPEAH@Z
+     782  0x78b20  ?validation_spec_empty@lmx@@3V?$ct_typed_validation_spec@Vc_empty@lmx@@@1@B
+     783  0x2db40  ?verify_element_end@c_unmarshal_helper@lmx@@AEAA?AW4elmx_error@2@XZ
+     784  0x3d890  ?vtostring@lmx@@YAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV23@AEBV23@@Z
+     785  0x3d8d0  ?vtostring@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+     786  0x2df20  ?write_any_info@c_xml_writer@lmx@@UEAAXAEBVc_any_info@2@@Z
+     787  0x443c0  ?xmlCharInRange@lmx@@YAHIPEBU_xmlChRangeGroup@1@@Z
+     788  0x552d8  ?xmlIsBaseCharGroup@lmx@@3U_xmlChRangeGroup@1@B
+     789  0x55818  ?xmlIsCharGroup@lmx@@3U_xmlChRangeGroup@1@B
+     790  0x55a48  ?xmlIsCombiningGroup@lmx@@3U_xmlChRangeGroup@1@B
+     791  0x55b58  ?xmlIsDigitGroup@lmx@@3U_xmlChRangeGroup@1@B
+     792  0x55e70  ?xmlIsExtenderGroup@lmx@@3U_xmlChRangeGroup@1@B
+     793  0x43520  ?xmlUCSIsAegeanNumbers@lmx@@YAHH@Z
+     794  0x43530  ?xmlUCSIsAlphabeticPresentationForms@lmx@@YAHH@Z
+     795  0x43540  ?xmlUCSIsArabic@lmx@@YAHH@Z
+     796  0x43560  ?xmlUCSIsArabicPresentationFormsA@lmx@@YAHH@Z
+     797  0x43580  ?xmlUCSIsArabicPresentationFormsB@lmx@@YAHH@Z
+     798  0x435a0  ?xmlUCSIsArmenian@lmx@@YAHH@Z
+     799  0x435b0  ?xmlUCSIsArrows@lmx@@YAHH@Z
+     800  0x435c0  ?xmlUCSIsBasicLatin@lmx@@YAHH@Z
+     801  0x435d0  ?xmlUCSIsBengali@lmx@@YAHH@Z
+     802  0x44470  ?xmlUCSIsBlock@lmx@@YAHHPEBD@Z
+     803  0x435e0  ?xmlUCSIsBlockElements@lmx@@YAHH@Z
+     804  0x435f0  ?xmlUCSIsBopomofo@lmx@@YAHH@Z
+     805  0x43600  ?xmlUCSIsBopomofoExtended@lmx@@YAHH@Z
+     806  0x43610  ?xmlUCSIsBoxDrawing@lmx@@YAHH@Z
+     807  0x43620  ?xmlUCSIsBraillePatterns@lmx@@YAHH@Z
+     808  0x43640  ?xmlUCSIsBuhid@lmx@@YAHH@Z
+     809  0x43650  ?xmlUCSIsByzantineMusicalSymbols@lmx@@YAHH@Z
+     810  0x43670  ?xmlUCSIsCJKCompatibility@lmx@@YAHH@Z
+     811  0x43690  ?xmlUCSIsCJKCompatibilityForms@lmx@@YAHH@Z
+     812  0x436a0  ?xmlUCSIsCJKCompatibilityIdeographs@lmx@@YAHH@Z
+     813  0x436c0  ?xmlUCSIsCJKCompatibilityIdeographsSupplement@lmx@@YAHH@Z
+     814  0x436e0  ?xmlUCSIsCJKRadicalsSupplement@lmx@@YAHH@Z
+     815  0x436f0  ?xmlUCSIsCJKSymbolsandPunctuation@lmx@@YAHH@Z
+     816  0x43700  ?xmlUCSIsCJKUnifiedIdeographs@lmx@@YAHH@Z
+     817  0x43720  ?xmlUCSIsCJKUnifiedIdeographsExtensionA@lmx@@YAHH@Z
+     818  0x43740  ?xmlUCSIsCJKUnifiedIdeographsExtensionB@lmx@@YAHH@Z
+     819  0x44520  ?xmlUCSIsCat@lmx@@YAHHPEBD@Z
+     820  0x43ff0  ?xmlUCSIsCatC@lmx@@YAHH@Z
+     821  0x44000  ?xmlUCSIsCatCc@lmx@@YAHH@Z
+     822  0x44020  ?xmlUCSIsCatCf@lmx@@YAHH@Z
+     823  0x44030  ?xmlUCSIsCatCo@lmx@@YAHH@Z
+     824  0x44070  ?xmlUCSIsCatCs@lmx@@YAHH@Z
+     825  0x440a0  ?xmlUCSIsCatL@lmx@@YAHH@Z
+     826  0x440b0  ?xmlUCSIsCatLl@lmx@@YAHH@Z
+     827  0x440c0  ?xmlUCSIsCatLm@lmx@@YAHH@Z
+     828  0x440d0  ?xmlUCSIsCatLo@lmx@@YAHH@Z
+     829  0x440e0  ?xmlUCSIsCatLt@lmx@@YAHH@Z
+     830  0x440f0  ?xmlUCSIsCatLu@lmx@@YAHH@Z
+     831  0x44100  ?xmlUCSIsCatM@lmx@@YAHH@Z
+     832  0x44110  ?xmlUCSIsCatMc@lmx@@YAHH@Z
+     833  0x44120  ?xmlUCSIsCatMe@lmx@@YAHH@Z
+     834  0x44160  ?xmlUCSIsCatMn@lmx@@YAHH@Z
+     835  0x44170  ?xmlUCSIsCatN@lmx@@YAHH@Z
+     836  0x44180  ?xmlUCSIsCatNd@lmx@@YAHH@Z
+     837  0x44190  ?xmlUCSIsCatNl@lmx@@YAHH@Z
+     838  0x441e0  ?xmlUCSIsCatNo@lmx@@YAHH@Z
+     839  0x441f0  ?xmlUCSIsCatP@lmx@@YAHH@Z
+     840  0x44200  ?xmlUCSIsCatPc@lmx@@YAHH@Z
+     841  0x44250  ?xmlUCSIsCatPd@lmx@@YAHH@Z
+     842  0x44260  ?xmlUCSIsCatPe@lmx@@YAHH@Z
+     843  0x44270  ?xmlUCSIsCatPf@lmx@@YAHH@Z
+     844  0x442a0  ?xmlUCSIsCatPi@lmx@@YAHH@Z
+     845  0x442d0  ?xmlUCSIsCatPo@lmx@@YAHH@Z
+     846  0x442e0  ?xmlUCSIsCatPs@lmx@@YAHH@Z
+     847  0x442f0  ?xmlUCSIsCatS@lmx@@YAHH@Z
+     848  0x44300  ?xmlUCSIsCatSc@lmx@@YAHH@Z
+     849  0x44310  ?xmlUCSIsCatSk@lmx@@YAHH@Z
+     850  0x44320  ?xmlUCSIsCatSm@lmx@@YAHH@Z
+     851  0x44330  ?xmlUCSIsCatSo@lmx@@YAHH@Z
+     852  0x44340  ?xmlUCSIsCatZ@lmx@@YAHH@Z
+     853  0x44350  ?xmlUCSIsCatZl@lmx@@YAHH@Z
+     854  0x44360  ?xmlUCSIsCatZp@lmx@@YAHH@Z
+     855  0x44370  ?xmlUCSIsCatZs@lmx@@YAHH@Z
+     856  0x43760  ?xmlUCSIsCherokee@lmx@@YAHH@Z
+     857  0x43770  ?xmlUCSIsCombiningDiacriticalMarks@lmx@@YAHH@Z
+     858  0x43780  ?xmlUCSIsCombiningDiacriticalMarksforSymbols@lmx@@YAHH@Z
+     859  0x43790  ?xmlUCSIsCombiningHalfMarks@lmx@@YAHH@Z
+     860  0x437a0  ?xmlUCSIsCombiningMarksforSymbols@lmx@@YAHH@Z
+     861  0x437b0  ?xmlUCSIsControlPictures@lmx@@YAHH@Z
+     862  0x437c0  ?xmlUCSIsCurrencySymbols@lmx@@YAHH@Z
+     863  0x437d0  ?xmlUCSIsCypriotSyllabary@lmx@@YAHH@Z
+     864  0x437e0  ?xmlUCSIsCyrillic@lmx@@YAHH@Z
+     865  0x43800  ?xmlUCSIsCyrillicSupplement@lmx@@YAHH@Z
+     866  0x43810  ?xmlUCSIsDeseret@lmx@@YAHH@Z
+     867  0x43820  ?xmlUCSIsDevanagari@lmx@@YAHH@Z
+     868  0x43830  ?xmlUCSIsDingbats@lmx@@YAHH@Z
+     869  0x43850  ?xmlUCSIsEnclosedAlphanumerics@lmx@@YAHH@Z
+     870  0x43870  ?xmlUCSIsEnclosedCJKLettersandMonths@lmx@@YAHH@Z
+     871  0x43890  ?xmlUCSIsEthiopic@lmx@@YAHH@Z
+     872  0x438b0  ?xmlUCSIsGeneralPunctuation@lmx@@YAHH@Z
+     873  0x438c0  ?xmlUCSIsGeometricShapes@lmx@@YAHH@Z
+     874  0x438d0  ?xmlUCSIsGeorgian@lmx@@YAHH@Z
+     875  0x438e0  ?xmlUCSIsGothic@lmx@@YAHH@Z
+     876  0x438f0  ?xmlUCSIsGreek@lmx@@YAHH@Z
+     877  0x43910  ?xmlUCSIsGreekExtended@lmx@@YAHH@Z
+     878  0x43930  ?xmlUCSIsGreekandCoptic@lmx@@YAHH@Z
+     879  0x43950  ?xmlUCSIsGujarati@lmx@@YAHH@Z
+     880  0x43960  ?xmlUCSIsGurmukhi@lmx@@YAHH@Z
+     881  0x43970  ?xmlUCSIsHalfwidthandFullwidthForms@lmx@@YAHH@Z
+     882  0x43990  ?xmlUCSIsHangulCompatibilityJamo@lmx@@YAHH@Z
+     883  0x439a0  ?xmlUCSIsHangulJamo@lmx@@YAHH@Z
+     884  0x439c0  ?xmlUCSIsHangulSyllables@lmx@@YAHH@Z
+     885  0x439e0  ?xmlUCSIsHanunoo@lmx@@YAHH@Z
+     886  0x439f0  ?xmlUCSIsHebrew@lmx@@YAHH@Z
+     887  0x43a00  ?xmlUCSIsHighPrivateUseSurrogates@lmx@@YAHH@Z
+     888  0x43a10  ?xmlUCSIsHighSurrogates@lmx@@YAHH@Z
+     889  0x43a30  ?xmlUCSIsHiragana@lmx@@YAHH@Z
+     890  0x43a40  ?xmlUCSIsIPAExtensions@lmx@@YAHH@Z
+     891  0x43a50  ?xmlUCSIsIdeographicDescriptionCharacters@lmx@@YAHH@Z
+     892  0x43a60  ?xmlUCSIsKanbun@lmx@@YAHH@Z
+     893  0x43a70  ?xmlUCSIsKangxiRadicals@lmx@@YAHH@Z
+     894  0x43a90  ?xmlUCSIsKannada@lmx@@YAHH@Z
+     895  0x43aa0  ?xmlUCSIsKatakana@lmx@@YAHH@Z
+     896  0x43ab0  ?xmlUCSIsKatakanaPhoneticExtensions@lmx@@YAHH@Z
+     897  0x43ac0  ?xmlUCSIsKhmer@lmx@@YAHH@Z
+     898  0x43ad0  ?xmlUCSIsKhmerSymbols@lmx@@YAHH@Z
+     899  0x43ae0  ?xmlUCSIsLao@lmx@@YAHH@Z
+     900  0x43af0  ?xmlUCSIsLatin1Supplement@lmx@@YAHH@Z
+     901  0x43b00  ?xmlUCSIsLatinExtendedA@lmx@@YAHH@Z
+     902  0x43b30  ?xmlUCSIsLatinExtendedAdditional@lmx@@YAHH@Z
+     903  0x43b10  ?xmlUCSIsLatinExtendedB@lmx@@YAHH@Z
+     904  0x43b50  ?xmlUCSIsLetterlikeSymbols@lmx@@YAHH@Z
+     905  0x43b60  ?xmlUCSIsLimbu@lmx@@YAHH@Z
+     906  0x43b70  ?xmlUCSIsLinearBIdeograms@lmx@@YAHH@Z
+     907  0x43b80  ?xmlUCSIsLinearBSyllabary@lmx@@YAHH@Z
+     908  0x43b90  ?xmlUCSIsLowSurrogates@lmx@@YAHH@Z
+     909  0x43bb0  ?xmlUCSIsMalayalam@lmx@@YAHH@Z
+     910  0x43bc0  ?xmlUCSIsMathematicalAlphanumericSymbols@lmx@@YAHH@Z
+     911  0x43be0  ?xmlUCSIsMathematicalOperators@lmx@@YAHH@Z
+     912  0x43c00  ?xmlUCSIsMiscellaneousMathematicalSymbolsA@lmx@@YAHH@Z
+     913  0x43c10  ?xmlUCSIsMiscellaneousMathematicalSymbolsB@lmx@@YAHH@Z
+     914  0x43c20  ?xmlUCSIsMiscellaneousSymbols@lmx@@YAHH@Z
+     915  0x43c40  ?xmlUCSIsMiscellaneousSymbolsandArrows@lmx@@YAHH@Z
+     916  0x43c60  ?xmlUCSIsMiscellaneousTechnical@lmx@@YAHH@Z
+     917  0x43c80  ?xmlUCSIsMongolian@lmx@@YAHH@Z
+     918  0x43ca0  ?xmlUCSIsMusicalSymbols@lmx@@YAHH@Z
+     919  0x43cc0  ?xmlUCSIsMyanmar@lmx@@YAHH@Z
+     920  0x43ce0  ?xmlUCSIsNumberForms@lmx@@YAHH@Z
+     921  0x43cf0  ?xmlUCSIsOgham@lmx@@YAHH@Z
+     922  0x43d00  ?xmlUCSIsOldItalic@lmx@@YAHH@Z
+     923  0x43d10  ?xmlUCSIsOpticalCharacterRecognition@lmx@@YAHH@Z
+     924  0x43d20  ?xmlUCSIsOriya@lmx@@YAHH@Z
+     925  0x43d30  ?xmlUCSIsOsmanya@lmx@@YAHH@Z
+     926  0x43d40  ?xmlUCSIsPhoneticExtensions@lmx@@YAHH@Z
+     927  0x43d50  ?xmlUCSIsPrivateUse@lmx@@YAHH@Z
+     928  0x43d80  ?xmlUCSIsPrivateUseArea@lmx@@YAHH@Z
+     929  0x43da0  ?xmlUCSIsRunic@lmx@@YAHH@Z
+     930  0x43db0  ?xmlUCSIsShavian@lmx@@YAHH@Z
+     931  0x43dc0  ?xmlUCSIsSinhala@lmx@@YAHH@Z
+     932  0x43dd0  ?xmlUCSIsSmallFormVariants@lmx@@YAHH@Z
+     933  0x43de0  ?xmlUCSIsSpacingModifierLetters@lmx@@YAHH@Z
+     934  0x43df0  ?xmlUCSIsSpecials@lmx@@YAHH@Z
+     935  0x43e00  ?xmlUCSIsSuperscriptsandSubscripts@lmx@@YAHH@Z
+     936  0x43e10  ?xmlUCSIsSupplementalArrowsA@lmx@@YAHH@Z
+     937  0x43e20  ?xmlUCSIsSupplementalArrowsB@lmx@@YAHH@Z
+     938  0x43e30  ?xmlUCSIsSupplementalMathematicalOperators@lmx@@YAHH@Z
+     939  0x43e50  ?xmlUCSIsSupplementaryPrivateUseAreaA@lmx@@YAHH@Z
+     940  0x43e70  ?xmlUCSIsSupplementaryPrivateUseAreaB@lmx@@YAHH@Z
+     941  0x43e90  ?xmlUCSIsSyriac@lmx@@YAHH@Z
+     942  0x43ea0  ?xmlUCSIsTagalog@lmx@@YAHH@Z
+     943  0x43eb0  ?xmlUCSIsTagbanwa@lmx@@YAHH@Z
+     944  0x43ec0  ?xmlUCSIsTags@lmx@@YAHH@Z
+     945  0x43ed0  ?xmlUCSIsTaiLe@lmx@@YAHH@Z
+     946  0x43ee0  ?xmlUCSIsTaiXuanJingSymbols@lmx@@YAHH@Z
+     947  0x43ef0  ?xmlUCSIsTamil@lmx@@YAHH@Z
+     948  0x43f00  ?xmlUCSIsTelugu@lmx@@YAHH@Z
+     949  0x43f10  ?xmlUCSIsThaana@lmx@@YAHH@Z
+     950  0x43f20  ?xmlUCSIsThai@lmx@@YAHH@Z
+     951  0x43f30  ?xmlUCSIsTibetan@lmx@@YAHH@Z
+     952  0x43f50  ?xmlUCSIsUgaritic@lmx@@YAHH@Z
+     953  0x43f60  ?xmlUCSIsUnifiedCanadianAboriginalSyllabics@lmx@@YAHH@Z
+     954  0x43f80  ?xmlUCSIsVariationSelectors@lmx@@YAHH@Z
+     955  0x43f90  ?xmlUCSIsVariationSelectorsSupplement@lmx@@YAHH@Z
+     956  0x43fb0  ?xmlUCSIsYiRadicals@lmx@@YAHH@Z
+     957  0x43fc0  ?xmlUCSIsYiSyllables@lmx@@YAHH@Z
+     958  0x43fe0  ?xmlUCSIsYijingHexagramSymbols@lmx@@YAHH@Z
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         000494ee 0000000180001000 TEXT
+  1 .rdata        0002b9f0 000000018004b000 DATA
+  2 .data         00001a00 0000000180077000 DATA
+  3 .pdata        00004df4 000000018007a000 DATA
+  4 .gfids        0000002c 000000018007f000 DATA
+  5 .rsrc         00000348 0000000180080000 DATA
+  6 .reloc        00000598 0000000180081000 DATA
+
+SYMBOL TABLE:

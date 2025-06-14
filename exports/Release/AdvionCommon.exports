@@ -1,0 +1,274 @@
+
+lib/Release/AdvionCommon.dll:	file format coff-x86-64
+architecture: x86_64
+start address: 0x0000000000000000
+Characteristics 0x2022
+	executable
+	large address aware
+	DLL
+
+Time/Date               Wed Dec  4 16:51:06 2019
+Magic                   020b	(PE32+)
+MajorLinkerVersion      14
+MinorLinkerVersion      0
+SizeOfCode              0000000000004400
+SizeOfInitializedData   0000000000004800
+SizeOfUninitializedData 0000000000000000
+AddressOfEntryPoint     00000000000043b4
+BaseOfCode              0000000000001000
+ImageBase               0000000180000000
+SectionAlignment        00001000
+FileAlignment           00000200
+MajorOSystemVersion     6
+MinorOSystemVersion     0
+MajorImageVersion       0
+MinorImageVersion       0
+MajorSubsystemVersion   6
+MinorSubsystemVersion   0
+Win32Version            00000000
+SizeOfImage             0000f000
+SizeOfHeaders           00000400
+CheckSum                00000000
+Subsystem               00000002	(Windows GUI)
+DllCharacteristics      00000160
+					HIGH_ENTROPY_VA
+					DYNAMIC_BASE
+					NX_COMPAT
+SizeOfStackReserve      0000000000100000
+SizeOfStackCommit       0000000000001000
+SizeOfHeapReserve       0000000000100000
+SizeOfHeapCommit        0000000000001000
+LoaderFlags             00000000
+NumberOfRvaAndSizes     00000010
+
+The Data Directory
+Entry 0 0000000000007670 00000c94 Export Directory [.edata (or where ever we found it)]
+Entry 1 0000000000008304 00000104 Import Directory [parts of .idata]
+Entry 2 000000000000d000 0000050c Resource Directory [.rsrc]
+Entry 3 000000000000b000 00000660 Exception Directory [.pdata]
+Entry 4 0000000000000000 00000000 Security Directory
+Entry 5 000000000000e000 00000060 Base Relocation Directory [.reloc]
+Entry 6 00000000000067b0 00000054 Debug Directory
+Entry 7 0000000000000000 00000000 Description Directory
+Entry 8 0000000000000000 00000000 Special Directory
+Entry 9 0000000000000000 00000000 Thread Storage Directory [.tls]
+Entry a 0000000000006810 00000094 Load Configuration Directory
+Entry b 0000000000000000 00000000 Bound Import Directory
+Entry c 0000000000006000 00000340 Import Address Table Directory
+Entry d 0000000000000000 00000000 Delay Import Directory
+Entry e 0000000000000000 00000000 CLR Runtime Header
+Entry f 0000000000000000 00000000 Reserved
+
+The Import Tables:
+  lookup 00008728 time 00000000 fwd 00000000 name 000087e6 addr 00006320
+
+    DLL Name: lmx-MD-vc14.dll
+    Hint/Ord  Name
+         309  ?convert@lmx@@YAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@PEAV23@AEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@3@@Z
+
+  lookup 00008620 time 00000000 fwd 00000000 name 00008838 addr 00006218
+
+    DLL Name: VERSION.dll
+    Hint/Ord  Name
+           7  GetFileVersionInfoSizeW
+          16  VerQueryValueW
+           8  GetFileVersionInfoW
+
+  lookup 00008408 time 00000000 fwd 00000000 name 00008a16 addr 00006000
+
+    DLL Name: KERNEL32.dll
+    Hint/Ord  Name
+        1198  RtlCaptureContext
+        1205  RtlLookupFunctionEntry
+         852  InitializeSListHead
+         279  DisableThreadLibraryCalls
+         733  GetSystemTimeAsFileTime
+         617  GetModuleFileNameW
+        1073  QueryPerformanceFrequency
+        1072  QueryPerformanceCounter
+         209  CreateMutexW
+        1467  WaitForSingleObject
+        1168  ReleaseMutex
+         598  GetLastError
+         127  CloseHandle
+        1108  ReadFile
+        1521  WriteFile
+         194  CreateFileW
+        1377  Sleep
+         460  GetCommState
+        1226  SetCommTimeouts
+        1225  SetCommState
+        1183  RemoveVectoredExceptionHandler
+         527  GetCurrentProcess
+         532  GetCurrentThreadId
+         267  DeleteFileW
+         939  LoadLibraryW
+          19  AddVectoredExceptionHandler
+         676  GetProcAddress
+         528  GetCurrentProcessId
+         420  FreeLibrary
+         874  IsDebuggerPresent
+        1212  RtlVirtualUnwind
+        1426  UnhandledExceptionFilter
+         880  IsProcessorFeaturePresent
+        1362  SetUnhandledExceptionFilter
+        1392  TerminateProcess
+
+  lookup 000085a8 time 00000000 fwd 00000000 name 00008a3c addr 000061a0
+
+    DLL Name: SHELL32.dll
+    Hint/Ord  Name
+         222  SHGetKnownFolderPath
+
+  lookup 00008738 time 00000000 fwd 00000000 name 00008a58 addr 00006330
+
+    DLL Name: ole32.dll
+    Hint/Ord  Name
+         127  CoTaskMemFree
+
+  lookup 00008528 time 00000000 fwd 00000000 name 00008dc4 addr 00006120
+
+    DLL Name: MSVCP140.dll
+    Hint/Ord  Name
+         654  ?_Xlength_error@std@@YAXPEBD@Z
+         692  ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+        1310  ?uncaught_exception@std@@YA_NXZ
+        1332  ?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QEBADD@Z
+        1249  ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAA_JPEBD_J@Z
+        1121  ?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@D@Z
+        1246  ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QEAAHD@Z
+         580  ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAXXZ
+         872  ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV12@XZ
+        1221  ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QEAAXH_N@Z
+         262  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@P6AAEAV01@AEAV01@@Z@Z
+         258  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@K@Z
+         266  ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QEAAAEAV01@PEBX@Z
+         651  ?_Xbad_alloc@std@@YAXXZ
+         655  ?_Xout_of_range@std@@YAXPEBD@Z
+
+  lookup 000085b8 time 00000000 fwd 00000000 name 00008e8e addr 000061b0
+
+    DLL Name: VCRUNTIME140.dll
+    Hint/Ord  Name
+           8  __C_specific_handler
+          62  memset
+          33  __std_exception_copy
+          34  __std_exception_destroy
+          54  _purecall
+          37  __std_type_info_destroy_list
+          35  __std_terminate
+          60  memcpy
+          58  memchr
+           1  _CxxThrowException
+          14  __CxxFrameHandler3
+          61  memmove
+
+  lookup 00008660 time 00000000 fwd 00000000 name 00009062 addr 00006258
+
+    DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+    Hint/Ord  Name
+          60  _register_onexit_function
+          34  _execute_onexit_table
+          52  _initialize_onexit_table
+          22  _cexit
+          51  _initialize_narrow_environment
+          24  _configure_narrow_argv
+          63  _seh_filter_dll
+         103  terminate
+          54  _initterm
+          55  _initterm_e
+          57  _invalid_parameter_noinfo_noreturn
+          30  _crt_atexit
+
+  lookup 000086c8 time 00000000 fwd 00000000 name 00009084 addr 000062c0
+
+    DLL Name: api-ms-win-crt-stdio-l1-1-0.dll
+    Hint/Ord  Name
+          17  __stdio_common_vswprintf
+          15  __stdio_common_vsprintf_s
+           3  __stdio_common_vfprintf
+           0  __acrt_iob_func
+
+  lookup 00008700 time 00000000 fwd 00000000 name 000090a4 addr 000062f8
+
+    DLL Name: api-ms-win-crt-time-l1-1-0.dll
+    Hint/Ord  Name
+          17  _difftime64
+          48  _time64
+          71  wcsftime
+          35  _localtime64
+
+  lookup 000086f0 time 00000000 fwd 00000000 name 000090c4 addr 000062e8
+
+    DLL Name: api-ms-win-crt-string-l1-1-0.dll
+    Hint/Ord  Name
+         142  strncmp
+
+  lookup 00008640 time 00000000 fwd 00000000 name 000090e6 addr 00006238
+
+    DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+    Hint/Ord  Name
+          25  malloc
+           8  _callnewh
+          24  free
+
+Export Table:
+ DLL name: AdvionCommon.dll
+ Ordinal base: 1
+ Ordinal      RVA  Name
+       1   0x26c0  ??0Mutex@AdvionCommon@@QEAA@PEB_W@Z
+       2   0x2c10  ??0USBSerialDevice@AdvionCommon@@QEAA@AEBV01@@Z
+       3   0x2eb0  ??0USBSerialDevice@AdvionCommon@@QEAA@XZ
+       4   0x2720  ??1Mutex@AdvionCommon@@QEAA@XZ
+       5   0x2ef0  ??1USBSerialDevice@AdvionCommon@@UEAA@XZ
+       6   0x10c0  ??4AdvionUtility@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+       7   0x10c0  ??4AdvionUtility@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+       8   0x10c0  ??4AdvionUtilityInternal@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+       9   0x10c0  ??4AdvionUtilityInternal@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+      10   0x2cb0  ??4USBSerialDevice@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+      11   0x10c0  ??4WinDump@AdvionCommon@@QEAAAEAV01@$$QEAV01@@Z
+      12   0x10c0  ??4WinDump@AdvionCommon@@QEAAAEAV01@AEBV01@@Z
+      13   0x6510  ??_7USBSerialDevice@AdvionCommon@@6B@
+      14   0x2670  ?GetTimeMS@@YA_KXZ
+      15   0x3250  ?configurePort@USBSerialDevice@AdvionCommon@@AEAA_NPEAX@Z
+      16   0x2f60  ?connect@USBSerialDevice@AdvionCommon@@UEAA_NH@Z
+      17   0x12c0  ?determineSoftwareVersion@AdvionUtilityInternal@AdvionCommon@@SAXAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z
+      18   0x2fc0  ?disconnect@USBSerialDevice@AdvionCommon@@QEAAXXZ
+      19   0x3060  ?findAndOpenPort@USBSerialDevice@AdvionCommon@@AEAA_NXZ
+      20   0x3050  ?getCOMPort@USBSerialDevice@AdvionCommon@@QEAAHXZ
+      21   0x37e0  ?getCommandDelay@USBSerialDevice@AdvionCommon@@MEAAHXZ
+      22   0x10d0  ?getSoftwareVersion@AdvionUtility@AdvionCommon@@SAPEBDXZ
+      23   0x1110  ?getSoftwareVersionW@AdvionUtility@AdvionCommon@@SAPEB_WXZ
+      24   0x2c00  ?getValidationStart@USBSerialDevice@AdvionCommon@@MEAAHXZ
+      25   0x31f0  ?initPortTimeouts@USBSerialDevice@AdvionCommon@@AEAAXPEAX@Z
+      26   0x3020  ?isConnected@USBSerialDevice@AdvionCommon@@QEAA_NXZ
+      27   0x2750  ?lock@Mutex@AdvionCommon@@QEAA_NXZ
+      28   0x14d0  ?ltrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+      29   0x1690  ?ltrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+      30   0x3640  ?readString@USBSerialDevice@AdvionCommon@@AEAA_NPEAD_N@Z
+      31   0x3960  ?registerExceptionHandler@WinDump@AdvionCommon@@SAXPEB_W@Z
+      32   0x1410  ?rtrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+      33   0x15b0  ?rtrim@AdvionUtilityInternal@AdvionCommon@@CAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+      34   0x37d0  ?secondaryValidationCheck@USBSerialDevice@AdvionCommon@@MEAA_NPEBD@Z
+      35   0x3560  ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBD@Z
+      36   0x34d0  ?sendCommand@USBSerialDevice@AdvionCommon@@IEAA_NPEBDPEAD_N@Z
+      37   0x30f0  ?testPort@USBSerialDevice@AdvionCommon@@MEAA_NI@Z
+      38   0x1590  ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEAV34@@Z
+      39   0x17f0  ?trim@AdvionUtilityInternal@AdvionCommon@@SAAEAV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@AEAV34@@Z
+      40   0x2770  ?try_lock@Mutex@AdvionCommon@@QEAA_NH@Z
+      41   0x2780  ?unlock@Mutex@AdvionCommon@@QEAA_NXZ
+      42   0x3ab0  ?unregisterExceptionHandler@WinDump@AdvionCommon@@SAXXZ
+      43   0x32e0  ?validate@USBSerialDevice@AdvionCommon@@AEAA_N_N@Z
+      44   0x3600  ?writeString@USBSerialDevice@AdvionCommon@@EEAA_NPEBD@Z
+
+Sections:
+Idx Name          Size     VMA              Type
+  0 .text         0000421a 0000000180001000 TEXT
+  1 .rdata        0000321e 0000000180006000 DATA
+  2 .data         00000200 000000018000a000 DATA
+  3 .pdata        00000660 000000018000b000 DATA
+  4 .gfids        0000002c 000000018000c000 DATA
+  5 .rsrc         0000050c 000000018000d000 DATA
+  6 .reloc        00000060 000000018000e000 DATA
+
+SYMBOL TABLE:
