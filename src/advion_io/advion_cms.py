@@ -1,5 +1,4 @@
 import ctypes
-from typing import Optional
 
 from .constants import (
     CMS_NAMES, 
