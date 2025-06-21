@@ -99,6 +99,20 @@ class OperationMode(IntEnum):
     Acquiring = 3
 
 
+class AcquisitionState(IntEnum):
+    Prevented = 0
+    Ready = 1
+    Waiting = 2
+    Underway = 3
+    Paused = 4
+
+
+class AcquisitionScanMode(IntEnum):
+    ASM_Unknown = 0
+    ASM_CMS_SIM = 1
+    ASM_CMS_Range = 2
+
+
 class TuneParameter(IntEnum):
     CapillaryTemperature = 0
     CapillaryVoltage = 1
@@ -269,4 +283,56 @@ CMS_NAMES = {
     'Instrument::getMaxScanSpeed': ('?getMaxScanSpeed@Instrument@AdvionCMS@@QEAANXZ', [ctypes.c_void_p], ctypes.c_double),
     'Instrument::getPumpDownRemainingSeconds': ('?getPumpDownRemainingSeconds@Instrument@AdvionCMS@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
     'Instrument::readAnalogInput': ('?readAnalogInput@Instrument@AdvionCMS@@QEAANH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_double),
+    
+    # AcquisitionManager static methods
+    'AcquisitionManager::canAcquireToFolder': ('?canAcquireToFolder@AcquisitionManager@AdvionCMS@@SA_NPEBD@Z', [ctypes.c_char_p], ctypes.c_bool),
+    'AcquisitionManager::canPerformSwitching': ('?canPerformSwitching@AcquisitionManager@AdvionCMS@@SA_NXZ', [], ctypes.c_bool),
+    'AcquisitionManager::canCalculateDeltaData': ('?canCalculateDeltaData@AcquisitionManager@AdvionCMS@@SA_NXZ', [], ctypes.c_bool),
+    'AcquisitionManager::getMinRangeScanTime': ('?getMinRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getMinSIMDwellTime': ('?getMinSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getMaxRangeScanTime': ('?getMaxRangeScanTime@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getMaxSIMDwellTime': ('?getMaxSIMDwellTime@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::start': ('?start@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEBD0000@Z', [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p], ctypes.c_int),
+    'AcquisitionManager::startWithSwitching': ('?startWithSwitching@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEBD000000@Z', [ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p, ctypes.c_char_p], ctypes.c_int),
+    'AcquisitionManager::stop': ('?stop@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ', [], ctypes.c_int),
+    'AcquisitionManager::pause': ('?pause@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@_N@Z', [ctypes.c_bool], ctypes.c_int),
+    'AcquisitionManager::resume': ('?resume@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@XZ', [], ctypes.c_int),
+    'AcquisitionManager::extend': ('?extend@AcquisitionManager@AdvionCMS@@SAHH@Z', [ctypes.c_int], ctypes.c_int),
+    'AcquisitionManager::isFinalizingData': ('?isFinalizingData@AcquisitionManager@AdvionCMS@@SA_NXZ', [], ctypes.c_bool),
+    'AcquisitionManager::getState': ('?getState@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionState@2@XZ', [], ctypes.c_int),
+    'AcquisitionManager::isUsingTwoIonSources': ('?isUsingTwoIonSources@AcquisitionManager@AdvionCMS@@SA_NXZ', [], ctypes.c_bool),
+    'AcquisitionManager::getNumScanModes': ('?getNumScanModes@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getScanMode': ('?getScanMode@AcquisitionManager@AdvionCMS@@SA?AW4AcquisitionScanMode@2@H@Z', [ctypes.c_int], ctypes.c_int),
+    'AcquisitionManager::getCurrentName': ('?getCurrentName@AcquisitionManager@AdvionCMS@@SAPEBDHH@Z', [ctypes.c_int, ctypes.c_int], ctypes.c_char_p),
+    'AcquisitionManager::getCurrentFolder': ('?getCurrentFolder@AcquisitionManager@AdvionCMS@@SAPEBDXZ', [], ctypes.c_char_p),
+    'AcquisitionManager::getMaxNumScans': ('?getMaxNumScans@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getMaxNumMasses': ('?getMaxNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getRuntime': ('?getRuntime@AcquisitionManager@AdvionCMS@@SANXZ', [], ctypes.c_double),
+    'AcquisitionManager::getTotalRunTime': ('?getTotalRunTime@AcquisitionManager@AdvionCMS@@SANXZ', [], ctypes.c_double),
+    'AcquisitionManager::getNumScansDone': ('?getNumScansDone@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getLastScanIndex': ('?getLastScanIndex@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getLastScanModeIndex': ('?getLastScanModeIndex@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getLastScanIonSource': ('?getLastScanIonSource@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getLastRetentionTime': ('?getLastRetentionTime@AcquisitionManager@AdvionCMS@@SANXZ', [], ctypes.c_double),
+    'AcquisitionManager::getLastNumMasses': ('?getLastNumMasses@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::getLastTIC': ('?getLastTIC@AcquisitionManager@AdvionCMS@@SANXZ', [], ctypes.c_double),
+    'AcquisitionManager::getLastXIC': ('?getLastXIC@AcquisitionManager@AdvionCMS@@SANNN@Z', [ctypes.c_double, ctypes.c_double], ctypes.c_double),
+    'AcquisitionManager::getLastDeltaIC': ('?getLastDeltaIC@AcquisitionManager@AdvionCMS@@SANXZ', [], ctypes.c_double),
+    'AcquisitionManager::getLastDeltaXIC': ('?getLastDeltaXIC@AcquisitionManager@AdvionCMS@@SANNN@Z', [ctypes.c_double, ctypes.c_double], ctypes.c_double),
+    'AcquisitionManager::getLastAnalogOutput': ('?getLastAnalogOutput@AcquisitionManager@AdvionCMS@@SANH_N@Z', [ctypes.c_int, ctypes.c_bool], ctypes.c_double),
+    'AcquisitionManager::getLastSpectrumMasses': ('?getLastSpectrumMasses@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z', [ctypes.POINTER(ctypes.c_double)], ctypes.c_int),
+    'AcquisitionManager::getLastSpectrumIntensities': ('?getLastSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z', [ctypes.POINTER(ctypes.c_double)], ctypes.c_int),
+    'AcquisitionManager::getLastDeltaSpectrumIntensities': ('?getLastDeltaSpectrumIntensities@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@PEAN@Z', [ctypes.POINTER(ctypes.c_double)], ctypes.c_int),
+    'AcquisitionManager::getAcquisitionBinsPerAMU': ('?getAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::setAcquisitionBinsPerAMU': ('?setAcquisitionBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z', [ctypes.c_int], ctypes.c_int),
+    'AcquisitionManager::getWriteBinsPerAMU': ('?getWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SAHXZ', [], ctypes.c_int),
+    'AcquisitionManager::setWriteBinsPerAMU': ('?setWriteBinsPerAMU@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@H@Z', [ctypes.c_int], ctypes.c_int),
+    'AcquisitionManager::createScalarChannel': ('?createScalarChannel@AcquisitionManager@AdvionCMS@@SAHPEBD@Z', [ctypes.c_char_p], ctypes.c_int),
+    'AcquisitionManager::writeScalarEntry': ('?writeScalarEntry@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HNN@Z', [ctypes.c_int, ctypes.c_double, ctypes.c_double], ctypes.c_int),
+    'AcquisitionManager::writeScalarEntries': ('?writeScalarEntries@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEAN0H@Z', [ctypes.c_int, ctypes.POINTER(ctypes.c_double), ctypes.POINTER(ctypes.c_double), ctypes.c_int], ctypes.c_int),
+    'AcquisitionManager::createAuxiliaryFile': ('?createAuxiliaryFile@AcquisitionManager@AdvionCMS@@SAHPEBD0@Z', [ctypes.c_char_p, ctypes.c_char_p], ctypes.c_int),
+    'AcquisitionManager::writeTextToFile': ('?writeTextToFile@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEBD@Z', [ctypes.c_int, ctypes.c_char_p], ctypes.c_int),
+    'AcquisitionManager::writeLogMessage': ('?writeLogMessage@AcquisitionManager@AdvionCMS@@SAXPEBD@Z', [ctypes.c_char_p], None),
+    'AcquisitionManager::writeExperiment': ('?writeExperiment@AcquisitionManager@AdvionCMS@@SAXPEBD@Z', [ctypes.c_char_p], None),
+    'AcquisitionManager::updateIonSourceOptimization': ('?updateIonSourceOptimization@AcquisitionManager@AdvionCMS@@SA?AW4ErrorCode@2@HPEBD@Z', [ctypes.c_int, ctypes.c_char_p], ctypes.c_int),
 }
