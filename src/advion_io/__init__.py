@@ -3,5 +3,6 @@ from .advion_cms import (
     AdvionInstrument,
     USBInstrument, 
     SimulatedInstrument,
-    AdvionInstrumentController
+    AdvionInstrumentController,
+    AdvionAcquisitionManager,
 )
