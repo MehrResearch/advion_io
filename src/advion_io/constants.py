@@ -191,6 +191,84 @@ class NumberReadback(IntEnum):
     DC1RB = 16
     DC2RB = 17
 
+
+class SeverityCode(IntEnum):
+    CMS_SEVERITY_INFORMATION = 1
+    CMS_SEVERITY_WARNING = 2
+    CMS_SEVERITY_ERROR = 3
+    CMS_SEVERITY_FATAL = 4
+
+
+class OperatePreventer(IntEnum):
+    NoCommunication = 0x00000001
+    PumpOff = 0x00000002
+    PumpSpeedTooLow = 0x00000004
+    VacuumTooHigh = 0x00000008
+    WaitingAfterPumpDown = 0x00000010
+    NoIonSource = 0x00000020
+    SafetySwitchTripped = 0x00000040
+    IncompatibleFirmware = 0x00000080
+
+
+class HardwareType(IntEnum):
+    CMS = 0
+    CMS_S = 1
+    CMS_L = 2
+    CMS_OEM = 3
+    CMS_S_OEM = 4
+    CMS_L_OEM = 5
+    CMS_C = 6
+
+
+class SourceType(IntEnum):
+    NO_SOURCE = 0
+    ESI_SOURCE = 1
+    APCI_SOURCE = 2
+    DART_SOURCE = 3
+    VAPCI_SOURCE = 4
+    ESI_OPSI_SOURCE = 5
+
+
+class LicensableUpgrade(IntEnum):
+    APCI_IonSource = 0
+    ASAP_IonSource = 1
+    ESI_OPSI_IonSource = 2
+    Plate_Express_Peripheral = 3
+    Isocratic_Pump_Peripheral = 4
+    MRA_Valve_Peripheral = 5
+    Avant_HPLC_Peripheral = 6
+
+
+class HeaterId(IntEnum):
+    CapillaryHeaterId = 0
+    SourceGasHeaterId = 1
+    TransferLineHeaterId = 2
+
+
+class TuningLevel(IntEnum):
+    ResolutionOnlyTune = 0
+    RegularTune = 1
+    FindPeaksTune = 2
+    DetectorGainTune = 3
+
+
+class TuningTask(IntEnum):
+    TestingPerformance = 0
+    Calibrating = 1
+    CalculatingBaseline = 2
+    CenteringPeaks = 3
+    TuningExtractionElectrode = 4
+    TuningHexapoleBias = 5
+    TuningResolution = 6
+    TuningIonEnergyAndResolution = 7
+    TuningDetectorGain = 8
+
+
+class MassCalibrationLevel(IntEnum):
+    SlowSpeed = 0
+    DefaultSpeed = 1
+    HighSpeed = 2
+
 DATA_NAMES = {
     'DataReader': ('??0DataReader@AdvionData@@QEAA@PEBD_N1@Z', [ctypes.c_void_p, ctypes.c_char_p, ctypes.c_bool, ctypes.c_bool], None),
     '~DataReader': ('??1DataReader@AdvionData@@QEAA@XZ', [ctypes.c_void_p], None),
@@ -283,6 +361,12 @@ CMS_NAMES = {
     'Instrument::getMaxScanSpeed': ('?getMaxScanSpeed@Instrument@AdvionCMS@@QEAANXZ', [ctypes.c_void_p], ctypes.c_double),
     'Instrument::getPumpDownRemainingSeconds': ('?getPumpDownRemainingSeconds@Instrument@AdvionCMS@@QEAAHXZ', [ctypes.c_void_p], ctypes.c_int),
     'Instrument::readAnalogInput': ('?readAnalogInput@Instrument@AdvionCMS@@QEAANH@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_double),
+    'Instrument::getHardwareType': ('?getHardwareType@Instrument@AdvionCMS@@QEAA?AW4HardwareType@2@XZ', [ctypes.c_void_p], ctypes.c_int),
+    'Instrument::getSourceType': ('?getSourceType@Instrument@AdvionCMS@@QEAA?AW4SourceType@2@XZ', [ctypes.c_void_p], ctypes.c_int),
+    'Instrument::getSourceGasTemperatureUserMax': ('?getSourceGasTemperatureUserMax@Instrument@AdvionCMS@@QEAANW4SourceType@2@@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_double),
+    'Instrument::isHeaterTemperatureEquilibrated': ('?isHeaterTemperatureEquilibrated@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_bool),
+    'Instrument::isHeaterTemperatureWithinMaximum': ('?isHeaterTemperatureWithinMaximum@Instrument@AdvionCMS@@QEAA_NW4HeaterId@2@@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_bool),
+    'Instrument::isLicensedUpgrade': ('?isLicensedUpgrade@Instrument@AdvionCMS@@QEAA_NW4LicensableUpgrade@2@@Z', [ctypes.c_void_p, ctypes.c_int], ctypes.c_bool),
     
     # AcquisitionManager static methods
     'AcquisitionManager::canAcquireToFolder': ('?canAcquireToFolder@AcquisitionManager@AdvionCMS@@SA_NPEBD@Z', [ctypes.c_char_p], ctypes.c_bool),

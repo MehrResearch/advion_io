@@ -7,7 +7,8 @@ from advion_io.advion_cms import (
 )
 from advion_io.constants import (
     AdvionCMSErrorCode, InstrumentState, OperationMode,
-    TuneParameter, InstrumentSwitch, BinaryReadback, NumberReadback
+    TuneParameter, InstrumentSwitch, BinaryReadback, NumberReadback,
+    OperatePreventer, HardwareType, SourceType, LicensableUpgrade, HeaterId
 )
 
 
@@ -91,10 +92,11 @@ class TestInstrumentController:
             can_pump_down = AdvionInstrumentController.can_pump_down()
             assert isinstance(can_pump_down, bool)
             
-            # Get operate preventers
+            # Get operate preventers - now returns list of enum values
             preventers = AdvionInstrumentController.get_operate_preventers()
-            assert isinstance(preventers, int)
-            assert preventers >= 0
+            assert isinstance(preventers, list)
+            for preventer in preventers:
+                assert isinstance(preventer, OperatePreventer)
             
         finally:
             AdvionInstrumentController.stop_controller()
@@ -307,6 +309,40 @@ class TestInstrumentMethods:
                 assert isinstance(value, float)
                 # Analog inputs are typically 0-5V or similar
                 assert 0.0 <= value <= 10.0
+                
+        finally:
+            AdvionInstrumentController.stop_controller()
+    
+    def test_new_instrument_methods(self, instrument):
+        """Test new instrument methods that return enum types."""
+        AdvionInstrumentController.start_controller(instrument)
+        
+        try:
+            # Test hardware type
+            hardware_type = instrument.get_hardware_type()
+            assert isinstance(hardware_type, HardwareType)
+            
+            # Test source type
+            source_type = instrument.get_source_type()
+            assert isinstance(source_type, SourceType)
+            
+            # Test source gas temperature max with enum parameter
+            max_temp = instrument.get_source_gas_temperature_max(source_type)
+            assert isinstance(max_temp, float)
+            assert max_temp > 0
+            
+            # Test heater temperature methods
+            for heater in HeaterId:
+                equilibrated = instrument.is_heater_temperature_equilibrated(heater)
+                assert isinstance(equilibrated, bool)
+                
+                within_max = instrument.is_heater_temperature_within_maximum(heater)
+                assert isinstance(within_max, bool)
+            
+            # Test licensed upgrade checks
+            for upgrade in LicensableUpgrade:
+                is_licensed = instrument.is_licensed_upgrade(upgrade)
+                assert isinstance(is_licensed, bool)
                 
         finally:
             AdvionInstrumentController.stop_controller()

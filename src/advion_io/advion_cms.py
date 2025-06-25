@@ -12,6 +12,15 @@ from .constants import (
     InstrumentSwitch, 
     BinaryReadback, 
     NumberReadback,
+    SeverityCode,
+    OperatePreventer,
+    HardwareType,
+    SourceType,
+    LicensableUpgrade,
+    HeaterId,
+    TuningLevel,
+    TuningTask,
+    MassCalibrationLevel,
     get_dll_path
 )
 
@@ -72,6 +81,26 @@ class AdvionInstrument:
     
     def read_analog_input(self, line: int) -> float:
         return cms_bindings["Instrument::readAnalogInput"](ctypes.byref(self.handle), line)
+    
+    def get_hardware_type(self) -> HardwareType:
+        hardware_type = cms_bindings["Instrument::getHardwareType"](ctypes.byref(self.handle))
+        return HardwareType(hardware_type)
+    
+    def get_source_type(self) -> SourceType:
+        source_type = cms_bindings["Instrument::getSourceType"](ctypes.byref(self.handle))
+        return SourceType(source_type)
+    
+    def get_source_gas_temperature_max(self, source: SourceType) -> float:
+        return cms_bindings["Instrument::getSourceGasTemperatureUserMax"](ctypes.byref(self.handle), source)
+    
+    def is_heater_temperature_equilibrated(self, heater: HeaterId) -> bool:
+        return cms_bindings["Instrument::isHeaterTemperatureEquilibrated"](ctypes.byref(self.handle), heater)
+    
+    def is_heater_temperature_within_maximum(self, heater: HeaterId) -> bool:
+        return cms_bindings["Instrument::isHeaterTemperatureWithinMaximum"](ctypes.byref(self.handle), heater)
+    
+    def is_licensed_upgrade(self, upgrade: LicensableUpgrade) -> bool:
+        return cms_bindings["Instrument::isLicensedUpgrade"](ctypes.byref(self.handle), upgrade)
 
 
 class USBInstrument(AdvionInstrument):
@@ -136,8 +165,14 @@ class AdvionInstrumentController:
         return cms_bindings["InstrumentController::canPumpDown"]()
     
     @staticmethod
-    def get_operate_preventers() -> int:
-        return cms_bindings["InstrumentController::getOperatePreventers"]()
+    def get_operate_preventers() -> list[OperatePreventer]:
+        """Returns a list of OperatePreventer enum values that are currently preventing operation."""
+        preventers_int = cms_bindings["InstrumentController::getOperatePreventers"]()
+        active_preventers = []
+        for preventer in OperatePreventer:
+            if preventers_int & preventer.value:
+                active_preventers.append(preventer)
+        return active_preventers
     
     @staticmethod
     def operate() -> AdvionCMSErrorCode:
