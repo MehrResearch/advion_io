@@ -1,13 +1,7 @@
 # advion_io
 
 Pure-Python reading and writing of Advion `.datx` mass-spectrometry
-data sets. No vendor DLLs, no `ctypes`, no Windows requirement — the
-package decodes and encodes the container and per-scan binary format
-directly, so it runs anywhere NumPy does.
-
-```bash
-uv add advion-io          # or: pip install advion-io
-```
+data sets.
 
 ## Reading
 
@@ -27,10 +21,7 @@ with DatxFile("acquisition.datx") as dx:
 ```
 
 `DataReader` is a higher-fidelity, Advion-shaped API on top of
-`DatxFile`. Method names and return types match the Advion reference
-implementation, so code written against the vendor API needs no
-changes. It adds Peak Express delta backgrounds / delta spectra, XICs,
-segment / scalar-channel / aux-file metadata, `save()`, and so on:
+`DatxFile`.
 
 ```python
 from advion_io import DataReader
@@ -69,11 +60,29 @@ with DataWriter("./data", "my_run", is_centroid=False) as w:
     out_path = w.create_datx_file()    # ./data/my_run.datx
 ```
 
-Decoded values match the reference output to the precision of float32
-(TIC reproduces to ~4e-7 relative error on the bundled example file).
-Every scan of the example file round-trips through `encode → decode`
-bit-for-bit identical, and the total `.spectra` byte count matches what
-the reference produces.
+## Interactive dashboard
+
+[`Analysis.py`](./Analysis.py) is a [marimo](https://marimo.io) notebook for
+exploring Advion .datx data.
+
+```bash
+# app mode (marimo run)
+uvx --from git+https://github.com/MehrResearch/advion_io ms-dashboard
+
+# editor mode (marimo edit), to tweak the cells
+uvx --from git+https://github.com/MehrResearch/advion_io ms-dashboard-edit
+```
+
+Extra arguments are forwarded to marimo, e.g. `... ms-dashboard --port 2718
+--headless`. Pick the acquisitions to analyse with the file browser at the top
+of the notebook.
+
+In a checkout the same notebook runs directly:
+
+```bash
+uvx marimo edit --sandbox Analysis.py    # isolated venv from its PEP 723 header
+uv run marimo edit Analysis.py           # against the local advion_io source
+```
 
 ## Batch conversion
 
@@ -83,43 +92,3 @@ it finds into a gzipped pickle of `{masses, times, intensities}`:
 ```bash
 uv run convert-all /path/to/folder
 ```
-
-## Layout
-
-```
-src/advion_io/
-    constants.py        # IntEnums mirroring the Advion API (error codes, states, …)
-    data_reader.py      # DataReader + DatxFile + decoder
-    data_writer.py      # DataWriter + encoder
-    convertall.py       # `convert-all` batch decoder
-tests/
-    test_data_reader.py
-    test_data_writer.py
-    test_datx_file.py
-    data/example.datx   # Example acquisition used by the tests
-datx_dashboard.py       # marimo notebook plotting an acquisition
-```
-
-## Development
-
-```bash
-uv sync
-uv run pytest
-```
-
-Tests that need the example acquisition skip automatically when it is
-absent. Point `ADVION_EXAMPLE_DATX` at another `.datx` file to run them
-against your own data (a few assertions are specific to the bundled
-file).
-
-## Scope
-
-This package covers *data files only*. Live instrument control
-(the vendor's `AdvionCMS` layer) is not implemented here.
-
-## License
-
-MIT — see [`LICENSE`](./LICENSE).
-
-Advion, Expression and CMS are trademarks of their respective owners;
-this project is not affiliated with or endorsed by them.

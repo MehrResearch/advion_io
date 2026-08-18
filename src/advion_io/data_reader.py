@@ -617,6 +617,15 @@ class DataReader:
         self._check_spectrum_index(index)
         return self._dx.get_spectrum(index)
 
+    def get_intensities(self) -> np.ndarray:
+        """Return every scan as a ``(numSpectra, numMasses)`` float32 matrix.
+
+        An extension over the reference API: decoding scan by scan through
+        :meth:`get_spectrum` is fine for a handful of spectra but wasteful when
+        a caller wants the whole run. The matrix is decoded once and cached.
+        """
+        return self._dx.intensities
+
     def get_averaged_spectrum(self, spectra_indices: Sequence[int]) -> np.ndarray:
         if len(spectra_indices) == 0:
             raise IOError(AdvionDataErrorCode.PARAMETER_OUT_OF_RANGE)

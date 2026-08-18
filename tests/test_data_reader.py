@@ -120,6 +120,14 @@ def test_get_spectrum_index_bounds(dr):
         dr.get_spectrum(dr.get_num_spectra())
 
 
+def test_get_intensities_matches_per_scan_decode(dr):
+    intensities = dr.get_intensities()
+    assert intensities.dtype == np.float32
+    assert intensities.shape == (dr.get_num_spectra(), dr.get_num_masses())
+    for index in (0, dr.get_num_spectra() // 2, dr.get_num_spectra() - 1):
+        np.testing.assert_array_equal(intensities[index], dr.get_spectrum(index))
+
+
 def test_get_averaged_spectrum_matches_manual(dr):
     avg = dr.get_averaged_spectrum([0, 5, 10])
     manual = (
